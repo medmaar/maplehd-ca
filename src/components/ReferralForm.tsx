@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const WA_NUMBER = "17828026280";
 const WA_REFER_URL = `https://wa.me/${WA_NUMBER}?text=Hi%20MapleHD%2C%20I%E2%80%99m%20referring%20someone%20to%20your%20service.%20What%E2%80%99s%20the%20next%20step%3F`;
@@ -15,25 +16,22 @@ export default function ReferralForm() {
     e.preventDefault();
     setStatus("loading");
     try {
-      const res = await fetch("/api/referral", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          yourName,
-          yourWhatsApp: yourWA,
-          friendName,
-          friendWhatsApp: friendWA,
-        }),
+      emailjs.init("XgOQHE8VNnCyBYP1z");
+      await emailjs.send("service_0e3cugb", "template_cuf7svm", {
+        from_name: yourName,
+        from_email: "referral@maplehd.ca",
+        phone: yourWA,
+        country: "Canada",
+        device: "Referral Submission",
+        plan: "Referral Program",
+        message: `REFERRAL SUBMISSION\n\nReferrer: ${yourName}\nReferrer WhatsApp: ${yourWA}\n\nFriend: ${friendName}\nFriend WhatsApp: ${friendWA}`,
+        site_name: "MapleHD.ca",
       });
-      if (res.ok) {
-        setStatus("success");
-        setYourName("");
-        setYourWA("");
-        setFriendName("");
-        setFriendWA("");
-      } else {
-        setStatus("error");
-      }
+      setStatus("success");
+      setYourName("");
+      setYourWA("");
+      setFriendName("");
+      setFriendWA("");
     } catch {
       setStatus("error");
     }
