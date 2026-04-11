@@ -62,12 +62,12 @@ export default function IPTVvsCableCanada() {
         <article style={{ maxWidth: 768, margin: "0 auto", padding: "64px 16px" }}>
           {/* Header */}
           <div style={{ marginBottom: 16, display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap" }}>
-            <span style={{ background: "#dc2626", color: "#fff", fontSize: 12, padding: "4px 12px", borderRadius: 9999, fontWeight: 700 }}>Comparison</span>
+            <span style={{ background: "#AE2448", color: "#fff", fontSize: 12, padding: "4px 12px", borderRadius: 9999, fontWeight: 700 }}>Comparison</span>
             <time dateTime="2026-02-20" style={{ color: "#6b7280", fontSize: 14 }}>February 20, 2026</time>
             <span style={{ color: "#6b7280", fontSize: 14 }}>6 min read</span>
           </div>
           <h1 style={{ fontSize: "clamp(28px, 5vw, 48px)", fontWeight: 900, marginBottom: 24, lineHeight: 1.2 }}>
-            IPTV vs Cable Canada 2026: <span style={{ color: "#ef4444" }}>Which Is Better?</span>
+            IPTV vs Cable Canada 2026: <span style={{ color: "#AE2448" }}>Which Is Better?</span>
           </h1>
           <p style={{ fontSize: 18, color: "#d1d5db", marginBottom: 40, lineHeight: 1.75 }}>
             Canadian households are ditching cable at record rates — over 400,000 subscribers cut the
@@ -76,7 +76,7 @@ export default function IPTVvsCableCanada() {
           </p>
 
           {/* Quick verdict */}
-          <div style={{ background: "#450a0a", border: "1px solid #dc2626", borderRadius: 16, padding: 24, marginBottom: 48 }}>
+          <div style={{ background: "#3d0f1f", border: "1px solid #AE2448", borderRadius: 16, padding: 24, marginBottom: 48 }}>
             <p style={{ fontWeight: 700, color: "#fff", fontSize: 18, marginBottom: 8 }}>Quick Verdict</p>
             <p style={{ color: "#d1d5db", fontSize: 14, lineHeight: 1.75 }}>
               For the vast majority of Canadian households, <strong>IPTV is the better choice in 2026</strong>.
@@ -94,7 +94,7 @@ export default function IPTVvsCableCanada() {
             </p>
 
             <div style={{ background: "#111827", borderRadius: 16, padding: 24, border: "1px solid #1f2937", marginBottom: 16 }}>
-              <h3 style={{ fontWeight: 700, fontSize: 19, marginBottom: 16, color: "#f87171" }}>Bell Canada (Fibe TV)</h3>
+              <h3 style={{ fontWeight: 700, fontSize: 19, marginBottom: 16, color: "#72BAA9" }}>Bell Canada (Fibe TV)</h3>
               <div style={{ display: "flex", flexDirection: "column", gap: 8, fontSize: 14, color: "#d1d5db" }}>
                 <div style={{ display: "flex", justifyContent: "space-between", borderBottom: "1px solid #1f2937", paddingBottom: 8 }}><span>Alt TV (basic IPTV package)</span><span style={{ fontWeight: 700 }}>$25/mo (limited channels)</span></div>
                 <div style={{ display: "flex", justifyContent: "space-between", borderBottom: "1px solid #1f2937", paddingBottom: 8 }}><span>Fibe TV Good Package</span><span style={{ fontWeight: 700 }}>$80/mo</span></div>
@@ -102,18 +102,18 @@ export default function IPTVvsCableCanada() {
                 <div style={{ display: "flex", justifyContent: "space-between", borderBottom: "1px solid #1f2937", paddingBottom: 8 }}><span>Sports packages (TSN + Sportsnet)</span><span style={{ fontWeight: 700 }}>+$20–$40/mo</span></div>
                 <div style={{ display: "flex", justifyContent: "space-between" }}><span>Equipment rental</span><span style={{ fontWeight: 700 }}>+$15/mo</span></div>
               </div>
-              <p style={{ color: "#f87171", fontWeight: 700, marginTop: 16, fontSize: 14 }}>Full sports package total: ~$140–$160/month</p>
+              <p style={{ color: "#72BAA9", fontWeight: 700, marginTop: 16, fontSize: 14 }}>Full sports package total: ~$140–$160/month</p>
             </div>
 
             <div style={{ background: "#111827", borderRadius: 16, padding: 24, border: "1px solid #1f2937", marginBottom: 16 }}>
-              <h3 style={{ fontWeight: 700, fontSize: 19, marginBottom: 16, color: "#f87171" }}>Rogers Cable TV</h3>
+              <h3 style={{ fontWeight: 700, fontSize: 19, marginBottom: 16, color: "#72BAA9" }}>Rogers Cable TV</h3>
               <div style={{ display: "flex", flexDirection: "column", gap: 8, fontSize: 14, color: "#d1d5db" }}>
                 <div style={{ display: "flex", justifyContent: "space-between", borderBottom: "1px solid #1f2937", paddingBottom: 8 }}><span>Starter package</span><span style={{ fontWeight: 700 }}>$40/mo</span></div>
                 <div style={{ display: "flex", justifyContent: "space-between", borderBottom: "1px solid #1f2937", paddingBottom: 8 }}><span>VIP package</span><span style={{ fontWeight: 700 }}>$110/mo</span></div>
                 <div style={{ display: "flex", justifyContent: "space-between", borderBottom: "1px solid #1f2937", paddingBottom: 8 }}><span>Sports bundle add-on</span><span style={{ fontWeight: 700 }}>+$25/mo</span></div>
                 <div style={{ display: "flex", justifyContent: "space-between" }}><span>HD PVR rental</span><span style={{ fontWeight: 700 }}>+$18/mo</span></div>
               </div>
-              <p style={{ color: "#f87171", fontWeight: 700, marginTop: 16, fontSize: 14 }}>Full sports package total: ~$150–$180/month</p>
+              <p style={{ color: "#72BAA9", fontWeight: 700, marginTop: 16, fontSize: 14 }}>Full sports package total: ~$150–$180/month</p>
             </div>
 
             <div style={{ background: "#052e16", borderRadius: 16, padding: 24, border: "1px solid #166534", marginBottom: 16 }}>
@@ -129,7 +129,7 @@ export default function IPTVvsCableCanada() {
             </div>
 
             <p style={{ color: "#d1d5db", fontSize: 14, lineHeight: 1.75 }}>
-              View all <Link href="/pricing" style={{ color: "#E53935", textDecoration: "none", fontWeight: 600 }}>MapleHD plans</Link> with full pricing details.
+              View all <Link href="/pricing" style={{ color: "#AE2448", textDecoration: "none", fontWeight: 600 }}>MapleHD plans</Link> with full pricing details.
             </p>
           </section>
 
@@ -142,7 +142,7 @@ export default function IPTVvsCableCanada() {
                   <tr>
                     <th style={{ textAlign: "left", padding: "12px 16px", color: "#9ca3af" }}>Feature</th>
                     <th style={{ textAlign: "left", padding: "12px 16px", color: "#4ade80" }}>IPTV</th>
-                    <th style={{ textAlign: "left", padding: "12px 16px", color: "#f87171" }}>Cable TV</th>
+                    <th style={{ textAlign: "left", padding: "12px 16px", color: "#72BAA9" }}>Cable TV</th>
                     <th style={{ textAlign: "left", padding: "12px 16px", color: "#9ca3af" }}>Winner</th>
                   </tr>
                 </thead>
@@ -224,14 +224,14 @@ export default function IPTVvsCableCanada() {
           </section>
 
           {/* CTA */}
-          <div style={{ background: "#111827", border: "1px solid #dc2626", borderRadius: 16, padding: 32, textAlign: "center", marginBottom: 48 }}>
+          <div style={{ background: "#111827", border: "1px solid #AE2448", borderRadius: 16, padding: 32, textAlign: "center", marginBottom: 48 }}>
             <h2 style={{ fontSize: "clamp(20px, 2.5vw, 26px)", fontWeight: 700, marginBottom: 16 }}>Ready to Switch from Cable to IPTV?</h2>
             <p style={{ color: "#d1d5db", marginBottom: 24 }}>Try MapleHD free for 5 minutes — no credit card required.</p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 16, justifyContent: "center" }}>
-              <Link href="/free-trial" style={{ background: "#dc2626", color: "#fff", padding: "12px 32px", borderRadius: 12, fontWeight: 700, textDecoration: "none", display: "inline-block" }}>
+              <Link href="/free-trial" style={{ background: "#AE2448", color: "#fff", padding: "12px 32px", borderRadius: 12, fontWeight: 700, textDecoration: "none", display: "inline-block" }}>
                 Get Free Trial
               </Link>
-              <Link href="/pricing" style={{ border: "1px solid #dc2626", color: "#f87171", padding: "12px 32px", borderRadius: 12, fontWeight: 700, textDecoration: "none", display: "inline-block" }}>
+              <Link href="/pricing" style={{ border: "1px solid #AE2448", color: "#72BAA9", padding: "12px 32px", borderRadius: 12, fontWeight: 700, textDecoration: "none", display: "inline-block" }}>
                 View MapleHD Plans
               </Link>
             </div>
@@ -240,13 +240,13 @@ export default function IPTVvsCableCanada() {
           {/* Related reading */}
           <div style={{ borderTop: "1px solid #1f2937", paddingTop: 32, display: "flex", flexDirection: "column", gap: 12 }}>
             <p style={{ color: "#9ca3af", fontSize: 14, marginBottom: 8 }}>Related reading:</p>
-            <Link href="/blog/is-iptv-legal-canada" style={{ color: "#E53935", textDecoration: "none", fontSize: 15 }}>
+            <Link href="/blog/is-iptv-legal-canada" style={{ color: "#AE2448", textDecoration: "none", fontSize: 15 }}>
               → Is IPTV Legal in Canada in 2026?
             </Link>
-            <Link href="/blog/best-iptv-player-canada" style={{ color: "#E53935", textDecoration: "none", fontSize: 15 }}>
+            <Link href="/blog/best-iptv-player-canada" style={{ color: "#AE2448", textDecoration: "none", fontSize: 15 }}>
               → Best IPTV Player Apps for Canada in 2026
             </Link>
-            <Link href="/blog/best-iptv-canada-2026" style={{ color: "#E53935", textDecoration: "none", fontSize: 15 }}>
+            <Link href="/blog/best-iptv-canada-2026" style={{ color: "#AE2448", textDecoration: "none", fontSize: 15 }}>
               → Best IPTV Providers in Canada 2026 — Tested &amp; Ranked
             </Link>
           </div>

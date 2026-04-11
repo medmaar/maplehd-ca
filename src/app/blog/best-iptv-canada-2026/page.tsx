@@ -134,12 +134,12 @@ export default function BestIPTVCanada2026() {
         <article style={{ maxWidth: 768, margin: "0 auto", padding: "64px 16px" }}>
           {/* Header */}
           <div style={{ marginBottom: 16, display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap" }}>
-            <span style={{ background: "#dc2626", color: "#fff", fontSize: 12, padding: "4px 12px", borderRadius: 9999, fontWeight: 700 }}>Reviews</span>
+            <span style={{ background: "#AE2448", color: "#fff", fontSize: 12, padding: "4px 12px", borderRadius: 9999, fontWeight: 700 }}>Reviews</span>
             <time dateTime="2026-01-10" style={{ color: "#6b7280", fontSize: 14 }}>January 10, 2026</time>
             <span style={{ color: "#6b7280", fontSize: 14 }}>8 min read</span>
           </div>
           <h1 style={{ fontSize: "clamp(28px, 5vw, 48px)", fontWeight: 900, marginBottom: 24, lineHeight: 1.2 }}>
-            Best MapleHD: <span style={{ color: "#ef4444" }}>Top Services</span> Reviewed &amp; Compared
+            Best MapleHD: <span style={{ color: "#AE2448" }}>Top Services</span> Reviewed &amp; Compared
           </h1>
           <p style={{ fontSize: 18, color: "#d1d5db", marginBottom: 40, lineHeight: 1.75 }}>
             If you&apos;re looking for the best IPTV service in Canada for 2026, you&apos;ve come to the right place.
@@ -184,7 +184,7 @@ export default function BestIPTVCanada2026() {
                 <tbody>
                   {services.map((s) => (
                     <tr key={s.rank} style={{ background: "#030712", borderTop: "1px solid #1f2937" }}>
-                      <td style={{ padding: "16px", fontWeight: 700, color: "#ef4444" }}>#{s.rank}</td>
+                      <td style={{ padding: "16px", fontWeight: 700, color: "#AE2448" }}>#{s.rank}</td>
                       <td style={{ padding: "16px", fontWeight: 600, color: "#fff" }}>{s.name}</td>
                       <td style={{ padding: "16px", color: "#d1d5db" }}>{s.channels}</td>
                       <td style={{ padding: "16px", color: "#d1d5db" }}>{s.price}</td>
@@ -206,7 +206,7 @@ export default function BestIPTVCanada2026() {
           {/* #1 Review */}
           <section style={{ marginBottom: 48 }}>
             <h2 style={{ fontSize: "clamp(22px, 3vw, 30px)", fontWeight: 700, marginBottom: 16 }}>
-              #1 MapleHD — <span style={{ color: "#ef4444" }}>Best Overall</span>
+              #1 MapleHD — <span style={{ color: "#AE2448" }}>Best Overall</span>
             </h2>
             <p style={{ color: "#d1d5db", lineHeight: 1.75, marginBottom: 16 }}>
               After testing every major IPTV provider available to Canadian subscribers in 2026,
@@ -254,7 +254,7 @@ export default function BestIPTVCanada2026() {
 
             <h3 style={{ fontSize: "clamp(18px, 2.5vw, 24px)", fontWeight: 700, marginBottom: 12, marginTop: 32 }}>Pricing</h3>
             <p style={{ color: "#d1d5db", lineHeight: 1.75, marginBottom: 16 }}>
-              See all <Link href="/pricing" style={{ color: "#E53935", textDecoration: "none", fontWeight: 600 }}>MapleHD plans</Link> — pricing is transparent and all in Canadian dollars:
+              See all <Link href="/pricing" style={{ color: "#AE2448", textDecoration: "none", fontWeight: 600 }}>MapleHD plans</Link> — pricing is transparent and all in Canadian dollars:
             </p>
             <ul style={{ paddingLeft: 24, color: "#d1d5db", lineHeight: 2, marginBottom: 16 }}>
               <li>1 Month: $9 (1 device)</li>
@@ -298,7 +298,7 @@ export default function BestIPTVCanada2026() {
           </section>
 
           {/* Verdict */}
-          <section style={{ marginBottom: 48, background: "#111827", borderRadius: 16, padding: 32, border: "1px solid #dc2626" }}>
+          <section style={{ marginBottom: 48, background: "#111827", borderRadius: 16, padding: 32, border: "1px solid #AE2448" }}>
             <h2 style={{ fontSize: "clamp(20px, 2.5vw, 26px)", fontWeight: 700, marginBottom: 16 }}>Our Verdict for 2026</h2>
             <p style={{ color: "#d1d5db", lineHeight: 1.75, marginBottom: 16 }}>
               For Canadians looking for the best IPTV experience in 2026, <strong>MapleHD</strong> is the
@@ -311,10 +311,10 @@ export default function BestIPTVCanada2026() {
               No credit card is required.
             </p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 16 }}>
-              <Link href="/free-trial" style={{ background: "#dc2626", color: "#fff", padding: "12px 32px", borderRadius: 12, fontWeight: 700, textDecoration: "none", display: "inline-block" }}>
+              <Link href="/free-trial" style={{ background: "#AE2448", color: "#fff", padding: "12px 32px", borderRadius: 12, fontWeight: 700, textDecoration: "none", display: "inline-block" }}>
                 Get Free Trial
               </Link>
-              <Link href="/pricing" style={{ border: "1px solid #dc2626", color: "#f87171", padding: "12px 32px", borderRadius: 12, fontWeight: 700, textDecoration: "none", display: "inline-block" }}>
+              <Link href="/pricing" style={{ border: "1px solid #AE2448", color: "#72BAA9", padding: "12px 32px", borderRadius: 12, fontWeight: 700, textDecoration: "none", display: "inline-block" }}>
                 View MapleHD Plans
               </Link>
             </div>
@@ -326,7 +326,7 @@ export default function BestIPTVCanada2026() {
             <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
               {faqSchema.mainEntity.map((item) => (
                 <div key={item.name} style={{ background: "#111827", borderRadius: 12, padding: 24, border: "1px solid #1f2937" }}>
-                  <h3 style={{ fontWeight: 700, fontSize: 17, marginBottom: 12, color: "#f87171" }}>{item.name}</h3>
+                  <h3 style={{ fontWeight: 700, fontSize: 17, marginBottom: 12, color: "#72BAA9" }}>{item.name}</h3>
                   <p style={{ color: "#9ca3af", fontSize: 14, lineHeight: 1.75 }}>{item.acceptedAnswer.text}</p>
                 </div>
               ))}
@@ -336,13 +336,13 @@ export default function BestIPTVCanada2026() {
           {/* Related reading */}
           <div style={{ borderTop: "1px solid #1f2937", paddingTop: 32, display: "flex", flexDirection: "column", gap: 12 }}>
             <p style={{ color: "#9ca3af", fontSize: 14, marginBottom: 8 }}>Related reading:</p>
-            <Link href="/blog/is-iptv-legal-canada" style={{ color: "#E53935", textDecoration: "none", fontSize: 15 }}>
+            <Link href="/blog/is-iptv-legal-canada" style={{ color: "#AE2448", textDecoration: "none", fontSize: 15 }}>
               → Is IPTV Legal in Canada in 2026?
             </Link>
-            <Link href="/blog/iptv-vs-cable-canada" style={{ color: "#E53935", textDecoration: "none", fontSize: 15 }}>
+            <Link href="/blog/iptv-vs-cable-canada" style={{ color: "#AE2448", textDecoration: "none", fontSize: 15 }}>
               → IPTV vs Cable in Canada 2026 – Is It Worth Switching?
             </Link>
-            <Link href="/blog/best-iptv-player-canada" style={{ color: "#E53935", textDecoration: "none", fontSize: 15 }}>
+            <Link href="/blog/best-iptv-player-canada" style={{ color: "#AE2448", textDecoration: "none", fontSize: 15 }}>
               → Best IPTV Player Apps for Canada in 2026
             </Link>
           </div>

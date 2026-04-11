@@ -78,14 +78,14 @@ export default function IPTVAndroidTVCanadaPage() {
         {/* Hero */}
         <section
           style={{
-            background: "linear-gradient(135deg, #0a0a0a 0%, #1a0505 100%)",
+            background: "linear-gradient(135deg, #0a0a0a 0%, #1a0a12 100%)",
             padding: "80px 16px 60px",
           }}
         >
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <span
               style={{
-                background: "#E53935",
+                background: "#AE2448",
                 color: "#fff",
                 fontSize: 12,
                 fontWeight: 700,
@@ -107,7 +107,7 @@ export default function IPTVAndroidTVCanadaPage() {
               }}
             >
               Best IPTV for{" "}
-              <span style={{ color: "#E53935" }}>Android TV in Canada 2026</span>
+              <span style={{ color: "#AE2448" }}>Android TV in Canada 2026</span>
             </h1>
             <p
               style={{
@@ -127,7 +127,7 @@ export default function IPTVAndroidTVCanadaPage() {
               <a
                 href="/pricing"
                 style={{
-                  background: "#E53935",
+                  background: "#AE2448",
                   color: "#fff",
                   padding: "16px 40px",
                   borderRadius: 12,
@@ -142,8 +142,8 @@ export default function IPTVAndroidTVCanadaPage() {
               <a
                 href="/free-trial"
                 style={{
-                  border: "2px solid #E53935",
-                  color: "#E53935",
+                  border: "2px solid #AE2448",
+                  color: "#AE2448",
                   padding: "16px 40px",
                   borderRadius: 12,
                   fontWeight: 700,
@@ -290,7 +290,7 @@ export default function IPTVAndroidTVCanadaPage() {
                 >
                   <span
                     style={{
-                      background: "#E53935",
+                      background: "#AE2448",
                       color: "#fff",
                       fontWeight: 800,
                       fontSize: "1rem",
@@ -365,7 +365,7 @@ export default function IPTVAndroidTVCanadaPage() {
                 <span
                   key={ch}
                   style={{
-                    background: "#1a0505",
+                    background: "#1a0a12",
                     border: "1px solid #3a1010",
                     color: "#fff",
                     padding: "6px 16px",
@@ -416,7 +416,7 @@ export default function IPTVAndroidTVCanadaPage() {
                   <div style={{ color: "#aaa", fontSize: "0.9rem", marginBottom: 8 }}>
                     {plan.period}
                   </div>
-                  <div style={{ color: "#E53935", fontSize: "1.6rem", fontWeight: 800 }}>
+                  <div style={{ color: "#AE2448", fontSize: "1.6rem", fontWeight: 800 }}>
                     {plan.price}
                   </div>
                 </div>
@@ -426,7 +426,7 @@ export default function IPTVAndroidTVCanadaPage() {
               <a
                 href="/pricing"
                 style={{
-                  background: "#E53935",
+                  background: "#AE2448",
                   color: "#fff",
                   padding: "14px 36px",
                   borderRadius: 12,
@@ -443,7 +443,7 @@ export default function IPTVAndroidTVCanadaPage() {
 
         {/* CTA */}
         <section
-          style={{ background: "#1a0505", padding: "60px 16px", textAlign: "center" }}
+          style={{ background: "#1a0a12", padding: "60px 16px", textAlign: "center" }}
         >
           <div style={{ maxWidth: 700, margin: "0 auto" }}>
             <h2 style={{ fontSize: "2rem", fontWeight: 800, marginBottom: 12 }}>
@@ -456,7 +456,7 @@ export default function IPTVAndroidTVCanadaPage() {
               us at{" "}
               <a
                 href="mailto:help@maplehd.ca"
-                style={{ color: "#E53935", textDecoration: "none" }}
+                style={{ color: "#AE2448", textDecoration: "none" }}
               >
                 help@maplehd.ca
               </a>
@@ -468,7 +468,7 @@ export default function IPTVAndroidTVCanadaPage() {
               <a
                 href="/pricing"
                 style={{
-                  background: "#E53935",
+                  background: "#AE2448",
                   color: "#fff",
                   padding: "16px 40px",
                   borderRadius: 12,
@@ -482,8 +482,8 @@ export default function IPTVAndroidTVCanadaPage() {
               <a
                 href="/free-trial"
                 style={{
-                  border: "2px solid #E53935",
-                  color: "#E53935",
+                  border: "2px solid #AE2448",
+                  color: "#AE2448",
                   padding: "16px 40px",
                   borderRadius: 12,
                   fontWeight: 700,

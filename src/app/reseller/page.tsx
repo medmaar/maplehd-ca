@@ -41,18 +41,18 @@ export default function ResellerPage() {
       {/* Hero */}
       <section
         style={{
-          background: "radial-gradient(ellipse 80% 55% at 50% 0%, rgba(229,57,53,0.14) 0%, transparent 65%), #0a0a0a",
+          background: "radial-gradient(ellipse 80% 55% at 50% 0%, rgba(174,36,72,0.14) 0%, transparent 65%), #0a0a0a",
           padding: "90px 16px 70px",
           textAlign: "center",
         }}
       >
         <div style={{ maxWidth: 800, margin: "0 auto" }}>
-          <span style={{ display: "inline-block", background: "rgba(229,57,53,0.12)", border: "1px solid rgba(229,57,53,0.3)", color: "#E53935", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", padding: "6px 18px", borderRadius: 999, marginBottom: 28 }}>
+          <span style={{ display: "inline-block", background: "rgba(174,36,72,0.12)", border: "1px solid rgba(174,36,72,0.3)", color: "#AE2448", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", padding: "6px 18px", borderRadius: 999, marginBottom: 28 }}>
             IPTV Reseller Program
           </span>
           <h1 style={{ fontSize: "clamp(34px, 5.5vw, 58px)", fontWeight: 900, lineHeight: 1.1, marginBottom: 22 }}>
             Become an IPTV Reseller<br />
-            <span style={{ color: "#E53935" }}>in Canada</span>
+            <span style={{ color: "#AE2448" }}>in Canada</span>
           </h1>
           <p style={{ color: "#9ca3af", fontSize: 18, lineHeight: 1.7, maxWidth: 640, margin: "0 auto 36px" }}>
             Start your own IPTV business in Canada with MapleHD&apos;s reseller program. Wholesale pricing, white-label support, and a powerful management panel — everything you need to build a profitable IPTV business.
@@ -60,7 +60,7 @@ export default function ResellerPage() {
           <a
             href="mailto:help@maplehd.ca?subject=IPTV%20Reseller%20Inquiry"
             style={{
-              background: "#E53935",
+              background: "#AE2448",
               color: "#fff",
               fontWeight: 700,
               fontSize: 17,
@@ -108,7 +108,7 @@ export default function ResellerPage() {
               { n: "05", title: "Scale and Earn", desc: "Grow your client base with MapleHD's reliable 99.9% uptime infrastructure backing your brand." },
             ].map((s) => (
               <div key={s.n} style={{ display: "flex", gap: 20, background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 14, padding: "22px 28px" }}>
-                <span style={{ color: "#E53935", fontWeight: 900, fontSize: 24, opacity: 0.5, minWidth: 40 }}>{s.n}</span>
+                <span style={{ color: "#AE2448", fontWeight: 900, fontSize: 24, opacity: 0.5, minWidth: 40 }}>{s.n}</span>
                 <div>
                   <h3 style={{ fontWeight: 700, fontSize: 16, marginBottom: 8 }}>{s.title}</h3>
                   <p style={{ color: "#9ca3af", fontSize: 14, lineHeight: 1.6 }}>{s.desc}</p>
@@ -133,7 +133,7 @@ export default function ResellerPage() {
               { title: "24/7 Backend Support", desc: "Our technical team supports your infrastructure around the clock so your clients are always satisfied." },
             ].map((f) => (
               <div key={f.title} style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 16, padding: "24px 20px" }}>
-                <h3 style={{ fontWeight: 700, fontSize: 15, marginBottom: 8, color: "#E53935" }}>{f.title}</h3>
+                <h3 style={{ fontWeight: 700, fontSize: 15, marginBottom: 8, color: "#AE2448" }}>{f.title}</h3>
                 <p style={{ color: "#9ca3af", fontSize: 13, lineHeight: 1.6 }}>{f.desc}</p>
               </div>
             ))}
@@ -142,7 +142,7 @@ export default function ResellerPage() {
       </section>
 
       {/* CTA */}
-      <section style={{ padding: "80px 16px", textAlign: "center", background: "radial-gradient(ellipse 80% 60% at 50% 50%, rgba(229,57,53,0.12) 0%, transparent 70%), #0a0a0a" }}>
+      <section style={{ padding: "80px 16px", textAlign: "center", background: "radial-gradient(ellipse 80% 60% at 50% 50%, rgba(174,36,72,0.12) 0%, transparent 70%), #0a0a0a" }}>
         <div style={{ maxWidth: 600, margin: "0 auto" }}>
           <h2 style={{ fontSize: "clamp(26px, 4vw, 40px)", fontWeight: 900, marginBottom: 16 }}>
             Ready to Start Your IPTV Business?
@@ -153,13 +153,13 @@ export default function ResellerPage() {
           <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
             <a
               href="mailto:help@maplehd.ca?subject=IPTV%20Reseller%20Inquiry"
-              style={{ background: "#E53935", color: "#fff", fontWeight: 700, fontSize: 16, padding: "16px 36px", borderRadius: 14, textDecoration: "none", display: "inline-block" }}
+              style={{ background: "#AE2448", color: "#fff", fontWeight: 700, fontSize: 16, padding: "16px 36px", borderRadius: 14, textDecoration: "none", display: "inline-block" }}
             >
               Email Us to Apply →
             </a>
             <Link
               href="/pricing"
-              style={{ background: "transparent", border: "2px solid rgba(229,57,53,0.4)", color: "#E53935", fontWeight: 700, fontSize: 16, padding: "16px 36px", borderRadius: 14, textDecoration: "none", display: "inline-block" }}
+              style={{ background: "transparent", border: "2px solid rgba(174,36,72,0.4)", color: "#AE2448", fontWeight: 700, fontSize: 16, padding: "16px 36px", borderRadius: 14, textDecoration: "none", display: "inline-block" }}
             >
               View Retail Plans
             </Link>

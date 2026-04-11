@@ -57,13 +57,13 @@ export default function BlogPage() {
     <main style={{ background: "#0a0a0a", color: "#fff", minHeight: "100vh" }}>
       <section
         style={{
-          background: "radial-gradient(ellipse 80% 55% at 50% 0%, rgba(229,57,53,0.12) 0%, transparent 65%), #0a0a0a",
+          background: "radial-gradient(ellipse 80% 55% at 50% 0%, rgba(174,36,72,0.12) 0%, transparent 65%), #0a0a0a",
           padding: "80px 16px 60px",
           textAlign: "center",
         }}
       >
         <div style={{ maxWidth: 700, margin: "0 auto" }}>
-          <p style={{ color: "#E53935", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 16 }}>
+          <p style={{ color: "#AE2448", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 16 }}>
             MapleHD Blog
           </p>
           <h1 style={{ fontSize: "clamp(32px, 5vw, 52px)", fontWeight: 900, lineHeight: 1.15, marginBottom: 20 }}>
@@ -95,7 +95,7 @@ export default function BlogPage() {
                 }}
               >
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16 }}>
-                  <span style={{ background: "rgba(229,57,53,0.12)", border: "1px solid rgba(229,57,53,0.25)", color: "#E53935", fontSize: 11, fontWeight: 700, padding: "4px 12px", borderRadius: 999 }}>
+                  <span style={{ background: "rgba(174,36,72,0.12)", border: "1px solid rgba(174,36,72,0.25)", color: "#AE2448", fontSize: 11, fontWeight: 700, padding: "4px 12px", borderRadius: 999 }}>
                     {post.tag}
                   </span>
                   <span style={{ color: "#6b7280", fontSize: 12 }}>{post.readTime}</span>

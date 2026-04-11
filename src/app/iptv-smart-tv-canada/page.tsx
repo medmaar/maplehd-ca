@@ -36,19 +36,19 @@ export default function IPTVSmartTVCanadaPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       <main style={{ background: "#0a0a0a", color: "#fff", minHeight: "100vh" }}>
         {/* Hero */}
-        <section style={{ background: "linear-gradient(135deg, #0a0a0a 0%, #1a0505 100%)", padding: "80px 16px 60px" }}>
+        <section style={{ background: "linear-gradient(135deg, #0a0a0a 0%, #1a0a12 100%)", padding: "80px 16px 60px" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
-            <span style={{ display: "inline-block", background: "rgba(229,57,53,0.12)", border: "1px solid rgba(229,57,53,0.3)", color: "#E53935", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", padding: "6px 16px", borderRadius: 999, marginBottom: 24 }}>
+            <span style={{ display: "inline-block", background: "rgba(174,36,72,0.12)", border: "1px solid rgba(174,36,72,0.3)", color: "#AE2448", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", padding: "6px 16px", borderRadius: 999, marginBottom: 24 }}>
               MapleHD · Smart TV
             </span>
             <h1 style={{ fontSize: "clamp(32px, 5vw, 52px)", fontWeight: 900, lineHeight: 1.15, marginBottom: 20 }}>
               IPTV for Samsung &amp; LG Smart TV<br />
-              <span style={{ color: "#E53935" }}>in Canada 2026</span>
+              <span style={{ color: "#AE2448" }}>in Canada 2026</span>
             </h1>
             <p style={{ color: "#9ca3af", fontSize: 17, lineHeight: 1.7, maxWidth: 680, marginBottom: 36 }}>
               MapleHD works seamlessly on Samsung and LG Smart TVs across Canada. Get 25,000+ live channels including CBC, CTV, TSN, and Sportsnet in stunning 4K quality — all without a cable subscription.
             </p>
-            <Link href="/pricing" style={{ background: "#E53935", color: "#fff", fontWeight: 700, fontSize: 16, padding: "14px 32px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
+            <Link href="/pricing" style={{ background: "#AE2448", color: "#fff", fontWeight: 700, fontSize: 16, padding: "14px 32px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
               Get Your MapleHD Plan →
             </Link>
           </div>
@@ -68,7 +68,7 @@ export default function IPTVSmartTVCanadaPage() {
                 { title: "25,000+ Live Channels", desc: "Access every Canadian network plus thousands of international channels directly on your Smart TV." },
               ].map((f) => (
                 <div key={f.title} style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 16, padding: "24px 20px" }}>
-                  <h3 style={{ fontWeight: 700, fontSize: 16, marginBottom: 8, color: "#E53935" }}>{f.title}</h3>
+                  <h3 style={{ fontWeight: 700, fontSize: 16, marginBottom: 8, color: "#AE2448" }}>{f.title}</h3>
                   <p style={{ color: "#9ca3af", fontSize: 14, lineHeight: 1.6 }}>{f.desc}</p>
                 </div>
               ))}
@@ -91,7 +91,7 @@ export default function IPTVSmartTVCanadaPage() {
                 { n: "05", title: "Start Streaming in 4K", desc: "Enjoy 25,000+ live channels and 120,000+ on-demand titles on your big-screen Smart TV." },
               ].map((s) => (
                 <div key={s.n} style={{ display: "flex", gap: 20, background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 14, padding: "20px 24px" }}>
-                  <span style={{ color: "#E53935", fontWeight: 900, fontSize: 24, opacity: 0.5, minWidth: 36 }}>{s.n}</span>
+                  <span style={{ color: "#AE2448", fontWeight: 900, fontSize: 24, opacity: 0.5, minWidth: 36 }}>{s.n}</span>
                   <div>
                     <h3 style={{ fontWeight: 700, fontSize: 15, marginBottom: 6 }}>{s.title}</h3>
                     <p style={{ color: "#9ca3af", fontSize: 14, lineHeight: 1.6 }}>{s.desc}</p>
@@ -112,10 +112,10 @@ export default function IPTVSmartTVCanadaPage() {
               Get the best MapleHD service on your Smart TV. Plans start at $9/month with a free 2-hour trial.
             </p>
             <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
-              <Link href="/pricing" style={{ background: "#E53935", color: "#fff", fontWeight: 700, fontSize: 15, padding: "14px 30px", borderRadius: 12, textDecoration: "none" }}>
+              <Link href="/pricing" style={{ background: "#AE2448", color: "#fff", fontWeight: 700, fontSize: 15, padding: "14px 30px", borderRadius: 12, textDecoration: "none" }}>
                 View MapleHD Plans →
               </Link>
-              <Link href="/free-trial" style={{ background: "transparent", border: "2px solid rgba(229,57,53,0.4)", color: "#E53935", fontWeight: 700, fontSize: 15, padding: "14px 30px", borderRadius: 12, textDecoration: "none" }}>
+              <Link href="/free-trial" style={{ background: "transparent", border: "2px solid rgba(174,36,72,0.4)", color: "#AE2448", fontWeight: 700, fontSize: 15, padding: "14px 30px", borderRadius: 12, textDecoration: "none" }}>
                 Try 24h Free
               </Link>
             </div>

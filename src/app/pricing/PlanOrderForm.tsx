@@ -129,7 +129,7 @@ export default function PlanOrderForm({ plan }: Props) {
       {status === "error" && (
         <div
           className="rounded-2xl px-4 py-3 text-sm font-medium"
-          style={{ background: "rgba(174,36,72,0.1)", border: "1px solid rgba(174,36,72,0.3)", color: "#ff6b6b" }}
+          style={{ background: "rgba(174,36,72,0.1)", border: "1px solid rgba(174,36,72,0.3)", color: "#72BAA9" }}
         >
           ❌ Something went wrong. Please try again or{" "}
           <a href="https://wa.me/17828026280" target="_blank" rel="noopener noreferrer" className="underline">

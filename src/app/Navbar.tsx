@@ -49,7 +49,7 @@ export default function Navbar() {
         <Link
           href="/free-trial"
           className="hidden md:inline-flex items-center gap-2 text-sm font-bold text-white px-5 py-2.5 rounded-xl transition-all hover:brightness-110"
-          style={{ background: "#E53935" }}
+          style={{ background: "#AE2448" }}
         >
           Free Trial
         </Link>
@@ -87,7 +87,7 @@ export default function Navbar() {
               href="/free-trial"
               onClick={() => setOpen(false)}
               className="mt-2 text-white px-4 py-3 rounded-xl text-sm font-bold text-center"
-              style={{ background: "#E53935" }}
+              style={{ background: "#AE2448" }}
             >
               Free Trial
             </Link>

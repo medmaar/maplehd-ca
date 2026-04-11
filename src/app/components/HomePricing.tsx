@@ -58,14 +58,14 @@ export default function HomePricing() {
     <section style={{ padding: "80px 16px", background: "#0a0a0a" }}>
       <div style={{ maxWidth: 1100, margin: "0 auto" }}>
         {/* Header */}
-        <p style={{ textAlign: "center", color: "#E53935", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12 }}>
+        <p style={{ textAlign: "center", color: "#AE2448", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12 }}>
           Transparent Pricing
         </p>
         <h2 style={{ textAlign: "center", fontSize: "clamp(28px, 4vw, 40px)", fontWeight: 900, marginBottom: 12, color: "#fff" }}>
           MapleHD Subscription Plans
         </h2>
         <div style={{ textAlign: "center", marginBottom: 20 }}>
-          <span style={{ display: "inline-block", background: "#E53935", color: "#fff", fontSize: 13, fontWeight: 700, padding: "5px 18px", borderRadius: 999 }}>
+          <span style={{ display: "inline-block", background: "#AE2448", color: "#fff", fontSize: 13, fontWeight: 700, padding: "5px 18px", borderRadius: 999 }}>
             50% OFF Today!
           </span>
         </div>
@@ -97,8 +97,8 @@ export default function HomePricing() {
                   flexShrink: 0,
                   padding: "9px 18px",
                   borderRadius: 999,
-                  border: active ? "none" : "1.5px solid rgba(229,57,53,0.35)",
-                  background: active ? "#E53935" : "transparent",
+                  border: active ? "none" : "1.5px solid rgba(174,36,72,0.35)",
+                  background: active ? "#AE2448" : "transparent",
                   color: "#fff",
                   fontWeight: 700,
                   fontSize: 13,
@@ -120,8 +120,8 @@ export default function HomePricing() {
             <div
               key={plan.name}
               style={{
-                background: plan.badge === "Best Value" ? "rgba(229,57,53,0.08)" : "rgba(255,255,255,0.03)",
-                border: plan.badge === "Best Value" ? "1.5px solid rgba(229,57,53,0.5)" : "1px solid rgba(255,255,255,0.08)",
+                background: plan.badge === "Best Value" ? "rgba(174,36,72,0.08)" : "rgba(255,255,255,0.03)",
+                border: plan.badge === "Best Value" ? "1.5px solid rgba(174,36,72,0.5)" : "1px solid rgba(255,255,255,0.08)",
                 borderRadius: 20,
                 padding: "32px 24px",
                 position: "relative",
@@ -136,7 +136,7 @@ export default function HomePricing() {
                     top: -12,
                     left: "50%",
                     transform: "translateX(-50%)",
-                    background: "#E53935",
+                    background: "#AE2448",
                     color: "#fff",
                     fontSize: 11,
                     fontWeight: 700,
@@ -151,7 +151,7 @@ export default function HomePricing() {
               <div style={{ fontSize: 18, fontWeight: 700, marginBottom: 6, color: "#fff" }}>{plan.name}</div>
               {/* Price + connection count */}
               <div style={{ display: "flex", alignItems: "baseline", gap: 8, marginBottom: 20 }}>
-                <span style={{ fontSize: 36, fontWeight: 900, color: "#E53935" }}>${prices[i]}</span>
+                <span style={{ fontSize: 36, fontWeight: 900, color: "#AE2448" }}>${prices[i]}</span>
                 <span style={{ fontSize: 12, color: "#6b7280" }}>/ {connLabel}</span>
               </div>
               <ul style={{ listStyle: "none", padding: 0, margin: "0 0 24px", flex: 1 }}>
@@ -177,7 +177,7 @@ export default function HomePricing() {
                 )}
                 {planFeatures.map((f) => (
                   <li key={f} style={{ fontSize: 13, color: "#9ca3af", marginBottom: 6, display: "flex", alignItems: "center", gap: 6, textAlign: "left" }}>
-                    <span style={{ color: "#E53935", fontWeight: 700, flexShrink: 0 }}>✓</span> {f}
+                    <span style={{ color: "#AE2448", fontWeight: 700, flexShrink: 0 }}>✓</span> {f}
                   </li>
                 ))}
               </ul>
@@ -185,14 +185,14 @@ export default function HomePricing() {
                 href={getHref(selected, plan.slug)}
                 style={{
                   display: "block",
-                  background: plan.badge === "Best Value" ? "#E53935" : "rgba(229,57,53,0.15)",
-                  color: plan.badge === "Best Value" ? "#fff" : "#E53935",
+                  background: plan.badge === "Best Value" ? "#AE2448" : "rgba(174,36,72,0.15)",
+                  color: plan.badge === "Best Value" ? "#fff" : "#AE2448",
                   fontWeight: 700,
                   fontSize: 14,
                   padding: "12px 20px",
                   borderRadius: 12,
                   textDecoration: "none",
-                  border: plan.badge === "Best Value" ? "none" : "1px solid rgba(229,57,53,0.3)",
+                  border: plan.badge === "Best Value" ? "none" : "1px solid rgba(174,36,72,0.3)",
                   textAlign: "center",
                 }}
               >
@@ -203,7 +203,7 @@ export default function HomePricing() {
         </div>
 
         <div style={{ textAlign: "center", marginTop: 32 }}>
-          <Link href="/pricing" style={{ color: "#E53935", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>
+          <Link href="/pricing" style={{ color: "#AE2448", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>
             View full pricing details →
           </Link>
         </div>

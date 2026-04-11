@@ -189,8 +189,8 @@ export default function IsIPTVLegalCanada() {
           {/* Section 6 */}
           <section
             style={{
-              background: "#1a0505",
-              border: "1px solid #E53935",
+              background: "#1a0a12",
+              border: "1px solid #AE2448",
               borderRadius: 12,
               padding: 24,
               marginBottom: 40,
@@ -206,7 +206,7 @@ export default function IsIPTVLegalCanada() {
               Questions? Email us at{" "}
               <a
                 href="mailto:help@maplehd.ca"
-                style={{ color: "#E53935", textDecoration: "underline" }}
+                style={{ color: "#AE2448", textDecoration: "underline" }}
               >
                 help@maplehd.ca
               </a>
@@ -244,19 +244,19 @@ export default function IsIPTVLegalCanada() {
             <p style={{ color: "#9ca3af", fontSize: 14, marginBottom: 8 }}>Related reading:</p>
             <Link
               href="/blog/best-iptv-canada-2026"
-              style={{ color: "#E53935", textDecoration: "none", fontSize: 15 }}
+              style={{ color: "#AE2448", textDecoration: "none", fontSize: 15 }}
             >
               → Best IPTV Providers in Canada 2026 – Tested &amp; Ranked
             </Link>
             <Link
               href="/blog/best-iptv-player-canada"
-              style={{ color: "#E53935", textDecoration: "none", fontSize: 15 }}
+              style={{ color: "#AE2448", textDecoration: "none", fontSize: 15 }}
             >
               → Best IPTV Player Apps for Canada in 2026
             </Link>
             <Link
               href="/iptv-firestick-canada"
-              style={{ color: "#E53935", textDecoration: "none", fontSize: 15 }}
+              style={{ color: "#AE2448", textDecoration: "none", fontSize: 15 }}
             >
               → How to Set Up IPTV on Firestick in Canada
             </Link>
@@ -268,7 +268,7 @@ export default function IsIPTVLegalCanada() {
               href="/pricing"
               style={{
                 display: "inline-block",
-                background: "#E53935",
+                background: "#AE2448",
                 color: "#fff",
                 fontWeight: 700,
                 fontSize: 16,

@@ -56,16 +56,16 @@ export default function IPTVMontrealPage() {
         <section
           style={{
             background:
-              "radial-gradient(ellipse 80% 55% at 50% 0%, rgba(229,57,53,0.15) 0%, transparent 65%), #0a0a0a",
+              "radial-gradient(ellipse 80% 55% at 50% 0%, rgba(174,36,72,0.15) 0%, transparent 65%), #0a0a0a",
             padding: "80px 16px 60px",
           }}
         >
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <span
               style={{
-                background: "rgba(229,57,53,0.12)",
-                border: "1px solid rgba(229,57,53,0.3)",
-                color: "#E53935",
+                background: "rgba(174,36,72,0.12)",
+                border: "1px solid rgba(174,36,72,0.3)",
+                color: "#AE2448",
                 fontSize: 12,
                 fontWeight: 700,
                 padding: "4px 14px",
@@ -103,7 +103,7 @@ export default function IPTVMontrealPage() {
               <a
                 href="/pricing"
                 style={{
-                  background: "#E53935",
+                  background: "#AE2448",
                   color: "#fff",
                   padding: "14px 36px",
                   borderRadius: 10,
@@ -116,8 +116,8 @@ export default function IPTVMontrealPage() {
               <a
                 href="/free-trial"
                 style={{
-                  border: "2px solid rgba(229,57,53,0.5)",
-                  color: "#E53935",
+                  border: "2px solid rgba(174,36,72,0.5)",
+                  color: "#AE2448",
                   padding: "14px 36px",
                   borderRadius: 10,
                   fontWeight: 700,
@@ -214,13 +214,13 @@ export default function IPTVMontrealPage() {
             </p>
             <div
               style={{
-                background: "rgba(229,57,53,0.08)",
-                border: "1px solid rgba(229,57,53,0.3)",
+                background: "rgba(174,36,72,0.08)",
+                border: "1px solid rgba(174,36,72,0.3)",
                 borderRadius: 12,
                 padding: 20,
               }}
             >
-              <p style={{ color: "#E53935", fontWeight: 700, marginBottom: 12 }}>
+              <p style={{ color: "#AE2448", fontWeight: 700, marginBottom: 12 }}>
                 MapleHD Plans — Available in Montreal
               </p>
               <ul style={{ color: "#d1d5db", margin: 0, paddingLeft: 20, lineHeight: 2 }}>
@@ -259,7 +259,7 @@ export default function IPTVMontrealPage() {
         {/* CTA */}
         <section
           style={{
-            background: "radial-gradient(ellipse 80% 60% at 50% 50%, rgba(229,57,53,0.12) 0%, transparent 70%), #111",
+            background: "radial-gradient(ellipse 80% 60% at 50% 50%, rgba(174,36,72,0.12) 0%, transparent 70%), #111",
             padding: "60px 16px",
             textAlign: "center",
             borderTop: "1px solid rgba(255,255,255,0.06)",
@@ -274,7 +274,7 @@ export default function IPTVMontrealPage() {
           <a
             href="/pricing"
             style={{
-              background: "#E53935",
+              background: "#AE2448",
               color: "#fff",
               padding: "16px 48px",
               borderRadius: 12,

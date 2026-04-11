@@ -73,9 +73,9 @@ export default function BestIPTVPlayerCanadaPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <main style={{ background: "#0a0a0a", color: "#fff", minHeight: "100vh" }}>
-        <section style={{ background: "radial-gradient(ellipse 80% 55% at 50% 0%, rgba(229,57,53,0.12) 0%, transparent 65%), #0a0a0a", padding: "80px 16px 60px" }}>
+        <section style={{ background: "radial-gradient(ellipse 80% 55% at 50% 0%, rgba(174,36,72,0.12) 0%, transparent 65%), #0a0a0a", padding: "80px 16px 60px" }}>
           <div style={{ maxWidth: 800, margin: "0 auto" }}>
-            <p style={{ color: "#E53935", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 16 }}>
+            <p style={{ color: "#AE2448", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 16 }}>
               Blog · MapleHD Guide
             </p>
             <h1 style={{ fontSize: "clamp(30px, 5vw, 50px)", fontWeight: 900, lineHeight: 1.15, marginBottom: 20 }}>
@@ -94,7 +94,7 @@ export default function BestIPTVPlayerCanadaPage() {
         <section style={{ padding: "40px 16px 20px", background: "#0a0a0a" }}>
           <div style={{ maxWidth: 800, margin: "0 auto" }}>
             <p style={{ color: "#9ca3af", fontSize: 15, lineHeight: 1.8, marginBottom: 16 }}>
-              All four players below are fully compatible with <Link href="/pricing" style={{ color: "#E53935", textDecoration: "none", fontWeight: 600 }}>MapleHD plans</Link>. They support M3U playlists and Xtream Codes — the two formats we provide. Whether you&apos;re on a Firestick, Android TV box, or iPhone, one of these will work perfectly for you.
+              All four players below are fully compatible with <Link href="/pricing" style={{ color: "#AE2448", textDecoration: "none", fontWeight: 600 }}>MapleHD plans</Link>. They support M3U playlists and Xtream Codes — the two formats we provide. Whether you&apos;re on a Firestick, Android TV box, or iPhone, one of these will work perfectly for you.
             </p>
             <p style={{ color: "#9ca3af", fontSize: 15, lineHeight: 1.8 }}>
               We tested each player with a real MapleHD subscription, evaluating channel loading speed, EPG accuracy, UI responsiveness, and overall stability on Canadian connections.
@@ -109,11 +109,11 @@ export default function BestIPTVPlayerCanadaPage() {
               <div key={p.name} style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 20, padding: "32px 28px" }}>
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", gap: 12, marginBottom: 16 }}>
                   <div>
-                    <span style={{ color: "#E53935", fontSize: 13, fontWeight: 700, marginRight: 8 }}>#{i + 1}</span>
+                    <span style={{ color: "#AE2448", fontSize: 13, fontWeight: 700, marginRight: 8 }}>#{i + 1}</span>
                     <span style={{ fontWeight: 900, fontSize: 22 }}>{p.name}</span>
                   </div>
-                  <div style={{ background: "rgba(229,57,53,0.12)", border: "1px solid rgba(229,57,53,0.3)", borderRadius: 8, padding: "6px 14px" }}>
-                    <span style={{ color: "#E53935", fontWeight: 700, fontSize: 14 }}>{p.rating}</span>
+                  <div style={{ background: "rgba(174,36,72,0.12)", border: "1px solid rgba(174,36,72,0.3)", borderRadius: 8, padding: "6px 14px" }}>
+                    <span style={{ color: "#AE2448", fontWeight: 700, fontSize: 14 }}>{p.rating}</span>
                   </div>
                 </div>
                 <p style={{ color: "#6b7280", fontSize: 13, marginBottom: 20 }}>
@@ -127,15 +127,15 @@ export default function BestIPTVPlayerCanadaPage() {
                     ))}
                   </div>
                   <div>
-                    <p style={{ color: "#f87171", fontWeight: 700, fontSize: 13, marginBottom: 8 }}>✗ Cons</p>
+                    <p style={{ color: "#72BAA9", fontWeight: 700, fontSize: 13, marginBottom: 8 }}>✗ Cons</p>
                     {p.cons.map((con) => (
                       <p key={con} style={{ color: "#9ca3af", fontSize: 13, marginBottom: 6 }}>· {con}</p>
                     ))}
                   </div>
                 </div>
-                <div style={{ background: "rgba(229,57,53,0.06)", borderRadius: 10, padding: "12px 16px" }}>
+                <div style={{ background: "rgba(174,36,72,0.06)", borderRadius: 10, padding: "12px 16px" }}>
                   <p style={{ color: "#d1d5db", fontSize: 13 }}>
-                    <strong style={{ color: "#E53935" }}>Best for:</strong> {p.bestFor}
+                    <strong style={{ color: "#AE2448" }}>Best for:</strong> {p.bestFor}
                   </p>
                 </div>
               </div>
@@ -156,9 +156,9 @@ export default function BestIPTVPlayerCanadaPage() {
               If you&apos;re on an iPhone or Apple TV, go with <strong style={{ color: "#fff" }}>GSE Smart IPTV</strong> or <strong style={{ color: "#fff" }}>IPTV Smarters Pro</strong>. Both work flawlessly with MapleHD credentials.
             </p>
             <p style={{ color: "#9ca3af", fontSize: 15, lineHeight: 1.8, marginBottom: 32 }}>
-              All players listed above are compatible with <Link href="/iptv-firestick-canada" style={{ color: "#E53935", textDecoration: "none" }}>Firestick</Link>, <Link href="/iptv-android-tv-canada" style={{ color: "#E53935", textDecoration: "none" }}>Android TV</Link>, and <Link href="/iptv-apple-tv-canada" style={{ color: "#E53935", textDecoration: "none" }}>Apple TV</Link> setups. Once you have your player, all you need is a <Link href="/pricing" style={{ color: "#E53935", textDecoration: "none" }}>MapleHD plan</Link> to get started.
+              All players listed above are compatible with <Link href="/iptv-firestick-canada" style={{ color: "#AE2448", textDecoration: "none" }}>Firestick</Link>, <Link href="/iptv-android-tv-canada" style={{ color: "#AE2448", textDecoration: "none" }}>Android TV</Link>, and <Link href="/iptv-apple-tv-canada" style={{ color: "#AE2448", textDecoration: "none" }}>Apple TV</Link> setups. Once you have your player, all you need is a <Link href="/pricing" style={{ color: "#AE2448", textDecoration: "none" }}>MapleHD plan</Link> to get started.
             </p>
-            <Link href="/pricing" style={{ background: "#E53935", color: "#fff", fontWeight: 700, fontSize: 15, padding: "14px 32px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
+            <Link href="/pricing" style={{ background: "#AE2448", color: "#fff", fontWeight: 700, fontSize: 15, padding: "14px 32px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
               View MapleHD Plans →
             </Link>
           </div>
