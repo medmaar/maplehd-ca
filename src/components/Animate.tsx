@@ -29,17 +29,20 @@ export function FadeUp({
 export function StaggerList({
   children,
   className,
+  style,
   stagger = 0.07,
   delayStart = 0,
 }: {
   children: ReactNode;
   className?: string;
+  style?: React.CSSProperties;
   stagger?: number;
   delayStart?: number;
 }) {
   return (
     <motion.div
       className={className}
+      style={style}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: "-60px" }}
