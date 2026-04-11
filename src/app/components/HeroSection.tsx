@@ -20,15 +20,15 @@ export default function HeroSection() {
       className="relative overflow-hidden py-24 md:py-36 px-4 text-center"
       style={{
         background:
-          "radial-gradient(ellipse 90% 55% at 50% -5%, rgba(253,3,34,0.14) 0%, transparent 65%), #10131E",
+          "radial-gradient(ellipse 90% 55% at 50% -5%, rgba(174,36,72,0.14) 0%, transparent 65%), #10131E",
       }}
     >
       {/* Badge */}
       <div
         className="inline-flex items-center gap-2 mb-7 px-4 py-[7px] rounded-full text-xs font-bold uppercase tracking-widest"
         style={{
-          background: "rgba(253,3,34,0.1)",
-          border: "1px solid rgba(253,3,34,0.28)",
+          background: "rgba(174,36,72,0.1)",
+          border: "1px solid rgba(174,36,72,0.28)",
           color: "#AE2448",
         }}
       >
@@ -68,7 +68,7 @@ export default function HeroSection() {
           className="inline-flex items-center justify-center gap-2 px-9 py-4 rounded-2xl text-base font-bold text-white transition-all hover:brightness-110 hover:scale-[1.02] active:scale-[0.99]"
           style={{
             background: "#AE2448",
-            boxShadow: "0 8px 32px rgba(253,3,34,0.32)",
+            boxShadow: "0 8px 32px rgba(174,36,72,0.32)",
           }}
         >
           Subscribe Now →

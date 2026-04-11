@@ -20,8 +20,8 @@ export default function PlanFAQ({ items }: Props) {
           key={i}
           className="rounded-2xl border overflow-hidden"
           style={{
-            borderColor: open === i ? "rgba(253,3,34,0.38)" : "rgba(255,255,255,0.07)",
-            background: open === i ? "rgba(253,3,34,0.05)" : "rgba(255,255,255,0.03)",
+            borderColor: open === i ? "rgba(174,36,72,0.38)" : "rgba(255,255,255,0.07)",
+            background: open === i ? "rgba(174,36,72,0.05)" : "rgba(255,255,255,0.03)",
             transition: "border-color 0.2s, background 0.2s",
           }}
         >

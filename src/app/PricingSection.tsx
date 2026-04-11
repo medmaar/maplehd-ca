@@ -139,7 +139,7 @@ export default function PricingSection() {
               <div
                 key={dur}
                 style={{
-                  background: isPopular ? "rgba(253,3,34,0.08)" : "#181C2A",
+                  background: isPopular ? "rgba(174,36,72,0.08)" : "#181C2A",
                   border: isPopular ? "2px solid #AE2448" : "1px solid #232840",
                   borderRadius: 16,
                   padding: "28px 24px",

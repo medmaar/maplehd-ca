@@ -77,7 +77,7 @@ export default function Page() {
           className="py-20 px-4"
           style={{
             background:
-              "radial-gradient(ellipse 80% 55% at 50% 0%, rgba(253,3,34,0.13) 0%, transparent 65%), #10131E",
+              "radial-gradient(ellipse 80% 55% at 50% 0%, rgba(174,36,72,0.13) 0%, transparent 65%), #10131E",
           }}
         >
           <div className="max-w-2xl mx-auto">
@@ -86,8 +86,8 @@ export default function Page() {
               <span
                 className="inline-block text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-5"
                 style={{
-                  background: "rgba(253,3,34,0.12)",
-                  border: "1px solid rgba(253,3,34,0.28)",
+                  background: "rgba(174,36,72,0.12)",
+                  border: "1px solid rgba(174,36,72,0.28)",
                   color: "#AE2448",
                 }}
               >
@@ -106,7 +106,7 @@ export default function Page() {
               </h1>
               <div style={{ display: "flex", alignItems: "center", gap: 16, marginTop: 10 }}>
                 <span style={{ color: "#AE2448", fontWeight: 800, fontSize: "2rem" }}>Price : $405</span>
-                <span style={{ background: "rgba(253,3,34,0.15)", color: "#AE2448", border: "1px solid rgba(253,3,34,0.4)", fontWeight: 700, fontSize: 12, padding: "4px 12px", borderRadius: 999, whiteSpace: "nowrap" }}>50% OFF</span>
+                <span style={{ background: "rgba(174,36,72,0.15)", color: "#AE2448", border: "1px solid rgba(174,36,72,0.4)", fontWeight: 700, fontSize: 12, padding: "4px 12px", borderRadius: 999, whiteSpace: "nowrap" }}>50% OFF</span>
               </div>
             </div>
 

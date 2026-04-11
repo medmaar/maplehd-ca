@@ -34,7 +34,7 @@ export default function PricingPage() {
         className="py-20 px-4 text-center"
         style={{
           background:
-            "radial-gradient(ellipse 80% 55% at 50% 0%, rgba(253,3,34,0.12) 0%, transparent 65%), #10131E",
+            "radial-gradient(ellipse 80% 55% at 50% 0%, rgba(174,36,72,0.12) 0%, transparent 65%), #10131E",
         }}
       >
         <div className="max-w-3xl mx-auto">
@@ -113,9 +113,9 @@ export default function PricingPage() {
         className="py-16 px-4 text-center"
         style={{
           background:
-            "radial-gradient(ellipse 80% 60% at 50% 50%, rgba(253,3,34,0.15) 0%, transparent 70%), #10131E",
-          borderTop: "1px solid rgba(253,3,34,0.15)",
-          borderBottom: "1px solid rgba(253,3,34,0.15)",
+            "radial-gradient(ellipse 80% 60% at 50% 50%, rgba(174,36,72,0.15) 0%, transparent 70%), #10131E",
+          borderTop: "1px solid rgba(174,36,72,0.15)",
+          borderBottom: "1px solid rgba(174,36,72,0.15)",
         }}
       >
         <div className="max-w-2xl mx-auto">
@@ -128,7 +128,7 @@ export default function PricingPage() {
           <a
             href="/free-trial"
             className="inline-block text-white px-10 py-4 rounded-2xl font-bold text-base transition-all hover:brightness-110"
-            style={{ background: "#AE2448", boxShadow: "0 8px 28px rgba(253,3,34,0.3)" }}
+            style={{ background: "#AE2448", boxShadow: "0 8px 28px rgba(174,36,72,0.3)" }}
           >
             Get Free Trial
           </a>
