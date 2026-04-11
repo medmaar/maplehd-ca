@@ -102,11 +102,24 @@ export default function Footer() {
 
         </div>
 
+        {/* Social / contact row */}
+        <div className="pt-8 pb-6 flex flex-wrap justify-center gap-4 border-t" style={{ borderColor: "rgba(255,255,255,0.06)" }}>
+          <a href="https://maplehd.ca" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-xs text-gray-400 hover:text-[#72BAA9] transition-colors">
+            🌐 <span>maplehd.ca</span>
+          </a>
+          <a href="https://wa.me/17828026280" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-xs text-gray-400 hover:text-[#25D366] transition-colors">
+            📱 <span>WhatsApp</span>
+          </a>
+          <a href="mailto:help@maplehd.ca" className="flex items-center gap-2 text-xs text-gray-400 hover:text-[#72BAA9] transition-colors">
+            📧 <span>help@maplehd.ca</span>
+          </a>
+          <a href="https://t.me/+z1lV-u1HmIA2YTQ0" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-xs text-gray-400 hover:text-[#229ED9] transition-colors">
+            💬 <span>Telegram Channel</span>
+          </a>
+        </div>
+
         {/* Bottom bar */}
-        <div
-          className="pt-8 flex flex-col sm:flex-row justify-between items-center gap-3 border-t"
-          style={{ borderColor: "rgba(255,255,255,0.06)" }}
-        >
+        <div className="flex flex-col sm:flex-row justify-between items-center gap-3">
           <p className="text-gray-600 text-xs">© 2026 MapleHD. All rights reserved.</p>
           <p className="text-gray-700 text-xs">help@maplehd.ca</p>
         </div>

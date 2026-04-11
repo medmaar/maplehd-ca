@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 const WA_URL = "https://wa.me/17828026280?text=Hi%20MapleHD%2C%20I%27m%20interested%20in%20your%20service.";
-const TG_URL = "https://t.me/IPTVCanadaSupport?text=Hi%20MapleHD%2C%20I%27m%20interested%20in%20your%20service.";
+const TG_URL = "https://t.me/+z1lV-u1HmIA2YTQ0?text=Hi%20MapleHD%2C%20I%27m%20interested%20in%20your%20service.";
 const EMAIL_URL = "mailto:help@maplehd.ca?subject=I%27m%20interested%20in%20your%20service";
 
 const contacts = [

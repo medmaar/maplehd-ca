@@ -19,9 +19,9 @@ const channels = [
     name: "Telegram",
     desc: "Join our support channel for quick help and service announcements.",
     action: "Open Telegram",
-    href: "https://t.me/IPTVCanadaSupport",
+    href: "https://t.me/+z1lV-u1HmIA2YTQ0",
     bg: "bg-[#229ED9]",
-    detail: "@IPTVCanadaSupport",
+    detail: "@LiveSupportstream",
   },
   {
     name: "Email",

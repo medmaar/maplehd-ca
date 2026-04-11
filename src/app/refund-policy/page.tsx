@@ -74,7 +74,7 @@ export default function RefundPolicyPage() {
               </p>
               <p>
                 <span className="text-gray-400 text-sm">Telegram: </span>
-                <a href="https://t.me/IPTVCanadaSupport" target="_blank" rel="noopener noreferrer" className="text-[#72BAA9] hover:underline">@IPTVCanadaSupport</a>
+                <a href="https://t.me/+z1lV-u1HmIA2YTQ0" target="_blank" rel="noopener noreferrer" className="text-[#72BAA9] hover:underline">@LiveSupportstream</a>
               </p>
               <p>
                 <span className="text-gray-400 text-sm">Email: </span>
