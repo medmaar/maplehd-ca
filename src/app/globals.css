@@ -46,6 +46,38 @@ body {
   animation: marquee 35s linear infinite;
 }
 
+/* Logo animations */
+@keyframes leafPulse {
+  0%, 100% { transform: scale(1) rotate(0deg); filter: drop-shadow(0 0 4px rgba(174,36,72,0.4)); }
+  50% { transform: scale(1.12) rotate(-6deg); filter: drop-shadow(0 0 10px rgba(174,36,72,0.85)); }
+}
+
+@keyframes hdShimmer {
+  0%, 100% { opacity: 1; text-shadow: 0 0 8px rgba(174,36,72,0.6); }
+  50% { opacity: 0.75; text-shadow: 0 0 18px rgba(174,36,72,1), 0 0 32px rgba(174,36,72,0.5); }
+}
+
+@keyframes logoEntrance {
+  from { opacity: 0; transform: translateX(-8px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.logo-leaf {
+  animation: leafPulse 3s ease-in-out infinite, logoEntrance 0.5s ease forwards;
+}
+
+.logo-hd {
+  animation: hdShimmer 3s ease-in-out infinite;
+  animation-delay: 0.2s;
+}
+
+.logo-maple {
+  animation: logoEntrance 0.5s ease forwards;
+  animation-delay: 0.1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
 /* react-phone-number-input dark theme */
 .phone-input-wrapper .PhoneInput {
   display: flex;
