@@ -1,0 +1,293 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: { absolute: "Best IPTV Service in Edmonton 2026 — 4K Streaming from $9 | MapleHD" },
+  description:
+    "MapleHD is Edmonton's best IPTV service. Stream Oilers, TSN, Sportsnet, CBC and 25,000+ channels in 4K. Plans from $9. Free trial available.",
+  keywords:
+    "IPTV Edmonton, best IPTV Edmonton, IPTV service Edmonton, MapleHD Edmonton, IPTV Canada Edmonton, IPTV Alberta Edmonton",
+  alternates: { canonical: "https://maplehd.ca/iptv-edmonton" },
+  openGraph: {
+    title: "Best IPTV Service in Edmonton 2026 — 4K Streaming from $9 | MapleHD",
+    description:
+      "MapleHD is Edmonton's best IPTV service. Stream Oilers, TSN, Sportsnet and 25,000+ channels in 4K. Plans from $9.",
+    url: "https://maplehd.ca/iptv-edmonton",
+    type: "website",
+    siteName: "MapleHD",
+    locale: "en_CA",
+  },
+  twitter: { card: "summary_large_image" },
+};
+
+const faqItems = [
+  {
+    q: "Is IPTV legal in Edmonton?",
+    a: "IPTV technology is legal in Edmonton and throughout Alberta. MapleHD delivers live TV streams over the internet to your device. Users in Edmonton are responsible for ensuring the content they access complies with Canadian copyright law.",
+  },
+  {
+    q: "What is the best IPTV service in Edmonton?",
+    a: "MapleHD is the best IPTV service in Edmonton, offering 25,000+ live channels including all local Alberta channels (CBC Edmonton, CTV Edmonton, Global Edmonton, Sportsnet West), complete NHL Edmonton Oilers coverage on Sportsnet and TSN, and 120,000+ on-demand titles — starting at $9/month.",
+  },
+  {
+    q: "Does MapleHD work in Edmonton?",
+    a: "Yes. MapleHD works seamlessly in Edmonton with all major internet providers including Telus, Shaw, and Rogers. Our servers are optimized for Alberta connections, delivering stable 4K streams with minimal buffering — including during peak Edmonton Oilers game nights.",
+  },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqItems.map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: { "@type": "Answer", text: item.a },
+  })),
+};
+
+export default function IPTVEdmontonPage() {
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <main style={{ background: "#0a0a0a", color: "#fff", minHeight: "100vh" }}>
+        {/* Hero */}
+        <section
+          style={{
+            background:
+              "radial-gradient(ellipse 80% 55% at 50% 0%, rgba(229,57,53,0.15) 0%, transparent 65%), #0a0a0a",
+            padding: "80px 16px 60px",
+          }}
+        >
+          <div style={{ maxWidth: 900, margin: "0 auto" }}>
+            <span
+              style={{
+                background: "rgba(229,57,53,0.12)",
+                border: "1px solid rgba(229,57,53,0.3)",
+                color: "#E53935",
+                fontSize: 12,
+                fontWeight: 700,
+                padding: "4px 14px",
+                borderRadius: 999,
+                letterSpacing: "0.08em",
+                textTransform: "uppercase",
+              }}
+            >
+              IPTV Edmonton · MapleHD
+            </span>
+            <h1
+              style={{
+                fontSize: "clamp(2rem, 5vw, 3rem)",
+                fontWeight: 900,
+                marginTop: 20,
+                marginBottom: 16,
+              }}
+            >
+              Best IPTV Service in Edmonton — 4K Streaming from $9
+            </h1>
+            <p
+              style={{
+                color: "#d1d5db",
+                fontSize: "1.1rem",
+                maxWidth: 640,
+                lineHeight: 1.7,
+              }}
+            >
+              Edmonton is Alberta&apos;s capital and home to one of the NHL&apos;s most passionate
+              fan bases. MapleHD serves Edmonton subscribers with 25,000+ live channels,
+              NHL Oilers coverage on every game, and 120,000+ on-demand titles. The best
+              IPTV Edmonton has to offer, starting at just $9/month.
+            </p>
+            <div style={{ marginTop: 32, display: "flex", gap: 16, flexWrap: "wrap" }}>
+              <a
+                href="/pricing"
+                style={{
+                  background: "#E53935",
+                  color: "#fff",
+                  padding: "14px 36px",
+                  borderRadius: 10,
+                  fontWeight: 700,
+                  textDecoration: "none",
+                }}
+              >
+                View Plans →
+              </a>
+              <a
+                href="/free-trial"
+                style={{
+                  border: "2px solid rgba(229,57,53,0.5)",
+                  color: "#E53935",
+                  padding: "14px 36px",
+                  borderRadius: 10,
+                  fontWeight: 700,
+                  textDecoration: "none",
+                }}
+              >
+                Free Trial
+              </a>
+            </div>
+          </div>
+        </section>
+
+        {/* Content */}
+        <section style={{ maxWidth: 900, margin: "0 auto", padding: "60px 16px" }}>
+          {/* Intro */}
+          <div style={{ marginBottom: 48 }}>
+            <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16, color: "#fff" }}>
+              IPTV Edmonton — Complete Alberta Coverage
+            </h2>
+            <p style={{ color: "#d1d5db", lineHeight: 1.8, marginBottom: 16 }}>
+              MapleHD delivers the best IPTV experience in Edmonton with all the channels
+              Albertans love. You get CBC Edmonton, CTV Edmonton, Global Edmonton,
+              Sportsnet West, TSN, and all regional Canadian networks in crisp HD and 4K.
+              Edmonton Oilers fans get every game live on Sportsnet and TSN — no blackouts,
+              no extra fees.
+            </p>
+            <p style={{ color: "#d1d5db", lineHeight: 1.8 }}>
+              Edmonton IPTV subscribers also get 25,000+ international channels, 120,000+ movies
+              and series on demand, 7-day catch-up TV, and a full EPG. MapleHD works on every
+              device — Firestick, Smart TV, Android, iPhone, Apple TV, and more — with instant
+              activation within 5 minutes of placing your order.
+            </p>
+          </div>
+
+          {/* Features */}
+          <div style={{ marginBottom: 48 }}>
+            <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16, color: "#fff" }}>
+              Why Edmonton Subscribers Choose MapleHD
+            </h2>
+            <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+              {[
+                {
+                  icon: "⚡",
+                  title: "Alberta-Optimized Servers",
+                  desc: "Our infrastructure is tuned for Telus and Shaw connections in Alberta, delivering low latency and smooth 4K streams for every Edmonton subscriber.",
+                },
+                {
+                  icon: "🏒",
+                  title: "Edmonton Oilers — Every Game Live",
+                  desc: "Watch the Oilers live on Sportsnet West and TSN in HD and 4K. No blackouts, no pay-per-view fees. Full NHL and WHL coverage included.",
+                },
+                {
+                  icon: "📺",
+                  title: "25,000+ Live Channels",
+                  desc: "Sports, news, entertainment, lifestyle, and international content — one MapleHD subscription covers every screen in your Edmonton home.",
+                },
+                {
+                  icon: "🇨🇦",
+                  title: "Canadian Support 24/7",
+                  desc: "Our bilingual support team is available around the clock to help Edmonton subscribers via WhatsApp (+1 782-802-6280) or email.",
+                },
+              ].map((item) => (
+                <li
+                  key={item.title}
+                  style={{
+                    display: "flex",
+                    gap: 16,
+                    alignItems: "flex-start",
+                    marginBottom: 16,
+                    background: "rgba(255,255,255,0.03)",
+                    borderRadius: 12,
+                    padding: 20,
+                    border: "1px solid rgba(255,255,255,0.07)",
+                  }}
+                >
+                  <span style={{ fontSize: 24, flexShrink: 0 }}>{item.icon}</span>
+                  <div>
+                    <p style={{ fontWeight: 700, marginBottom: 4, color: "#fff" }}>{item.title}</p>
+                    <p style={{ color: "#9ca3af", lineHeight: 1.7, margin: 0 }}>{item.desc}</p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Pricing */}
+          <div style={{ marginBottom: 48 }}>
+            <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16, color: "#fff" }}>
+              MapleHD Pricing for Edmonton — From $9/Month
+            </h2>
+            <p style={{ color: "#d1d5db", lineHeight: 1.8, marginBottom: 16 }}>
+              Telus and Shaw TV packages in Edmonton cost $80–$130/month. MapleHD starts at
+              just $9/month with no contracts and no hidden fees. Edmonton subscribers save
+              an average of $900/year by switching to IPTV with MapleHD.
+            </p>
+            <div
+              style={{
+                background: "rgba(229,57,53,0.08)",
+                border: "1px solid rgba(229,57,53,0.3)",
+                borderRadius: 12,
+                padding: 20,
+              }}
+            >
+              <p style={{ color: "#E53935", fontWeight: 700, marginBottom: 12 }}>
+                MapleHD Plans — Available in Edmonton
+              </p>
+              <ul style={{ color: "#d1d5db", margin: 0, paddingLeft: 20, lineHeight: 2 }}>
+                <li>1 Month — $9</li>
+                <li>3 Months — $29</li>
+                <li>6 Months — $39</li>
+                <li>12 Months — $49 (Best Value)</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* FAQ */}
+          <div>
+            <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 20, color: "#fff" }}>
+              IPTV Edmonton — Frequently Asked Questions
+            </h2>
+            <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+              {faqItems.map((item) => (
+                <div
+                  key={item.q}
+                  style={{
+                    background: "rgba(255,255,255,0.03)",
+                    border: "1px solid rgba(255,255,255,0.08)",
+                    borderRadius: 12,
+                    padding: "20px 24px",
+                  }}
+                >
+                  <p style={{ fontWeight: 700, color: "#fff", marginBottom: 8 }}>{item.q}</p>
+                  <p style={{ color: "#9ca3af", lineHeight: 1.7, margin: 0 }}>{item.a}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* CTA */}
+        <section
+          style={{
+            background: "radial-gradient(ellipse 80% 60% at 50% 50%, rgba(229,57,53,0.12) 0%, transparent 70%), #111",
+            padding: "60px 16px",
+            textAlign: "center",
+            borderTop: "1px solid rgba(255,255,255,0.06)",
+          }}
+        >
+          <h2 style={{ fontSize: "1.8rem", fontWeight: 800, marginBottom: 16 }}>
+            Start Streaming IPTV in Edmonton Today
+          </h2>
+          <p style={{ color: "#9ca3af", marginBottom: 32, maxWidth: 500, margin: "0 auto 32px" }}>
+            Plans from $9/month. Free trial available. No contracts, no hidden fees.
+          </p>
+          <a
+            href="/pricing"
+            style={{
+              background: "#E53935",
+              color: "#fff",
+              padding: "16px 48px",
+              borderRadius: 12,
+              fontWeight: 700,
+              textDecoration: "none",
+              display: "inline-block",
+            }}
+          >
+            View MapleHD Plans →
+          </a>
+        </section>
+      </main>
+    </>
+  );
+}

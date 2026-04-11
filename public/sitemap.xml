@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Core pages -->
+  <url><loc>https://maplehd.ca</loc><lastmod>2026-04-10</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://maplehd.ca/pricing</loc><lastmod>2026-04-10</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://maplehd.ca/free-trial</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <!-- Single-device pricing plans -->
+  <url><loc>https://maplehd.ca/pricing/1-month</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://maplehd.ca/pricing/3-months</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://maplehd.ca/pricing/6-months</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://maplehd.ca/pricing/12-months</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <!-- Multi-device: 2 devices -->
+  <url><loc>https://maplehd.ca/pricing/2-devices/1-month</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://maplehd.ca/pricing/2-devices/3-months</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://maplehd.ca/pricing/2-devices/6-months</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://maplehd.ca/pricing/2-devices/1-year</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <!-- Multi-device: 3 devices -->
+  <url><loc>https://maplehd.ca/pricing/3-devices/1-month</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://maplehd.ca/pricing/3-devices/3-months</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://maplehd.ca/pricing/3-devices/6-months</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://maplehd.ca/pricing/3-devices/1-year</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <!-- Multi-device: 4 devices -->
+  <url><loc>https://maplehd.ca/pricing/4-devices/1-month</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://maplehd.ca/pricing/4-devices/3-months</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://maplehd.ca/pricing/4-devices/6-months</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://maplehd.ca/pricing/4-devices/1-year</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <!-- Multi-device: 5 devices -->
+  <url><loc>https://maplehd.ca/pricing/5-devices/1-month</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://maplehd.ca/pricing/5-devices/3-months</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://maplehd.ca/pricing/5-devices/6-months</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://maplehd.ca/pricing/5-devices/1-year</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <!-- Multi-device: 6 devices -->
+  <url><loc>https://maplehd.ca/pricing/6-devices/1-month</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://maplehd.ca/pricing/6-devices/3-months</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://maplehd.ca/pricing/6-devices/6-months</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://maplehd.ca/pricing/6-devices/1-year</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <!-- Multi-device: 7 devices -->
+  <url><loc>https://maplehd.ca/pricing/7-devices/1-month</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://maplehd.ca/pricing/7-devices/3-months</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://maplehd.ca/pricing/7-devices/6-months</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://maplehd.ca/pricing/7-devices/1-year</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <!-- Multi-device: 8 devices -->
+  <url><loc>https://maplehd.ca/pricing/8-devices/1-month</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://maplehd.ca/pricing/8-devices/3-months</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://maplehd.ca/pricing/8-devices/6-months</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://maplehd.ca/pricing/8-devices/1-year</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <!-- Multi-device: 9 devices -->
+  <url><loc>https://maplehd.ca/pricing/9-devices/1-month</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://maplehd.ca/pricing/9-devices/3-months</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://maplehd.ca/pricing/9-devices/6-months</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://maplehd.ca/pricing/9-devices/1-year</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <!-- Multi-device: 10 devices -->
+  <url><loc>https://maplehd.ca/pricing/10-devices/1-month</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://maplehd.ca/pricing/10-devices/3-months</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://maplehd.ca/pricing/10-devices/6-months</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://maplehd.ca/pricing/10-devices/1-year</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <!-- City landing pages -->
+  <url><loc>https://maplehd.ca/iptv-toronto</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maplehd.ca/iptv-vancouver</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maplehd.ca/iptv-montreal</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maplehd.ca/iptv-calgary</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maplehd.ca/iptv-ottawa</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maplehd.ca/iptv-edmonton</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <!-- Device pages -->
+  <url><loc>https://maplehd.ca/iptv-firestick-canada</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://maplehd.ca/iptv-android-tv-canada</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://maplehd.ca/iptv-smart-tv-canada</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://maplehd.ca/iptv-apple-tv-canada</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://maplehd.ca/iptv-mag-box-canada</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <!-- Informational pages -->
+  <url><loc>https://maplehd.ca/channels-list</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://maplehd.ca/how-it-works</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://maplehd.ca/referral</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://maplehd.ca/reseller</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://maplehd.ca/contact</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <!-- Blog -->
+  <url><loc>https://maplehd.ca/blog</loc><lastmod>2026-04-10</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maplehd.ca/blog/best-iptv-canada-2026</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maplehd.ca/blog/is-iptv-legal-canada</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maplehd.ca/blog/iptv-vs-cable-canada</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maplehd.ca/blog/best-iptv-player-canada</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <!-- Legal pages -->
+  <url><loc>https://maplehd.ca/privacy-policy</loc><lastmod>2026-04-10</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://maplehd.ca/terms-of-service</loc><lastmod>2026-04-10</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://maplehd.ca/refund-policy</loc><lastmod>2026-04-10</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://maplehd.ca/dmca</loc><lastmod>2026-04-10</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://maplehd.ca/disclaimer</loc><lastmod>2026-04-10</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+</urlset>

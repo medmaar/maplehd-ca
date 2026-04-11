@@ -1,0 +1,89 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --background: #10131E;
+  --foreground: #ffffff;
+  --red: #fd0322;
+}
+
+body {
+  background: #10131E;
+  color: #ffffff;
+}
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-slide {
+  animation: fadeSlideUp 0.42s ease forwards;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 28s linear infinite;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 35s linear infinite;
+}
+
+/* react-phone-number-input dark theme */
+.phone-input-wrapper .PhoneInput {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.phone-input-wrapper .PhoneInputCountry {
+  display: flex;
+  align-items: center;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 12px;
+  padding: 0 12px;
+  height: 46px;
+  gap: 6px;
+  cursor: pointer;
+}
+.phone-input-wrapper .PhoneInputCountrySelect {
+  background: #1a1d2e;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+.phone-input-wrapper .PhoneInputInput {
+  flex: 1;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 12px;
+  padding: 12px 16px;
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+}
+.phone-input-wrapper .PhoneInputInput:focus {
+  border-color: #fd0322;
+}
+.phone-input-wrapper .PhoneInputCountrySelectArrow {
+  color: #9ca3af;
+}
