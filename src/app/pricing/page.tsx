@@ -56,7 +56,7 @@ export default function PricingPage() {
             {["No contracts", "Instant activation", "Cancel anytime", "24h free trial available"].map(
               (item) => (
                 <span key={item} className="flex items-center gap-2">
-                  <span style={{ color: "#4ade80" }}>✓</span> {item}
+                  <span style={{ color: "#D5E7B5" }}>✓</span> {item}
                 </span>
               )
             )}

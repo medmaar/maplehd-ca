@@ -228,7 +228,7 @@ export default function HomePage() {
                 Try Free Trial
               </Link>
             </div>
-            <p style={{ color: "#6b7280", fontSize: 13 }}>
+            <p style={{ color: "#D5E7B5", fontSize: 13 }}>
               ✓ Free Trial &nbsp;&nbsp; ✓ No Contracts &nbsp;&nbsp; ✓ Interac e-Transfer Accepted
             </p>
           </div>
@@ -247,13 +247,13 @@ export default function HomePage() {
             }}
           >
             {[
-              { val: "25,000+", label: "Live Channels" },
-              { val: "120,000+", label: "Movies & Series" },
-              { val: "4K Ultra HD", label: "Streaming Quality" },
-              { val: "24/7", label: "Canadian Support" },
+              { val: "25,000+", label: "Live Channels", color: "#72BAA9" },
+              { val: "120,000+", label: "Movies & Series", color: "#D5E7B5" },
+              { val: "4K Ultra HD", label: "Streaming Quality", color: "#AE2448" },
+              { val: "24/7", label: "Canadian Support", color: "#72BAA9" },
             ].map((s) => (
               <div key={s.val}>
-                <div style={{ fontSize: 28, fontWeight: 900, color: "#AE2448" }}>{s.val}</div>
+                <div style={{ fontSize: 28, fontWeight: 900, color: s.color || "#AE2448" }}>{s.val}</div>
                 <div style={{ fontSize: 13, color: "#6b7280", marginTop: 4 }}>{s.label}</div>
               </div>
             ))}
@@ -300,7 +300,7 @@ export default function HomePage() {
         {/* ── 5. CANADIAN CHANNELS ── */}
         <section style={{ padding: "80px 16px", background: "#0a0a0a" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
-            <p style={{ color: "#AE2448", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12, textAlign: "center" }}>
+            <p style={{ color: "#72BAA9", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12, textAlign: "center" }}>
               Canadian Content
             </p>
             <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 16 }}>
@@ -314,13 +314,13 @@ export default function HomePage() {
                 <span
                   key={ch}
                   style={{
-                    background: "rgba(255,255,255,0.05)",
-                    border: "1px solid rgba(255,255,255,0.1)",
+                    background: "rgba(114,186,169,0.07)",
+                    border: "1px solid rgba(114,186,169,0.22)",
                     borderRadius: 8,
                     padding: "8px 16px",
                     fontSize: 13,
                     fontWeight: 600,
-                    color: "#d1d5db",
+                    color: "#72BAA9",
                   }}
                 >
                   {ch}
@@ -342,7 +342,7 @@ export default function HomePage() {
             <p style={{ textAlign: "center", color: "#6b7280", marginBottom: 16, fontSize: 15 }}>
               All PPV events included at no extra charge with your MapleHD subscription.
             </p>
-            <p style={{ textAlign: "center", color: "#4ade80", fontSize: 13, marginBottom: 44 }}>
+            <p style={{ textAlign: "center", color: "#D5E7B5", fontSize: 13, marginBottom: 44 }}>
               ✓ No blackouts &nbsp;&nbsp; ✓ All PPV events free &nbsp;&nbsp; ✓ 4K live sports
             </p>
           </div>
@@ -353,8 +353,8 @@ export default function HomePage() {
                   key={i}
                   style={{
                     flexShrink: 0,
-                    background: "rgba(174,36,72,0.06)",
-                    border: "1px solid rgba(174,36,72,0.15)",
+                    background: "rgba(114,186,169,0.06)",
+                    border: "1px solid rgba(114,186,169,0.2)",
                     borderRadius: 14,
                     padding: "14px 24px",
                     color: "#fff",
@@ -407,7 +407,7 @@ export default function HomePage() {
         {/* ── 8. FAQ ── */}
         <section style={{ padding: "80px 16px", background: "#0d0d0d" }}>
           <div style={{ maxWidth: 780, margin: "0 auto" }}>
-            <p style={{ color: "#AE2448", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12, textAlign: "center" }}>FAQ</p>
+            <p style={{ color: "#72BAA9", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12, textAlign: "center" }}>FAQ</p>
             <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 48 }}>
               Frequently Asked Questions
             </h2>

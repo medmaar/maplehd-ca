@@ -58,7 +58,7 @@ export default function HomePricing() {
     <section style={{ padding: "80px 16px", background: "#0a0a0a" }}>
       <div style={{ maxWidth: 1100, margin: "0 auto" }}>
         {/* Header */}
-        <p style={{ textAlign: "center", color: "#AE2448", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12 }}>
+        <p style={{ textAlign: "center", color: "#72BAA9", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12 }}>
           Transparent Pricing
         </p>
         <h2 style={{ textAlign: "center", fontSize: "clamp(28px, 4vw, 40px)", fontWeight: 900, marginBottom: 12, color: "#fff" }}>
@@ -177,7 +177,7 @@ export default function HomePricing() {
                 )}
                 {planFeatures.map((f) => (
                   <li key={f} style={{ fontSize: 13, color: "#9ca3af", marginBottom: 6, display: "flex", alignItems: "center", gap: 6, textAlign: "left" }}>
-                    <span style={{ color: "#AE2448", fontWeight: 700, flexShrink: 0 }}>✓</span> {f}
+                    <span style={{ color: "#72BAA9", fontWeight: 700, flexShrink: 0 }}>✓</span> {f}
                   </li>
                 ))}
               </ul>
@@ -185,8 +185,8 @@ export default function HomePricing() {
                 href={getHref(selected, plan.slug)}
                 style={{
                   display: "block",
-                  background: plan.badge === "Best Value" ? "#AE2448" : "rgba(174,36,72,0.15)",
-                  color: plan.badge === "Best Value" ? "#fff" : "#AE2448",
+                  background: plan.badge === "Best Value" ? "#AE2448" : "rgba(114,186,169,0.15)",
+                  color: plan.badge === "Best Value" ? "#fff" : "#72BAA9",
                   fontWeight: 700,
                   fontSize: 14,
                   padding: "12px 20px",
@@ -203,7 +203,7 @@ export default function HomePricing() {
         </div>
 
         <div style={{ textAlign: "center", marginTop: 32 }}>
-          <Link href="/pricing" style={{ color: "#AE2448", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>
+          <Link href="/pricing" style={{ color: "#72BAA9", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>
             View full pricing details →
           </Link>
         </div>

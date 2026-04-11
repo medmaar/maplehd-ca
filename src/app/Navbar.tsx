@@ -39,7 +39,7 @@ export default function Navbar() {
         {/* Desktop links */}
         <div className="hidden md:flex items-center gap-6 text-sm font-medium text-gray-400">
           {links.map((l) => (
-            <Link key={l.href} href={l.href} className="hover:text-white transition-colors">
+            <Link key={l.href} href={l.href} className="hover:text-[#72BAA9] transition-colors">
               {l.label}
             </Link>
           ))}
