@@ -135,13 +135,26 @@ export default function HomePage() {
         {/* ── 1. HERO ── */}
         <section
           style={{
-            background:
-              "radial-gradient(ellipse 90% 60% at 50% 0%, rgba(174,36,72,0.18) 0%, transparent 65%), #0a0a0a",
+            position: "relative",
+            overflow: "hidden",
+            background: "#0a0a0a",
             padding: "90px 16px 80px",
             textAlign: "center",
           }}
         >
-          <div style={{ maxWidth: 800, margin: "0 auto" }}>
+          <img
+            src="/iptv-subscription-canada-1.jpg"
+            alt="IPTV subscription Canada — watch NHL hockey and live Canadian TV channels in HD"
+            style={{
+              position: "absolute", inset: 0,
+              width: "100%", height: "100%",
+              objectFit: "cover", objectPosition: "center top",
+              opacity: 0.3, zIndex: 0,
+            }}
+          />
+          <div style={{ position: "absolute", inset: 0, zIndex: 1, background: "linear-gradient(to bottom, rgba(8,6,16,0.5) 0%, rgba(8,6,16,0.3) 50%, rgba(8,6,16,0.88) 100%)" }} />
+          <div style={{ position: "absolute", inset: 0, zIndex: 2, background: "radial-gradient(ellipse 80% 40% at 50% 0%, rgba(174,36,72,0.2) 0%, transparent 65%)" }} />
+          <div style={{ maxWidth: 800, margin: "0 auto", position: "relative", zIndex: 3 }}>
             <span
               style={{
                 display: "inline-block",
