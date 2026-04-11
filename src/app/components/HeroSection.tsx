@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import { ScaleIn } from "../../components/Animate";
 
 const words = ["LIVE TV", "SPORTS", "MOVIES", "SERIES"];
 
