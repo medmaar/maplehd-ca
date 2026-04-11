@@ -28,7 +28,7 @@ function OrderContent() {
             You&apos;re one step away
           </div>
           <h1 className="text-3xl md:text-4xl font-extrabold mb-3">
-            Complete Your <span className="text-red-500">Order</span>
+            Complete Your <span className="text-[#AE2448]">Order</span>
           </h1>
           <p className="text-gray-400">
             Contact us via your preferred method below and we&apos;ll activate your subscription within minutes.
@@ -36,8 +36,8 @@ function OrderContent() {
         </div>
 
         {/* Plan summary */}
-        <div className="bg-gray-900 border border-red-600 rounded-2xl p-6 mb-8">
-          <h2 className="text-lg font-bold text-red-400 mb-4">Your Selected Plan</h2>
+        <div className="bg-gray-900 border border-[#AE2448] rounded-2xl p-6 mb-8">
+          <h2 className="text-lg font-bold text-[#72BAA9] mb-4">Your Selected Plan</h2>
           <div className="flex justify-between items-center mb-2">
             <span className="text-gray-400">Duration</span>
             <span className="font-bold">{duration}</span>
@@ -48,7 +48,7 @@ function OrderContent() {
           </div>
           <div className="border-t border-gray-700 mt-4 pt-4 flex justify-between items-center">
             <span className="text-gray-400 font-bold">Total</span>
-            <span className="text-3xl font-extrabold text-red-500">${price}</span>
+            <span className="text-3xl font-extrabold text-[#AE2448]">${price}</span>
           </div>
         </div>
 
@@ -108,7 +108,7 @@ function OrderContent() {
         </div>
 
         <div className="text-center">
-          <a href="/pricing" className="text-gray-500 hover:text-red-400 text-sm transition-colors">
+          <a href="/pricing" className="text-gray-500 hover:text-[#72BAA9] text-sm transition-colors">
             ← Back to pricing
           </a>
         </div>

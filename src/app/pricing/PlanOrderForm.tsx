@@ -141,7 +141,7 @@ export default function PlanOrderForm({ plan }: Props) {
       {/* Full Name */}
       <div>
         <label className="block text-sm text-gray-400 mb-1.5">
-          Full Name <span style={{ color: "#fd0322" }}>*</span>
+          Full Name <span style={{ color: "#AE2448" }}>*</span>
         </label>
         <input
           type="text"
@@ -157,7 +157,7 @@ export default function PlanOrderForm({ plan }: Props) {
       {/* Email */}
       <div>
         <label className="block text-sm text-gray-400 mb-1.5">
-          Email Address <span style={{ color: "#fd0322" }}>*</span>
+          Email Address <span style={{ color: "#AE2448" }}>*</span>
         </label>
         <input
           type="text"
@@ -245,7 +245,7 @@ export default function PlanOrderForm({ plan }: Props) {
         type="submit"
         disabled={status === "loading"}
         className="w-full text-white py-4 rounded-2xl font-bold text-base transition-all hover:brightness-110 disabled:opacity-60"
-        style={{ background: "#fd0322" }}
+        style={{ background: "#AE2448" }}
       >
         {status === "loading" ? "Sending…" : "Order Now →"}
       </button>

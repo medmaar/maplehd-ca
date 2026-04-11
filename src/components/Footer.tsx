@@ -95,7 +95,7 @@ export default function Footer() {
               MapleHD does not host or stream any copyrighted content. All content is
               provided by third-party providers.
             </p>
-            <Link href="/disclaimer" className="text-xs text-red-500 hover:text-red-400 transition-colors">
+            <Link href="/disclaimer" className="text-xs text-[#AE2448] hover:text-[#72BAA9] transition-colors">
               Read Disclaimer →
             </Link>
           </div>

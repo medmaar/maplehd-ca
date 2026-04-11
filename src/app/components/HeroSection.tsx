@@ -29,10 +29,10 @@ export default function HeroSection() {
         style={{
           background: "rgba(253,3,34,0.1)",
           border: "1px solid rgba(253,3,34,0.28)",
-          color: "#fd0322",
+          color: "#AE2448",
         }}
       >
-        <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#fd0322] animate-pulse" />
+        <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#AE2448] animate-pulse" />
         #1 IPTV Service in Canada 2026
       </div>
 
@@ -48,7 +48,7 @@ export default function HeroSection() {
         <span
           key={animKey}
           className="block text-4xl md:text-[58px] font-extrabold tracking-tight animate-fade-slide"
-          style={{ color: "#fd0322" }}
+          style={{ color: "#AE2448" }}
         >
           {words[index]}
         </span>
@@ -67,7 +67,7 @@ export default function HeroSection() {
           href="/pricing"
           className="inline-flex items-center justify-center gap-2 px-9 py-4 rounded-2xl text-base font-bold text-white transition-all hover:brightness-110 hover:scale-[1.02] active:scale-[0.99]"
           style={{
-            background: "#fd0322",
+            background: "#AE2448",
             boxShadow: "0 8px 32px rgba(253,3,34,0.32)",
           }}
         >

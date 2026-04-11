@@ -42,7 +42,7 @@ export default function PlanOrderForm({ planLabel, price, whatsappNumber, emailA
           Complete your order via WhatsApp. If it didn&apos;t open,{" "}
           <a
             href={`mailto:${emailAddress}`}
-            className="underline text-red-700"
+            className="underline text-[#6E1A37]"
           >
             email us instead
           </a>
@@ -71,7 +71,7 @@ export default function PlanOrderForm({ planLabel, price, whatsappNumber, emailA
           placeholder="E.g. John"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          className="w-full rounded-xl border border-gray-300 bg-white px-4 py-3 text-gray-900 text-sm outline-none focus:border-red-400 focus:ring-2 focus:ring-red-100 transition"
+          className="w-full rounded-xl border border-gray-300 bg-white px-4 py-3 text-gray-900 text-sm outline-none focus:border-[#72BAA9] focus:ring-2 focus:ring-[#D5E7B5] transition"
         />
       </div>
 
@@ -86,7 +86,7 @@ export default function PlanOrderForm({ planLabel, price, whatsappNumber, emailA
           placeholder="E.g. john@example.com"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="w-full rounded-xl border border-gray-300 bg-white px-4 py-3 text-gray-900 text-sm outline-none focus:border-red-400 focus:ring-2 focus:ring-red-100 transition"
+          className="w-full rounded-xl border border-gray-300 bg-white px-4 py-3 text-gray-900 text-sm outline-none focus:border-[#72BAA9] focus:ring-2 focus:ring-[#D5E7B5] transition"
         />
       </div>
 
@@ -99,7 +99,7 @@ export default function PlanOrderForm({ planLabel, price, whatsappNumber, emailA
           required
           value={country}
           onChange={(e) => setCountry(e.target.value)}
-          className="w-full rounded-xl border border-gray-300 bg-white px-4 py-3 text-gray-900 text-sm outline-none focus:border-red-400 focus:ring-2 focus:ring-red-100 transition"
+          className="w-full rounded-xl border border-gray-300 bg-white px-4 py-3 text-gray-900 text-sm outline-none focus:border-[#72BAA9] focus:ring-2 focus:ring-[#D5E7B5] transition"
         >
           <option value="">Select country</option>
           {COUNTRIES.map((c) => (
@@ -118,13 +118,13 @@ export default function PlanOrderForm({ planLabel, price, whatsappNumber, emailA
           placeholder="E.g. +1 300 400 5000"
           value={phone}
           onChange={(e) => setPhone(e.target.value)}
-          className="w-full rounded-xl border border-gray-300 bg-white px-4 py-3 text-gray-900 text-sm outline-none focus:border-red-400 focus:ring-2 focus:ring-red-100 transition"
+          className="w-full rounded-xl border border-gray-300 bg-white px-4 py-3 text-gray-900 text-sm outline-none focus:border-[#72BAA9] focus:ring-2 focus:ring-[#D5E7B5] transition"
         />
       </div>
 
       <button
         type="submit"
-        className="w-full bg-[#e11d2e] hover:brightness-95 active:scale-[.99] text-white font-bold text-base rounded-xl py-4 shadow-lg shadow-red-200 transition"
+        className="w-full bg-[#e11d2e] hover:brightness-95 active:scale-[.99] text-white font-bold text-base rounded-xl py-4 shadow-lg shadow-[#D5E7B5] transition"
       >
         Submit Now →
       </button>

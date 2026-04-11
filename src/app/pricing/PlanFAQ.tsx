@@ -34,7 +34,7 @@ export default function PlanFAQ({ items }: Props) {
             <span
               className="shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-white text-lg font-bold"
               style={{
-                background: open === i ? "#fd0322" : "rgba(255,255,255,0.08)",
+                background: open === i ? "#AE2448" : "rgba(255,255,255,0.08)",
                 transform: open === i ? "rotate(45deg)" : "rotate(0deg)",
                 transition: "transform 0.25s, background 0.2s",
               }}

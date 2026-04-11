@@ -40,13 +40,13 @@ export default function PricingPage() {
         <div className="max-w-3xl mx-auto">
           <p
             className="text-xs font-bold uppercase tracking-widest mb-4"
-            style={{ color: "#fd0322" }}
+            style={{ color: "#AE2448" }}
           >
             Transparent Pricing
           </p>
           <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-white">
             MapleHD{" "}
-            <span style={{ color: "#fd0322" }}>Subscription Plans 2026</span>
+            <span style={{ color: "#AE2448" }}>Subscription Plans 2026</span>
           </h1>
           <p className="text-gray-400 mb-8 max-w-xl mx-auto leading-relaxed">
             Transparent pricing with no hidden fees. All plans include 25,000+ channels,
@@ -70,12 +70,12 @@ export default function PricingPage() {
       {/* What's included */}
       <section className="py-20 px-4" style={{ background: "#10131E" }}>
         <div className="max-w-4xl mx-auto">
-          <p className="text-center text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#fd0322" }}>
+          <p className="text-center text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#AE2448" }}>
             Included in Every Plan
           </p>
           <h2 className="text-3xl font-extrabold text-center text-white mb-12">
             Every Plan Includes{" "}
-            <span style={{ color: "#fd0322" }}>Everything</span>
+            <span style={{ color: "#AE2448" }}>Everything</span>
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {[
@@ -128,7 +128,7 @@ export default function PricingPage() {
           <a
             href="/free-trial"
             className="inline-block text-white px-10 py-4 rounded-2xl font-bold text-base transition-all hover:brightness-110"
-            style={{ background: "#fd0322", boxShadow: "0 8px 28px rgba(253,3,34,0.3)" }}
+            style={{ background: "#AE2448", boxShadow: "0 8px 28px rgba(253,3,34,0.3)" }}
           >
             Get Free Trial
           </a>
@@ -138,11 +138,11 @@ export default function PricingPage() {
       {/* FAQ */}
       <section className="py-20 px-4">
         <div className="max-w-3xl mx-auto">
-          <p className="text-center text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#fd0322" }}>
+          <p className="text-center text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#AE2448" }}>
             FAQ
           </p>
           <h2 className="text-3xl font-extrabold text-center text-white mb-10">
-            Pricing <span style={{ color: "#fd0322" }}>FAQ</span>
+            Pricing <span style={{ color: "#AE2448" }}>FAQ</span>
           </h2>
           <FaqAccordion />
         </div>

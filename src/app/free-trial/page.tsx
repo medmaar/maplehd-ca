@@ -67,7 +67,7 @@ export default function FreeTrialPage() {
                 style={{
                   background: "rgba(253,3,34,0.12)",
                   border: "1px solid rgba(253,3,34,0.28)",
-                  color: "#fd0322",
+                  color: "#AE2448",
                 }}
               >
                 No Credit Card Required
@@ -102,7 +102,7 @@ export default function FreeTrialPage() {
             <div>
               <p
                 className="text-xs font-bold uppercase tracking-widest mb-2"
-                style={{ color: "#fd0322" }}
+                style={{ color: "#AE2448" }}
               >
                 FAQ
               </p>

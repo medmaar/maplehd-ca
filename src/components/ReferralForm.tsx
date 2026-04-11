@@ -46,7 +46,7 @@ export default function ReferralForm() {
         className="bg-gray-950 border border-gray-800 rounded-2xl p-8 space-y-6"
       >
         <div>
-          <p className="text-xs text-red-400 font-bold uppercase tracking-widest mb-4">
+          <p className="text-xs text-[#72BAA9] font-bold uppercase tracking-widest mb-4">
             Your Details
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -58,7 +58,7 @@ export default function ReferralForm() {
                 placeholder="John"
                 value={yourName}
                 onChange={(e) => setYourName(e.target.value)}
-                className="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 text-sm text-white placeholder-gray-600 focus:outline-none focus:border-red-500 transition-colors"
+                className="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 text-sm text-white placeholder-gray-600 focus:outline-none focus:border-[#AE2448] transition-colors"
               />
             </div>
             <div>
@@ -69,14 +69,14 @@ export default function ReferralForm() {
                 placeholder="+1 782 000 0000"
                 value={yourWA}
                 onChange={(e) => setYourWA(e.target.value)}
-                className="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 text-sm text-white placeholder-gray-600 focus:outline-none focus:border-red-500 transition-colors"
+                className="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 text-sm text-white placeholder-gray-600 focus:outline-none focus:border-[#AE2448] transition-colors"
               />
             </div>
           </div>
         </div>
 
         <div>
-          <p className="text-xs text-red-400 font-bold uppercase tracking-widest mb-4">
+          <p className="text-xs text-[#72BAA9] font-bold uppercase tracking-widest mb-4">
             Friend&apos;s Details
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -88,7 +88,7 @@ export default function ReferralForm() {
                 placeholder="Jane"
                 value={friendName}
                 onChange={(e) => setFriendName(e.target.value)}
-                className="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 text-sm text-white placeholder-gray-600 focus:outline-none focus:border-red-500 transition-colors"
+                className="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 text-sm text-white placeholder-gray-600 focus:outline-none focus:border-[#AE2448] transition-colors"
               />
             </div>
             <div>
@@ -99,7 +99,7 @@ export default function ReferralForm() {
                 placeholder="+1 782 000 0000"
                 value={friendWA}
                 onChange={(e) => setFriendWA(e.target.value)}
-                className="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 text-sm text-white placeholder-gray-600 focus:outline-none focus:border-red-500 transition-colors"
+                className="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 text-sm text-white placeholder-gray-600 focus:outline-none focus:border-[#AE2448] transition-colors"
               />
             </div>
           </div>
@@ -113,14 +113,14 @@ export default function ReferralForm() {
           <button
             type="submit"
             disabled={status === "loading"}
-            className="w-full bg-red-600 hover:bg-red-700 disabled:opacity-60 text-white py-4 rounded-xl font-bold text-lg transition-colors"
+            className="w-full bg-[#AE2448] hover:bg-[#6E1A37] disabled:opacity-60 text-white py-4 rounded-xl font-bold text-lg transition-colors"
           >
             {status === "loading" ? "Submitting…" : "Submit Referral"}
           </button>
         )}
 
         {status === "error" && (
-          <p className="text-center text-red-400 text-sm">
+          <p className="text-center text-[#72BAA9] text-sm">
             Something went wrong. Please try again or use the WhatsApp button below.
           </p>
         )}

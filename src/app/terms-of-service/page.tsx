@@ -10,7 +10,7 @@ export default function TermsOfServicePage() {
   return (
     <main className="bg-gray-950 text-white min-h-screen py-20 px-4">
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-4xl font-extrabold mb-4 text-red-500">Terms of Service</h1>
+        <h1 className="text-4xl font-extrabold mb-4 text-[#AE2448]">Terms of Service</h1>
         <p className="text-gray-400 text-sm mb-10">Last updated: March 28, 2026</p>
 
         <div className="space-y-10 text-gray-300 leading-relaxed">
@@ -91,8 +91,8 @@ export default function TermsOfServicePage() {
           <section>
             <h2 className="text-2xl font-bold text-white mb-3">12. Contact</h2>
             <div className="bg-gray-900 rounded-xl p-6 border border-gray-800">
-              <p>Email: <a href="mailto:help@maplehd.ca" className="text-red-400 hover:underline">help@maplehd.ca</a></p>
-              <p className="mt-2">WhatsApp: <a href="https://wa.me/17828026280" target="_blank" rel="noopener noreferrer" className="text-red-400 hover:underline">+1 (782) 802-6280</a></p>
+              <p>Email: <a href="mailto:help@maplehd.ca" className="text-[#72BAA9] hover:underline">help@maplehd.ca</a></p>
+              <p className="mt-2">WhatsApp: <a href="https://wa.me/17828026280" target="_blank" rel="noopener noreferrer" className="text-[#72BAA9] hover:underline">+1 (782) 802-6280</a></p>
             </div>
           </section>
         </div>

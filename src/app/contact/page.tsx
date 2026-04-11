@@ -39,7 +39,7 @@ export default function ContactPage() {
       <div className="max-w-3xl mx-auto">
         {/* Header */}
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
-          Contact <span className="text-red-500">Us</span>
+          Contact <span className="text-[#AE2448]">Us</span>
         </h1>
         <p className="text-gray-400 text-lg mb-12">
           Our Canadian support team is available 24/7 in English and French.
@@ -89,7 +89,7 @@ export default function ContactPage() {
         {/* FAQ shortcut */}
         <div className="text-center">
           <p className="text-gray-400 mb-4">Have a common question? Check our FAQ first.</p>
-          <a href="/#faq" className="inline-block border border-red-600 text-red-400 hover:bg-red-600 hover:text-white px-8 py-3 rounded-xl font-bold transition-colors">
+          <a href="/#faq" className="inline-block border border-[#AE2448] text-[#72BAA9] hover:bg-[#AE2448] hover:text-white px-8 py-3 rounded-xl font-bold transition-colors">
             View FAQ
           </a>
         </div>

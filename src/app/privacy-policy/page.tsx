@@ -10,7 +10,7 @@ export default function PrivacyPolicyPage() {
   return (
     <main className="bg-gray-950 text-white min-h-screen py-20 px-4">
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-4xl font-extrabold mb-4 text-red-500">Privacy Policy</h1>
+        <h1 className="text-4xl font-extrabold mb-4 text-[#AE2448]">Privacy Policy</h1>
         <p className="text-gray-400 text-sm mb-10">Last updated: March 28, 2026</p>
 
         <div className="space-y-10 text-gray-300 leading-relaxed">
@@ -72,7 +72,7 @@ export default function PrivacyPolicyPage() {
               <li>Withdraw consent for the use of your personal information</li>
               <li>Request deletion of your personal information</li>
             </ul>
-            <p className="mt-3">To exercise these rights, contact us at <a href="mailto:help@maplehd.ca" className="text-red-400 hover:underline">help@maplehd.ca</a>.</p>
+            <p className="mt-3">To exercise these rights, contact us at <a href="mailto:help@maplehd.ca" className="text-[#72BAA9] hover:underline">help@maplehd.ca</a>.</p>
           </section>
 
           <section>
@@ -84,8 +84,8 @@ export default function PrivacyPolicyPage() {
             <h2 className="text-2xl font-bold text-white mb-3">9. Contact Us</h2>
             <p>If you have questions about this Privacy Policy, please contact us:</p>
             <div className="mt-4 bg-gray-900 rounded-xl p-6 border border-gray-800">
-              <p>Email: <a href="mailto:help@maplehd.ca" className="text-red-400 hover:underline">help@maplehd.ca</a></p>
-              <p className="mt-2">WhatsApp: <a href="https://wa.me/17828026280" target="_blank" rel="noopener noreferrer" className="text-red-400 hover:underline">+1 (782) 802-6280</a></p>
+              <p>Email: <a href="mailto:help@maplehd.ca" className="text-[#72BAA9] hover:underline">help@maplehd.ca</a></p>
+              <p className="mt-2">WhatsApp: <a href="https://wa.me/17828026280" target="_blank" rel="noopener noreferrer" className="text-[#72BAA9] hover:underline">+1 (782) 802-6280</a></p>
             </div>
           </section>
         </div>

@@ -10,11 +10,11 @@ export default function RefundPolicyPage() {
   return (
     <main className="bg-gray-950 text-white min-h-screen py-20 px-4">
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-4xl font-extrabold mb-4 text-red-500">Refund Policy</h1>
+        <h1 className="text-4xl font-extrabold mb-4 text-[#AE2448]">Refund Policy</h1>
         <p className="text-gray-400 text-sm mb-10">Last updated: March 28, 2026</p>
 
         {/* Summary box */}
-        <div className="bg-red-950 border border-red-600 rounded-2xl p-6 mb-10">
+        <div className="bg-[#6E1A37] border border-[#AE2448] rounded-2xl p-6 mb-10">
           <h2 className="text-lg font-bold text-white mb-2">Summary</h2>
           <p className="text-gray-300 text-sm leading-relaxed">
             Due to the instant digital nature of our service, we do not offer refunds once a subscription
@@ -44,7 +44,7 @@ export default function RefundPolicyPage() {
               <li>Carries zero obligation to purchase</li>
             </ul>
             <p className="mt-3">
-              <a href="/free-trial" className="text-red-400 hover:underline font-semibold">Get your free trial here →</a>
+              <a href="/free-trial" className="text-[#72BAA9] hover:underline font-semibold">Get your free trial here →</a>
             </p>
           </section>
 
@@ -70,15 +70,15 @@ export default function RefundPolicyPage() {
             <div className="bg-gray-900 rounded-xl p-6 border border-gray-800 space-y-3">
               <p>
                 <span className="text-gray-400 text-sm">WhatsApp: </span>
-                <a href="https://wa.me/17828026280" target="_blank" rel="noopener noreferrer" className="text-red-400 hover:underline">+1 (782) 802-6280</a>
+                <a href="https://wa.me/17828026280" target="_blank" rel="noopener noreferrer" className="text-[#72BAA9] hover:underline">+1 (782) 802-6280</a>
               </p>
               <p>
                 <span className="text-gray-400 text-sm">Telegram: </span>
-                <a href="https://t.me/IPTVCanadaSupport" target="_blank" rel="noopener noreferrer" className="text-red-400 hover:underline">@IPTVCanadaSupport</a>
+                <a href="https://t.me/IPTVCanadaSupport" target="_blank" rel="noopener noreferrer" className="text-[#72BAA9] hover:underline">@IPTVCanadaSupport</a>
               </p>
               <p>
                 <span className="text-gray-400 text-sm">Email: </span>
-                <a href="mailto:help@maplehd.ca" className="text-red-400 hover:underline">help@maplehd.ca</a>
+                <a href="mailto:help@maplehd.ca" className="text-[#72BAA9] hover:underline">help@maplehd.ca</a>
               </p>
             </div>
           </section>

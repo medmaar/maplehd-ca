@@ -8258,7 +8258,7 @@ export default function ChannelsListPage() {
       <section className="bg-gradient-to-br from-gray-900 via-gray-950 to-black py-16 px-4 text-center">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
-            MapleHD <span className="text-red-500">Channel List</span>
+            MapleHD <span className="text-[#AE2448]">Channel List</span>
           </h1>
           <p className="text-xl text-gray-300 mb-6">
             25,000+ live channels across Canada, the US, UK, and worldwide.
@@ -8274,7 +8274,7 @@ export default function ChannelsListPage() {
       </section>
 
       {/* Stats bar */}
-      <div className="bg-red-600 py-3 px-4">
+      <div className="bg-[#AE2448] py-3 px-4">
         <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-8 text-white text-sm font-semibold">
           <span>🌍 152 Countries &amp; Regions</span>
           <span>📺 25,000+ Live Channels</span>
@@ -8289,11 +8289,11 @@ export default function ChannelsListPage() {
           {categories.map((cat, index) => (
             <details
               key={cat.name}
-              className="group bg-gray-900 border border-gray-800 rounded-xl overflow-hidden transition-all hover:border-red-700"
+              className="group bg-gray-900 border border-gray-800 rounded-xl overflow-hidden transition-all hover:border-[#6E1A37]"
             >
               <summary className="flex items-center justify-between px-5 py-4 cursor-pointer select-none list-none">
                 <div className="flex items-center gap-3">
-                  <span className="text-red-500 font-bold text-lg group-open:text-red-400 transition-colors">
+                  <span className="text-[#AE2448] font-bold text-lg group-open:text-[#72BAA9] transition-colors">
                     {cat.name}
                   </span>
                 </div>
@@ -8317,7 +8317,7 @@ export default function ChannelsListPage() {
                   {cat.channels.map((ch) => (
                     <span
                       key={ch}
-                      className="bg-gray-800 border border-gray-700 hover:border-red-600 hover:text-white text-gray-300 text-xs px-3 py-1.5 rounded-lg transition-colors cursor-default"
+                      className="bg-gray-800 border border-gray-700 hover:border-[#AE2448] hover:text-white text-gray-300 text-xs px-3 py-1.5 rounded-lg transition-colors cursor-default"
                     >
                       {ch}
                     </span>
@@ -8330,17 +8330,17 @@ export default function ChannelsListPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 px-4 bg-gradient-to-r from-red-900 to-gray-900 text-center">
+      <section className="py-16 px-4 bg-gradient-to-r from-[#6E1A37] to-gray-900 text-center">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-3xl font-bold mb-4">Access All 25,000+ Channels</h2>
           <p className="text-gray-300 mb-8">
             Every plan includes the full channel list. Try it free for 5 minutes — no credit card required.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/free-trial" className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-colors">
+            <a href="/free-trial" className="bg-[#AE2448] hover:bg-[#6E1A37] text-white px-8 py-4 rounded-xl font-bold text-lg transition-colors">
               Get Free Trial
             </a>
-            <a href="/pricing" className="border border-red-600 text-red-400 hover:bg-red-600 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-colors">
+            <a href="/pricing" className="border border-[#AE2448] text-[#72BAA9] hover:bg-[#AE2448] hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-colors">
               View Pricing
             </a>
           </div>

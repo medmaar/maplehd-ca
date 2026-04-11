@@ -139,7 +139,7 @@ export default function OrderForm({ plan, price, devices }: Props) {
         type="submit"
         disabled={loading}
         className="w-full text-white py-4 rounded-2xl font-bold text-base transition-all hover:brightness-110 disabled:opacity-60 mt-2"
-        style={{ background: "#fd0322" }}
+        style={{ background: "#AE2448" }}
       >
         {loading ? "Submitting…" : "Submit Order →"}
       </button>

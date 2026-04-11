@@ -60,7 +60,7 @@ export default function HowItWorksPage() {
       <section className="bg-gradient-to-br from-gray-900 via-gray-950 to-black py-16 px-4 text-center">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
-            How <span className="text-red-500">IPTV Works</span> in Canada
+            How <span className="text-[#AE2448]">IPTV Works</span> in Canada
           </h1>
           <p className="text-xl text-gray-300">
             Three simple steps. No technician required. Start watching in minutes.
@@ -74,7 +74,7 @@ export default function HowItWorksPage() {
           <div className="space-y-8">
             {steps.map((s) => (
               <div key={s.step} className="flex gap-6 bg-gray-900 rounded-2xl p-8 border border-gray-800">
-                <div className="flex-shrink-0 w-14 h-14 bg-red-600 rounded-full flex items-center justify-center font-extrabold text-white text-2xl">
+                <div className="flex-shrink-0 w-14 h-14 bg-[#AE2448] rounded-full flex items-center justify-center font-extrabold text-white text-2xl">
                   {s.step}
                 </div>
                 <div className="flex-1">
@@ -83,7 +83,7 @@ export default function HowItWorksPage() {
                   <p className="text-gray-400 text-sm mb-4">{s.detail}</p>
                   <a
                     href={s.cta.href}
-                    className="inline-block border border-red-600 text-red-400 hover:bg-red-600 hover:text-white px-5 py-2 rounded-lg text-sm font-bold transition-colors"
+                    className="inline-block border border-[#AE2448] text-[#72BAA9] hover:bg-[#AE2448] hover:text-white px-5 py-2 rounded-lg text-sm font-bold transition-colors"
                   >
                     {s.cta.label} →
                   </a>
@@ -98,7 +98,7 @@ export default function HowItWorksPage() {
       <section className="py-16 px-4 bg-gray-900">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold mb-6">
-            What Exactly <span className="text-red-500">Is IPTV?</span>
+            What Exactly <span className="text-[#AE2448]">Is IPTV?</span>
           </h2>
           <div className="space-y-4 text-gray-300 leading-relaxed">
             <p>
@@ -124,7 +124,7 @@ export default function HowItWorksPage() {
       <section id="devices" className="py-20 px-4">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-4">
-            Compatible <span className="text-red-500">Devices</span>
+            Compatible <span className="text-[#AE2448]">Devices</span>
           </h2>
           <p className="text-center text-gray-400 mb-10">
             Our IPTV service works on virtually every screen you own.
@@ -137,7 +137,7 @@ export default function HowItWorksPage() {
                   <div className="font-bold text-white">{d.name}</div>
                   <div className="text-gray-400 text-sm">{d.desc}</div>
                   {d.guide && (
-                    <a href={d.guide} className="text-red-400 text-xs hover:underline mt-1 inline-block">
+                    <a href={d.guide} className="text-[#72BAA9] text-xs hover:underline mt-1 inline-block">
                       Setup guide →
                     </a>
                   )}
@@ -152,7 +152,7 @@ export default function HowItWorksPage() {
       <section className="py-16 px-4 bg-gray-900">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-4">
-            Internet Speed <span className="text-red-500">Requirements</span>
+            Internet Speed <span className="text-[#AE2448]">Requirements</span>
           </h2>
           <p className="text-center text-gray-400 mb-10">
             Any standard Canadian broadband connection is more than sufficient.
@@ -160,7 +160,7 @@ export default function HowItWorksPage() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
             {requirements.map((r) => (
               <div key={r.label} className="bg-gray-950 rounded-xl p-5 border border-gray-800 text-center">
-                <div className="text-2xl font-extrabold text-red-500 mb-1">{r.speed}</div>
+                <div className="text-2xl font-extrabold text-[#AE2448] mb-1">{r.speed}</div>
                 <div className="text-gray-400 text-sm">{r.label}</div>
               </div>
             ))}
@@ -175,7 +175,7 @@ export default function HowItWorksPage() {
       <section className="py-20 px-4">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-10">
-            Common <span className="text-red-500">Questions</span>
+            Common <span className="text-[#AE2448]">Questions</span>
           </h2>
           <div className="space-y-6">
             {[
@@ -186,7 +186,7 @@ export default function HowItWorksPage() {
               { q: "What happens if a channel goes down?", a: "Our servers maintain multiple redundant streams for each channel. If one stream has issues, the system automatically switches to a backup. Our 24/7 support team also monitors the service around the clock." },
             ].map((item) => (
               <div key={item.q} className="bg-gray-900 rounded-xl p-6 border border-gray-800">
-                <h3 className="font-bold text-lg mb-3 text-red-400">{item.q}</h3>
+                <h3 className="font-bold text-lg mb-3 text-[#72BAA9]">{item.q}</h3>
                 <p className="text-gray-400 text-sm leading-relaxed">{item.a}</p>
               </div>
             ))}
@@ -195,17 +195,17 @@ export default function HowItWorksPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 px-4 bg-gradient-to-r from-red-900 to-gray-900 text-center">
+      <section className="py-16 px-4 bg-gradient-to-r from-[#6E1A37] to-gray-900 text-center">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-3xl font-bold mb-4">Ready to Get Started?</h2>
           <p className="text-gray-300 mb-8">
             Try it free for 5 minutes. No credit card, no commitment. Our team will have you set up in minutes.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/free-trial" className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-colors">
+            <a href="/free-trial" className="bg-[#AE2448] hover:bg-[#6E1A37] text-white px-8 py-4 rounded-xl font-bold text-lg transition-colors">
               Get Free Trial
             </a>
-            <a href="/pricing" className="border border-red-600 text-red-400 hover:bg-red-600 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-colors">
+            <a href="/pricing" className="border border-[#AE2448] text-[#72BAA9] hover:bg-[#AE2448] hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-colors">
               View Pricing
             </a>
           </div>

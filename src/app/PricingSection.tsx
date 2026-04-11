@@ -72,14 +72,14 @@ export default function PricingSection() {
     <section id="pricing-section" style={{ background: "#10131E", color: "#fff", padding: "60px 16px" }}>
       <div style={{ maxWidth: 1100, margin: "0 auto" }}>
         {/* Header */}
-        <p style={{ textAlign: "center", color: "#fd0322", fontWeight: 700, fontSize: 13, letterSpacing: 2, textTransform: "uppercase", marginBottom: 8 }}>
+        <p style={{ textAlign: "center", color: "#AE2448", fontWeight: 700, fontSize: 13, letterSpacing: 2, textTransform: "uppercase", marginBottom: 8 }}>
           PRICING PLANS
         </p>
         <h2 style={{ textAlign: "center", fontSize: "clamp(1.6rem,4vw,2.2rem)", fontWeight: 800, marginBottom: 8 }}>
           Simple, Transparent Pricing
         </h2>
         <div style={{ textAlign: "center", marginBottom: 8 }}>
-          <span style={{ display: "inline-block", background: "#fd0322", color: "#fff", fontSize: 13, fontWeight: 700, padding: "5px 18px", borderRadius: 999 }}>
+          <span style={{ display: "inline-block", background: "#AE2448", color: "#fff", fontSize: 13, fontWeight: 700, padding: "5px 18px", borderRadius: 999 }}>
             50% OFF Today!
           </span>
         </div>
@@ -112,7 +112,7 @@ export default function PricingSection() {
                   padding: "8px 18px",
                   borderRadius: 999,
                   border: active ? "none" : "1px solid #333",
-                  background: active ? "#fd0322" : "transparent",
+                  background: active ? "#AE2448" : "transparent",
                   color: "#fff",
                   fontWeight: 600,
                   fontSize: 14,
@@ -140,7 +140,7 @@ export default function PricingSection() {
                 key={dur}
                 style={{
                   background: isPopular ? "rgba(253,3,34,0.08)" : "#181C2A",
-                  border: isPopular ? "2px solid #fd0322" : "1px solid #232840",
+                  border: isPopular ? "2px solid #AE2448" : "1px solid #232840",
                   borderRadius: 16,
                   padding: "28px 24px",
                   position: "relative",
@@ -155,7 +155,7 @@ export default function PricingSection() {
                       top: -13,
                       left: "50%",
                       transform: "translateX(-50%)",
-                      background: "#fd0322",
+                      background: "#AE2448",
                       color: "#fff",
                       fontSize: 11,
                       fontWeight: 700,
@@ -196,7 +196,7 @@ export default function PricingSection() {
                   )}
                   {features.map((f) => (
                     <li key={f} style={{ fontSize: 13, color: "#ccc", marginBottom: 6, display: "flex", alignItems: "center", gap: 8 }}>
-                      <span style={{ color: "#fd0322", fontWeight: 700 }}>✓</span> {f}
+                      <span style={{ color: "#AE2448", fontWeight: 700 }}>✓</span> {f}
                     </li>
                   ))}
                 </ul>
@@ -207,8 +207,8 @@ export default function PricingSection() {
                     textAlign: "center",
                     padding: "11px 0",
                     borderRadius: 8,
-                    border: isPopular ? "none" : "1px solid #fd0322",
-                    background: isPopular ? "#fd0322" : "transparent",
+                    border: isPopular ? "none" : "1px solid #AE2448",
+                    background: isPopular ? "#AE2448" : "transparent",
                     color: "#fff",
                     fontWeight: 700,
                     fontSize: 14,

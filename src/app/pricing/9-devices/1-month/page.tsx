@@ -88,7 +88,7 @@ export default function Page() {
                 style={{
                   background: "rgba(253,3,34,0.12)",
                   border: "1px solid rgba(253,3,34,0.28)",
-                  color: "#fd0322",
+                  color: "#AE2448",
                 }}
               >
                 MapleHD · 1 Month · 9 Devices
@@ -105,8 +105,8 @@ export default function Page() {
                 1 Month - 9 Devices
               </h1>
               <div style={{ display: "flex", alignItems: "center", gap: 16, marginTop: 10 }}>
-                <span style={{ color: "#fd0322", fontWeight: 800, fontSize: "2rem" }}>Price : $81</span>
-                <span style={{ background: "rgba(253,3,34,0.15)", color: "#fd0322", border: "1px solid rgba(253,3,34,0.4)", fontWeight: 700, fontSize: 12, padding: "4px 12px", borderRadius: 999, whiteSpace: "nowrap" }}>50% OFF</span>
+                <span style={{ color: "#AE2448", fontWeight: 800, fontSize: "2rem" }}>Price : $81</span>
+                <span style={{ background: "rgba(253,3,34,0.15)", color: "#AE2448", border: "1px solid rgba(253,3,34,0.4)", fontWeight: 700, fontSize: 12, padding: "4px 12px", borderRadius: 999, whiteSpace: "nowrap" }}>50% OFF</span>
               </div>
             </div>
 
@@ -133,7 +133,7 @@ export default function Page() {
             <div>
               <p
                 className="text-xs font-bold uppercase tracking-widest mb-2"
-                style={{ color: "#fd0322" }}
+                style={{ color: "#AE2448" }}
               >
                 FAQ
               </p>

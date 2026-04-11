@@ -52,7 +52,7 @@ export default function FaqAccordion() {
             <span
               className="shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-white text-lg font-bold transition-all duration-300"
               style={{
-                background: open === i ? "#fd0322" : "rgba(255,255,255,0.08)",
+                background: open === i ? "#AE2448" : "rgba(255,255,255,0.08)",
                 transform: open === i ? "rotate(45deg)" : "rotate(0deg)",
               }}
             >

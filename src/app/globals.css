@@ -4,7 +4,7 @@
 :root {
   --background: #10131E;
   --foreground: #ffffff;
-  --red: #fd0322;
+  --red: #AE2448;
 }
 
 body {
@@ -82,7 +82,7 @@ body {
   outline: none;
 }
 .phone-input-wrapper .PhoneInputInput:focus {
-  border-color: #fd0322;
+  border-color: #AE2448;
 }
 .phone-input-wrapper .PhoneInputCountrySelectArrow {
   color: #9ca3af;

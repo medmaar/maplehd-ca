@@ -11,11 +11,11 @@ export default function DisclaimerPage() {
   return (
     <main className="bg-gray-950 text-white min-h-screen py-20 px-4">
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-4xl font-extrabold mb-4 text-red-500">Disclaimer</h1>
+        <h1 className="text-4xl font-extrabold mb-4 text-[#AE2448]">Disclaimer</h1>
         <p className="text-gray-400 text-sm mb-10">Last updated: April 4, 2026</p>
 
         <section className="space-y-8 text-gray-300 leading-relaxed">
-          <div className="bg-gray-900 border border-red-700 rounded-2xl p-8">
+          <div className="bg-gray-900 border border-[#6E1A37] rounded-2xl p-8">
             <h2 className="text-2xl font-bold text-white mb-4">Content Disclaimer</h2>
             <p className="text-gray-300 leading-relaxed">
               MapleHD does not host or stream any copyrighted content. All content is
@@ -77,7 +77,7 @@ export default function DisclaimerPage() {
               third-party provider.
             </p>
             <div className="mt-4 bg-gray-900 rounded-xl p-6 border border-gray-800">
-              <p>Email: <a href="mailto:help@maplehd.ca" className="text-red-400 hover:underline">help@maplehd.ca</a></p>
+              <p>Email: <a href="mailto:help@maplehd.ca" className="text-[#72BAA9] hover:underline">help@maplehd.ca</a></p>
               <p className="text-gray-500 text-sm mt-2">Please include &quot;Copyright Concern&quot; in the subject line.</p>
             </div>
           </div>
