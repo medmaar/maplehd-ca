@@ -1,4 +1,5 @@
 "use client";
+import { FadeUp } from "../../components/Animate";
 import { useState } from "react";
 
 const items = [

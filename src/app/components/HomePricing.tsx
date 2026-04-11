@@ -1,4 +1,5 @@
 "use client";
+import { FadeUp, StaggerList, StaggerItem, HoverCard } from "../../components/Animate";
 import { useRef, useState } from "react";
 import Link from "next/link";
 
@@ -115,10 +116,9 @@ export default function HomePricing() {
         </div>
 
         {/* Plan cards */}
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 20 }}>
+        <StaggerList style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 20 }}>
           {planDefs.map((plan, i) => (
-            <div
-              key={plan.name}
+            <StaggerItem key={plan.name}><HoverCard
               style={{
                 background: plan.badge === "Best Value" ? "rgba(174,36,72,0.08)" : "rgba(255,255,255,0.03)",
                 border: plan.badge === "Best Value" ? "1.5px solid rgba(174,36,72,0.5)" : "1px solid rgba(255,255,255,0.08)",
@@ -127,6 +127,7 @@ export default function HomePricing() {
                 position: "relative",
                 display: "flex",
                 flexDirection: "column",
+                cursor: "default",
               }}
             >
               {plan.badge && (
@@ -198,9 +199,9 @@ export default function HomePricing() {
               >
                 Get Started →
               </Link>
-            </div>
+            </HoverCard></StaggerItem>
           ))}
-        </div>
+        </StaggerList>
 
         <div style={{ textAlign: "center", marginTop: 32 }}>
           <Link href="/pricing" style={{ color: "#72BAA9", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>

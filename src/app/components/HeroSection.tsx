@@ -103,10 +103,10 @@ export default function HeroSection() {
           { n: "99.9%", l: "Uptime" },
           { n: "24/7", l: "Support" },
         ].map((s) => (
-          <div key={s.l} className="flex items-center gap-2">
+          <ScaleIn key={s.l}><div className="flex items-center gap-2">
             <span className="font-extrabold" style={{ color: "#72BAA9" }}>{s.n}</span>
             <span className="text-gray-500">{s.l}</span>
-          </div>
+          </div></ScaleIn>
         ))}
       </div>
 

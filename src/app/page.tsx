@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import HomePricing from "./components/HomePricing";
+import { FadeUp, StaggerList, StaggerItem, HoverCard, CountUp, SlideIn, ScaleIn } from "../components/Animate";
 
 export const metadata: Metadata = {
   title: { absolute: "Best IPTV Canada 2026 — 4K Streaming from $9 | MapleHD" },
@@ -154,7 +155,7 @@ export default function HomePage() {
           />
           <div style={{ position: "absolute", inset: 0, zIndex: 1, background: "linear-gradient(to bottom, rgba(8,6,16,0.5) 0%, rgba(8,6,16,0.3) 50%, rgba(8,6,16,0.88) 100%)" }} />
           <div style={{ position: "absolute", inset: 0, zIndex: 2, background: "radial-gradient(ellipse 80% 40% at 50% 0%, rgba(174,36,72,0.2) 0%, transparent 65%)" }} />
-          <div style={{ maxWidth: 800, margin: "0 auto", position: "relative", zIndex: 3 }}>
+          <FadeUp><div style={{ maxWidth: 800, margin: "0 auto", position: "relative", zIndex: 3 }}>
             <span
               style={{
                 display: "inline-block",
@@ -231,7 +232,7 @@ export default function HomePage() {
             <p style={{ color: "#D5E7B5", fontSize: 13 }}>
               ✓ Free Trial &nbsp;&nbsp; ✓ No Contracts &nbsp;&nbsp; ✓ Interac e-Transfer Accepted
             </p>
-          </div>
+          </div></FadeUp>
         </section>
 
         {/* ── 2. STATS BAR ── */}
@@ -247,15 +248,15 @@ export default function HomePage() {
             }}
           >
             {[
-              { val: "25,000+", label: "Live Channels", color: "#72BAA9" },
-              { val: "120,000+", label: "Movies & Series", color: "#D5E7B5" },
-              { val: "4K Ultra HD", label: "Streaming Quality", color: "#AE2448" },
-              { val: "24/7", label: "Canadian Support", color: "#72BAA9" },
+              { val: "25,000", suffix: "+", label: "Live Channels", color: "#72BAA9", num: 25000 },
+              { val: "120,000", suffix: "+", label: "Movies & Series", color: "#D5E7B5", num: 120000 },
+              { val: "4K", suffix: " Ultra HD", label: "Streaming Quality", color: "#AE2448", num: null },
+              { val: "24", suffix: "/7", label: "Canadian Support", color: "#72BAA9", num: 24 },
             ].map((s) => (
-              <div key={s.val}>
-                <div style={{ fontSize: 28, fontWeight: 900, color: s.color || "#AE2448" }}>{s.val}</div>
+              <ScaleIn key={s.val}><div>
+                <div style={{ fontSize: 28, fontWeight: 900, color: s.color || "#AE2448" }}>{s.num ? <CountUp to={s.num} suffix={s.suffix} style={{ color: s.color }} /> : <>{s.val}{s.suffix}</>}</div>
                 <div style={{ fontSize: 13, color: "#6b7280", marginTop: 4 }}>{s.label}</div>
-              </div>
+              </div></ScaleIn>
             ))}
           </div>
         </section>
@@ -266,9 +267,9 @@ export default function HomePage() {
         {/* ── 4. DEVICES MARQUEE ── */}
         <section style={{ padding: "80px 16px", background: "#0d0d0d", overflow: "hidden" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
-            <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12 }}>
+            <FadeUp><h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12 }}>
               Works on All Your Devices
-            </h2>
+            </h2></FadeUp>
             <p style={{ textAlign: "center", color: "#6b7280", marginBottom: 48, fontSize: 15 }}>
               One subscription — every screen in your home.
             </p>
@@ -300,7 +301,7 @@ export default function HomePage() {
         {/* ── 5. CANADIAN CHANNELS ── */}
         <section style={{ padding: "80px 16px", background: "#0a0a0a" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
-            <p style={{ color: "#72BAA9", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12, textAlign: "center" }}>
+            <FadeUp><p style={{ color: "#72BAA9", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12, textAlign: "center" }}>
               Canadian Content
             </p>
             <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 16 }}>
@@ -308,11 +309,10 @@ export default function HomePage() {
             </h2>
             <p style={{ textAlign: "center", color: "#6b7280", marginBottom: 40, fontSize: 15, maxWidth: 620, margin: "0 auto 40px" }}>
               MapleHD includes every major Canadian network — no blackouts on NHL, CFL, or NBA games.
-            </p>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: 12, justifyContent: "center", marginBottom: 32 }}>
+            </p></FadeUp>
+            <StaggerList style={{ display: "flex", flexWrap: "wrap", gap: 12, justifyContent: "center", marginBottom: 32 }}>
               {["CBC", "CTV", "Global", "City TV", "CP24", "TSN 1", "TSN 2", "TSN 3", "TSN 4", "TSN 5", "Sportsnet", "Sportsnet ONE", "Sportsnet West", "Sportsnet Pacific", "RDS", "TVA Sports", "TVA", "Canal Vie"].map((ch) => (
-                <span
-                  key={ch}
+                <StaggerItem key={ch} style={{ display: "inline-block" }}><span
                   style={{
                     background: "rgba(114,186,169,0.07)",
                     border: "1px solid rgba(114,186,169,0.22)",
@@ -321,12 +321,13 @@ export default function HomePage() {
                     fontSize: 13,
                     fontWeight: 600,
                     color: "#72BAA9",
+                    display: "inline-block",
                   }}
                 >
                   {ch}
-                </span>
+                </span></StaggerItem>
               ))}
-            </div>
+            </StaggerList>
             <p style={{ textAlign: "center", color: "#6b7280", fontSize: 13 }}>
               + 25,000+ more channels from around the world
             </p>
@@ -336,9 +337,9 @@ export default function HomePage() {
         {/* ── 6. SPORTS ── */}
         <section style={{ padding: "80px 16px", background: "#0d0d0d", overflow: "hidden" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
-            <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12 }}>
+            <FadeUp><h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12 }}>
               Never Miss a Game
-            </h2>
+            </h2></FadeUp>
             <p style={{ textAlign: "center", color: "#6b7280", marginBottom: 16, fontSize: 15 }}>
               All PPV events included at no extra charge with your MapleHD subscription.
             </p>
