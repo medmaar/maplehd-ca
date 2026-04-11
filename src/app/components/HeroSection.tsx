@@ -18,11 +18,23 @@ export default function HeroSection() {
   return (
     <section
       className="relative overflow-hidden py-24 md:py-36 px-4 text-center"
-      style={{
-        background:
-          "radial-gradient(ellipse 90% 55% at 50% -5%, rgba(174,36,72,0.14) 0%, transparent 65%), #10131E",
-      }}
+      style={{ background: "#10131E" }}
     >
+      {/* Hero background image */}
+      <div className="absolute inset-0 w-full h-full">
+        <img
+          src="/iptv-subscription-canada-1.jpg"
+          alt="IPTV subscription Canada — watch NHL hockey and live Canadian TV channels in HD"
+          className="w-full h-full object-cover object-center"
+          style={{ opacity: 0.28 }}
+        />
+        <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, rgba(10,8,20,0.55) 0%, rgba(10,8,20,0.35) 50%, rgba(10,8,20,0.85) 100%)" }} />
+        <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 80% 40% at 50% 0%, rgba(174,36,72,0.18) 0%, transparent 65%)" }} />
+      </div>
+
+      {/* All content above the image */}
+      <div className="relative z-10">
+
       {/* Badge */}
       <div
         className="inline-flex items-center gap-2 mb-7 px-4 py-[7px] rounded-full text-xs font-bold uppercase tracking-widest"
@@ -97,6 +109,8 @@ export default function HeroSection() {
           </div>
         ))}
       </div>
+
+      </div>{/* end z-10 */}
     </section>
   );
 }
