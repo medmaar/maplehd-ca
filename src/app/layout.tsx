@@ -49,8 +49,8 @@ export default function RootLayout({
                 <head>
                   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
                   {/* GA4 */}
-                  <script async src="https://www.googletagmanager.com/gtag/js?id=G-978MK0JNMG" />
-                  <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-978MK0JNMG');` }} />
+                  <script async src="https://www.googletagmanager.com/gtag/js?id=G-978MK0JNMG"></script>
+                  <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-978MK0JNMG');` }}></script>
                   <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(aggregateRatingSchema) }} />
                 </head>
                 <body
