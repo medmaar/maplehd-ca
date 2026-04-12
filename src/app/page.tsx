@@ -139,8 +139,12 @@ export default function HomePage() {
             position: "relative",
             overflow: "hidden",
             background: "#0a0a0a",
-            padding: "90px 16px 80px",
+            minHeight: "100svh",
+            padding: "0 16px",
             textAlign: "center",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
           }}
         >
           <img
@@ -155,7 +159,7 @@ export default function HomePage() {
           />
           <div style={{ position: "absolute", inset: 0, zIndex: 1, background: "linear-gradient(to bottom, rgba(8,6,16,0.5) 0%, rgba(8,6,16,0.3) 50%, rgba(8,6,16,0.88) 100%)" }} />
           <div style={{ position: "absolute", inset: 0, zIndex: 2, background: "radial-gradient(ellipse 80% 40% at 50% 0%, rgba(174,36,72,0.2) 0%, transparent 65%)" }} />
-          <FadeUp><div style={{ maxWidth: 800, margin: "0 auto", position: "relative", zIndex: 3 }}>
+          <FadeUp><div style={{ maxWidth: 800, margin: "0 auto", position: "relative", zIndex: 3, width: "100%", paddingTop: "100px", paddingBottom: "80px" }}>
             <span
               style={{
                 display: "inline-block",
