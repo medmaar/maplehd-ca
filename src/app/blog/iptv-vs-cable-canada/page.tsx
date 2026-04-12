@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "IPTV vs Cable Canada 2026: Which Is Better? Full Comparison | MapleHD",
+  title: "IPTV vs Cable Canada 2026: Which Is Better? | MapleHD",
   description:
     "IPTV vs cable TV in Canada — we compare price, channels, picture quality, contracts, and flexibility to help you decide which is better in 2026.",
   keywords:
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://maplehd.ca/blog/iptv-vs-cable-canada" },
   openGraph: {
     images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "IPTV vs Cable Canada 2026" }],
-    title: "IPTV vs Cable Canada 2026: Which Is Better? Full Comparison | MapleHD",
+    title: "IPTV vs Cable Canada 2026: Which Is Better? | MapleHD",
     description:
       "IPTV vs cable TV in Canada — we compare price, channels, picture quality, contracts, and flexibility to help you decide which is better in 2026.",
     url: "https://maplehd.ca/blog/iptv-vs-cable-canada",

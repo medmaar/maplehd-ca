@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Best IPTV Player for Canada 2026 – TiviMate, IPTV Smarters & More | MapleHD",
+  title: "Best IPTV Player Canada 2026 — TiviMate & Smarters | MapleHD",
   description:
     "Find the best IPTV player app for Canada in 2026. Compare TiviMate, IPTV Smarters Pro, GSE Smart IPTV, and Perfect Player. Works with MapleHD on all devices.",
   keywords: "best IPTV player Canada, TiviMate Canada, IPTV Smarters Canada, IPTV app Canada 2026",
   alternates: { canonical: "https://maplehd.ca/blog/best-iptv-player-canada" },
   openGraph: {
-    title: "Best IPTV Player for Canada 2026 – TiviMate, IPTV Smarters & More",
+    title: "Best IPTV Player Canada 2026 — TiviMate & Smarters",
     description: "Find the best IPTV player app for Canada in 2026. Compare TiviMate, IPTV Smarters Pro, GSE Smart IPTV, and Perfect Player.",
     url: "https://maplehd.ca/blog/best-iptv-player-canada",
     type: "article",

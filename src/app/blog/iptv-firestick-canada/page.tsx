@@ -74,9 +74,22 @@ const steps = [
   },
 ];
 
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How to Install IPTV on Firestick Canada 2026",
+  "description": "Step-by-step guide to setting up IPTV on Amazon Firestick in Canada. Install IPTV Smarters Pro or TiviMate and stream 25,000+ Canadian channels.",
+  "url": "https://maplehd.ca/blog/iptv-firestick-canada",
+  "datePublished": "2026-01-01",
+  "dateModified": "2026-04-12",
+  "author": { "@type": "Organization", "name": "MapleHD" },
+  "publisher": { "@type": "Organization", "name": "MapleHD", "url": "https://maplehd.ca" }
+};
+
 export default function IPTVFirestickBlogPost() {
   return (
-    <main className="bg-gray-950 text-white min-h-screen">
+    <><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} /><main className="bg-gray-950 text-white min-h-screen">
       <article className="max-w-3xl mx-auto py-16 px-4">
         {/* Header */}
         <div className="mb-4 flex items-center gap-3">
@@ -197,6 +210,6 @@ export default function IPTVFirestickBlogPost() {
           </div>
         </div>
       </article>
-    </main>
+    </main></>
   );
 }

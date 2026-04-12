@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "IPTV Android Canada 2026 | Best IPTV App for Android Phone & Tablet",
+  title: "IPTV Android Canada 2026 | Best App for Android | MapleHD",
   description:
     "Stream IPTV on your Android phone or tablet in Canada. 25,000+ channels, HD & 4K quality, NHL, TSN, CTV and more. Easy APK install. Try free today.",
   keywords:
@@ -17,9 +17,24 @@ const steps = [
   { step: "5", title: "Watch Anywhere in Canada", desc: "Your full channel list and VOD library load instantly. Stream on the go over Wi-Fi or mobile data." },
 ];
 
+
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Set Up IPTV on Android in Canada",
+  "url": "https://maplehd.ca/iptv-android-canada",
+  "step": [
+      { "@type": "HowToStep", "name": "Subscribe & Get Credentials", "text": "Choose a MapleHD plan and contact us. Login credentials arrive within minutes." },
+      { "@type": "HowToStep", "name": "Allow Unknown Sources", "text": "Go to Settings > Security and enable Install Unknown Apps to sideload our IPTV app." },
+      { "@type": "HowToStep", "name": "Download the IPTV App", "text": "Download the APK we send you, or get our recommended app from the Google Play Store." },
+      { "@type": "HowToStep", "name": "Enter Your Credentials", "text": "Open the app, enter the server URL, username, and password, then tap Connect." },
+      { "@type": "HowToStep", "name": "Watch Anywhere in Canada", "text": "Your full channel list loads instantly. Stream live TV on Wi-Fi or mobile data." }
+  ]
+};
+
 export default function IPTVAndroidPage() {
   return (
-    <main className="bg-gray-950 text-white min-h-screen">
+    <><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} /><main className="bg-gray-950 text-white min-h-screen">
       {/* Hero */}
       <section className="bg-gradient-to-br from-gray-900 via-gray-950 to-black py-20 px-4 text-center">
         <div className="max-w-3xl mx-auto">
@@ -135,6 +150,6 @@ export default function IPTVAndroidPage() {
           </a>
         </div>
       </section>
-    </main>
+    </main></>
   );
 }

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: { absolute: "Best IPTV Service in Vancouver 2026 — 4K Streaming from $9 | MapleHD" },
+  title: { absolute: "Best IPTV Vancouver 2026 — 4K from $9 | MapleHD" },
   description:
     "MapleHD is Vancouver's best IPTV service. Stream Canucks, Whitecaps, TSN, Sportsnet, CBC and 25,000+ channels in 4K. Plans from $9. Free trial available.",
   keywords:
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://maplehd.ca/iptv-vancouver" },
   openGraph: {
     images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "Best IPTV Vancouver 2026 | MapleHD" }],
-    title: "Best IPTV Service in Vancouver 2026 — 4K Streaming from $9 | MapleHD",
+    title: "Best IPTV Vancouver 2026 — 4K from $9 | MapleHD",
     description:
       "MapleHD is Vancouver's best IPTV service. Stream Canucks, Whitecaps, TSN, Sportsnet and 25,000+ channels in 4K. Plans from $9.",
     url: "https://maplehd.ca/iptv-vancouver",

@@ -17,9 +17,24 @@ const steps = [
   { step: "5", title: "Start Watching", desc: "Your full channel list and EPG load automatically. Use your Roku remote to browse and enjoy." },
 ];
 
+
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Set Up IPTV on Roku in Canada",
+  "url": "https://maplehd.ca/iptv-roku-canada",
+  "step": [
+      { "@type": "HowToStep", "name": "Subscribe & Get Credentials", "text": "Choose a MapleHD plan. We send your login credentials within minutes." },
+      { "@type": "HowToStep", "name": "Add a Private Channel", "text": "Go to my.roku.com on a browser and add the private channel code we provide." },
+      { "@type": "HowToStep", "name": "Install on Your Roku", "text": "Open the Roku Channel Store on your device and install the newly added channel." },
+      { "@type": "HowToStep", "name": "Enter Your Credentials", "text": "Launch the channel and enter your MapleHD server URL, username, and password." },
+      { "@type": "HowToStep", "name": "Start Streaming", "text": "Browse 25,000+ Canadian and international channels on your Roku device." }
+  ]
+};
+
 export default function IPTVRokuPage() {
   return (
-    <main className="bg-gray-950 text-white min-h-screen">
+    <><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} /><main className="bg-gray-950 text-white min-h-screen">
       {/* Hero */}
       <section className="bg-gradient-to-br from-gray-900 via-gray-950 to-black py-20 px-4 text-center">
         <div className="max-w-3xl mx-auto">
@@ -135,6 +150,6 @@ export default function IPTVRokuPage() {
           </a>
         </div>
       </section>
-    </main>
+    </main></>
   );
 }

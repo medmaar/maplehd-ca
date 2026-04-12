@@ -17,9 +17,24 @@ const steps = [
   { step: "5", title: "Watch Anywhere", desc: "Your channels load instantly. Stream live TV and VOD on your iPhone or iPad anywhere in Canada." },
 ];
 
+
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Set Up IPTV on iPhone and iPad in Canada",
+  "url": "https://maplehd.ca/iptv-ios-canada",
+  "step": [
+      { "@type": "HowToStep", "name": "Subscribe & Get Credentials", "text": "Choose a MapleHD plan. We send your login credentials within minutes." },
+      { "@type": "HowToStep", "name": "Open the App Store", "text": "On your iPhone or iPad, search for the recommended IPTV player in the App Store." },
+      { "@type": "HowToStep", "name": "Install the App", "text": "Download and install the IPTV player app we recommend after you subscribe." },
+      { "@type": "HowToStep", "name": "Enter Your Credentials", "text": "Open the app and enter your MapleHD server URL, username, and password." },
+      { "@type": "HowToStep", "name": "Start Streaming", "text": "Your 25,000+ Canadian channels load instantly on your iOS device." }
+  ]
+};
+
 export default function IPTVIOSPage() {
   return (
-    <main className="bg-gray-950 text-white min-h-screen">
+    <><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} /><main className="bg-gray-950 text-white min-h-screen">
       {/* Hero */}
       <section className="bg-gradient-to-br from-gray-900 via-gray-950 to-black py-20 px-4 text-center">
         <div className="max-w-3xl mx-auto">
@@ -135,6 +150,6 @@ export default function IPTVIOSPage() {
           </a>
         </div>
       </section>
-    </main>
+    </main></>
   );
 }

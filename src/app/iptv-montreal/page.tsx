@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: { absolute: "Best IPTV Service in Montreal 2026 — 4K Streaming from $9 | MapleHD" },
+  title: { absolute: "Best IPTV Montreal 2026 — 4K from $9 | MapleHD" },
   description:
     "MapleHD is Montreal's best IPTV service. Stream Canadiens, RDS, TVA Sports, TSN, CBC, and 25,000+ channels in 4K. Plans from $9. Free trial available.",
   keywords:
     "IPTV Montreal, best IPTV Montreal, IPTV service Montreal, MapleHD Montreal, IPTV Canada Montreal, IPTV Quebec",
   alternates: { canonical: "https://maplehd.ca/iptv-montreal" },
   openGraph: {
-    title: "Best IPTV Service in Montreal 2026 — 4K Streaming from $9 | MapleHD",
+    title: "Best IPTV Montreal 2026 — 4K from $9 | MapleHD",
     description:
       "MapleHD is Montreal's best IPTV service. Stream Canadiens, RDS, TVA Sports and 25,000+ channels in 4K. Plans from $9.",
     url: "https://maplehd.ca/iptv-montreal",

@@ -17,9 +17,24 @@ const steps = [
   { step: "5", title: "Enjoy 4K IPTV", desc: "Your full channel list and VOD library loads automatically. Browse and enjoy in stunning 4K." },
 ];
 
+
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Set Up IPTV on Samsung Smart TV in Canada",
+  "url": "https://maplehd.ca/iptv-samsung-tv-canada",
+  "step": [
+      { "@type": "HowToStep", "name": "Subscribe & Get Credentials", "text": "Choose a MapleHD plan. We send your login credentials instantly." },
+      { "@type": "HowToStep", "name": "Open Samsung Smart Hub", "text": "Press the Home button on your Samsung remote and navigate to the Apps section." },
+      { "@type": "HowToStep", "name": "Install an IPTV App", "text": "Search for our recommended IPTV player in the Samsung App Store and install it." },
+      { "@type": "HowToStep", "name": "Enter Your Credentials", "text": "Open the app and enter your MapleHD server URL, username, and password." },
+      { "@type": "HowToStep", "name": "Start Streaming", "text": "Your Samsung TV is now loaded with 25,000+ Canadian channels in 4K." }
+  ]
+};
+
 export default function IPTVSamsungPage() {
   return (
-    <main className="bg-gray-950 text-white min-h-screen">
+    <><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} /><main className="bg-gray-950 text-white min-h-screen">
       {/* Hero */}
       <section className="bg-gradient-to-br from-gray-900 via-gray-950 to-black py-20 px-4 text-center">
         <div className="max-w-3xl mx-auto">
@@ -137,6 +152,6 @@ export default function IPTVSamsungPage() {
           </a>
         </div>
       </section>
-    </main>
+    </main></>
   );
 }
