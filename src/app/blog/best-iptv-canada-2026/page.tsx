@@ -2,14 +2,15 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Best MapleHD: Top Services Reviewed & Compared | MapleHD",
+  title: "Best IPTV Canada 2026 — Top Services Reviewed & Tested | MapleHD",
   description:
     "Looking for the best IPTV service in Canada for 2026? We reviewed and compared the top Canadian IPTV providers on channels, price, reliability and support.",
   keywords:
     "best MapleHD, top MapleHD, MapleHD review, best IPTV service Canada",
   alternates: { canonical: "https://maplehd.ca/blog/best-iptv-canada-2026" },
   openGraph: {
-    title: "Best MapleHD: Top Services Reviewed & Compared | MapleHD",
+    images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "Best IPTV Canada 2026" }],
+    title: "Best IPTV Canada 2026 — Top Services Reviewed & Tested | MapleHD",
     description:
       "We reviewed and compared the top Canadian IPTV providers on channels, price, reliability and support.",
     url: "https://maplehd.ca/blog/best-iptv-canada-2026",

@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     "IPTV Toronto, best IPTV Toronto, IPTV service Toronto, MapleHD Toronto, IPTV Canada Toronto",
   alternates: { canonical: "https://maplehd.ca/iptv-toronto" },
   openGraph: {
+    images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "Best IPTV Toronto 2026 | MapleHD" }],
     title: "Best IPTV Service in Toronto 2026 — 4K Streaming from $9 | MapleHD",
     description:
       "MapleHD is Toronto's best IPTV service. Stream NHL Maple Leafs, Raptors, TSN, Sportsnet and 25,000+ channels in 4K. Plans from $9.",

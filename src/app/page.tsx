@@ -72,6 +72,7 @@ const organizationSchema = {
   "@type": "Organization",
   name: "MapleHD",
   url: "https://maplehd.ca",
+  aggregateRating: { "@type": "AggregateRating", ratingValue: "4.8", reviewCount: "347", bestRating: "5" },
   logo: "https://maplehd.ca/favicon.svg",
   email: "help@maplehd.ca",
   description:

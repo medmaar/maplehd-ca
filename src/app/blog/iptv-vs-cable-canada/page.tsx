@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "IPTV vs cable Canada, IPTV vs cable TV Canada, is IPTV better than cable Canada, IPTV or cable Canada 2026",
   alternates: { canonical: "https://maplehd.ca/blog/iptv-vs-cable-canada" },
   openGraph: {
+    images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "IPTV vs Cable Canada 2026" }],
     title: "IPTV vs Cable Canada 2026: Which Is Better? Full Comparison | MapleHD",
     description:
       "IPTV vs cable TV in Canada — we compare price, channels, picture quality, contracts, and flexibility to help you decide which is better in 2026.",

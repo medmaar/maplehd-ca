@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     "IPTV Vancouver, best IPTV Vancouver, IPTV service Vancouver, MapleHD Vancouver, IPTV Canada Vancouver",
   alternates: { canonical: "https://maplehd.ca/iptv-vancouver" },
   openGraph: {
+    images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "Best IPTV Vancouver 2026 | MapleHD" }],
     title: "Best IPTV Service in Vancouver 2026 — 4K Streaming from $9 | MapleHD",
     description:
       "MapleHD is Vancouver's best IPTV service. Stream Canucks, Whitecaps, TSN, Sportsnet and 25,000+ channels in 4K. Plans from $9.",

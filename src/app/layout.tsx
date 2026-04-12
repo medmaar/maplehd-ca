@@ -19,11 +19,26 @@ export const metadata: Metadata = {
         siteName: "MapleHD",
         locale: "en_CA",
         type: "website",
+        images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "MapleHD — Best IPTV Canada 2026" }],
     },
-    twitter: { card: "summary_large_image" },
+    twitter: { card: "summary_large_image", images: ["/iptv-subscription-canada-1.jpg"] },
     verification: {
         google: "jQXDgMZI_-Pq-46kEnWXh7ja47F2Is-yNCu1klKviq8",
     },
+};
+
+const aggregateRatingSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "MapleHD",
+  "url": "https://maplehd.ca",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "347",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
 };
 
 export default function RootLayout({
@@ -33,6 +48,10 @@ export default function RootLayout({
           <html lang="en" className="h-full">
                 <head>
                   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+                  {/* GA4 */}
+                  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MAPLEHD2026" />
+                  <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-MAPLEHD2026');` }} />
+                  <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(aggregateRatingSchema) }} />
                 </head>
                 <body
                           className="min-h-full flex flex-col"

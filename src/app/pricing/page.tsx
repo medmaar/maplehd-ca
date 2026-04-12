@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     "MapleHD pricing, MapleHD plans, IPTV subscription price Canada, cheap IPTV Canada 2026",
   alternates: { canonical: "https://maplehd.ca/pricing" },
   openGraph: {
+    images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "IPTV Canada Pricing — Plans from $9/month | MapleHD" }],
     title: "IPTV Subscription Canada — Plans from $9 | MapleHD",
     description:
       "Compare MapleHD IPTV plans for Canada. 1, 3, 6 & 12-month options starting at $9. 25,000+ live channels, 4K streaming, NHL, TSN, CTV included.",
