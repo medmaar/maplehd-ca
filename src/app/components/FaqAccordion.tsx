@@ -4,28 +4,28 @@ import { useState } from "react";
 
 const items = [
   {
-    q: "What is the best IPTV service in Canada for 2026?",
-    a: "IPTV Subscription Canada is the #1 rated IPTV service in Canada for 2026, offering 25,000+ live channels including all Canadian networks, NHL, TSN, Sportsnet, CTV, CBC and 120,000+ movies and series in 4K quality with 99.9% uptime.",
+    q: "Are there NHL blackouts with MapleHD?",
+    a: "Zero blackouts — guaranteed. Every NHL game for all 32 teams streams without regional restrictions. Your team plays, you watch. Regular season, playoffs, and Stanley Cup Finals, all included.",
   },
   {
-    q: "Is IPTV legal in Canada?",
-    a: "IPTV technology is completely legal in Canada and is used by major telecoms. Our service provides access to publicly available streams and operates within Canadian broadcasting standards.",
+    q: "Is UFC PPV included or do I pay extra?",
+    a: "Every UFC PPV and Fight Night is included at no extra cost. No $79.99 fees per event. Every numbered card, every prelim — all part of your MapleHD subscription.",
   },
   {
-    q: "Can I watch NHL and Canadian sports?",
-    a: "Yes! We include TSN, Sportsnet, CBC Sports, CTV, and all NHL games. Every Leafs, Habs, Canucks, Oilers, Flames and Senators game is covered in HD and 4K.",
+    q: "Do I get all CFL games including the Grey Cup?",
+    a: "Yes — all CFL regular season games, playoffs, and the Grey Cup are included via TSN coverage. All 9 teams from Hamilton Tiger-Cats to BC Lions, every game.",
   },
   {
-    q: "How much does IPTV cost compared to cable in Canada?",
-    a: "Our IPTV plans start at just $9/month compared to $80–150/month for cable. You save up to 80% while getting more channels and better quality.",
+    q: "Which international sports are covered?",
+    a: "Premier League, Champions League, La Liga, and Serie A via Sky Sports and beIN Sports. NBA, NFL, MLB, and international rugby and cricket are also fully covered — no extra subscriptions needed.",
   },
   {
-    q: "What devices are supported?",
-    a: "Our IPTV works on Amazon Fire Stick, all Smart TVs (Samsung, LG), Android boxes, iPhone, iPad, Android phones, MAG boxes, Windows and Mac computers.",
+    q: "Can I watch two games on different screens at once?",
+    a: "Yes — multi-connection plans (2–10 streams) let you watch multiple live games simultaneously. Oilers on the big screen and UFC main card on a laptop — completely independent streams, no buffering.",
   },
   {
-    q: "Do you offer a free trial?",
-    a: "Yes! We offer a 5-minute free trial so you can test all 25,000+ channels and 120,000+ VOD titles completely risk-free before subscribing. No credit card required.",
+    q: "Is there a free trial to test the sports streams?",
+    a: "Yes — 2-hour free trial, no credit card required. Includes full live sports access so you can check NHL or UFC stream quality on your own device. Contact us via WhatsApp or email to activate.",
   },
 ];
 

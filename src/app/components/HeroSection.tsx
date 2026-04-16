@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { ScaleIn } from "../../components/Animate";
 
-const words = ["LIVE TV", "SPORTS", "MOVIES", "SERIES"];
+const words = ["NHL PLAYOFFS", "UFC PPV FREE", "CFL GAMES", "NBA LIVE"];
 
 export default function HeroSection() {
   const [index, setIndex] = useState(0);
@@ -46,14 +46,14 @@ export default function HeroSection() {
         }}
       >
         <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#AE2448] animate-pulse" />
-        #1 IPTV Service in Canada 2026
+        Canada's #1 Live Sports IPTV — 2026
       </div>
 
       {/* Main headline */}
       <h1 className="text-5xl md:text-[72px] font-extrabold leading-[1.04] tracking-tight text-white mb-4">
-        Canada&apos;s Best
+        Canada&apos;s #1
         <br />
-        IPTV Service
+        Sports IPTV
       </h1>
 
       {/* Animated rotating word */}
@@ -69,9 +69,9 @@ export default function HeroSection() {
 
       {/* Subtitle */}
       <p className="text-lg md:text-xl text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
-        Stream 25,000+ live TV channels and 120,000+ movies &amp; series in 4K.
+        NHL, UFC, CFL, NBA, NFL — all in one subscription.
         <br className="hidden sm:block" />
-        NHL, TSN, CTV, Sportsnet &amp; more — all in one Canadian subscription.
+        Every PPV included. Zero blackouts on any Canadian team.
       </p>
 
       {/* CTA buttons */}
@@ -98,9 +98,9 @@ export default function HeroSection() {
       {/* Stats row */}
       <div className="mt-14 flex flex-wrap justify-center gap-x-10 gap-y-3 text-sm">
         {[
-          { n: "25,000+", l: "Live Channels" },
-          { n: "120,000+", l: "Movies & Series" },
-          { n: "4K", l: "Ultra HD" },
+          { n: "0", l: "Blackouts" },
+          { n: "All PPV", l: "Included Free" },
+          { n: "TSN+SN", l: "All Feeds" },
           { n: "99.9%", l: "Uptime" },
           { n: "24/7", l: "Support" },
         ].map((s) => (

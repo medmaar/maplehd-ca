@@ -3,17 +3,17 @@ import PricingSection from "../PricingSection";
 import FaqAccordion from "../components/FaqAccordion";
 
 export const metadata: Metadata = {
-  title: { absolute: "IPTV Subscription Canada — Plans from $9 | MapleHD" },
+  title: { absolute: "Sports IPTV Plans Canada — NHL, UFC, CFL from $9 | MapleHD" },
   description:
-    "Compare MapleHD IPTV plans for Canada. 1, 3, 6 & 12-month options starting at $9. 25,000+ live channels, 4K streaming, NHL, TSN, CTV included. No contracts.",
+    "MapleHD sports IPTV plans for Canada. Every NHL game, UFC PPV, CFL game included. TSN, Sportsnet all feeds. Zero blackouts. No contracts, from $9/month.",
   keywords:
-    "MapleHD pricing, MapleHD plans, IPTV subscription price Canada, cheap IPTV Canada 2026",
+    "MapleHD pricing, NHL IPTV plan Canada, sports IPTV Canada price, UFC IPTV subscription Canada 2026",
   alternates: { canonical: "https://maplehd.ca/pricing" },
   openGraph: {
-    images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "IPTV Canada Pricing — Plans from $9/month | MapleHD" }],
-    title: "IPTV Subscription Canada — Plans from $9 | MapleHD",
+    images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "MapleHD Sports IPTV Plans Canada — NHL, UFC, CFL" }],
+    title: "Sports IPTV Plans Canada — NHL, UFC, CFL from $9 | MapleHD",
     description:
-      "Compare MapleHD IPTV plans for Canada. 1, 3, 6 & 12-month options starting at $9. 25,000+ live channels, 4K streaming, NHL, TSN, CTV included.",
+      "MapleHD sports IPTV plans for Canada. Every NHL game, UFC PPV, CFL game. TSN, Sportsnet all feeds. Zero blackouts from $9/month.",
     url: "https://maplehd.ca/pricing",
     siteName: "MapleHD",
     locale: "en_CA",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "IPTV Subscription Canada — Plans from $9 | MapleHD",
+    title: "Sports IPTV Plans Canada — NHL, UFC, CFL from $9 | MapleHD",
     description:
-      "Compare MapleHD IPTV plans for Canada. 1, 3, 6 & 12-month options starting at $9. 25,000+ live channels, 4K streaming included.",
+      "MapleHD sports IPTV plans. NHL, UFC PPV, CFL included. Zero blackouts from $9/month.",
   },
 };
 
@@ -47,14 +47,14 @@ export default function PricingPage() {
           </p>
           <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-white">
             MapleHD{" "}
-            <span style={{ color: "#AE2448" }}>Subscription Plans 2026</span>
+            <span style={{ color: "#AE2448" }}>Sports Plans 2026</span>
           </h1>
           <p className="text-gray-400 mb-8 max-w-xl mx-auto leading-relaxed">
-            Transparent pricing with no hidden fees. All plans include 25,000+ channels,
-            120,000+ movies &amp; series, and 24/7 Canadian support.
+            No hidden fees. Every plan includes all NHL games, UFC PPV, CFL, NBA, NFL —
+            zero blackouts, zero extra PPV charges, and 24/7 Canadian support.
           </p>
           <div className="flex flex-wrap justify-center gap-5 text-sm text-gray-400">
-            {["No contracts", "Instant activation", "Cancel anytime", "24h free trial available"].map(
+            {["No blackouts ever", "UFC PPV included", "All TSN & Sportsnet feeds", "Free 2h trial"].map(
               (item) => (
                 <span key={item} className="flex items-center gap-2">
                   <span style={{ color: "#D5E7B5" }}>✓</span> {item}
@@ -76,20 +76,20 @@ export default function PricingPage() {
           </p>
           <h2 className="text-3xl font-extrabold text-center text-white mb-12">
             Every Plan Includes{" "}
-            <span style={{ color: "#AE2448" }}>Everything</span>
+            <span style={{ color: "#AE2448" }}>Every Sport</span>
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {[
               "25,000+ Live TV Channels",
-              "120,000+ Movies & Series (VOD)",
-              "4K Ultra HD & HD Quality",
-              "NHL, NFL, NBA, MLB, UFC",
-              "TSN, Sportsnet, CBC, CTV, Global",
-              "PPV Events Included",
-              "Electronic Program Guide (EPG)",
-              "Catch-Up TV (7 days)",
-              "All Devices: Fire Stick, Smart TV, iOS, Android",
-              "Anti-Freeze Technology",
+              "All NHL Games — Zero Blackouts (All 32 Teams)",
+              "UFC PPV & Fight Night — No Extra Charge",
+              "CFL (All Games + Grey Cup)",
+              "NBA, NFL, MLB — Full Coverage",
+              "TSN (All 5 Feeds) + Sportsnet (All Feeds)",
+              "beIN Sports, Sky Sports, ESPN, ESPN 2",
+              "EPG + Catch-Up TV (7 days)",
+              "All Devices: Fire TV, Smart TV, iOS, Android",
+              "Simultaneous Streams — Up to 10 Screens",
               "99.9% Uptime Guarantee",
               "24/7 Canadian Support",
             ].map((feature) => (
@@ -121,10 +121,10 @@ export default function PricingPage() {
       >
         <div className="max-w-2xl mx-auto">
           <h2 className="text-3xl font-extrabold text-white mb-4">
-            Not Sure Yet? Try Free for 5 Minutes
+            Try It Free — Test Any Live Game
           </h2>
           <p className="text-gray-400 mb-8 text-sm">
-            No credit card required. Test every channel, every feature, on any device.
+            No credit card. Stream a live NHL game, UFC card, or any sports channel on your own device before you commit.
           </p>
           <a
             href="/free-trial"

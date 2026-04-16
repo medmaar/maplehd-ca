@@ -25,12 +25,12 @@ const planDefs = [
 
 const planFeatures = [
   "25,000+ Live Channels",
-  "120,000+ Movies & Series",
-  "4K Ultra HD Quality",
-  "NHL · TSN · Sportsnet · CTV",
+  "All NHL Games — Zero Blackouts",
+  "UFC PPV Included Free",
+  "CFL, NBA, NFL, MLB, Premier League",
+  "TSN (All 5 Feeds) + Sportsnet",
   "PPV Events Included",
   "EPG & Catch-Up TV",
-  "All Devices Supported",
   "24/7 Canadian Support",
 ];
 
@@ -71,7 +71,7 @@ export default function HomePricing() {
           </span>
         </div>
         <p style={{ textAlign: "center", color: "#6b7280", marginBottom: 36, fontSize: 15 }}>
-          All plans include 25,000+ channels, 4K streaming, and 24/7 Canadian support. Pay via Interac e-Transfer.
+          All plans include every NHL game, UFC PPV, CFL, NBA, and NFL — zero blackouts, zero extra charges. Pay via Interac e-Transfer.
         </p>
 
         {/* Connection selector — horizontally scrollable, starts from left */}

@@ -8,13 +8,13 @@ export const metadata: Metadata = {
     metadataBase: new URL("https://maplehd.ca"),
     icons: { icon: "/favicon.svg" },
     title: {
-        default: "Best IPTV Canada 2026 | MapleHD",
-        template: "%s | MapleHD IPTV Canada",
+        default: "NHL, UFC & CFL IPTV Canada — No Blackouts | MapleHD",
+        template: "%s | MapleHD Sports IPTV Canada",
     },
     description:
-        "Best IPTV service in Canada 2026. 25,000+ live channels, 120,000+ movies & series in 4K. NHL, TSN, CTV, Sportsnet included. Plans from $9. Try free — no credit card.",
+        "Canada's #1 live sports IPTV. Every NHL game, UFC PPV, CFL game included. TSN all feeds, Sportsnet all feeds. Zero blackouts from $9/month.",
     keywords:
-        "MapleHD, best IPTV Canada, IPTV subscription Canada, IPTV service Canada, Canadian IPTV 2026",
+        "MapleHD, NHL IPTV Canada, UFC IPTV Canada, CFL IPTV, live sports IPTV Canada, no blackout IPTV 2026",
     openGraph: {
         siteName: "MapleHD",
         locale: "en_CA",

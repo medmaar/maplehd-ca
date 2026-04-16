@@ -4,16 +4,16 @@ import HomePricing from "./components/HomePricing";
 import { FadeUp, StaggerList, StaggerItem, HoverCard, CountUp, SlideIn, ScaleIn } from "../components/Animate";
 
 export const metadata: Metadata = {
-  title: { absolute: "Best IPTV Canada 2026 — 4K Streaming from $9 | MapleHD" },
+  title: { absolute: "NHL, UFC & CFL IPTV Canada 2026 — Every Game, No Blackouts | MapleHD" },
   description:
-    "Canada's #1 IPTV service in 2026. Stream 25,000+ live channels and 120,000+ movies & series in 4K. NHL, TSN, CTV, Sportsnet included. Plans from $9/month. Free trial — no credit card.",
+    "Canada's #1 IPTV for live sports. Every NHL game, UFC PPV, CFL matchup and NBA game — zero blackouts, no extra charges. TSN, Sportsnet, beIN Sports from $9/month.",
   keywords:
-    "best IPTV Canada 2026, MapleHD, IPTV subscription Canada, Canadian IPTV, IPTV free trial Canada, cheap IPTV Canada, best IPTV service Canada",
+    "NHL IPTV Canada, live sports IPTV Canada, UFC PPV Canada IPTV, CFL IPTV, MapleHD, no blackout IPTV Canada, sports streaming Canada 2026",
   alternates: { canonical: "https://maplehd.ca" },
   openGraph: {
-    title: "Best IPTV Canada 2026 — 4K Streaming from $9 | MapleHD",
+    title: "NHL, UFC & CFL IPTV Canada 2026 — Every Game, No Blackouts | MapleHD",
     description:
-      "Canada's #1 IPTV service in 2026. Stream 25,000+ live channels and 120,000+ movies & series in 4K. NHL, TSN, CTV, Sportsnet included. Plans from $9/month.",
+      "Canada's #1 IPTV for live sports. Every NHL game, UFC PPV, CFL, NBA — zero blackouts, no extra PPV charges. TSN, Sportsnet, beIN Sports from $9/month.",
     url: "https://maplehd.ca",
     type: "website",
     siteName: "MapleHD",
@@ -24,36 +24,36 @@ export const metadata: Metadata = {
 
 const faqs = [
   {
-    q: "What is IPTV and how does it work in Canada?",
-    a: "IPTV (Internet Protocol Television) delivers live TV channels and on-demand content over your internet connection instead of cable or satellite. In Canada, MapleHD provides 25,000+ live channels and 120,000+ movies and series streamed directly to your device in 4K quality.",
+    q: "Are there blackouts on NHL games with MapleHD?",
+    a: "Zero blackouts — guaranteed. Every NHL game for all 32 teams streams without regional restrictions. Your team plays, you watch. Regular season, playoffs, and Stanley Cup Finals — all included.",
   },
   {
-    q: "Is IPTV legal in Canada in 2026?",
-    a: "IPTV technology is legal in Canada. MapleHD complies with Canadian broadcasting regulations and provides access to publicly available streams. Users are responsible for ensuring they have the right to view content in their jurisdiction.",
+    q: "Is UFC PPV included or do I pay extra per event?",
+    a: "Every UFC Pay-Per-View event and UFC Fight Night is included at no extra charge. No $79.99 fees per event. Every numbered card, every main card, every preliminary fight — all part of your MapleHD subscription.",
   },
   {
-    q: "How much does IPTV cost compared to cable in Canada?",
-    a: "MapleHD plans start at $9/month — compared to $80–$150/month for cable. A 12-month plan costs just $49 total, saving you over $900/year versus Bell or Rogers.",
+    q: "Which NHL teams and games are covered?",
+    a: "All 32 NHL teams, every game. Maple Leafs, Canadiens, Canucks, Oilers, Flames, Senators, Jets, and Kraken — every city, every game. TSN (all 5 feeds) and Sportsnet (all regional feeds) are fully included.",
   },
   {
-    q: "Can I get a free IPTV trial in Canada?",
-    a: "Yes! MapleHD offers a free 2-hour trial with no credit card required. Contact us via WhatsApp or email to activate your trial instantly.",
+    q: "Do I get CFL games including the Grey Cup?",
+    a: "Yes — all CFL regular season games, playoffs, and the Grey Cup are included via full TSN coverage. All 9 CFL teams covered from the Hamilton Tiger-Cats to the BC Lions.",
   },
   {
-    q: "What devices work with MapleHD?",
-    a: "MapleHD works on Amazon Firestick, Samsung & LG Smart TVs, Android TV boxes, Android phones, iPhones, iPads, Apple TV, MAG boxes, Windows PCs, and Macs. Any device with an IPTV player app is compatible.",
+    q: "Can I watch international soccer — Premier League, Champions League?",
+    a: "Yes. MapleHD includes Sky Sports (all feeds), beIN Sports, ESPN, ESPN 2, and coverage of Premier League, Champions League, La Liga, Serie A, and more — all without extra subscriptions.",
   },
   {
-    q: "Do I need a VPN for IPTV in Canada?",
-    a: "No VPN is required to use MapleHD in Canada. Our servers are optimized for Canadian connections and deliver fast, stable streams without any additional software.",
+    q: "What if two big games are on at the same time?",
+    a: "Get a multi-connection plan (2–10 streams) and watch both simultaneously on different screens. Oilers game on the living room TV and the UFC main card on your phone — completely independent streams, no conflict.",
   },
   {
-    q: "What Canadian sports channels are included?",
-    a: "Every plan includes TSN (all feeds), Sportsnet (all regional feeds), CBC Sports, RDS, TVA Sports, and more. Full NHL, NFL, NBA, MLB, UFC, CFL, and Premier League coverage is included with no blackouts.",
+    q: "Is IPTV legal in Canada?",
+    a: "IPTV technology is completely legal in Canada — it's the same delivery method used by Bell Fibe and Rogers Ignite. MapleHD provides access to publicly available streams and operates within Canadian broadcasting standards.",
   },
   {
-    q: "How do I set up IPTV on my Firestick?",
-    a: "Download IPTV Smarters Pro or TiviMate from the Amazon App Store, enter the server URL, username, and password we send you, and start streaming. Full setup takes under 5 minutes. See our Firestick setup guide for step-by-step instructions.",
+    q: "Is there a free trial to test the live sports streams?",
+    a: "Yes — free 2-hour trial with no credit card required. Full live sports access so you can test an NHL game or UFC card on your own device before subscribing. Contact us via WhatsApp or email to activate instantly.",
   },
 ];
 
@@ -76,7 +76,7 @@ const organizationSchema = {
   logo: "https://maplehd.ca/favicon.svg",
   email: "help@maplehd.ca",
   description:
-    "Canada's #1 IPTV subscription service. 25,000+ live channels, 120,000+ movies & series in 4K.",
+    "Canada's #1 live sports IPTV service. Every NHL game, UFC PPV, CFL game — zero blackouts. TSN, Sportsnet all feeds from $9/month.",
   areaServed: "CA",
 };
 
@@ -94,9 +94,11 @@ const deviceNames = [
 ];
 
 const sportsChannels = [
-  "TSN", "Sportsnet", "CBC Sports", "TVA Sports", "RDS", "NHL Network",
-  "NFL Network", "NBA TV", "ESPN", "ESPN 2", "beIN Sports", "Sky Sports",
-  "DAZN", "UFC Fight Pass", "Golf Channel", "Olympic Channel",
+  "TSN 1", "TSN 2", "TSN 3", "TSN 4", "TSN 5",
+  "Sportsnet", "Sportsnet ONE", "Sportsnet West", "Sportsnet Pacific",
+  "NHL Network", "NFL Network", "NBA TV", "beIN Sports",
+  "Sky Sports", "ESPN", "ESPN 2", "DAZN", "TVA Sports", "RDS",
+  "UFC Fight Pass", "Golf Channel", "Olympic Channel",
 ];
 
 const cities = [
@@ -109,13 +111,14 @@ const cities = [
 ];
 
 const comparison = [
-  { feature: "Price/month", us: "$9", cable: "$80–$150", other: "$15–$25" },
-  { feature: "Live Channels", us: "25,000+", cable: "150–500", other: "5,000–15,000" },
-  { feature: "4K Streaming", us: "✓", cable: "Limited", other: "Varies" },
+  { feature: "Monthly Cost", us: "$9", cable: "$80–$150", other: "$15–$25" },
+  { feature: "NHL Blackouts", us: "Zero blackouts", cable: "Regional blackouts", other: "Varies" },
+  { feature: "UFC PPV Cost", us: "$0 extra", cable: "$59.99/event", other: "Varies" },
+  { feature: "CFL / Grey Cup", us: "All games included", cable: "TSN add-on", other: "Rarely" },
+  { feature: "Sports Channels", us: "TSN all + SN all + ESPN", cable: "Selected feeds", other: "Limited" },
   { feature: "Contracts", us: "None", cable: "1–2 years", other: "Varies" },
-  { feature: "Free Trial", us: "Free 24-hour trial", cable: "×", other: "Rarely" },
-  { feature: "Canadian Support", us: "24/7", cable: "Business hours", other: "×" },
-  { feature: "Devices", us: "All devices", cable: "1–2 boxes", other: "Limited" },
+  { feature: "Free Trial", us: "Free 2-hour trial", cable: "×", other: "Rarely" },
+  { feature: "Simultaneous Games", us: "Up to 10 screens", cable: "1–2 TVs", other: "Limited" },
 ];
 
 export default function HomePage() {
@@ -176,7 +179,7 @@ export default function HomePage() {
                 marginBottom: 28,
               }}
             >
-              🍁 #1 IPTV Service in Canada 2026
+              🏒 Canada's #1 Live Sports IPTV — 2026
             </span>
             <h1
               style={{
@@ -186,8 +189,8 @@ export default function HomePage() {
                 marginBottom: 24,
               }}
             >
-              Best IPTV Service<br />
-              <span style={{ color: "#AE2448" }}>in Canada 2026</span>
+              Every Game.<br />
+              <span style={{ color: "#AE2448" }}>Every Goal. Every Fight.</span>
             </h1>
             <p
               style={{
@@ -198,8 +201,8 @@ export default function HomePage() {
                 lineHeight: 1.7,
               }}
             >
-              Stream 25,000+ live TV channels and 120,000+ movies &amp; series in 4K. NHL, TSN,
-              CTV, Sportsnet &amp; more — all in one Canadian IPTV subscription.
+              NHL, UFC, CFL, NBA, NFL — all in one subscription. Every PPV event free.
+              Zero blackouts on any Canadian team.
             </p>
             <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap", marginBottom: 28 }}>
               <Link
@@ -253,9 +256,9 @@ export default function HomePage() {
             }}
           >
             {[
-              { val: "25,000", suffix: "+", label: "Live Channels", color: "#72BAA9", num: 25000 },
-              { val: "120,000", suffix: "+", label: "Movies & Series", color: "#D5E7B5", num: 120000 },
-              { val: "4K", suffix: " Ultra HD", label: "Streaming Quality", color: "#AE2448", num: null },
+              { val: "0", suffix: "", label: "Blackouts — Ever", color: "#72BAA9", num: null },
+              { val: "All PPV", suffix: "", label: "Events Free", color: "#D5E7B5", num: null },
+              { val: "TSN+SN", suffix: "", label: "All Feeds", color: "#AE2448", num: null },
               { val: "24", suffix: "/7", label: "Canadian Support", color: "#72BAA9", num: 24 },
             ].map((s) => (
               <ScaleIn key={s.val}><div>
@@ -310,13 +313,13 @@ export default function HomePage() {
               Canadian Content
             </p>
             <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 16 }}>
-              All Your Favourite Canadian Channels
+              Every Canadian Sports Network Included
             </h2>
             <p style={{ textAlign: "center", color: "#6b7280", marginBottom: 40, fontSize: 15, maxWidth: 620, margin: "0 auto 40px" }}>
-              MapleHD includes every major Canadian network — no blackouts on NHL, CFL, or NBA games.
+              TSN (all 5 feeds), Sportsnet (all regional feeds), CBC Sports, RDS, and TVA Sports — every game on every network, zero blackouts.
             </p></FadeUp>
             <StaggerList style={{ display: "flex", flexWrap: "wrap", gap: 12, justifyContent: "center", marginBottom: 32 }}>
-              {["CBC", "CTV", "Global", "City TV", "CP24", "TSN 1", "TSN 2", "TSN 3", "TSN 4", "TSN 5", "Sportsnet", "Sportsnet ONE", "Sportsnet West", "Sportsnet Pacific", "RDS", "TVA Sports", "TVA", "Canal Vie"].map((ch) => (
+              {["TSN 1", "TSN 2", "TSN 3", "TSN 4", "TSN 5", "Sportsnet", "Sportsnet ONE", "Sportsnet West", "Sportsnet Pacific", "NHL Network", "CBC Sports", "TVA Sports", "RDS", "NFL Network", "NBA TV", "ESPN", "CBC", "CTV"].map((ch) => (
                 <StaggerItem key={ch} style={{ display: "inline-block" }}><span
                   style={{
                     background: "rgba(114,186,169,0.07)",
@@ -343,13 +346,13 @@ export default function HomePage() {
         <section style={{ padding: "80px 16px", background: "#0d0d0d", overflow: "hidden" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <FadeUp><h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12 }}>
-              Never Miss a Game
+              Every PPV. Every Playoffs. Every Final.
             </h2></FadeUp>
             <p style={{ textAlign: "center", color: "#6b7280", marginBottom: 16, fontSize: 15 }}>
-              All PPV events included at no extra charge with your MapleHD subscription.
+              UFC, NHL, NBA, CFL, NFL, Premier League — zero blackouts, zero extra PPV charges. Every event included.
             </p>
             <p style={{ textAlign: "center", color: "#D5E7B5", fontSize: 13, marginBottom: 44 }}>
-              ✓ No blackouts &nbsp;&nbsp; ✓ All PPV events free &nbsp;&nbsp; ✓ 4K live sports
+              ✓ Zero blackouts &nbsp;&nbsp; ✓ All UFC PPV free &nbsp;&nbsp; ✓ All 32 NHL teams
             </p>
           </div>
           <div style={{ overflow: "hidden" }}>
@@ -383,7 +386,7 @@ export default function HomePage() {
               MapleHD vs Cable vs Other IPTV
             </h2>
             <p style={{ textAlign: "center", color: "#6b7280", marginBottom: 48, fontSize: 15 }}>
-              See why Canadian IPTV subscribers are switching to MapleHD.
+              No blackouts. No PPV fees. Every Canadian sports network included. Here's the full picture.
             </p>
             <div style={{ overflowX: "auto" }}>
               <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 14 }}>
@@ -486,10 +489,10 @@ export default function HomePage() {
         >
           <div style={{ maxWidth: 620, margin: "0 auto" }}>
             <h2 style={{ fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 900, marginBottom: 16 }}>
-              Start Streaming Today
+              Never Miss Another Game
             </h2>
             <p style={{ color: "#9ca3af", marginBottom: 36, fontSize: 16, lineHeight: 1.7 }}>
-              Join thousands of Canadians who switched from cable to MapleHD. Try free for 5 minutes — no credit card required.
+              Every NHL playoff game, every UFC PPV, every CFL Grey Cup — all in one subscription, no blackouts, no extra charges. Try free, no credit card required.
             </p>
             <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
               <Link
