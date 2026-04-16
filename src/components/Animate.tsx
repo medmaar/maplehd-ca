@@ -117,16 +117,17 @@ export function CountUp({
   const ref = useRef<HTMLSpanElement>(null);
   const inView = useInView(ref, { once: true, margin: "-40px" });
   const [displayed, setDisplayed] = useState(0);
+  const motionVal = useMotionValue(0);
+
+  useEffect(() => {
+    return motionVal.on("change", (v) => setDisplayed(Math.round(v)));
+  }, [motionVal]);
 
   useEffect(() => {
     if (!inView) return;
-    const controls = animate(0, to, {
-      duration,
-      ease: "easeOut",
-      onUpdate: (v) => setDisplayed(Math.round(v)),
-    });
+    const controls = animate(motionVal, to, { duration, ease: "easeOut" });
     return controls.stop;
-  }, [inView, to, duration]);
+  }, [inView, to, duration, motionVal]);
 
   return (
     <span ref={ref} style={style}>
