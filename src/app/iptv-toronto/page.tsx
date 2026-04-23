@@ -1,293 +1,62 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: { absolute: "Best IPTV Toronto 2026 — 4K from $9 | MapleHD" },
-  description:
-    "MapleHD is Toronto's best IPTV service. Stream NHL Maple Leafs, Raptors, TSN, Sportsnet, CBC and 25,000+ channels in 4K. Plans from $9. Free trial available.",
-  keywords:
-    "IPTV Toronto, best IPTV Toronto, IPTV service Toronto, MapleHD Toronto, IPTV Canada Toronto",
+  title: "Sports IPTV Toronto | Watch Leafs Without Blackouts | MapleHD",
+  description: "Watch Toronto sports without blackouts. Maple Leafs, Raptors, Blue Jays, all TSN & Sportsnet channels live. No regional blocking, all games streamed.",
   alternates: { canonical: "https://maplehd.ca/iptv-toronto" },
-  openGraph: {
-    images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "Best IPTV Toronto 2026 | MapleHD" }],
-    title: "Best IPTV Toronto 2026 — 4K from $9 | MapleHD",
-    description:
-      "MapleHD is Toronto's best IPTV service. Stream NHL Maple Leafs, Raptors, TSN, Sportsnet and 25,000+ channels in 4K. Plans from $9.",
-    url: "https://maplehd.ca/iptv-toronto",
-    type: "website",
-    siteName: "MapleHD",
-    locale: "en_CA",
-  },
-  twitter: { card: "summary_large_image" },
 };
 
-const faqItems = [
-  {
-    q: "Is IPTV legal in Toronto?",
-    a: "IPTV technology is legal in Toronto and across Canada. MapleHD delivers streams over the internet to your device. Users in Toronto are responsible for ensuring the content they access complies with Canadian copyright law.",
-  },
-  {
-    q: "What is the best IPTV service in Toronto?",
-    a: "MapleHD is widely considered the best IPTV service in Toronto. It offers 25,000+ live channels including all local Toronto channels (CBC Toronto, CTV Toronto, CP24, City TV), complete NHL Maple Leafs coverage on TSN and Sportsnet, and 120,000+ on-demand titles — all starting at $9/month.",
-  },
-  {
-    q: "Does MapleHD work in Toronto?",
-    a: "Yes. MapleHD works perfectly in Toronto with any major internet provider including Rogers, Bell, and Fido. Our servers are optimized for Ontario connections, delivering stable 4K streams with minimal buffering even during peak hours like Leafs game nights.",
-  },
-];
-
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: faqItems.map((item) => ({
-    "@type": "Question",
-    name: item.q,
-    acceptedAnswer: { "@type": "Answer", text: item.a },
-  })),
-};
-
-export default function IPTVTorontoPage() {
+export default function TorontoPage() {
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <main style={{ background: "#0a0a0a", color: "#fff", minHeight: "100vh" }}>
-        {/* Hero */}
-        <section
-          style={{
-            background:
-              "radial-gradient(ellipse 80% 55% at 50% 0%, rgba(174,36,72,0.15) 0%, transparent 65%), #0a0a0a",
-            padding: "80px 16px 60px",
-          }}
-        >
-          <div style={{ maxWidth: 900, margin: "0 auto" }}>
-            <span
-              style={{
-                background: "rgba(174,36,72,0.12)",
-                border: "1px solid rgba(174,36,72,0.3)",
-                color: "#AE2448",
-                fontSize: 12,
-                fontWeight: 700,
-                padding: "4px 14px",
-                borderRadius: 999,
-                letterSpacing: "0.08em",
-                textTransform: "uppercase",
-              }}
-            >
-              IPTV Toronto · MapleHD
-            </span>
-            <h1
-              style={{
-                fontSize: "clamp(2rem, 5vw, 3rem)",
-                fontWeight: 900,
-                marginTop: 20,
-                marginBottom: 16,
-              }}
-            >
-              Best IPTV Service in Toronto — 4K Streaming from $9
-            </h1>
-            <p
-              style={{
-                color: "#d1d5db",
-                fontSize: "1.1rem",
-                maxWidth: 640,
-                lineHeight: 1.7,
-              }}
-            >
-              Toronto has some of the fastest internet in Canada — the perfect foundation
-              for 4K IPTV streaming. MapleHD serves thousands of Toronto subscribers with
-              25,000+ live channels, NHL Maple Leafs, Raptors, and 120,000+ on-demand
-              titles. IPTV Toronto has never been this affordable or reliable.
-            </p>
-            <div style={{ marginTop: 32, display: "flex", gap: 16, flexWrap: "wrap" }}>
-              <a
-                href="/pricing"
-                style={{
-                  background: "#AE2448",
-                  color: "#fff",
-                  padding: "14px 36px",
-                  borderRadius: 10,
-                  fontWeight: 700,
-                  textDecoration: "none",
-                }}
-              >
-                View Plans →
-              </a>
-              <a
-                href="/free-trial"
-                style={{
-                  border: "2px solid rgba(174,36,72,0.5)",
-                  color: "#AE2448",
-                  padding: "14px 36px",
-                  borderRadius: 10,
-                  fontWeight: 700,
-                  textDecoration: "none",
-                }}
-              >
-                Free Trial
-              </a>
-            </div>
-          </div>
-        </section>
+    <main className="min-h-screen bg-gray-950 text-white px-4 py-12">
+      <div className="max-w-3xl mx-auto">
+        <h1 className="text-4xl md:text-5xl font-extrabold mb-6">
+          Watch Maple Leafs Without Blackouts — Sports IPTV in Toronto
+        </h1>
+        <p className="text-xl text-gray-300 mb-8">
+          Bell and Rogers block local sports. Not on MapleHD. Watch every Maple Leafs game, Raptors matchup, Blue Jays game, and every other Toronto team — no blackout restrictions, all season long.
+        </p>
 
-        {/* Content */}
-        <section style={{ maxWidth: 900, margin: "0 auto", padding: "60px 16px" }}>
-          {/* Intro */}
-          <div style={{ marginBottom: 48 }}>
-            <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16, color: "#fff" }}>
-              IPTV Toronto — Everything You Need in One Subscription
-            </h2>
-            <p style={{ color: "#d1d5db", lineHeight: 1.8, marginBottom: 16 }}>
-              MapleHD delivers the best IPTV experience in Toronto with a channel lineup that
-              covers everything locals love. You get CBC Toronto, CTV Toronto, Sportsnet Ontario,
-              TSN, Global Toronto, CP24, and City TV — all in crisp HD and 4K quality.
-              Toronto Maple Leafs fans get every game on Sportsnet and TSN with no blackouts.
-            </p>
-            <p style={{ color: "#d1d5db", lineHeight: 1.8 }}>
-              Beyond local Toronto channels, MapleHD gives you access to 25,000+ live channels
-              from across Canada and around the world — including international sports, news,
-              entertainment, kids&apos; content, and on-demand libraries with 120,000+ movies &amp; series.
-              IPTV Toronto subscribers also get 7-day catch-up TV and a full electronic program guide (EPG).
-            </p>
-          </div>
+        <div className="bg-gray-900 rounded-xl p-8 mb-8">
+          <h2 className="text-2xl font-bold mb-4">Toronto Sports Without Blackouts</h2>
+          <ul className="space-y-3 text-gray-300">
+            <li>✓ <strong>Maple Leafs:</strong> Every NHL game, no blackouts — TSN & Sportsnet live</li>
+            <li>✓ <strong>Raptors:</strong> All NBA games, full season + playoffs</li>
+            <li>✓ <strong>Blue Jays:</strong> Complete MLB season, every game available</li>
+            <li>✓ <strong>Toronto FC:</strong> MLS games, Canadian playoff matches</li>
+            <li>✓ <strong>No Regional Blocking:</strong> Cable can't restrict what you watch</li>
+            <li>✓ <strong>All TSN & Sportsnet:</strong> TSN1-4, Sportsnet East, Sportsnet Ontario</li>
+            <li>✓ <strong>99.9% Uptime:</strong> Guaranteed reliability for playoff games</li>
+          </ul>
+        </div>
 
-          {/* Features */}
-          <div style={{ marginBottom: 48 }}>
-            <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16, color: "#fff" }}>
-              Why Toronto Subscribers Choose MapleHD
-            </h2>
-            <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
-              {[
-                {
-                  icon: "⚡",
-                  title: "Ontario-Optimized Servers",
-                  desc: "Our infrastructure is tuned for Ontario internet providers — Rogers, Bell, Fido — delivering low latency and smooth 4K playback for every Toronto subscriber.",
-                },
-                {
-                  icon: "📺",
-                  title: "25,000+ Live Channels",
-                  desc: "One MapleHD subscription unlocks the biggest IPTV channel library in Canada — sports, news, entertainment, lifestyle, and international content in one place.",
-                },
-                {
-                  icon: "🏒",
-                  title: "Full NHL Coverage — No Blackouts",
-                  desc: "Watch every Toronto Maple Leafs game live on TSN and Sportsnet in 4K. No blackouts, no extra fees. All NHL, NBA, NFL, MLB, UFC, and CFL games included.",
-                },
-                {
-                  icon: "🇨🇦",
-                  title: "Canadian Support 24/7",
-                  desc: "Our bilingual support team is available around the clock to help Toronto subscribers with setup, troubleshooting, and billing via WhatsApp or email.",
-                },
-              ].map((item) => (
-                <li
-                  key={item.title}
-                  style={{
-                    display: "flex",
-                    gap: 16,
-                    alignItems: "flex-start",
-                    marginBottom: 16,
-                    background: "rgba(255,255,255,0.03)",
-                    borderRadius: 12,
-                    padding: 20,
-                    border: "1px solid rgba(255,255,255,0.07)",
-                  }}
-                >
-                  <span style={{ fontSize: 24, flexShrink: 0 }}>{item.icon}</span>
-                  <div>
-                    <p style={{ fontWeight: 700, marginBottom: 4, color: "#fff" }}>{item.title}</p>
-                    <p style={{ color: "#9ca3af", lineHeight: 1.7, margin: 0 }}>{item.desc}</p>
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </div>
+        <h2 className="text-2xl font-bold mb-4 mt-8">Why Toronto Fans Switch from Cable</h2>
+        <p className="text-gray-300 mb-4">
+          <strong>Bell Fibe TV in Toronto:</strong> $50-70/month base + $30-40 sports package + $15 equipment = $95-125/month. Regional blackouts still apply.
+        </p>
+        <p className="text-gray-300 mb-8">
+          <strong>MapleHD:</strong> $36/month (3 devices) or $9/month (1 device). All sports included. Zero blackouts.
+        </p>
 
-          {/* Pricing */}
-          <div style={{ marginBottom: 48 }}>
-            <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16, color: "#fff" }}>
-              MapleHD Pricing for Toronto — From $9/Month
-            </h2>
-            <p style={{ color: "#d1d5db", lineHeight: 1.8, marginBottom: 16 }}>
-              Bell and Rogers cable packages in Toronto run $90–$150/month before taxes and fees.
-              MapleHD starts at just $9/month, with longer plans offering even better value.
-              Toronto subscribers save an average of $900/year by switching to IPTV.
-            </p>
-            <div
-              style={{
-                background: "rgba(174,36,72,0.08)",
-                border: "1px solid rgba(174,36,72,0.3)",
-                borderRadius: 12,
-                padding: 20,
-              }}
-            >
-              <p style={{ color: "#AE2448", fontWeight: 700, marginBottom: 12 }}>
-                MapleHD Plans — Available in Toronto
-              </p>
-              <ul style={{ color: "#d1d5db", margin: 0, paddingLeft: 20, lineHeight: 2 }}>
-                <li>1 Month — $9</li>
-                <li>3 Months — $29</li>
-                <li>6 Months — $39</li>
-                <li>12 Months — $49 (Best Value)</li>
-              </ul>
-            </div>
-          </div>
+        <h2 className="text-2xl font-bold mb-4">Set Up Sports Streaming in Toronto</h2>
+        <ol className="space-y-2 text-gray-300 mb-8">
+          <li>1. Download MapleHD on Fire Stick, Android TV, or Smart TV</li>
+          <li>2. Log in (free 24-hour trial, no credit card)</li>
+          <li>3. Go to Sports section → find your game</li>
+          <li>4. Stream live to any device</li>
+          <li>5. Enjoy sports without blackouts</li>
+        </ol>
 
-          {/* FAQ */}
-          <div>
-            <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 20, color: "#fff" }}>
-              IPTV Toronto — Frequently Asked Questions
-            </h2>
-            <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-              {faqItems.map((item) => (
-                <div
-                  key={item.q}
-                  style={{
-                    background: "rgba(255,255,255,0.03)",
-                    border: "1px solid rgba(255,255,255,0.08)",
-                    borderRadius: 12,
-                    padding: "20px 24px",
-                  }}
-                >
-                  <p style={{ fontWeight: 700, color: "#fff", marginBottom: 8 }}>{item.q}</p>
-                  <p style={{ color: "#9ca3af", lineHeight: 1.7, margin: 0 }}>{item.a}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        <h2 className="text-2xl font-bold mb-4">Toronto Internet Speeds</h2>
+        <p className="text-gray-300 mb-4">
+          Rogers Ignite (Toronto standard): 50-150 Mbps. Perfect for sports streaming. Even 15 Mbps works smoothly.
+        </p>
 
-        {/* CTA */}
-        <section
-          style={{
-            background: "radial-gradient(ellipse 80% 60% at 50% 50%, rgba(174,36,72,0.12) 0%, transparent 70%), #111",
-            padding: "60px 16px",
-            textAlign: "center",
-            borderTop: "1px solid rgba(255,255,255,0.06)",
-          }}
-        >
-          <h2 style={{ fontSize: "1.8rem", fontWeight: 800, marginBottom: 16 }}>
-            Start Streaming IPTV in Toronto Today
-          </h2>
-          <p style={{ color: "#9ca3af", marginBottom: 32, maxWidth: 500, margin: "0 auto 32px" }}>
-            Plans from $9/month. Free trial available. No contracts, no hidden fees.
-          </p>
-          <a
-            href="/pricing"
-            style={{
-              background: "#AE2448",
-              color: "#fff",
-              padding: "16px 48px",
-              borderRadius: 12,
-              fontWeight: 700,
-              textDecoration: "none",
-              display: "inline-block",
-            }}
-          >
-            View MapleHD Plans →
-          </a>
-        </section>
-      </main>
-    </>
+        <Link href="/free-trial" className="inline-block bg-green-600 text-white font-bold px-8 py-3 rounded-lg hover:bg-green-700">
+          Stream Leafs Free for 24 Hours
+        </Link>
+      </div>
+    </main>
   );
 }
