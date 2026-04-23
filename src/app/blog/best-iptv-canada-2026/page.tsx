@@ -2,31 +2,31 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Best IPTV Canada 2026 — Top Services Reviewed & Tested | MapleHD",
+  title: "Best IPTV for Sports in Canada 2026: No Blackouts, All Games, HD Streaming | MapleHD",
   description:
-    "Looking for the best IPTV service in Canada for 2026? We reviewed and compared the top Canadian IPTV providers on channels, price, reliability and support.",
+    "Stream every hockey, football, and UFC game in Canada without blackouts. NHL, TSN, Sportsnet, CFL, NBA on reliable 1080p HD IPTV. No sports packages, all included.",
   keywords:
-    "best MapleHD, top MapleHD, MapleHD review, best IPTV service Canada",
+    "sports IPTV Canada, NHL streaming no blackouts, sports IPTV Canada 2026, Hockey streaming Canada, TSN Sportsnet streaming",
   alternates: { canonical: "https://maplehd.ca/blog/best-iptv-canada-2026" },
   openGraph: {
-    images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "Best IPTV Canada 2026" }],
-    title: "Best IPTV Canada 2026 — Top Services Reviewed & Tested | MapleHD",
+      images: [{ url: "/og-image.webp", width: 1403, height: 761, alt: "MapleHD — Best Sports IPTV Canada 2026" }],
+    title: "Watch Every Game Without Blackouts — Sports IPTV Canada 2026",
     description:
-      "We reviewed and compared the top Canadian IPTV providers on channels, price, reliability and support.",
+      "Stream NHL, CFL, NBA, UFC without blackout restrictions. All TSN & Sportsnet channels. Reliable 1080p HD on every device. Canadian support included.",
     url: "https://maplehd.ca/blog/best-iptv-canada-2026",
     type: "article",
     siteName: "MapleHD",
   },
-  twitter: { card: "summary_large_image" },
+  twitter: { card: "summary_large_image", images: ["/og-image.webp"] },
 };
 
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Best MapleHD: Top Services Reviewed & Compared",
+  headline: "Best IPTV for Sports in Canada 2026 — NHL, CFL, NBA Without Blackouts",
   description:
-    "We reviewed and compared the top Canadian IPTV providers on channels, price, reliability and support.",
-  datePublished: "2026-01-10",
+    "Complete guide to streaming sports in Canada without blackout restrictions. NHL, TSN, Sportsnet, CFL, NBA, UFC on reliable HD IPTV with Canadian support.",
+  datePublished: "2026-01-20",
   dateModified: "2026-04-01",
   author: { "@type": "Organization", name: "MapleHD" },
   publisher: {
@@ -43,86 +43,50 @@ const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "What is the best IPTV service in Canada for 2026?",
+      name: "Can I watch all NHL games without blackouts on IPTV?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "MapleHD is rated the best IPTV service in Canada for 2026 based on channel count (25,000+), Canadian content coverage, 4K quality, uptime (99.9%), and 24/7 Canadian support. Plans start at $9/month.",
+        text: "Yes. MapleHD streams all TSN and Sportsnet channels without regional blackout restrictions. Watch every NHL game — Maple Leafs, Canadiens, Canucks, Oilers, Flames, and all 32 teams. Games start at 7 PM EST.",
       },
     },
     {
       "@type": "Question",
-      name: "How much does the best IPTV in Canada cost?",
+      name: "Do I need to pay extra for sports channels on IPTV?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The best IPTV services in Canada start at $9–$15 per month for a single device. Annual plans reduce the cost significantly — MapleHD offers 12 months for $49 for one device.",
+        text: "No. With MapleHD, TSN1, TSN2, TSN3, TSN4, Sportsnet, and all sports channels are included on every plan from $9/month. No sports packages, no extra fees.",
       },
     },
     {
       "@type": "Question",
-      name: "Is IPTV legal in Canada?",
+      name: "What sports does MapleHD include?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "IPTV technology is completely legal in Canada. The legality depends on the specific service and content. Services that stream publicly available broadcasts operate within Canadian broadcasting standards.",
+        text: "MapleHD includes NHL, NBA, NFL, MLB, CFL, UFC, MMA, Premier League soccer, La Liga, Serie A, Canadian college sports, and major PPV events. All streamed live.",
       },
     },
     {
       "@type": "Question",
-      name: "Do Canadian IPTV services include NHL?",
+      name: "Are live sports streams reliable without buffering?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. The top Canadian IPTV services include all NHL games through TSN, Sportsnet, and CBC Sports. This covers all 32 teams including the Maple Leafs, Canadiens, Canucks, Oilers, Flames, and Senators.",
+        text: "MapleHD guarantees 99.9% uptime on all sports streams. Adaptive bitrate technology adjusts quality based on your connection to prevent buffering. For best results, use 15+ Mbps internet and wired connection when possible.",
       },
     },
     {
       "@type": "Question",
-      name: "What devices work with Canadian IPTV services?",
+      name: "Can I watch PPV fights on IPTV?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Most Canadian IPTV services work on Amazon Fire Stick, Samsung and LG Smart TVs, Android boxes, iPhones, iPads, Android phones, MAG boxes, Windows, and Mac computers.",
+        text: "Yes. MapleHD includes major PPV events like UFC fights, boxing matches, and wrestling shows at no extra cost. Traditional cable charges $60-100 per PPV; it's all included with MapleHD.",
       },
     },
   ],
 };
 
-const services = [
-  {
-    rank: 1,
-    name: "MapleHD",
-    channels: "25,000+",
-    price: "$9/mo",
-    uptime: "99.9%",
-    support: "24/7 Canadian",
-    trial: "Yes — 24h free",
-    verdict: "Best Overall",
-    verdictColor: "#16a34a",
-  },
-  {
-    rank: 2,
-    name: "Generic IPTV Provider B",
-    channels: "18,000+",
-    price: "$12/mo",
-    uptime: "98.5%",
-    support: "Email only",
-    trial: "No",
-    verdict: "Good",
-    verdictColor: "#2563eb",
-  },
-  {
-    rank: 3,
-    name: "Generic IPTV Provider C",
-    channels: "15,000+",
-    price: "$15/mo",
-    uptime: "97.0%",
-    support: "Ticket system",
-    trial: "48h — credit card",
-    verdict: "Average",
-    verdictColor: "#ca8a04",
-  },
-];
-
-export default function BestIPTVCanada2026() {
+export default function MapleHDBlogPost() {
   return (
-    <>
+    <main className="min-h-screen bg-gray-950 text-white px-4 py-12">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
@@ -131,224 +95,202 @@ export default function BestIPTVCanada2026() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      <main style={{ background: "#030712", color: "#fff", minHeight: "100vh" }}>
-        <article style={{ maxWidth: 768, margin: "0 auto", padding: "64px 16px" }}>
-          {/* Header */}
-          <div style={{ marginBottom: 16, display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap" }}>
-            <span style={{ background: "#AE2448", color: "#fff", fontSize: 12, padding: "4px 12px", borderRadius: 9999, fontWeight: 700 }}>Reviews</span>
-            <time dateTime="2026-01-10" style={{ color: "#6b7280", fontSize: 14 }}>January 10, 2026</time>
-            <span style={{ color: "#6b7280", fontSize: 14 }}>8 min read</span>
-          </div>
-          <h1 style={{ fontSize: "clamp(28px, 5vw, 48px)", fontWeight: 900, marginBottom: 24, lineHeight: 1.2 }}>
-            Best MapleHD: <span style={{ color: "#AE2448" }}>Top Services</span> Reviewed &amp; Compared
-          </h1>
-          <p style={{ fontSize: 18, color: "#d1d5db", marginBottom: 40, lineHeight: 1.75 }}>
-            If you&apos;re looking for the best IPTV service in Canada for 2026, you&apos;ve come to the right place.
-            We&apos;ve tested and compared the leading Canadian IPTV providers on the metrics that matter most:
-            channel count, Canadian content, reliability, picture quality, and support.
+
+      <article className="max-w-3xl mx-auto">
+        <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
+          Watch Every Game Without Blackouts — Sports IPTV Canada 2026
+        </h1>
+        <p className="text-gray-400 text-lg mb-8">
+          Tired of missing games due to regional blackouts? We tested every sports IPTV service in Canada for NHL, CFL, UFC coverage, reliability, and streaming quality. Here's what actually works.
+        </p>
+
+        <div className="prose prose-invert max-w-none mb-12">
+          <h2 className="text-2xl font-bold mt-8 mb-4">The Problem With Cable Sports in Canada</h2>
+          <p>
+            Bell and Rogers impose regional blackout restrictions. Want to watch the Maple Leafs game? Blacked out locally. Want to watch the Canucks? Blocked unless you pay for a premium package. Want UFC? That's $70 extra per PPV.
+          </p>
+          <p>
+            Sports IPTV fixes this. MapleHD gives you all TSN, Sportsnet, and sports channels — every game, no blackouts, no extra fees.
           </p>
 
-          {/* Intro */}
-          <section style={{ marginBottom: 48 }}>
-            <h2 style={{ fontSize: "clamp(22px, 3vw, 30px)", fontWeight: 700, marginBottom: 16 }}>What to Look for in a Canadian IPTV Service</h2>
-            <p style={{ color: "#d1d5db", lineHeight: 1.75, marginBottom: 16 }}>
-              Not all IPTV services are created equal — and in Canada, the stakes are higher. Canadian
-              viewers need reliable access to local networks like CBC, CTV, Global, and Citytv, as well
-              as sports-focused channels like TSN and Sportsnet. A generic international IPTV service
-              will often miss these entirely or carry them in low quality.
-            </p>
-            <p style={{ color: "#d1d5db", lineHeight: 1.75, marginBottom: 16 }}>
-              Before choosing an IPTV service in Canada, evaluate it on these six criteria:
-            </p>
-            <ul style={{ paddingLeft: 24, color: "#d1d5db", lineHeight: 2 }}>
-              <li><strong>Canadian channel coverage</strong> — Does it include TSN, Sportsnet, CBC, CTV, Global, and regional channels?</li>
-              <li><strong>Channel count</strong> — More isn&apos;t always better, but a count above 20,000 usually indicates comprehensive coverage.</li>
-              <li><strong>Uptime and reliability</strong> — Look for services with a proven 99%+ uptime, especially for live sports.</li>
-              <li><strong>4K and HD quality</strong> — The best services offer 4K on key channels and HD on everything else.</li>
-              <li><strong>Canadian support</strong> — A support team available in your time zone, in English and French, is invaluable.</li>
-              <li><strong>Honest pricing</strong> — Transparent pricing with no hidden fees or forced annual commitments.</li>
-            </ul>
-          </section>
+          <h2 className="text-2xl font-bold mt-8 mb-4">NHL on MapleHD — Watch Every Game</h2>
+          <p>
+            <strong>No blackouts. No regional restrictions.</strong> Watch all 32 NHL teams, every game of the season:
+          </p>
+          <ul>
+            <li>Toronto Maple Leafs</li>
+            <li>Montreal Canadiens</li>
+            <li>Vancouver Canucks</li>
+            <li>Edmonton Oilers</li>
+            <li>Calgary Flames</li>
+            <li>Winnipeg Jets</li>
+            <li>Ottawa Senators</li>
+            <li>All 25 US teams</li>
+          </ul>
+          <p>
+            Channels: TSN1, TSN2, TSN3, TSN4, Sportsnet, Sportsnet 360, Sportsnet One, Sportsnet West, Sportsnet East, Sportsnet Ontario, Sportsnet Pacific, CBC Sports.
+          </p>
+          <p>
+            <strong>Cost on cable:</strong> $40-60/month base + $20-40 premium channels + $30-60 extra for full sports packages = $90-160/month.
+          </p>
+          <p>
+            <strong>Cost on MapleHD:</strong> $9-45/month (depending on devices). Everything included.
+          </p>
 
-          {/* Comparison table */}
-          <section style={{ marginBottom: 48 }}>
-            <h2 style={{ fontSize: "clamp(22px, 3vw, 30px)", fontWeight: 700, marginBottom: 24 }}>Top IPTV Services in Canada — 2026 Comparison</h2>
-            <div style={{ overflowX: "auto", borderRadius: 16, border: "1px solid #1f2937" }}>
-              <table style={{ width: "100%", fontSize: 14, borderCollapse: "collapse" }}>
-                <thead style={{ background: "#111827" }}>
-                  <tr>
-                    {["Rank", "Service", "Channels", "Price", "Uptime", "Support", "Free Trial", "Verdict"].map((h) => (
-                      <th key={h} style={{ textAlign: "left", padding: "12px 16px", color: "#9ca3af", fontWeight: 600 }}>{h}</th>
-                    ))}
-                  </tr>
-                </thead>
-                <tbody>
-                  {services.map((s) => (
-                    <tr key={s.rank} style={{ background: "#030712", borderTop: "1px solid #1f2937" }}>
-                      <td style={{ padding: "16px", fontWeight: 700, color: "#AE2448" }}>#{s.rank}</td>
-                      <td style={{ padding: "16px", fontWeight: 600, color: "#fff" }}>{s.name}</td>
-                      <td style={{ padding: "16px", color: "#d1d5db" }}>{s.channels}</td>
-                      <td style={{ padding: "16px", color: "#d1d5db" }}>{s.price}</td>
-                      <td style={{ padding: "16px", color: "#d1d5db" }}>{s.uptime}</td>
-                      <td style={{ padding: "16px", color: "#d1d5db" }}>{s.support}</td>
-                      <td style={{ padding: "16px", color: "#d1d5db" }}>{s.trial}</td>
-                      <td style={{ padding: "16px" }}>
-                        <span style={{ background: s.verdictColor, color: "#fff", fontSize: 12, padding: "4px 8px", borderRadius: 9999, fontWeight: 700 }}>
-                          {s.verdict}
-                        </span>
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </section>
+          <h2 className="text-2xl font-bold mt-8 mb-4">CFL Football — Complete Coverage</h2>
+          <p>
+            Watch the entire Canadian Football League season:
+          </p>
+          <ul>
+            <li>All 9 CFL teams (BC Lions, Calgary Stampeders, Edmonton Elks, Saskatchewan Roughriders, Winnipeg Blue Bombers, Hamilton Tiger-Cats, Toronto Argonauts, Montreal Alouettes, Ottawa Redblacks)</li>
+            <li>Regular season, playoffs, and Grey Cup championship</li>
+            <li>Live on TSN and CBC Sports</li>
+            <li>No regional blocking — watch every game regardless of your location</li>
+          </ul>
 
-          {/* #1 Review */}
-          <section style={{ marginBottom: 48 }}>
-            <h2 style={{ fontSize: "clamp(22px, 3vw, 30px)", fontWeight: 700, marginBottom: 16 }}>
-              #1 MapleHD — <span style={{ color: "#AE2448" }}>Best Overall</span>
-            </h2>
-            <p style={{ color: "#d1d5db", lineHeight: 1.75, marginBottom: 16 }}>
-              After testing every major IPTV provider available to Canadian subscribers in 2026,
-              <strong> MapleHD</strong> stands out as the clear leader. Here&apos;s why:
-            </p>
+          <h2 className="text-2xl font-bold mt-8 mb-4">UFC & Combat Sports — All Events Included</h2>
+          <p>
+            One of the biggest advantages of MapleHD is PPV events. Cable charges $70-100 per UFC event. MapleHD includes them all:
+          </p>
+          <ul>
+            <li>UFC Fight Nights (weekly)</li>
+            <li>UFC PPV events (4 per month average)</li>
+            <li>Boxing matches (Canelo, Wilder, etc.)</li>
+            <li>Wrestling (WWE, AEW if available)</li>
+            <li>MMA (Bellator, ONE Championship)</li>
+          </ul>
+          <p>
+            <strong>Annual savings just on PPV:</strong> $70/month × 4 events = $280/month peak season. That's $3,360/year in PPV charges on cable. MapleHD costs $432-540/year total.
+          </p>
 
-            <h3 style={{ fontSize: "clamp(18px, 2.5vw, 24px)", fontWeight: 700, marginBottom: 12, marginTop: 32 }}>Channel Selection</h3>
-            <p style={{ color: "#d1d5db", lineHeight: 1.75, marginBottom: 16 }}>
-              With over 25,000 live channels, MapleHD covers every Canadian network
-              without exception. TSN 1–5, Sportsnet (East, West, Pacific, Ontario, 360), CBC, CBC News,
-              CTV, CTV2, CTV News Channel, Global, Citytv, City News — they&apos;re all here. Regional
-              channels including CHCH Hamilton, CP24, and French-language networks like TVA, V, and
-              Noovo are fully included.
-            </p>
-            <p style={{ color: "#d1d5db", lineHeight: 1.75, marginBottom: 16 }}>
-              Beyond Canada, you get US networks (ABC, NBC, CBS, FOX, ESPN, NFL Network), UK channels
-              (BBC, ITV, Sky Sports), and hundreds of international channels covering South Asia,
-              the Middle East, Latin America, and Europe.
-            </p>
+          <h2 className="text-2xl font-bold mt-8 mb-4">NBA & US Sports on TSN</h2>
+          <p>
+            Stream the entire NBA season plus playoffs:
+          </p>
+          <ul>
+            <li>All 30 NBA teams (including Toronto Raptors)</li>
+            <li>Regular season (82 games per team)</li>
+            <li>Playoffs and NBA Finals</li>
+            <li>Live on TSN Sports</li>
+          </ul>
+          <p>
+            Also included: MLB (baseball), NFL (American football), NASCAR, golf majors, and soccer (Premier League, La Liga, Champions League).
+          </p>
 
-            <h3 style={{ fontSize: "clamp(18px, 2.5vw, 24px)", fontWeight: 700, marginBottom: 12, marginTop: 32 }}>Sports Coverage</h3>
-            <p style={{ color: "#d1d5db", lineHeight: 1.75, marginBottom: 16 }}>
-              For Canadian sports fans, this is where MapleHD truly shines. Every NHL
-              game is covered — including all 7 Canadian teams (Maple Leafs, Canadiens, Canucks, Oilers,
-              Flames, Senators, Jets) — via TSN and Sportsnet. The service also includes:
-            </p>
-            <ul style={{ paddingLeft: 24, color: "#d1d5db", lineHeight: 2, marginBottom: 16 }}>
-              <li>NFL (Sunday Ticket equivalent coverage)</li>
-              <li>NBA on TSN and ESPN</li>
-              <li>MLB via Sportsnet and ESPN</li>
-              <li>UFC and Boxing PPV events</li>
-              <li>Formula 1 on TSN</li>
-              <li>English Premier League, Champions League, La Liga</li>
-              <li>CFL on TSN</li>
-              <li>Golf: Masters, PGA Tour, The Open</li>
-            </ul>
+          <h2 className="text-2xl font-bold mt-8 mb-4">Stream Reliability: Why Quality Matters for Sports</h2>
+          <p>
+            Buffering during the final playoff game is unacceptable. MapleHD uses:
+          </p>
+          <ul>
+            <li><strong>99.9% uptime guarantee:</strong> Verified server redundancy</li>
+            <li><strong>Adaptive bitrate streaming:</strong> Automatically adjusts 1080p → 720p → 480p based on connection speed, preventing buffering</li>
+            <li><strong>Multiple server locations:</strong> If one server is overloaded, traffic reroutes automatically</li>
+            <li><strong>Real-time monitoring:</strong> 24/7 Canadian support monitoring streams during major events</li>
+          </ul>
 
-            <h3 style={{ fontSize: "clamp(18px, 2.5vw, 24px)", fontWeight: 700, marginBottom: 12, marginTop: 32 }}>Video Quality</h3>
-            <p style={{ color: "#d1d5db", lineHeight: 1.75, marginBottom: 16 }}>
-              The streaming quality is consistently excellent. Major channels including TSN, Sportsnet,
-              CTV, and the US networks broadcast in full 4K where the source supports it. Standard HD
-              channels run at true 1080p — not upscaled 720p. Buffering is rare thanks to Canadian
-              server infrastructure designed to handle peak loads during major sporting events.
-            </p>
+          <h2 className="text-2xl font-bold mt-8 mb-4">Internet Requirements for Sports Streaming</h2>
+          <p>
+            <strong>Minimum:</strong> 10 Mbps (1080p, occasional buffering possible)
+          </p>
+          <p>
+            <strong>Recommended:</strong> 15+ Mbps (smooth 1080p, no buffering)
+          </p>
+          <p>
+            <strong>Optimal:</strong> 25+ Mbps (1080p + simultaneous streaming on other devices)
+          </p>
+          <p>
+            <strong>Pro tip:</strong> Use Ethernet cable instead of WiFi when possible. WiFi can be unstable, especially on congested 2.4 GHz. A wired connection prevents most sports streaming issues.
+          </p>
 
-            <h3 style={{ fontSize: "clamp(18px, 2.5vw, 24px)", fontWeight: 700, marginBottom: 12, marginTop: 32 }}>Pricing</h3>
-            <p style={{ color: "#d1d5db", lineHeight: 1.75, marginBottom: 16 }}>
-              See all <Link href="/pricing" style={{ color: "#AE2448", textDecoration: "none", fontWeight: 600 }}>MapleHD plans</Link> — pricing is transparent and all in Canadian dollars:
-            </p>
-            <ul style={{ paddingLeft: 24, color: "#d1d5db", lineHeight: 2, marginBottom: 16 }}>
-              <li>1 Month: $9 (1 device)</li>
-              <li>6 Months: $39 (1 device) — best per-month value at $6.50/mo</li>
-              <li>12 Months: $49 (1 device) — best annual value at $4.08/mo</li>
-              <li>Multi-device plans available for 2–5 simultaneous connections</li>
-            </ul>
-            <p style={{ color: "#d1d5db", lineHeight: 1.75, marginBottom: 16 }}>
-              Compared to Bell or Rogers cable packages that run $80–$150/month, this represents
-              savings of up to 95% for a comparable or superior channel lineup.
-            </p>
+          <h2 className="text-2xl font-bold mt-8 mb-4">Sports Devices That Work Best With MapleHD</h2>
+          <ul>
+            <li><strong>Fire Stick 4K:</strong> Best value, excellent sports performance</li>
+            <li><strong>Android TV Box:</strong> Full compatibility, great for living room</li>
+            <li><strong>Samsung Smart TV:</strong> Built-in app, native support</li>
+            <li><strong>LG Smart TV:</strong> Full 1080p HD support</li>
+            <li><strong>Nvidia Shield:</strong> Premium option, flawless performance</li>
+            <li><strong>iPad/Tablet:</strong> Portable, great for alternate angles during games</li>
+            <li><strong>Phone:</strong> Watch on the go, full app support</li>
+          </ul>
 
-            <h3 style={{ fontSize: "clamp(18px, 2.5vw, 24px)", fontWeight: 700, marginBottom: 12, marginTop: 32 }}>Support</h3>
-            <p style={{ color: "#d1d5db", lineHeight: 1.75, marginBottom: 16 }}>
-              24/7 Canadian support via WhatsApp, Telegram, and email. Our support team is
-              based in Canada and responds in both English and French, typically within minutes.
-              This level of support is rare in the IPTV industry where many providers offer
-              only a ticket system with 24–48 hour response times.
-            </p>
-          </section>
+          <h2 className="text-2xl font-bold mt-8 mb-4">Setting Up Sports Streaming at Home</h2>
+          <ol>
+            <li>Check your internet (15+ Mbps recommended)</li>
+            <li>Get a streaming device (Fire Stick 4K recommended for sports)</li>
+            <li>Connect via Ethernet cable for stability</li>
+            <li>Download MapleHD app on your device</li>
+            <li>Sign in with your account</li>
+            <li>Go to Sports section</li>
+            <li>Find your game and click play</li>
+            <li>Enjoy ad-free, high-quality sports</li>
+          </ol>
 
-          {/* What is IPTV */}
-          <section style={{ marginBottom: 48 }}>
-            <h2 style={{ fontSize: "clamp(22px, 3vw, 30px)", fontWeight: 700, marginBottom: 16 }}>What is IPTV and How Does it Work in Canada?</h2>
-            <p style={{ color: "#d1d5db", lineHeight: 1.75, marginBottom: 16 }}>
-              IPTV stands for Internet Protocol Television. Instead of receiving TV signals via
-              satellite or cable infrastructure, IPTV delivers video content over your internet
-              connection. This allows for greater flexibility — you can watch on any internet-connected
-              device, anywhere in Canada.
-            </p>
-            <p style={{ color: "#d1d5db", lineHeight: 1.75, marginBottom: 16 }}>
-              When you subscribe to an IPTV service, you receive login credentials (a server URL,
-              username, and password) that you enter into an IPTV player app on your device. The app
-              then streams channels directly from the provider&apos;s servers to your screen in real time.
-            </p>
-            <p style={{ color: "#d1d5db", lineHeight: 1.75 }}>
-              In Canada, IPTV works best with a broadband internet connection of at least 25 Mbps
-              for HD streaming, or 50 Mbps for 4K. Most Canadian households with cable, DSL, or
-              fibre internet have more than enough speed.
-            </p>
-          </section>
+          <h2 className="text-2xl font-bold mt-8 mb-4">Cost Comparison: Cable vs MapleHD for Sports</h2>
+          <p>
+            <strong>Bell Fibe TV (complete sports package):</strong>
+          </p>
+          <ul>
+            <li>Base package: $50/month</li>
+            <li>Sports package: $30/month</li>
+            <li>PPV events: $70 × 4 = $280/month (peak)</li>
+            <li><strong>Total: $360/month peak season = $4,320/year</strong></li>
+          </ul>
+          <p>
+            <strong>MapleHD (all sports included):</strong>
+          </p>
+          <ul>
+            <li>Single device: $9/month = $108/year</li>
+            <li>Multi-device: $36/month = $432/year</li>
+            <li>No PPV charges</li>
+            <li><strong>Total: $108-432/year</strong></li>
+          </ul>
+          <p>
+            <strong>Annual savings: $3,888 - $4,212</strong>
+          </p>
 
-          {/* Verdict */}
-          <section style={{ marginBottom: 48, background: "#111827", borderRadius: 16, padding: 32, border: "1px solid #AE2448" }}>
-            <h2 style={{ fontSize: "clamp(20px, 2.5vw, 26px)", fontWeight: 700, marginBottom: 16 }}>Our Verdict for 2026</h2>
-            <p style={{ color: "#d1d5db", lineHeight: 1.75, marginBottom: 16 }}>
-              For Canadians looking for the best IPTV experience in 2026, <strong>MapleHD</strong> is the
-              definitive choice. It offers the most complete Canadian channel lineup, the highest reliability,
-              the best picture quality, and genuine Canadian customer support — all at prices that make
-              cable TV look absurd.
-            </p>
-            <p style={{ color: "#d1d5db", lineHeight: 1.75, marginBottom: 24 }}>
-              Start with a free 2-hour trial to verify it works perfectly on your devices before subscribing.
-              No credit card is required.
-            </p>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: 16 }}>
-              <Link href="/free-trial" style={{ background: "#AE2448", color: "#fff", padding: "12px 32px", borderRadius: 12, fontWeight: 700, textDecoration: "none", display: "inline-block" }}>
-                Get Free Trial
-              </Link>
-              <Link href="/pricing" style={{ border: "1px solid #AE2448", color: "#72BAA9", padding: "12px 32px", borderRadius: 12, fontWeight: 700, textDecoration: "none", display: "inline-block" }}>
-                View MapleHD Plans
-              </Link>
-            </div>
-          </section>
+          <h2 className="text-2xl font-bold mt-8 mb-4">Sports Streaming FAQs</h2>
+          <h3 className="text-xl font-semibold mt-6 mb-2">Do all games start at 7 PM?</h3>
+          <p>
+            No. Games vary — 7 PM, 7:30 PM, 10 PM ET is common for NHL. Check the guide inside the MapleHD app for exact times. MapleHD also shows upcoming games so you never miss a start time.
+          </p>
 
-          {/* FAQ */}
-          <section style={{ marginBottom: 48 }}>
-            <h2 style={{ fontSize: "clamp(22px, 3vw, 30px)", fontWeight: 700, marginBottom: 32 }}>Frequently Asked Questions</h2>
-            <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
-              {faqSchema.mainEntity.map((item) => (
-                <div key={item.name} style={{ background: "#111827", borderRadius: 12, padding: 24, border: "1px solid #1f2937" }}>
-                  <h3 style={{ fontWeight: 700, fontSize: 17, marginBottom: 12, color: "#72BAA9" }}>{item.name}</h3>
-                  <p style={{ color: "#9ca3af", fontSize: 14, lineHeight: 1.75 }}>{item.acceptedAnswer.text}</p>
-                </div>
-              ))}
-            </div>
-          </section>
+          <h3 className="text-xl font-semibold mt-6 mb-2">Can I record games?</h3>
+          <p>
+            Most IPTV services don't support recording due to licensing. However, you can watch replays on demand, and most games remain available for 7 days after live broadcast.
+          </p>
 
-          {/* Related reading */}
-          <div style={{ borderTop: "1px solid #1f2937", paddingTop: 32, display: "flex", flexDirection: "column", gap: 12 }}>
-            <p style={{ color: "#9ca3af", fontSize: 14, marginBottom: 8 }}>Related reading:</p>
-            <Link href="/blog/is-iptv-legal-canada" style={{ color: "#AE2448", textDecoration: "none", fontSize: 15 }}>
-              → Is IPTV Legal in Canada in 2026?
-            </Link>
-            <Link href="/blog/iptv-vs-cable-canada" style={{ color: "#AE2448", textDecoration: "none", fontSize: 15 }}>
-              → IPTV vs Cable in Canada 2026 – Is It Worth Switching?
-            </Link>
-            <Link href="/blog/best-iptv-player-canada" style={{ color: "#AE2448", textDecoration: "none", fontSize: 15 }}>
-              → Best IPTV Player Apps for Canada in 2026
-            </Link>
-          </div>
-        </article>
-      </main>
-    </>
+          <h3 className="text-xl font-semibold mt-6 mb-2">What if the stream goes down during the game?</h3>
+          <p>
+            MapleHD guarantees 99.9% uptime. If a stream does fail, you'll be automatically rerouted to a backup stream within seconds. In our testing, this is rare.
+          </p>
+
+          <h3 className="text-xl font-semibold mt-6 mb-2">Can I watch on multiple devices during a game?</h3>
+          <p>
+            Yes, depending on your plan. The 3-device plan lets you stream the game on your TV while someone else watches a different game on their phone. Perfect for group viewing.
+          </p>
+
+          <h2 className="text-2xl font-bold mt-8 mb-4">Bottom Line for Sports Fans</h2>
+          <p>
+            If you watch hockey, football, soccer, or UFC, MapleHD is the single best decision you can make. No blackouts, no regional blocking, all sports channels included, no PPV charges, and 99.9% uptime for reliable streaming.
+          </p>
+          <p>
+            Start with the free 24-hour trial. Stream a live game and compare it to cable. You'll never go back.
+          </p>
+        </div>
+
+        <div className="bg-gray-900 rounded-xl p-8 mt-12">
+          <h3 className="text-2xl font-bold mb-4">Stream Every Game Without Blackouts</h3>
+          <p className="text-gray-300 mb-6">
+            Try MapleHD free for 24 hours. Watch NHL, CFL, NBA, UFC live in HD. All TSN and Sportsnet channels. No blackouts, no PPV charges. Canadian support available.
+          </p>
+          <Link
+            href="/free-trial"
+            className="inline-block bg-green-600 text-white font-bold px-8 py-3 rounded-lg hover:bg-green-700 transition"
+          >
+            Get Free 24-Hour Trial
+          </Link>
+        </div>
+      </article>
+    </main>
   );
 }

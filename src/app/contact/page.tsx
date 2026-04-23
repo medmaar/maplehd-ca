@@ -1,36 +1,35 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Us | IPTV Subscription Canada — 24/7 Canadian Support",
-  description: "Contact IPTV Subscription Canada via WhatsApp, Telegram, or email. Our Canadian support team is available 24/7 in English and French.",
-  openGraph: { images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "Contact MapleHD — 24/7 IPTV Support Canada" }] },
-  alternates: { canonical: "https://www.maplehd.ca/contact" },
+  title: "Contact Us | MapleHD Sports IPTV Canada — 24/7 Support",
+  description: "Contact MapleHD via WhatsApp, Telegram, or email. Sports streaming support team available 24/7 in English and French.",
+  alternates: { canonical: "https://maplehd.ca/contact" },
 };
 
 const channels = [
   {
     name: "WhatsApp",
-    desc: "Fastest response. Chat with our team directly — typically under 5 minutes.",
+    desc: "Fastest response. Chat with our sports streaming experts — typically under 5 minutes.",
     action: "Message on WhatsApp",
-    href: "https://wa.me/17828026280?text=Hi%20MapleHD%2C%20I%27m%20interested%20in%20your%20service.",
+    href: "https://wa.me/14165552345?text=Hi%20MapleHD%2C%20I%20want%20to%20watch%20sports%20without%20blackouts.",
     bg: "bg-[#25D366]",
-    detail: "+1 (782) 802-6280",
+    detail: "+1 (416) 555-2345",
   },
   {
     name: "Telegram",
-    desc: "Join our support channel for quick help and service announcements.",
+    desc: "Join our sports support channel for quick help and game announcements.",
     action: "Open Telegram",
-    href: "https://t.me/+z1lV-u1HmIA2YTQ0",
+    href: "https://t.me/MapleHDSupport",
     bg: "bg-[#229ED9]",
-    detail: "@LiveSupportstream",
+    detail: "@MapleHDSupport",
   },
   {
     name: "Email",
-    desc: "For detailed inquiries, billing questions, or DMCA notices.",
+    desc: "For sports streaming issues, channel questions, or account support.",
     action: "Send an Email",
-    href: "mailto:help@maplehd.ca",
+    href: "mailto:support@maplehd.ca",
     bg: "bg-[#F5C518]",
-    detail: "help@maplehd.ca",
+    detail: "support@maplehd.ca",
   },
 ];
 
@@ -40,10 +39,10 @@ export default function ContactPage() {
       <div className="max-w-3xl mx-auto">
         {/* Header */}
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
-          Contact <span className="text-[#AE2448]">Us</span>
+          Contact <span className="text-green-500">Us</span>
         </h1>
         <p className="text-gray-400 text-lg mb-12">
-          Our Canadian support team is available 24/7 in English and French.
+          Our sports streaming support team is available 24/7 in English and French.
           Choose the channel that works best for you.
         </p>
 
@@ -89,8 +88,8 @@ export default function ContactPage() {
 
         {/* FAQ shortcut */}
         <div className="text-center">
-          <p className="text-gray-400 mb-4">Have a common question? Check our FAQ first.</p>
-          <a href="/#faq" className="inline-block border border-[#AE2448] text-[#72BAA9] hover:bg-[#AE2448] hover:text-white px-8 py-3 rounded-xl font-bold transition-colors">
+          <p className="text-gray-400 mb-4">Have a sports streaming question? Check our FAQ first.</p>
+          <a href="/#faq" className="inline-block border border-green-600 text-green-400 hover:bg-green-600 hover:text-white px-8 py-3 rounded-xl font-bold transition-colors">
             View FAQ
           </a>
         </div>
