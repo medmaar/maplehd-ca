@@ -107,7 +107,7 @@ export default function Footer() {
           <a href="https://maplehd.ca" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-xs text-gray-400 hover:text-[#72BAA9] transition-colors">
             🌐 <span>maplehd.ca</span>
           </a>
-          <a href="https://wa.me/17828026280" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-xs text-gray-400 hover:text-[#25D366] transition-colors">
+          <a href="/whatsapp-contact" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-xs text-gray-400 hover:text-[#25D366] transition-colors">
             📱 <span>WhatsApp</span>
           </a>
           <a href="mailto:help@maplehd.ca" className="flex items-center gap-2 text-xs text-gray-400 hover:text-[#72BAA9] transition-colors">
