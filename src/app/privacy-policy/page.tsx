@@ -85,7 +85,7 @@ export default function PrivacyPolicyPage() {
             <p>If you have questions about this Privacy Policy, please contact us:</p>
             <div className="mt-4 bg-gray-900 rounded-xl p-6 border border-gray-800">
               <p>Email: <a href="mailto:help@maplehd.ca" className="text-[#72BAA9] hover:underline">help@maplehd.ca</a></p>
-              <p className="mt-2">WhatsApp: <a href="https://wa.me/17828026280" target="_blank" rel="noopener noreferrer" className="text-[#72BAA9] hover:underline">+1 (782) 802-6280</a></p>
+              <p className="mt-2">WhatsApp: <a href="/whatsapp-contact" target="_blank" rel="noopener noreferrer" className="text-[#72BAA9] hover:underline">+1 (782) 802-6280</a></p>
             </div>
           </section>
         </div>
