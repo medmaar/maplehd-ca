@@ -16,8 +16,8 @@ export default function ReferralForm() {
     e.preventDefault();
     setStatus("loading");
     try {
-      emailjs.init("XgOQHE8VNnCyBYP1z");
-      await emailjs.send("service_0e3cugb", "template_cuf7svm", {
+      emailjs.init("Xviff5xDI5EWUdF9P");
+      await emailjs.send("service_84i1c0s", "template_wsb6yh8", {
         from_name: yourName,
         from_email: "referral@maplehd.ca",
         phone: yourWA,
