@@ -2,8 +2,8 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 
-const WA_NUMBER = "17828026280";
-const WA_REFER_URL = `https://wa.me/${WA_NUMBER}?text=Hi%20MapleHD%2C%20I%E2%80%99m%20referring%20someone%20to%20your%20service.%20What%E2%80%99s%20the%20next%20step%3F`;
+
+
 
 export default function ReferralForm() {
   const [yourName, setYourName] = useState("");
@@ -128,7 +128,7 @@ export default function ReferralForm() {
       <div className="mt-6 text-center">
         <p className="text-gray-500 text-sm mb-4">Prefer WhatsApp? Reach us directly:</p>
         <a
-          href={WA_REFER_URL}
+          href={'/whatsapp-contact'}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-[#25D366] hover:brightness-110 text-gray-900 font-bold px-8 py-4 rounded-xl text-sm transition"
