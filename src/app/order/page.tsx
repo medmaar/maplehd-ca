@@ -117,6 +117,12 @@ function OrderContent() {
   );
 }
 
+import type { Metadata } from "next";
+export const metadata: Metadata = {
+  alternates: { canonical: "https://maplehd.ca/order" },
+  robots: { index: false, follow: true },
+};
+
 export default function OrderPage() {
   return (
     <Suspense fallback={<div className="bg-gray-950 min-h-screen flex items-center justify-center text-white">Loading...</div>}>

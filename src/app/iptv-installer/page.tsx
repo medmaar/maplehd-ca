@@ -12,13 +12,28 @@ const installs = [
   { device: "iPhone / iPad (iOS)", steps: ["App Store → search 'IPTV Smarters Pro' → Install (paid app ~$5.99)","Open → Add New User → Login with Xtream Codes","Enter your MapleHD host, username, password","Tap Load → channels populate automatically","AirPlay supported for streaming to Apple TV"] },
   { device: "MAG Box", steps: ["Boot your MAG box → wait for the Stalker Middleware screen","Enter your MapleHD portal URL in the Portal URL field","Confirm server → enter MAC address if prompted (provided in your welcome email)","Channel list loads automatically — no app installation needed","Select your favourite channels and enjoy"] },
 ];
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"MapleHD","item":"https://maplehd.ca"},
+    {"@type":"ListItem","position":2,"name":"IPTV Installer Canada","item":"https://maplehd.ca/iptv-installer"}
+  ]
+};
+
 export default function IPTVInstallerPage() {
   return (
     <main style={{ background: "linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%)", color: "#fff", minHeight: "100vh" }}>
       <section style={{ padding: "80px 16px 60px" }}>
         <div style={{ maxWidth: 900, margin: "0 auto" }}>
           <span style={{ background: "rgba(249,110,91,0.18)", border: "1px solid rgba(249,110,91,0.4)", color: "#F96E5B", fontSize: 12, fontWeight: 700, padding: "4px 14px", borderRadius: 999, textTransform: "uppercase" }}>IPTV Installer · Canada · MapleHD</span>
-          <h1 style={{ fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 900, marginTop: 20, marginBottom: 16 }}>
+          <div style={{ textAlign: "center", marginBottom: 8 }}>
+          <span style={{ background: "rgba(249,110,91,0.15)", border: "1px solid rgba(249,110,91,0.3)", color: "#F96E5B", fontSize: 12, fontWeight: 600, padding: "3px 12px", borderRadius: 999 }}>
+            🗓 Last updated: April 2026
+          </span>
+        </div>
+            <h1 style={{ fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 900, marginTop: 20, marginBottom: 16 }}>
             IPTV Installer Canada — <span style={{ color: "#F96E5B" }}>Setup Guide for Every Device</span>
           </h1>
           <p style={{ color: "rgba(255,255,255,0.88)", fontSize: "1.1rem", maxWidth: 680, lineHeight: 1.7, marginBottom: 28 }}>

@@ -6,12 +6,19 @@ export const metadata: Metadata = {
     "Meilleur service IPTV au Québec. TVA, RDS, Canal Vie, V Télé, Noovo et 25 000+ chaînes. Essai gratuit — sans carte de crédit. Abonnement IPTV Québec dès 9 $/mois.",
   keywords:
     "iptv québec, iptv subscription canada, iptv service canada, best iptv for canada, iptv providers in canada, service iptv, meilleur iptv québec, iptv montréal, iptv québec 2026",
-  alternates: { canonical: "https://maplehd.ca/iptv-quebec" },
+  alternates: {
+    canonical: "https://maplehd.ca/iptv-quebec",
+    languages: {
+      "fr-CA": "https://maplehd.ca/iptv-quebec",
+      "en-CA": "https://maplehd.ca/iptv-quebec",
+    }
+  },
   openGraph: {
     title: "IPTV Québec 2026 — Meilleur Service IPTV au Québec | MapleHD",
     description: "Meilleur IPTV au Québec. TVA, RDS, Noovo, Canal Vie, 25 000+ chaînes. Essai gratuit dès 9 $/mois.",
     url: "https://maplehd.ca/iptv-quebec",
     type: "website", siteName: "MapleHD", locale: "fr_CA",
+    alternateLocale: ["en_CA"],
     images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "IPTV Québec – MapleHD" }],
   },
   twitter: { card: "summary_large_image" },
@@ -36,10 +43,22 @@ const quebecChannels = [
   "ARTV","TV5","MELS","Séries+","Historia","Zeste",
 ];
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"MapleHD","item":"https://maplehd.ca"},
+    {"@type":"ListItem","position":2,"name":"IPTV Québec","item":"https://maplehd.ca/iptv-quebec"}
+  ]
+};
+
 export default function IPTVQuebecPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script />
       <main style={{ background: "linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%)", color: "#fff", minHeight: "100vh" }}>
 
         {/* Hero */}
@@ -48,6 +67,11 @@ export default function IPTVQuebecPage() {
             <span style={{ background: "rgba(249,110,91,0.18)", border: "1px solid rgba(249,110,91,0.4)", color: "#F96E5B", fontSize: 12, fontWeight: 700, padding: "4px 14px", borderRadius: 999, textTransform: "uppercase", letterSpacing: "0.08em" }}>
               IPTV Québec · MapleHD 2026
             </span>
+            <div style={{ textAlign: "center", marginBottom: 8 }}>
+          <span style={{ background: "rgba(249,110,91,0.15)", border: "1px solid rgba(249,110,91,0.3)", color: "#F96E5B", fontSize: 12, fontWeight: 600, padding: "3px 12px", borderRadius: 999 }}>
+            🗓 Last updated: April 2026
+          </span>
+        </div>
             <h1 style={{ fontSize: "clamp(2rem, 5vw, 3.2rem)", fontWeight: 900, marginTop: 20, marginBottom: 16, color: "#fff" }}>
               IPTV Québec 2026 — <span style={{ color: "#F96E5B" }}>Meilleur Service</span> dès 9 $/mois
             </h1>

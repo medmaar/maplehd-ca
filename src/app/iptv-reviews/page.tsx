@@ -27,14 +27,30 @@ const schema = {
     reviewRating: { "@type": "Rating", ratingValue: r.stars },
   })),
 };
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"MapleHD","item":"https://maplehd.ca"},
+    {"@type":"ListItem","position":2,"name":"IPTV Reviews Canada","item":"https://maplehd.ca/iptv-reviews"}
+  ]
+};
+
 export default function IPTVReviewsPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <main style={{ background: "linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%)", color: "#fff", minHeight: "100vh" }}>
         <section style={{ padding: "80px 16px 60px" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <span style={{ background: "rgba(249,110,91,0.18)", border: "1px solid rgba(249,110,91,0.4)", color: "#F96E5B", fontSize: 12, fontWeight: 700, padding: "4px 14px", borderRadius: 999, textTransform: "uppercase" }}>IPTV Reviews Canada · MapleHD</span>
+            <div style={{ textAlign: "center", marginBottom: 8 }}>
+          <span style={{ background: "rgba(249,110,91,0.15)", border: "1px solid rgba(249,110,91,0.3)", color: "#F96E5B", fontSize: 12, fontWeight: 600, padding: "3px 12px", borderRadius: 999 }}>
+            🗓 Last updated: April 2026
+          </span>
+        </div>
             <h1 style={{ fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 900, marginTop: 20, marginBottom: 16 }}>
               MapleHD IPTV Reviews — <span style={{ color: "#F96E5B" }}>4.8/5 from 347 Canadians</span>
             </h1>

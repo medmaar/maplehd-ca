@@ -15,6 +15,8 @@ export const metadata: Metadata = {
       "IPTV vs cable TV in Canada — we compare price, channels, picture quality, contracts, and flexibility to help you decide which is better in 2026.",
     url: "https://maplehd.ca/blog/iptv-vs-cable-canada",
     type: "article",
+    publishedTime: "2026-03-05T00:00:00Z",
+    modifiedTime: "2026-04-25T00:00:00Z",
     siteName: "MapleHD",
   },
   twitter: { card: "summary_large_image" },
@@ -52,12 +54,25 @@ const comparison = [
   { feature: "Support Quality",         iptv: "Varies by provider",  cable: "Established company",winner: "cable" },
 ];
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"MapleHD","item":"https://maplehd.ca"},
+    {"@type":"ListItem","position":2,"name":"Blog","item":"https://maplehd.ca/blog"},
+    {"@type":"ListItem","position":3,"name":"Iptv Vs Cable Canada","item":"https://maplehd.ca/blog/iptv-vs-cable-canada"}
+  ]
+};
+
 export default function IPTVvsCableCanada() {
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script
       />
       <main style={{ background: "#030712", color: "#fff", minHeight: "100vh" }}>
         <article style={{ maxWidth: 768, margin: "0 auto", padding: "64px 16px" }}>
