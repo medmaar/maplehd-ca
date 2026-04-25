@@ -64,6 +64,36 @@ export default function FreeIPTVCanadaPage() {
           <a href="/free-trial" style={{ background: "#F96E5B", color: "#fff", padding: "14px 40px", borderRadius: 10, fontWeight: 700, textDecoration: "none" }}>Claim Free Trial →</a>
         </div>
       </section>
+
+      <section style={{ maxWidth: 900, margin: "0 auto", padding: "0 16px 60px" }}>
+        <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16, color: "#fff" }}>What the MapleHD Free IPTV Trial Actually Includes</h2>
+        <p style={{ color: "rgba(255,255,255,0.85)", lineHeight: 1.85, marginBottom: 16 }}>
+          The MapleHD free IPTV trial is not a stripped-down preview — it&apos;s the full service for 24 hours. You get complete access to all 25,000+ live channels including every Canadian network (CBC, CTV, Global, TSN, Sportsnet, RDS, TVA), all sports channels with live NHL, UFC, CFL, NBA, NFL and MLB, international channels in 50+ languages, and the complete 120,000+ VOD library. The trial runs for 24 continuous hours from the moment your credentials are activated, on up to 2 devices.
+        </p>
+        <p style={{ color: "rgba(255,255,255,0.85)", lineHeight: 1.85, marginBottom: 32 }}>
+          There is no credit card required and no automatic billing when the trial ends. To continue after your 24 hours, you choose a paid plan — but that decision is entirely yours. Many subscribers describe the free trial as the moment they decided to cut cable: they could see with their own eyes that the 4K quality was real and the streams were stable.
+        </p>
+
+        <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16, color: "#fff" }}>How to Get Your Free IPTV Trial in Canada</h2>
+        <p style={{ color: "rgba(255,255,255,0.85)", lineHeight: 1.85, marginBottom: 16 }}>
+          Requesting your free trial takes about 60 seconds. Visit the free trial page and contact us via WhatsApp or email with your device type — Fire Stick, Smart TV, iPhone, Android, or MAG Box. We activate your credentials manually and send them back within minutes. This manual activation process exists to prevent abuse and ensure every trial subscriber gets personal setup assistance if needed.
+        </p>
+        <p style={{ color: "rgba(255,255,255,0.85)", lineHeight: 1.85, marginBottom: 32 }}>
+          Once you receive your credentials, installation is simple. Download IPTV Smarters Pro on your device, add a new user with your host URL, username, and password, and all channels load automatically. If you encounter any issue during setup, our Canadian support team is available 24/7 via WhatsApp to walk you through it step by step — including screen-share assistance for Smart TV and Fire Stick setups.
+        </p>
+
+        <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16, color: "#fff" }}>Why Offer a Free IPTV Trial? The MapleHD Approach</h2>
+        <p style={{ color: "rgba(255,255,255,0.85)", lineHeight: 1.85, marginBottom: 24 }}>
+          Most IPTV services in Canada don&apos;t offer free trials because they can&apos;t afford to — their stream quality doesn&apos;t hold up under direct scrutiny. MapleHD offers a genuine no-strings trial because we&apos;re confident in the product. We&apos;ve found that subscribers who test before they pay cancel less, are more satisfied, and are far more likely to refer friends and family. The free trial isn&apos;t a marketing cost — it&apos;s how we build lasting trust with Canadian customers.
+        </p>
+
+        <div style={{ background: "#1A3D45", borderRadius: 16, padding: 32, textAlign: "center" }}>
+          <h2 style={{ fontSize: "1.5rem", fontWeight: 800, color: "#fff", marginBottom: 12 }}>Claim Your Free IPTV Trial Now</h2>
+          <p style={{ color: "rgba(255,255,255,0.8)", marginBottom: 28, lineHeight: 1.7 }}>No credit card. No auto-billing. Full 24-hour access to all channels. Takes 60 seconds to request.</p>
+          <a href="/free-trial" style={{ background: "#F96E5B", color: "#fff", padding: "14px 40px", borderRadius: 10, fontWeight: 700, textDecoration: "none" }}>Get Free Trial →</a>
+        </div>
+      </section>
+
     </main>
   );
 }

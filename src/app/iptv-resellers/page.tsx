@@ -62,6 +62,39 @@ export default function IPTVResellersPage() {
           <a href="/reseller" style={{ background: "#F96E5B", color: "#fff", padding: "14px 40px", borderRadius: 10, fontWeight: 700, textDecoration: "none" }}>Start Reselling →</a>
         </div>
       </section>
+
+      <section style={{ maxWidth: 900, margin: "0 auto", padding: "0 16px 60px" }}>
+        <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16, color: "#fff" }}>How the MapleHD IPTV Reseller Program Works</h2>
+        <p style={{ color: "rgba(255,255,255,0.85)", lineHeight: 1.85, marginBottom: 16 }}>
+          The MapleHD IPTV reseller program is designed for entrepreneurs, IT professionals, and tech-savvy individuals who want to build a recurring income by providing IPTV subscriptions to Canadian customers. As a reseller, you purchase credits at wholesale pricing and use them to create subscriptions for your clients — keeping the full margin between your wholesale cost and whatever price you charge.
+        </p>
+        <p style={{ color: "rgba(255,255,255,0.85)", lineHeight: 1.85, marginBottom: 32 }}>
+          There is no minimum purchase to get started and no monthly fee for maintaining your reseller account. Buy credits when you need them, create subscriptions as orders come in, and scale your business at whatever pace works for you. Most successful MapleHD resellers start by offering the service to friends and family, then expand through word-of-mouth into their local community.
+        </p>
+
+        <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16, color: "#fff" }}>The MapleHD Reseller Panel: What You Get</h2>
+        <p style={{ color: "rgba(255,255,255,0.85)", lineHeight: 1.85, marginBottom: 16 }}>
+          Upon approval, you receive access to a full-featured reseller control panel. From the panel you can create new subscriptions, extend existing ones, reset passwords, monitor usage, and set expiry dates — all without contacting MapleHD support. Subscriptions are generated instantly, so you can fulfil orders for customers the moment they pay you. The panel gives you a real-time view of all active accounts under your reseller ID including trial accounts, active subscriptions, and recently expired ones.
+        </p>
+        <p style={{ color: "rgba(255,255,255,0.85)", lineHeight: 1.85, marginBottom: 32 }}>
+          The white-label option lets you brand the service under your own name. Your customers see your brand, your contact information, and your pricing — MapleHD operates as the silent backend supplier. This is particularly useful for resellers who want to build a recognizable local IPTV brand in their city or community.
+        </p>
+
+        <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16, color: "#fff" }}>Realistic Earnings as a Canadian IPTV Reseller</h2>
+        <p style={{ color: "rgba(255,255,255,0.85)", lineHeight: 1.85, marginBottom: 16 }}>
+          A MapleHD IPTV reseller credit for a 1-month subscription costs significantly less than the $9–$15 that end customers typically pay for monthly IPTV. On a typical reseller margin of $5–$10 per subscription, a reseller with 50 active customers earns $250–$500 per month in passive income from renewals alone. Annual subscriptions carry even higher margins — customers paying once per year are more likely to renew, and the per-month cost to them is lower, making the value proposition easy to communicate.
+        </p>
+        <p style={{ color: "rgba(255,255,255,0.85)", lineHeight: 1.85, marginBottom: 32 }}>
+          Most MapleHD resellers in Canada recoup their initial credit purchase within the first week and operate profitably from month two onward. The business model is simple: offer a better product at a lower price than Bell or Rogers, provide friendly local support, and build a loyal customer base that renews automatically each cycle.
+        </p>
+
+        <div style={{ background: "rgba(249,110,91,0.12)", borderRadius: 16, padding: 32, textAlign: "center", border: "1px solid rgba(249,110,91,0.25)" }}>
+          <h2 style={{ fontSize: "1.5rem", fontWeight: 800, color: "#fff", marginBottom: 12 }}>Apply to Become an IPTV Reseller in Canada</h2>
+          <p style={{ color: "rgba(255,255,255,0.8)", marginBottom: 28, lineHeight: 1.7 }}>Contact us via WhatsApp or the reseller page. Panel access is granted same-day after approval.</p>
+          <a href="/reseller" style={{ background: "#F96E5B", color: "#fff", padding: "14px 40px", borderRadius: 10, fontWeight: 700, textDecoration: "none" }}>Apply Now →</a>
+        </div>
+      </section>
+
     </main>
   );
 }

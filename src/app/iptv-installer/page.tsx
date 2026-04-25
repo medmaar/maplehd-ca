@@ -61,6 +61,39 @@ export default function IPTVInstallerPage() {
           <a href="/free-trial" style={{ background: "#F96E5B", color: "#fff", padding: "14px 40px", borderRadius: 10, fontWeight: 700, textDecoration: "none" }}>Start Free & Get Install Help →</a>
         </div>
       </section>
+
+      <section style={{ maxWidth: 900, margin: "0 auto", padding: "0 16px 60px" }}>
+        <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16, color: "#fff" }}>Why IPTV Installation in Canada Is Easier Than You Think</h2>
+        <p style={{ color: "rgba(255,255,255,0.85)", lineHeight: 1.85, marginBottom: 16 }}>
+          Many Canadians hesitate to try IPTV because they assume it requires technical knowledge or complex configuration. In reality, installing IPTV on any modern device is a three-step process: download an app from your device&apos;s app store, enter your provider&apos;s server credentials, and start watching. The entire process typically takes under five minutes from downloading the app to browsing live channels. MapleHD&apos;s Canadian support team walks every new subscriber through installation via WhatsApp — including screen-sharing for those who prefer guided setup.
+        </p>
+        <p style={{ color: "rgba(255,255,255,0.85)", lineHeight: 1.85, marginBottom: 32 }}>
+          The slightly more complex setups — like installing IPTV Smarters on a Fire Stick via the Downloader app — still take under ten minutes and require no technical background. Our installer guide covers every step with screenshots, and if you get stuck at any point, one WhatsApp message gets you live support within minutes.
+        </p>
+
+        <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16, color: "#fff" }}>Choosing the Right IPTV App for Your Installation</h2>
+        <p style={{ color: "rgba(255,255,255,0.85)", lineHeight: 1.85, marginBottom: 16 }}>
+          The app you install is as important as the service behind it. For Fire Stick and Android TV, TiviMate is the gold standard — it delivers the cleanest interface, the best EPG experience, hardware-accelerated 4K playback, and the most reliable IPTV Smarters Pro compatibility. IPTV Smarters Pro works on every platform including iOS and is a strong second choice. For MAG boxes, the built-in Stalker Middleware client requires no additional app installation — just your portal URL.
+        </p>
+        <p style={{ color: "rgba(255,255,255,0.85)", lineHeight: 1.85, marginBottom: 32 }}>
+          When you subscribe to MapleHD, we recommend the specific app and configuration that works best for your device. We&apos;ve tested every major IPTV player against MapleHD&apos;s streams and have settings profiles ready for each one — no trial and error required on your end.
+        </p>
+
+        <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16, color: "#fff" }}>IPTV Installation Troubleshooting: Common Canadian Issues</h2>
+        <p style={{ color: "rgba(255,255,255,0.85)", lineHeight: 1.85, marginBottom: 16 }}>
+          The most common installation issue in Canada is ISP throttling. Some Canadian internet providers — particularly smaller cable ISPs — throttle video streaming traffic, which can cause buffering on high-bitrate 4K channels even with a fast plan. The fix is straightforward: enable a VPN at the router level (we recommend the router-level VPN approach to cover all devices at once) or contact your ISP to confirm unrestricted streaming. Bell Fibe, Rogers, and Telus Optik subscribers almost never encounter throttling.
+        </p>
+        <p style={{ color: "rgba(255,255,255,0.85)", lineHeight: 1.85, marginBottom: 24 }}>
+          DNS resolution issues can also affect IPTV installations — if your router uses your ISP&apos;s default DNS server and that server has latency issues, channel loading can be slow. Switching your device or router to use Cloudflare DNS (1.1.1.1) or Google DNS (8.8.8.8) typically resolves this within seconds. MapleHD support walks subscribers through both fixes whenever needed.
+        </p>
+
+        <div style={{ background: "#1A3D45", borderRadius: 16, padding: 32, textAlign: "center" }}>
+          <h2 style={{ fontSize: "1.5rem", fontWeight: 800, color: "#fff", marginBottom: 12 }}>Get MapleHD + Free Installation Help</h2>
+          <p style={{ color: "rgba(255,255,255,0.8)", marginBottom: 28, lineHeight: 1.7 }}>Free trial, no credit card. We install with you via WhatsApp on any device in Canada.</p>
+          <a href="/free-trial" style={{ background: "#F96E5B", color: "#fff", padding: "14px 40px", borderRadius: 10, fontWeight: 700, textDecoration: "none" }}>Start + Get Install Help →</a>
+        </div>
+      </section>
+
     </main>
   );
 }

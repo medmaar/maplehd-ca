@@ -61,6 +61,36 @@ export default function IPTVSmartersPage() {
           <a href="/free-trial" style={{ background: "#F96E5B", color: "#fff", padding: "14px 40px", borderRadius: 10, fontWeight: 700, textDecoration: "none" }}>Start Free Trial →</a>
         </div>
       </section>
+
+      <section style={{ maxWidth: 900, margin: "0 auto", padding: "0 16px 60px" }}>
+        <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16, color: "#fff" }}>Why IPTV Smarters Pro Is the Most Popular IPTV App in Canada</h2>
+        <p style={{ color: "rgba(255,255,255,0.85)", lineHeight: 1.85, marginBottom: 16 }}>
+          IPTV Smarters Pro has become the default IPTV app for Canadian subscribers because it&apos;s the most versatile option available. It works on every major platform — Android, iOS, Smart TV, Fire TV, Windows, and Mac — which means your entire household can use the same IPTV app regardless of what devices they own. A single MapleHD subscription with multiple connections runs IPTV Smarters on the living room TV, the kids&apos; Fire Stick, the bedroom iPhone, and a Windows laptop simultaneously.
+        </p>
+        <p style={{ color: "rgba(255,255,255,0.85)", lineHeight: 1.85, marginBottom: 32 }}>
+          IPTV Smarters supports both Xtream Codes API and M3U playlist formats, making it compatible with every IPTV provider. MapleHD recommends using Xtream Codes for the fastest channel loading, best EPG data accuracy, and full access to catch-up TV functionality. Setup with MapleHD&apos;s Xtream Codes credentials takes about two minutes on any device.
+        </p>
+
+        <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16, color: "#fff" }}>IPTV Smarters Pro vs TiviMate: Which Should Canadian Subscribers Use?</h2>
+        <p style={{ color: "rgba(255,255,255,0.85)", lineHeight: 1.85, marginBottom: 16 }}>
+          The honest answer is that both are excellent, and the right choice depends on your primary device. For Android TV boxes and Fire Sticks connected to a living room TV, TiviMate has a slight edge — its remote control navigation is smoother, its EPG layout is cleaner on large screens, and its hardware decoding is more reliable on 4K H.265 content. For multi-device households where subscribers switch between a phone, tablet, and Smart TV, IPTV Smarters Pro wins on cross-platform availability since TiviMate doesn&apos;t have an iOS version.
+        </p>
+        <p style={{ color: "rgba(255,255,255,0.85)", lineHeight: 1.85, marginBottom: 32 }}>
+          Many MapleHD subscribers in Canada use both: TiviMate on their main TV setup and IPTV Smarters Pro on mobile devices. MapleHD&apos;s Xtream Codes credentials work in both apps simultaneously. If you&apos;re starting out, IPTV Smarters Pro on your first device is the safest starting point — it&apos;s free on Android and well-documented, so setup issues are easy to troubleshoot.
+        </p>
+
+        <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16, color: "#fff" }}>MapleHD + IPTV Smarters: Performance on Canadian Connections</h2>
+        <p style={{ color: "rgba(255,255,255,0.85)", lineHeight: 1.85, marginBottom: 24 }}>
+          IPTV Smarters Pro on a standard Canadian home internet connection delivers consistent, buffer-free HD and 4K streams with MapleHD. We recommend enabling hardware decoding in IPTV Smarters&apos; settings for 4K content — this offloads the video processing to your device&apos;s dedicated video chip rather than the CPU, dramatically reducing battery drain on mobile and eliminating dropped frames on budget Android TV boxes. On Fire Stick specifically, enabling hardware decoding and disabling the app&apos;s built-in screen saver produces the most stable 4K experience.
+        </p>
+
+        <div style={{ background: "#1A3D45", borderRadius: 16, padding: 32, textAlign: "center" }}>
+          <h2 style={{ fontSize: "1.5rem", fontWeight: 800, color: "#fff", marginBottom: 12 }}>Try MapleHD with IPTV Smarters — Free Trial</h2>
+          <p style={{ color: "rgba(255,255,255,0.8)", marginBottom: 28, lineHeight: 1.7 }}>No credit card. Full access on IPTV Smarters Pro on all your devices. From $9/month after trial.</p>
+          <a href="/free-trial" style={{ background: "#F96E5B", color: "#fff", padding: "14px 40px", borderRadius: 10, fontWeight: 700, textDecoration: "none" }}>Start Free Trial →</a>
+        </div>
+      </section>
+
     </main>
   );
 }

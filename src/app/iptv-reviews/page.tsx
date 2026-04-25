@@ -88,6 +88,25 @@ export default function IPTVReviewsPage() {
           </div>
         </section>
       </main>
+
+      <section style={{ maxWidth: 900, margin: "0 auto", padding: "0 16px 60px" }}>
+        <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 16, color: "#fff" }}>What Genuine IPTV Reviews in Canada Cover</h2>
+        <p style={{ color: "rgba(255,255,255,0.85)", lineHeight: 1.85, marginBottom: 16 }}>
+          Across verified review platforms, MapleHD consistently receives top marks for sports coverage and support responsiveness — the two areas where Canadian subscribers have the highest expectations. Stream quality during live events is the most common subject of positive reviews, and it reflects our investment in Canadian server infrastructure and capacity scaling during NHL playoffs and UFC events.
+        </p>
+        <p style={{ color: "rgba(255,255,255,0.85)", lineHeight: 1.85, marginBottom: 16 }}>
+          Not every IPTV review is written by someone who has actually used the service. When evaluating any IPTV service review, look for reviews mentioning specific features: NHL coverage, UFC PPV quality, specific device setup experiences, or direct support interactions. These are far more reliable than generic star-rating complaints. MapleHD&apos;s 4.8/5 average across 347+ reviews is built on subscribers who describe the actual service — from the quality of TSN 4K feeds to the speed of WhatsApp support responses.
+        </p>
+        <p style={{ color: "rgba(255,255,255,0.85)", lineHeight: 1.85, marginBottom: 32 }}>
+          We take negative reviews seriously. Feedback about setup difficulties led us to expand our WhatsApp support team and add guided installation via screen share. Feedback about rare buffering events led to server capacity increases before the 2025–26 NHL season. The reviews you read today reflect a product that has been shaped by genuine subscriber input over three years of operation in the Canadian market.
+        </p>
+        <div style={{ background: "#1A3D45", borderRadius: 16, padding: 32, textAlign: "center" }}>
+          <h2 style={{ fontSize: "1.5rem", fontWeight: 800, color: "#fff", marginBottom: 12 }}>Form Your Own Opinion — Free 24h Trial</h2>
+          <p style={{ color: "rgba(255,255,255,0.8)", marginBottom: 28, lineHeight: 1.7 }}>Join 347+ satisfied Canadians. No credit card required.</p>
+          <a href="/free-trial" style={{ background: "#F96E5B", color: "#fff", padding: "14px 40px", borderRadius: 10, fontWeight: 700, textDecoration: "none" }}>Try MapleHD Free →</a>
+        </div>
+      </section>
+
     </>
   );
 }
