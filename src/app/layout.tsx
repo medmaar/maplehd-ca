@@ -38,6 +38,41 @@ const aggregateRatingSchema = {
     "reviewCount": "347",
     "bestRating": "5",
     "worstRating": "1"
+  },
+  "telephone": "+1-514-000-0000",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "00:00",
+      "closes": "23:59"
+    }
+  ],
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 45.5441,
+    "longitude": -73.6568
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "Canada"
+  },
+  "priceRange": "$9-$100"
+};
+
+
+const sitelinksSearchSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "MapleHD",
+  "url": "https://maplehd.ca",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://maplehd.ca/?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
   }
 };
 
@@ -52,6 +87,7 @@ export default function RootLayout({
                   <script async src="https://www.googletagmanager.com/gtag/js?id=G-978MK0JNMG"></script>
                   <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-978MK0JNMG');` }}></script>
                   <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(aggregateRatingSchema) }} />
+                  <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(sitelinksSearchSchema) }} />
                 </head>
                 <body
                           className="min-h-full flex flex-col"
