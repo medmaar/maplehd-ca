@@ -179,7 +179,7 @@ export default function HomePage() {
                 marginBottom: 28,
               }}
             >
-              🏒 Canada's #1 Live Sports IPTV — 2026
+              🍁 Best IPTV Service Canada · IPTV Québec · 2026
             </span>
             <h1
               style={{
@@ -189,8 +189,8 @@ export default function HomePage() {
                 marginBottom: 24,
               }}
             >
-              Every Game.<br />
-              <span style={{ color: "#AE2448" }}>Every Goal. Every Fight.</span>
+              Best IPTV Service Canada<br />
+              <span style={{ color: "#AE2448" }}>IPTV Québec — Free Trial</span>
             </h1>
             <p
               style={{
