@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
         "Best IPTV service in Canada. IPTV Québec, IPTV subscription, IPTV resellers. Smarters, Firestick, Smart TV. 25,000+ channels, free trial, zero blackouts from $9/month.",
     keywords:
-        "iptv québec, iptv subscription canada, iptv resellers, iptv smarters, iptv smarters pro, iptv free, iptv with box, best iptv service canada, iptv providers canada, free iptv canada, MapleHD, NHL IPTV Canada, UFC IPTV Canada, live sports IPTV Canada",
+        "iptv québec, iptv subscription canada, iptv resellers, iptv smarters, iptv smarters pro, iptv free, iptv with box, best iptv service canada, iptv providers canada, free iptv canada, iptv installer, iptv reviews, iptv solutions, iptv top canada, free box for iptv in canada, best iptv services, best iptv providers, MapleHD, NHL IPTV Canada, UFC IPTV Canada",
     openGraph: {
         siteName: "MapleHD",
         locale: "en_CA",

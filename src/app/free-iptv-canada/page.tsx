@@ -35,6 +35,8 @@ export default function FreeIPTVCanadaPage() {
             "✅ Works on Any Device",
             "✅ No Credit Card Required",
             "✅ No Auto-Billing After Trial",
+          "✅ Free Setup Assistance Included",
+          "✅ Free IPTV Box Recommendation Included",,
           ].map(f => (
             <div key={f} style={{ background: "rgba(255,255,255,0.06)", borderRadius: 10, padding: "14px 18px", border: "1px solid rgba(255,255,255,0.1)", fontSize: 14, fontWeight: 600, color: "rgba(255,255,255,0.9)" }}>
               {f}
