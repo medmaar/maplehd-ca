@@ -4,14 +4,14 @@ import HomePricing from "./components/HomePricing";
 import { FadeUp, StaggerList, StaggerItem, HoverCard, CountUp, SlideIn, ScaleIn } from "../components/Animate";
 
 export const metadata: Metadata = {
-  title: { absolute: "NHL, UFC & CFL IPTV Canada 2026 — Every Game, No Blackouts | MapleHD" },
+  title: { absolute: "Best IPTV Service Canada 2026 — IPTV Québec & Free Trial | MapleHD" },
   description:
-    "Canada's #1 IPTV for live sports. Every NHL game, UFC PPV, CFL matchup and NBA game — zero blackouts, no extra charges. TSN, Sportsnet, beIN Sports from $9/month.",
+    "Best IPTV service in Canada 2026. IPTV Québec, IPTV subscription Canada, IPTV with box — free trial available. 25,000+ channels, NHL, UFC, CFL zero blackouts from $9/month.",
   keywords:
-    "NHL IPTV Canada, live sports IPTV Canada, UFC PPV Canada IPTV, CFL IPTV, MapleHD, no blackout IPTV Canada, sports streaming Canada 2026",
+    "iptv québec, best iptv service canada, iptv subscription canada, iptv resellers, iptv smarters, iptv with box, free iptv canada, iptv smarters pro, iptv providers canada, iptv firestick, MapleHD, NHL IPTV Canada",
   alternates: { canonical: "https://maplehd.ca" },
   openGraph: {
-    title: "NHL, UFC & CFL IPTV Canada 2026 — Every Game, No Blackouts | MapleHD",
+    title: "Best IPTV Service Canada 2026 — IPTV Québec & Free Trial | MapleHD",
     description:
       "Canada's #1 IPTV for live sports. Every NHL game, UFC PPV, CFL, NBA — zero blackouts, no extra PPV charges. TSN, Sportsnet, beIN Sports from $9/month.",
     url: "https://maplehd.ca",
