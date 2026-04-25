@@ -12,11 +12,6 @@ interface FormData {
   whatsappNumber: string;
 }
 
-import type { Metadata } from "next";
-export const metadata: Metadata = {
-  alternates: { canonical: "https://maplehd.ca/whatsapp-contact" },
-  robots: { index: false, follow: true },
-};
 
 export default function WhatsAppContactPage() {
   const [formData, setFormData] = useState<FormData>({ firstName: '', whatsappNumber: '' });
