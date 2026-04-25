@@ -15,8 +15,6 @@ export const metadata: Metadata = {
       "IPTV vs cable TV in Canada — we compare price, channels, picture quality, contracts, and flexibility to help you decide which is better in 2026.",
     url: "https://maplehd.ca/blog/iptv-vs-cable-canada",
     type: "article",
-    publishedTime: "2026-03-05T00:00:00Z",
-    modifiedTime: "2026-04-25T00:00:00Z",
     siteName: "MapleHD",
   },
   twitter: { card: "summary_large_image" },

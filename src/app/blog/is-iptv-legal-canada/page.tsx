@@ -15,8 +15,6 @@ export const metadata: Metadata = {
     url: "https://maplehd.ca/blog/is-iptv-legal-canada",
     siteName: "MapleHD",
     type: "article",
-    publishedTime: "2026-03-15T00:00:00Z",
-    modifiedTime: "2026-04-25T00:00:00Z",
   },
   twitter: {
     card: "summary_large_image",

@@ -15,8 +15,6 @@ export const metadata: Metadata = {
       "Stream NHL, CFL, NBA, UFC without blackout restrictions. All TSN & Sportsnet channels. Reliable 1080p HD on every device. Canadian support included.",
     url: "https://maplehd.ca/blog/best-iptv-canada-2026",
     type: "article",
-    publishedTime: "2026-01-15T00:00:00Z",
-    modifiedTime: "2026-04-25T00:00:00Z",
     siteName: "MapleHD",
   },
   twitter: { card: "summary_large_image", images: ["/og-image.webp"] },

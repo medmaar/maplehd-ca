@@ -12,8 +12,6 @@ export const metadata: Metadata = {
     description: "Find the best IPTV player app for Canada in 2026. Compare TiviMate, IPTV Smarters Pro, GSE Smart IPTV, and Perfect Player.",
     url: "https://maplehd.ca/blog/best-iptv-player-canada",
     type: "article",
-    publishedTime: "2026-02-10T00:00:00Z",
-    modifiedTime: "2026-04-25T00:00:00Z",
     siteName: "MapleHD",
   },
   twitter: { card: "summary_large_image" },
