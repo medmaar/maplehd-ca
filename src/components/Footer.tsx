@@ -86,14 +86,6 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="py-5 mb-4 border-t border-b" style={{ borderColor: "rgba(255,255,255,0.06)" }}>
-          <p className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-3">Also from our network</p>
-          <div className="flex flex-wrap gap-4">
-            <a href="https://maple4k.ca" className="text-gray-400 hover:text-[#72BAA9] text-sm transition-colors">Maple4K — 4K IPTV Canada</a>
-            <a href="https://maplestreamtv.ca" className="text-gray-400 hover:text-[#72BAA9] text-sm transition-colors">MapleStreamTV — Family IPTV Canada</a>
-          </div>
-        </div>
-
         <div className="pt-4 flex flex-wrap justify-center gap-4 mb-4">
           <a href="/whatsapp-contact" className="flex items-center gap-2 text-xs text-gray-400 hover:text-[#25D366] transition-colors">📱 WhatsApp</a>
           <a href="mailto:help@maplehd.ca" className="flex items-center gap-2 text-xs text-gray-400 hover:text-[#72BAA9] transition-colors">📧 help@maplehd.ca</a>
