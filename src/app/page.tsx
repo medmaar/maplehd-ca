@@ -1,3 +1,35 @@
+const aggregateRatingSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "MapleHD",
+  "url": "https://maplehd.ca",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "347",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "00:00",
+      "closes": "23:59"
+    }
+  ],
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 45.5441,
+    "longitude": -73.6568
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "Canada"
+  },
+  "priceRange": "$9-$100"
+};
+
 import type { Metadata } from "next";
 import Link from "next/link";
 import HomePricing from "./components/HomePricing";

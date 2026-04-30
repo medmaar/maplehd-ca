@@ -1,3 +1,6 @@
+import { Plus_Jakarta_Sans } from 'next/font/google';
+
+const plusJakarta = Plus_Jakarta_Sans({ subsets: ['latin'], weight: ['400','500','600','700','800'], display: 'swap', variable: '--font-jakarta' });
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./Navbar";
@@ -6,6 +9,7 @@ import FloatingContact from "../components/FloatingContact";
 
 export const metadata: Metadata = {
     metadataBase: new URL("https://maplehd.ca"),
+    alternates: { canonical: "https://maplehd.ca", languages: { "en-CA": "https://maplehd.ca", "x-default": "https://maplehd.ca" } },
     icons: { icon: "/favicon.svg" },
     title: {
         default: "Best IPTV Service Canada — Free Trial, No Blackouts | MapleHD",
@@ -27,37 +31,6 @@ export const metadata: Metadata = {
     },
 };
 
-const aggregateRatingSchema = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "MapleHD",
-  "url": "https://maplehd.ca",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.8",
-    "reviewCount": "347",
-    "bestRating": "5",
-    "worstRating": "1"
-  },
-  "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-      "opens": "00:00",
-      "closes": "23:59"
-    }
-  ],
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 45.5441,
-    "longitude": -73.6568
-  },
-  "areaServed": {
-    "@type": "Country",
-    "name": "Canada"
-  },
-  "priceRange": "$9-$100"
-};
 
 
 const sitelinksSearchSchema = {
@@ -85,7 +58,6 @@ export default function RootLayout({
                   {/* GA4 */}
                   <script async src="https://www.googletagmanager.com/gtag/js?id=G-978MK0JNMG"></script>
                   <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-978MK0JNMG');` }}></script>
-                  <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(aggregateRatingSchema) }} />
                   <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(sitelinksSearchSchema) }} />
                 </head>
                 <body
