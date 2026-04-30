@@ -27,8 +27,8 @@ const articleSchema = {
   description:
     "Complete guide to streaming sports in Canada without blackout restrictions. NHL, TSN, Sportsnet, CFL, NBA, UFC on reliable HD IPTV with Canadian support.",
   datePublished: "2026-01-20",
-  dateModified: "2026-04-01",
-  author: { "@type": "Organization", name: "MapleHD" },
+  dateModified: "2026-04-30",
+  "author": { "@type": "Person", "name": "Marc Bouchard", "url": "https://maplehd.ca/about" },
   publisher: {
     "@type": "Organization",
     name: "MapleHD",

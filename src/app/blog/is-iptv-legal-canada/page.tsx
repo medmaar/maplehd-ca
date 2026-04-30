@@ -29,8 +29,8 @@ const articleSchema = {
   "@type": "Article",
   headline: "Is IPTV Legal in Canada in 2026?",
   datePublished: "2026-01-15",
-  dateModified: "2026-04-01",
-  author: { "@type": "Organization", name: "MapleHD" },
+  dateModified: "2026-04-30",
+  "author": { "@type": "Person", "name": "Marc Bouchard", "url": "https://maplehd.ca/about" },
   publisher: {
     "@type": "Organization",
     name: "MapleHD",

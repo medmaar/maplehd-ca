@@ -82,7 +82,7 @@ const articleSchema = {
   "description": "Step-by-step guide to setting up IPTV on Amazon Firestick in Canada. Install IPTV Smarters Pro or TiviMate and stream 25,000+ Canadian channels.",
   "url": "https://maplehd.ca/blog/iptv-firestick-canada",
   "datePublished": "2026-01-01",
-  "dateModified": "2026-04-12",
+  "dateModified": "2026-04-30",
   "author": { "@type": "Organization", "name": "MapleHD" },
   "publisher": { "@type": "Organization", "name": "MapleHD", "url": "https://maplehd.ca" }
 };
