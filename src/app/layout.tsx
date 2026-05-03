@@ -1,11 +1,17 @@
 import { Plus_Jakarta_Sans } from 'next/font/google';
 
-const plusJakarta = Plus_Jakarta_Sans({ subsets: ['latin'], weight: ['400','500','600','700','800'], display: 'swap', variable: '--font-jakarta' });
-import type { Metadata } from "next";
+const plusJakarta = Plus_Jakarta_Sans({ subsets: ['latin'], weight: ['400','500','600','700','800'], display: 'optional', variable: '--font-jakarta', preload: true });
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import Navbar from "./Navbar";
 import Footer from "../components/Footer";
 import FloatingContact from "../components/FloatingContact";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#080610",
+};
 
 export const metadata: Metadata = {
     metadataBase: new URL("https://maplehd.ca"),
@@ -52,17 +58,42 @@ export default function RootLayout({
     children,
 }: Readonly<{ children: React.ReactNode }>) {
     return (
-          <html lang="en" className="h-full">
+          <html lang="en" className={`h-full ${plusJakarta.variable}`}>
                 <head>
                   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-                  {/* GA4 */}
-                  <script async src="https://www.googletagmanager.com/gtag/js?id=G-978MK0JNMG"></script>
-                  <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-978MK0JNMG');` }}></script>
+                  {/* Preload LCP hero */}
+                  <link rel="preload" as="image" href="/hero-mobile.webp" type="image/webp" fetchPriority="high" />
+                  {/* Critical above-fold CSS */}
+                  <style dangerouslySetInnerHTML={{ __html: `
+                    *,*::before,*::after{box-sizing:border-box}
+                    html{height:100%;scroll-behavior:smooth}
+                    body{background:#0a0a0a;color:#fff;margin:0;min-height:100%;display:flex;flex-direction:column}
+                    nav{position:sticky;top:0;z-index:50}
+                    main>section:first-child{position:relative;overflow:hidden;background:#0a0a0a;min-height:600px;padding:0 16px;text-align:center;display:flex;align-items:center;justify-content:center}
+                    main>section:first-child>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;opacity:.3;z-index:0}
+                    .flex-1{flex:1}
+                  `}} />
                   <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(sitelinksSearchSchema) }} />
+                  {/* GA4 — loads after user interaction only */}
+                  <script dangerouslySetInnerHTML={{ __html: `
+                    window.dataLayer=window.dataLayer||[];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js',new Date());gtag('config','G-978MK0JNMG');
+                    var _gaLoaded=false;
+                    function _loadGA(){
+                      if(_gaLoaded)return;_gaLoaded=true;
+                      var s=document.createElement('script');
+                      s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-978MK0JNMG';
+                      document.head.appendChild(s);
+                    }
+                    ['click','scroll','keydown','touchstart','mousemove'].forEach(function(e){
+                      document.addEventListener(e,_loadGA,{once:true,passive:true});
+                    });
+                    setTimeout(_loadGA,5000);
+                  ` }}></script>
                 </head>
                 <body
-                          className="min-h-full flex flex-col"
-                          style={{ fontFamily: "'Plus Jakarta Sans', system-ui, sans-serif" }}
+                          className={`min-h-full flex flex-col ${plusJakarta.className}`}
                         >
                         <Navbar />
                         <div className="flex-1">{children}</div>

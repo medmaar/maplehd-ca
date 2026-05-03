@@ -1,6 +1,9 @@
 "use client";
+import React from "react";
 import { useEffect, useRef, useState, ReactNode } from "react";
-import { motion, useInView, useMotionValue, useSpring, animate } from "framer-motion";
+
+// Lightweight CSS-based animation replacements for framer-motion
+// Saves ~160KB of JS bundle weight
 
 /* ─── Fade + slide up on scroll ─── */
 export function FadeUp({
@@ -11,208 +14,174 @@ export function FadeUp({
   children: ReactNode;
   delay?: number;
   className?: string;
+  style?: React.CSSProperties;
 }) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [visible, setVisible] = useState(false);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const obs = new IntersectionObserver(
+      ([e]) => { if (e.isIntersecting) { setVisible(true); obs.unobserve(el); } },
+      { threshold: 0.1, rootMargin: "0px 0px -40px 0px" }
+    );
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, []);
   return (
-    <motion.div
+    <div
+      ref={ref}
       className={className}
-      initial={{ opacity: 0, y: 32 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-60px" }}
-      transition={{ duration: 0.55, delay, ease: [0.22, 1, 0.36, 1] }}
+      style={{
+        opacity: visible ? 1 : 0,
+        transform: visible ? "translateY(0)" : "translateY(28px)",
+        transition: `opacity 0.55s cubic-bezier(0.22,1,0.36,1) ${delay}s, transform 0.55s cubic-bezier(0.22,1,0.36,1) ${delay}s`,
+        willChange: "opacity, transform",
+      }}
     >
       {children}
-    </motion.div>
+    </div>
   );
 }
 
 /* ─── Staggered children ─── */
-export function StaggerList({
-  children,
-  className,
-  style,
-  stagger = 0.07,
-  delayStart = 0,
-}: {
-  children: ReactNode;
-  className?: string;
-  style?: React.CSSProperties;
-  stagger?: number;
-  delayStart?: number;
-}) {
-  return (
-    <motion.div
-      className={className}
-      style={style}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, margin: "-60px" }}
-      variants={{
-        hidden: {},
-        visible: { transition: { staggerChildren: stagger, delayChildren: delayStart } },
-      }}
-    >
-      {children}
-    </motion.div>
-  );
+export function StaggerList({ children, className, style }: { children: ReactNode; className?: string; style?: React.CSSProperties }) {
+  return <div className={className}>{children}</div>;
 }
 
 export function StaggerItem({
   children,
+  index = 0,
   className,
   style,
 }: {
   children: ReactNode;
+  index?: number;
   className?: string;
   style?: React.CSSProperties;
 }) {
   return (
-    <motion.div
+    <FadeUp delay={index * 0.08} className={className} style={style}>
+      {children}
+    </FadeUp>
+  );
+}
+
+/* ─── Hover card ─── */
+export function HoverCard({ children, className, style }: { children: ReactNode; className?: string; style?: React.CSSProperties }) {
+  return (
+    <div
       className={className}
-      style={style}
-      variants={{
-        hidden: { opacity: 0, y: 24 },
-        visible: { opacity: 1, y: 0, transition: { duration: 0.45, ease: [0.22, 1, 0.36, 1] } },
+      style={{ transition: "transform 0.3s ease, box-shadow 0.3s ease" }}
+      onMouseEnter={e => {
+        (e.currentTarget as HTMLElement).style.transform = "translateY(-4px) scale(1.02)";
+      }}
+      onMouseLeave={e => {
+        (e.currentTarget as HTMLElement).style.transform = "";
       }}
     >
       {children}
-    </motion.div>
+    </div>
   );
 }
 
-/* ─── Hover lift card ─── */
-export function HoverCard({
-  children,
-  className,
-  style,
-}: {
-  children: ReactNode;
-  className?: string;
-  style?: React.CSSProperties;
-}) {
-  return (
-    <motion.div
-      className={className}
-      style={style}
-      whileHover={{ y: -6, scale: 1.02 }}
-      whileTap={{ scale: 0.98 }}
-      transition={{ type: "spring", stiffness: 340, damping: 24 }}
-    >
-      {children}
-    </motion.div>
-  );
-}
-
-/* ─── Animated number counter ─── */
+/* ─── CountUp number animation ─── */
 export function CountUp({
+  from = 0,
   to,
-  suffix = "",
   duration = 1.8,
-  style,
+  suffix = "",
+  className,
 }: {
+  from?: number;
   to: number;
-  suffix?: string;
   duration?: number;
+  suffix?: string;
+  className?: string;
   style?: React.CSSProperties;
 }) {
   const ref = useRef<HTMLSpanElement>(null);
-  const inView = useInView(ref, { once: true, margin: "-40px" });
-  const [displayed, setDisplayed] = useState(0);
-  const motionVal = useMotionValue(0);
-
+  const started = useRef(false);
   useEffect(() => {
-    return motionVal.on("change", (v) => setDisplayed(Math.round(v)));
-  }, [motionVal]);
+    const el = ref.current;
+    if (!el) return;
+    const obs = new IntersectionObserver(([e]) => {
+      if (e.isIntersecting && !started.current) {
+        started.current = true;
+        const start = performance.now();
+        const tick = (now: number) => {
+          const p = Math.min((now - start) / (duration * 1000), 1);
+          const eased = 1 - Math.pow(1 - p, 3);
+          el.textContent = Math.round(from + (to - from) * eased) + suffix;
+          if (p < 1) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+        obs.unobserve(el);
+      }
+    }, { threshold: 0.5 });
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, [from, to, duration, suffix]);
+  return <span ref={ref} className={className}>{from}{suffix}</span>;
+}
 
+/* ─── Slide in from left ─── */
+export function SlideIn({ children, className, delay = 0 }: { children: ReactNode; className?: string; delay?: number }) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [visible, setVisible] = useState(false);
   useEffect(() => {
-    if (!inView) return;
-    const controls = animate(motionVal, to, { duration, ease: "easeOut" });
-    return controls.stop;
-  }, [inView, to, duration, motionVal]);
-
+    const el = ref.current;
+    if (!el) return;
+    const obs = new IntersectionObserver(
+      ([e]) => { if (e.isIntersecting) { setVisible(true); obs.unobserve(el); } },
+      { threshold: 0.1 }
+    );
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, []);
   return (
-    <span ref={ref} style={style}>
-      {displayed.toLocaleString()}{suffix}
-    </span>
+    <div
+      ref={ref}
+      className={className}
+      style={{
+        opacity: visible ? 1 : 0,
+        transform: visible ? "translateX(0)" : "translateX(-32px)",
+        transition: `opacity 0.6s ease ${delay}s, transform 0.6s ease ${delay}s`,
+      }}
+    >
+      {children}
+    </div>
   );
 }
 
-/* ─── Slide in from left/right ─── */
-export function SlideIn({
-  children,
-  from = "left",
-  delay = 0,
-  className,
-  style,
-}: {
-  children: ReactNode;
-  from?: "left" | "right";
-  delay?: number;
-  className?: string;
-  style?: React.CSSProperties;
-}) {
-  return (
-    <motion.div
-      className={className}
-      style={style}
-      initial={{ opacity: 0, x: from === "left" ? -40 : 40 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: true, margin: "-60px" }}
-      transition={{ duration: 0.6, delay, ease: [0.22, 1, 0.36, 1] }}
-    >
-      {children}
-    </motion.div>
-  );
+export function PulseButton({ children, className, style }: { children: ReactNode; className?: string; style?: React.CSSProperties }) {
+  return <div className={className}>{children}</div>;
 }
 
-/* ─── Pulse glow on CTA buttons ─── */
-export function PulseButton({
-  children,
-  className,
-  style,
-  href,
-}: {
-  children: ReactNode;
-  className?: string;
-  style?: React.CSSProperties;
-  href?: string;
-}) {
-  const el = (
-    <motion.span
-      style={{ display: "inline-block", ...style }}
-      whileHover={{ scale: 1.04 }}
-      whileTap={{ scale: 0.97 }}
-      animate={{ boxShadow: ["0 0 0px rgba(174,36,72,0)", "0 0 22px rgba(174,36,72,0.55)", "0 0 0px rgba(174,36,72,0)"] }}
-      transition={{ boxShadow: { duration: 2.4, repeat: Infinity, ease: "easeInOut" }, scale: { type: "spring", stiffness: 340 } }}
-      className={className}
-    >
-      {children}
-    </motion.span>
-  );
-  return href ? <a href={href} style={{ textDecoration: "none" }}>{el}</a> : el;
-}
-
-/* ─── Scale in (for badges, icons) ─── */
-export function ScaleIn({
-  children,
-  delay = 0,
-  className,
-  style,
-}: {
-  children: ReactNode;
-  delay?: number;
-  className?: string;
-  style?: React.CSSProperties;
-}) {
+export function ScaleIn({ children, className, delay = 0 }: { children: ReactNode; className?: string; delay?: number }) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [visible, setVisible] = useState(false);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const obs = new IntersectionObserver(
+      ([e]) => { if (e.isIntersecting) { setVisible(true); obs.unobserve(el); } },
+      { threshold: 0.1 }
+    );
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, []);
   return (
-    <motion.div
+    <div
+      ref={ref}
       className={className}
-      style={style}
-      initial={{ opacity: 0, scale: 0.8 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      viewport={{ once: true, margin: "-40px" }}
-      transition={{ duration: 0.4, delay, ease: [0.22, 1, 0.36, 1] }}
+      style={{
+        opacity: visible ? 1 : 0,
+        transform: visible ? "scale(1)" : "scale(0.92)",
+        transition: `opacity 0.5s ease ${delay}s, transform 0.5s ease ${delay}s`,
+      }}
     >
       {children}
-    </motion.div>
+    </div>
   );
 }

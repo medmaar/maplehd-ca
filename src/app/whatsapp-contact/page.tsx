@@ -1,7 +1,11 @@
 'use client';
 
+async function getEmailjs() {
+  const mod = await import('@emailjs/browser');
+  return mod.default;
+}
+
 import { useState, FormEvent } from 'react';
-import emailjs from '@emailjs/browser';
 
 const SERVICE_ID = 'service_84i1c0s';
 const TEMPLATE_ID = 'template_wsb6yh8';
@@ -30,8 +34,8 @@ export default function WhatsAppContactPage() {
     setError('');
 
     try {
-      emailjs.init(PUBLIC_KEY);
       
+      const emailjs = await getEmailjs();
       await emailjs.send(SERVICE_ID, TEMPLATE_ID, {
         firstName: formData.firstName,
         whatsappNumber: formData.whatsappNumber,

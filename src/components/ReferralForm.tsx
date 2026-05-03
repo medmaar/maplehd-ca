@@ -1,6 +1,10 @@
 "use client";
+
+async function getEmailjs() {
+  const mod = await import("@emailjs/browser");
+  return mod.default;
+}
 import { useState } from "react";
-import emailjs from "@emailjs/browser";
 
 
 
@@ -16,7 +20,7 @@ export default function ReferralForm() {
     e.preventDefault();
     setStatus("loading");
     try {
-      emailjs.init("Xviff5xDI5EWUdF9P");
+      const emailjs = await getEmailjs();
       await emailjs.send("service_84i1c0s", "template_wsb6yh8", {
         from_name: yourName,
         from_email: "referral@maplehd.ca",

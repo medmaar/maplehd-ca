@@ -1,3 +1,10 @@
+
+/* ── HERO PROTECTION — LCP img always visible ── */
+main > section:first-child > img {
+  opacity: .3 !important;
+  transform: none !important;
+}
+
 @import "tailwindcss";
 
 :root {
@@ -37,12 +44,14 @@ body {
 
 .animate-marquee {
   animation: marquee 28s linear infinite;
+  will-change: transform;
 }
 
 .marquee-track {
   display: flex;
   width: max-content;
   animation: marquee 35s linear infinite;
+  will-change: transform;
 }
 
 /* Logo animations */
@@ -63,10 +72,12 @@ body {
 
 .logo-leaf {
   animation: leafPulse 3s ease-in-out infinite, logoEntrance 0.5s ease forwards;
+  will-change: transform, opacity;
 }
 
 .logo-hd {
   animation: hdShimmer 3s ease-in-out infinite;
+  will-change: opacity;
   animation-delay: 0.2s;
 }
 

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import EmailLink from "./EmailLink";
 import Logo from "./Logo";
 
 export default function Footer() {
@@ -14,7 +15,7 @@ export default function Footer() {
             </p>
           </div>
           <div className="sm:text-right shrink-0">
-            <a href="mailto:help@maplehd.ca" className="text-sm text-gray-400 hover:text-[#72BAA9] transition-colors">help@maplehd.ca</a>
+            <EmailLink className="text-sm text-gray-400 hover:text-[#72BAA9] transition-colors" />
             <div className="mt-3 text-gray-500 text-sm leading-relaxed">
               <p className="text-gray-400 font-medium text-xs uppercase tracking-wider mb-1">Address</p>
               <p>9361 Rue Lajeunesse</p>
@@ -88,13 +89,13 @@ export default function Footer() {
 
         <div className="pt-4 flex flex-wrap justify-center gap-4 mb-4">
           <a href="/whatsapp-contact" className="flex items-center gap-2 text-xs text-gray-400 hover:text-[#25D366] transition-colors">📱 WhatsApp</a>
-          <a href="mailto:help@maplehd.ca" className="flex items-center gap-2 text-xs text-gray-400 hover:text-[#72BAA9] transition-colors">📧 help@maplehd.ca</a>
+          <a href="mailto:help@maplehd.ca" className="flex items-center gap-2 text-xs text-gray-400 hover:text-[#72BAA9] transition-colors">📧 <EmailLink style={{ color: "inherit", textDecoration: "none" }} /></a>
           <a href="https://t.me/+z1lV-u1HmIA2YTQ0" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-xs text-gray-400 hover:text-[#229ED9] transition-colors">💬 Telegram</a>
         </div>
 
         <div className="flex flex-col sm:flex-row justify-between items-center gap-3">
           <p className="text-gray-600 text-xs">© 2026 MapleHD. All rights reserved.</p>
-          <p className="text-gray-700 text-xs">help@maplehd.ca</p>
+          <p className="text-gray-700 text-xs"><EmailLink style={{ color: "inherit" }} /></p>
         </div>
       </div>
     </footer>

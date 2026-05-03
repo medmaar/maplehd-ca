@@ -32,7 +32,8 @@ const aggregateRatingSchema = {
 
 import type { Metadata } from "next";
 import Link from "next/link";
-import HomePricing from "./components/HomePricing";
+import dynamic from "next/dynamic";
+const HomePricing = dynamic(() => import("./components/HomePricing"));
 import { FadeUp, StaggerList, StaggerItem, HoverCard, CountUp, SlideIn, ScaleIn } from "../components/Animate";
 
 export const metadata: Metadata = {
@@ -106,7 +107,7 @@ const organizationSchema = {
   url: "https://maplehd.ca",
   aggregateRating: { "@type": "AggregateRating", ratingValue: "4.8", reviewCount: "347", bestRating: "5" },
   logo: "https://maplehd.ca/favicon.svg",
-  email: "help@maplehd.ca",
+  // email omitted
   description:
     "Canada's #1 live sports IPTV service. Every NHL game, UFC PPV, CFL game — zero blackouts. TSN, Sportsnet all feeds from $9/month.",
   areaServed: "CA",
@@ -175,7 +176,7 @@ export default function HomePage() {
             position: "relative",
             overflow: "hidden",
             background: "#0a0a0a",
-            minHeight: "100svh",
+            minHeight: "600px",
             padding: "0 16px",
             textAlign: "center",
             display: "flex",
@@ -184,8 +185,10 @@ export default function HomePage() {
           }}
         >
           <img
-            src="/iptv-subscription-canada-1.jpg"
+            src="/hero-mobile.webp"
             alt="IPTV subscription Canada — watch NHL hockey and live Canadian TV channels in HD"
+            fetchPriority="high"
+            decoding="sync"
             style={{
               position: "absolute", inset: 0,
               width: "100%", height: "100%",
