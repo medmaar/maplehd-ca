@@ -10,6 +10,7 @@ export function FadeUp({
   children,
   delay = 0,
   className,
+  style: extraStyle,
 }: {
   children: ReactNode;
   delay?: number;
@@ -37,6 +38,7 @@ export function FadeUp({
         transform: visible ? "translateY(0)" : "translateY(28px)",
         transition: `opacity 0.55s cubic-bezier(0.22,1,0.36,1) ${delay}s, transform 0.55s cubic-bezier(0.22,1,0.36,1) ${delay}s`,
         willChange: visible ? "auto" : "opacity, transform",
+        ...extraStyle,
       }}
     >
       {children}
@@ -46,7 +48,7 @@ export function FadeUp({
 
 /* ─── Staggered children ─── */
 export function StaggerList({ children, className, style }: { children: ReactNode; className?: string; style?: React.CSSProperties }) {
-  return <div className={className}>{children}</div>;
+  return <div className={className} style={style}>{children}</div>;
 }
 
 export function StaggerItem({
@@ -72,7 +74,7 @@ export function HoverCard({ children, className, style }: { children: ReactNode;
   return (
     <div
       className={className}
-      style={{ transition: "transform 0.3s ease, box-shadow 0.3s ease" }}
+      style={{ transition: "transform 0.3s ease, box-shadow 0.3s ease", ...style }}
       onMouseEnter={e => {
         (e.currentTarget as HTMLElement).style.transform = "translateY(-4px) scale(1.02)";
       }}
