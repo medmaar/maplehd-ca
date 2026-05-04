@@ -61,8 +61,9 @@ export default function RootLayout({
           <html lang="en" className={`h-full ${plusJakarta.variable}`}>
                 <head>
                   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-                  {/* Preload LCP hero */}
-                  <link rel="preload" as="image" href="/hero-mobile.webp" type="image/webp" fetchPriority="high" />
+                  {/* Preload LCP hero — desktop gets 1920px, mobile gets 600px */}
+                  <link rel="preload" as="image" href="/hero-desktop.webp" type="image/webp" fetchPriority="high" media="(min-width: 768px)" />
+                  <link rel="preload" as="image" href="/hero-mobile.webp" type="image/webp" fetchPriority="high" media="(max-width: 767px)" />
                   {/* Critical above-fold CSS */}
                   <style dangerouslySetInnerHTML={{ __html: `
                     *,*::before,*::after{box-sizing:border-box}
@@ -70,7 +71,8 @@ export default function RootLayout({
                     body{background:#0a0a0a;color:#fff;margin:0;min-height:100%;display:flex;flex-direction:column}
                     nav{position:sticky;top:0;z-index:50}
                     main>section:first-child{position:relative;overflow:hidden;background:#0a0a0a;min-height:600px;padding:0 16px;text-align:center;display:flex;align-items:center;justify-content:center}
-                    main>section:first-child>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;opacity:.3;z-index:0}
+                    main>section:first-child picture{position:absolute;inset:0;width:100%;height:100%;z-index:0}
+                    main>section:first-child picture img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;opacity:.3;z-index:0}
                     .flex-1{flex:1}
                   `}} />
                   <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(sitelinksSearchSchema) }} />

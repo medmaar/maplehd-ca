@@ -36,7 +36,7 @@ export function FadeUp({
         opacity: visible ? 1 : 0,
         transform: visible ? "translateY(0)" : "translateY(28px)",
         transition: `opacity 0.55s cubic-bezier(0.22,1,0.36,1) ${delay}s, transform 0.55s cubic-bezier(0.22,1,0.36,1) ${delay}s`,
-        willChange: "opacity, transform",
+        willChange: visible ? "auto" : "opacity, transform",
       }}
     >
       {children}
@@ -147,6 +147,7 @@ export function SlideIn({ children, className, delay = 0 }: { children: ReactNod
         opacity: visible ? 1 : 0,
         transform: visible ? "translateX(0)" : "translateX(-32px)",
         transition: `opacity 0.6s ease ${delay}s, transform 0.6s ease ${delay}s`,
+        willChange: visible ? "auto" : "opacity, transform",
       }}
     >
       {children}
@@ -179,6 +180,7 @@ export function ScaleIn({ children, className, delay = 0 }: { children: ReactNod
         opacity: visible ? 1 : 0,
         transform: visible ? "scale(1)" : "scale(0.92)",
         transition: `opacity 0.5s ease ${delay}s, transform 0.5s ease ${delay}s`,
+        willChange: visible ? "auto" : "opacity, transform",
       }}
     >
       {children}

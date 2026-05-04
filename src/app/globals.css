@@ -1,5 +1,6 @@
 
 /* ── HERO PROTECTION — LCP img always visible ── */
+main > section:first-child > picture > img,
 main > section:first-child > img {
   opacity: .3 !important;
   transform: none !important;
