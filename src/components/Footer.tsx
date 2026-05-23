@@ -72,6 +72,9 @@ export default function Footer() {
               <Link href="/iptv-calgary" className="text-gray-400 hover:text-[#72BAA9] text-sm transition-colors">Calgary</Link>
               <Link href="/iptv-ottawa" className="text-gray-400 hover:text-[#72BAA9] text-sm transition-colors">Ottawa</Link>
               <Link href="/iptv-edmonton" className="text-gray-400 hover:text-[#72BAA9] text-sm transition-colors">Edmonton</Link>
+              <Link href="/iptv-winnipeg" className="text-gray-400 hover:text-[#72BAA9] text-sm transition-colors">Winnipeg</Link>
+              <Link href="/iptv-hamilton" className="text-gray-400 hover:text-[#72BAA9] text-sm transition-colors">Hamilton</Link>
+              <Link href="/iptv-london-ontario" className="text-gray-400 hover:text-[#72BAA9] text-sm transition-colors">London ON</Link>
             </div>
           </div>
 

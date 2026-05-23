@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     "Stream IPTV on your Android phone or tablet in Canada. 25,000+ channels, HD & 4K quality, NHL, TSN, CTV and more. Easy APK install. Try free today.",
   keywords:
     "IPTV Android Canada, IPTV Android phone Canada, IPTV Android tablet Canada, best IPTV app Android Canada",
-  alternates: { canonical: "https://www.maplehd.ca/iptv-android-canada" },
+  alternates: { canonical: "https://maplehd.ca/iptv-android-canada" },
 };
 
 const steps = [

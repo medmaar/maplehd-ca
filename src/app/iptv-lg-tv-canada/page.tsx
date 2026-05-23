@@ -6,7 +6,28 @@ export const metadata: Metadata = {
     "Stream IPTV on your LG Smart TV in Canada. 25,000+ channels, 4K quality, NHL, TSN, CTV and more. Easy webOS setup. Try free today.",
   keywords:
     "IPTV LG TV Canada, IPTV LG Smart TV Canada, LG webOS MapleHD, best IPTV for LG TV Canada",
-  alternates: { canonical: "https://www.maplehd.ca/iptv-lg-tv-canada" },
+  alternates: { canonical: "https://maplehd.ca/iptv-lg-tv-canada" },
+  openGraph: {
+    images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "IPTV LG TV Canada 2026 | MapleHD" }],
+    title: "IPTV LG TV Canada 2026 | Best IPTV for LG Smart TV (webOS)",
+    description: "Stream IPTV on your LG Smart TV in Canada. 25,000+ channels, 4K quality, NHL, TSN, CTV and more.",
+    url: "https://maplehd.ca/iptv-lg-tv-canada",
+    type: "website",
+    siteName: "MapleHD",
+    locale: "en_CA",
+  },
+  twitter: { card: "summary_large_image" },
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    { "@type": "Question", name: "Does IPTV work on all LG Smart TVs?", acceptedAnswer: { "@type": "Answer", text: "Our service works on all LG Smart TVs running webOS (2018 and newer). Older LG TVs may require an Android box or Fire Stick." } },
+    { "@type": "Question", name: "Do I need to sideload any apps?", acceptedAnswer: { "@type": "Answer", text: "Most supported apps are available directly from the LG Content Store. For older models, we provide a safe sideload method that does not void your warranty." } },
+    { "@type": "Question", name: "Can I watch on my LG TV and phone at the same time?", acceptedAnswer: { "@type": "Answer", text: "Yes — with a 2-device or higher plan you can stream on multiple devices simultaneously." } },
+    { "@type": "Question", name: "Does IPTV support LG's 4K and 8K resolution?", acceptedAnswer: { "@type": "Answer", text: "Yes. We stream up to 4K Ultra HD. Our servers automatically match the stream quality to your TV's resolution and your internet speed." } },
+  ],
 };
 
 const steps = [
@@ -19,7 +40,9 @@ const steps = [
 
 export default function IPTVLGTVPage() {
   return (
-    <main className="bg-gray-950 text-white min-h-screen">
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <main className="bg-gray-950 text-white min-h-screen">
       {/* Hero */}
       <section className="bg-gradient-to-br from-gray-900 via-gray-950 to-black py-20 px-4 text-center">
         <div className="max-w-3xl mx-auto">
@@ -136,5 +159,6 @@ export default function IPTVLGTVPage() {
         </div>
       </section>
     </main>
+    </>
   );
 }

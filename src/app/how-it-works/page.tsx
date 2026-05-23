@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     "Learn how IPTV works in Canada. Simple 3-step setup, compatible devices, internet requirements, and everything you need to start streaming today.",
   keywords:
     "how does IPTV work Canada, how to set up MapleHD, IPTV setup Canada, IPTV explained Canada",
-  alternates: { canonical: "https://www.maplehd.ca/how-it-works" },
+  alternates: { canonical: "https://maplehd.ca/how-it-works" },
 };
 
 const steps = [

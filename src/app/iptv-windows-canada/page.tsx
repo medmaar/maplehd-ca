@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     "Stream IPTV on Windows PC or Mac in Canada. 25,000+ channels, 4K quality, NHL, TSN, CTV and more. Works with VLC, IPTV Smarters, and more. Try free today.",
   keywords:
     "IPTV Windows Canada, IPTV PC Canada, IPTV computer Canada, IPTV Mac Canada, best IPTV for PC Canada",
-  alternates: { canonical: "https://www.maplehd.ca/iptv-windows-canada" },
+  alternates: { canonical: "https://maplehd.ca/iptv-windows-canada" },
 };
 
 const steps = [

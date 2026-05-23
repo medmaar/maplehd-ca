@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: "DMCA Policy | IPTV Subscription Canada",
   description:
     "DMCA policy for IPTV Subscription Canada. Learn how to submit a DMCA takedown notice and our process for handling copyright claims.",
-  alternates: { canonical: "https://www.maplehd.ca/dmca" },
+  alternates: { canonical: "https://maplehd.ca/dmca" },
 };
 
 export default function DMCAPage() {

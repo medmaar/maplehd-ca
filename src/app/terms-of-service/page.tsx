@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Terms of Service | IPTV Subscription Canada",
   description: "Terms of service for IPTV Subscription Canada. Read our terms before using our IPTV service.",
-  alternates: { canonical: "https://www.maplehd.ca/terms-of-service" },
+  alternates: { canonical: "https://maplehd.ca/terms-of-service" },
 };
 
 export default function TermsOfServicePage() {

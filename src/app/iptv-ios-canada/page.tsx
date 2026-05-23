@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     "Stream IPTV on iPhone or iPad in Canada. 25,000+ channels, HD & 4K quality, NHL, TSN, CTV and more. Easy App Store setup. Try free today.",
   keywords:
     "IPTV iPhone Canada, IPTV iPad Canada, IPTV iOS Canada, best IPTV for iPhone Canada, IPTV app Canada iOS",
-  alternates: { canonical: "https://www.maplehd.ca/iptv-ios-canada" },
+  alternates: { canonical: "https://maplehd.ca/iptv-ios-canada" },
 };
 
 const steps = [

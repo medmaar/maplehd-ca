@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     "Complete guide to installing IPTV on Amazon Fire Stick in Canada. Works on Fire Stick 4K, Lite, and all Fire TV devices. Easy step-by-step setup.",
   keywords:
     "IPTV Firestick Canada, install IPTV Fire Stick Canada, how to set up IPTV Firestick Canada, IPTV Fire TV Canada",
-  alternates: { canonical: "https://www.maplehd.ca/blog/iptv-firestick-canada" },
+  alternates: { canonical: "https://maplehd.ca/blog/iptv-firestick-canada" },
 };
 
 const steps = [

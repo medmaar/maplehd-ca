@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     "sports IPTV Canada, NHL streaming no blackouts, sports IPTV Canada 2026, Hockey streaming Canada, TSN Sportsnet streaming",
   alternates: { canonical: "https://maplehd.ca/blog/best-iptv-canada-2026" },
   openGraph: {
-      images: [{ url: "/og-image.webp", width: 1403, height: 761, alt: "MapleHD — Best Sports IPTV Canada 2026" }],
+      images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "MapleHD — Best Sports IPTV Canada 2026" }],
     title: "Watch Every Game Without Blackouts — Sports IPTV Canada 2026",
     description:
       "Stream NHL, CFL, NBA, UFC without blackout restrictions. All TSN & Sportsnet channels. Reliable 1080p HD on every device. Canadian support included.",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "MapleHD",
   },
-  twitter: { card: "summary_large_image", images: ["/og-image.webp"] },
+  twitter: { card: "summary_large_image", images: ["/iptv-subscription-canada-1.jpg"] },
 };
 
 const articleSchema = {

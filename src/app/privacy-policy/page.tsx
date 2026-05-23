@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Privacy Policy | IPTV Subscription Canada",
   description: "Privacy policy for IPTV Subscription Canada. Learn how we collect, use, and protect your personal information.",
-  alternates: { canonical: "https://www.maplehd.ca/privacy-policy" },
+  alternates: { canonical: "https://maplehd.ca/privacy-policy" },
 };
 
 export default function PrivacyPolicyPage() {

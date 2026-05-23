@@ -4,12 +4,12 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "MapleHD Blog 2026 | Guides, Reviews & News – MapleHD",
   description:
-    "Read MapleHD's MapleHD blog. Expert guides on setup, legality, pricing comparisons, player reviews, and the best IPTV services in Canada for 2026.",
-  keywords: "MapleHD blog, MapleHD guide 2026, best MapleHD review",
+    "MapleHD blog — expert guides on IPTV setup, legality, pricing comparisons, player reviews, and the best IPTV services in Canada for 2026.",
+  keywords: "IPTV blog Canada, MapleHD guide 2026, best IPTV review Canada, IPTV Canada 2026",
   alternates: { canonical: "https://maplehd.ca/blog" },
   openGraph: {
     title: "MapleHD Blog 2026 | Guides, Reviews & News – MapleHD",
-    description: "Read MapleHD's MapleHD blog. Expert guides on setup, legality, pricing comparisons, and player reviews.",
+    description: "MapleHD blog — expert guides on IPTV setup, legality, pricing comparisons, and player reviews for Canada 2026.",
     url: "https://maplehd.ca/blog",
     type: "website",
     siteName: "MapleHD",
