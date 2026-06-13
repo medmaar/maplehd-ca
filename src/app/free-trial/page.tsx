@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import PlanOrderForm from "../pricing/PlanOrderForm";
+import FreeTrialForm from "./FreeTrialForm";
 import PlanFAQ, { type FaqItem } from "../pricing/PlanFAQ";
 
 export const metadata: Metadata = {
@@ -15,18 +15,18 @@ export const metadata: Metadata = {
 const faqItems: FaqItem[] = [
   {
     q: "How do I get the free trial?",
-    a: "Simply fill out the form above and submit your request. Our team will activate your trial within minutes — usually under 5 minutes during business hours.",
+    a: "Simply fill out the form above and submit your request. Your trial credentials will be sent to your email automatically within seconds.",
   },
   {
     q: "Does the free trial include all channels?",
-    a: "Yes. Your 2-hour trial gives you full access to all 25,000+ live channels, 120,000+ VOD titles, and all sports packages — no restrictions.",
+    a: "Yes. Your 24-hour trial gives you full access to all 25,000+ live channels, 120,000+ VOD titles, and all sports packages — no restrictions.",
   },
   {
     q: "How many devices can I use during the trial?",
     a: "Your trial includes one simultaneous connection. If you want to test on multiple devices, let us know and we can arrange that.",
   },
   {
-    q: "What happens after 2 hours?",
+    q: "What happens after 24 hours?",
     a: "Your trial simply stops. There are no charges, no cancellation required. If you'd like to continue, contact us to choose a plan.",
   },
   {
@@ -84,11 +84,11 @@ export default function FreeTrialPage() {
                 Free Trial — MapleHD
               </h1>
               <p className="text-gray-400 text-sm mt-3">
-                5-minute full access. Fill out the form and we&apos;ll activate your trial within minutes.
+                Fill out the form and your credentials will arrive in your inbox within seconds — automatically.
               </p>
             </div>
 
-            {/* Order Form */}
+            {/* Free Trial Form */}
             <div
               className="rounded-3xl p-6 md:p-8 border mb-16"
               style={{
@@ -96,7 +96,7 @@ export default function FreeTrialPage() {
                 borderColor: "rgba(255,255,255,0.07)",
               }}
             >
-              <PlanOrderForm plan="Free Trial" />
+              <FreeTrialForm />
             </div>
 
             {/* FAQ */}
