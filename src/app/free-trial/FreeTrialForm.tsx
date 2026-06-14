@@ -111,12 +111,45 @@ export default function FreeTrialForm() {
 
       {/* Success */}
       {status === "success" && (
-        <div
-          className="rounded-2xl px-4 py-3 text-sm font-medium"
-          style={{ background: "rgba(74,222,128,0.1)", border: "1px solid rgba(74,222,128,0.3)", color: "#4ade80" }}
-        >
-          ✅ Your free trial credentials have been sent to your email! Check your inbox (and spam folder just in case).
-        </div>
+        <>
+          <style>{`
+            @keyframes popIn{0%{transform:scale(0);opacity:0}100%{transform:scale(1);opacity:1}}
+            @keyframes drawCheck{to{stroke-dashoffset:0}}
+          `}</style>
+          <div style={{
+            textAlign:"center",padding:"2.5rem 1.5rem",
+            background:"rgba(46,204,113,0.08)",
+            border:"1px solid rgba(46,204,113,0.35)",
+            borderRadius:20,
+            boxShadow:"0 0 40px rgba(46,204,113,0.12)"
+          }}>
+            <div style={{marginBottom:"1.5rem"}}>
+              <div style={{
+                width:90,height:90,borderRadius:"50%",
+                background:"rgba(46,204,113,0.15)",
+                border:"3px solid #2ecc71",
+                display:"flex",alignItems:"center",justifyContent:"center",
+                margin:"0 auto",
+                animation:"popIn 0.5s cubic-bezier(0.175,0.885,0.32,1.275) both"
+              }}>
+                <svg viewBox="0 0 52 52" style={{
+                  width:44,height:44,stroke:"#2ecc71",strokeWidth:3,fill:"none",
+                  strokeDasharray:60,strokeDashoffset:60,
+                  animation:"drawCheck 0.5s 0.35s ease forwards"
+                } as React.CSSProperties}>
+                  <polyline points="14,27 22,36 38,17"/>
+                </svg>
+              </div>
+            </div>
+            <div style={{color:"#2ecc71",fontSize:"1.8rem",fontWeight:900,marginBottom:"0.5rem"}}>
+              Your Trial is Active!
+            </div>
+            <p style={{color:"rgba(255,255,255,0.85)",fontSize:"1rem",lineHeight:1.7,margin:0}}>
+              Your login credentials have been sent to your email.<br/>
+              Check your inbox — your 24H access starts now.
+            </p>
+          </div>
+        </>
       )}
 
       {/* Error */}
