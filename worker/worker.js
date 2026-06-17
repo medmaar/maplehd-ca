@@ -1,5 +1,5 @@
 /**
- * Maple HD — Free Trial Worker
+ * Maple HD — Free Trial Worker v1
  * - Creates IPTV line via Activation Panel (USA - All, sub=99)
  * - Welcome + T-4h reminder + T=0 follow-up emails
  * - KV storage for cron-based follow-ups
