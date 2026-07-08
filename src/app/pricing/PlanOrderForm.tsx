@@ -132,7 +132,7 @@ export default function PlanOrderForm({ plan }: Props) {
           style={{ background: "rgba(174,36,72,0.1)", border: "1px solid rgba(174,36,72,0.3)", color: "#72BAA9" }}
         >
           ❌ Something went wrong. Please try again or{" "}
-          <a href="https://wa.me/17828026280" target="_blank" rel="noopener noreferrer" className="underline">
+          <a href="/msg/wa" target="_blank" rel="noopener noreferrer" className="underline">
             contact us on WhatsApp
           </a>.
         </div>

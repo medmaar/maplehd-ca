@@ -92,7 +92,7 @@ export default function TermsOfServicePage() {
             <h2 className="text-2xl font-bold text-white mb-3">12. Contact</h2>
             <div className="bg-gray-900 rounded-xl p-6 border border-gray-800">
               <p>Email: <a href="mailto:help@maplehd.ca" className="text-[#72BAA9] hover:underline">help@maplehd.ca</a></p>
-              <p className="mt-2">WhatsApp: <a href="https://wa.me/17828026280" target="_blank" rel="noopener noreferrer" className="text-[#72BAA9] hover:underline">+1 (782) 802-6280</a></p>
+              <p className="mt-2">WhatsApp: <a href="/msg/wa" target="_blank" rel="noopener noreferrer" className="text-[#72BAA9] hover:underline">+1 (782) 802-6280</a></p>
             </div>
           </section>
         </div>
