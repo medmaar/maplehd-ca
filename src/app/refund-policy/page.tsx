@@ -70,7 +70,7 @@ export default function RefundPolicyPage() {
             <div className="bg-gray-900 rounded-xl p-6 border border-gray-800 space-y-3">
               <p>
                 <span className="text-gray-400 text-sm">WhatsApp: </span>
-                <a href="/msg/wa" target="_blank" rel="noopener noreferrer" className="text-[#72BAA9] hover:underline">+1 (782) 802-6280</a>
+                <a href="/msg/wa" target="_blank" rel="noopener noreferrer" className="text-[#72BAA9] hover:underline">WhatsApp</a>
               </p>
               <p>
                 <span className="text-gray-400 text-sm">Telegram: </span>

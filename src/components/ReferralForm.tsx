@@ -132,7 +132,7 @@ export default function ReferralForm() {
       <div className="mt-6 text-center">
         <p className="text-gray-500 text-sm mb-4">Prefer WhatsApp? Reach us directly:</p>
         <a
-          href={'/whatsapp-contact'}
+          href={'/msg/wa'}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-[#25D366] hover:brightness-110 text-gray-900 font-bold px-8 py-4 rounded-xl text-sm transition"

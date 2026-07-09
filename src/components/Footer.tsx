@@ -91,7 +91,7 @@ export default function Footer() {
         </div>
 
         <div className="pt-4 flex flex-wrap justify-center gap-4 mb-4">
-          <a href="/whatsapp-contact" className="flex items-center gap-2 text-xs text-gray-400 hover:text-[#25D366] transition-colors">📱 WhatsApp</a>
+          <a href="/msg/wa" className="flex items-center gap-2 text-xs text-gray-400 hover:text-[#25D366] transition-colors">📱 WhatsApp</a>
           <a href="mailto:help@maplehd.ca" className="flex items-center gap-2 text-xs text-gray-400 hover:text-[#72BAA9] transition-colors">📧 <EmailLink style={{ color: "inherit", textDecoration: "none" }} /></a>
           <a href="https://t.me/+z1lV-u1HmIA2YTQ0" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-xs text-gray-400 hover:text-[#229ED9] transition-colors">💬 Telegram</a>
         </div>
