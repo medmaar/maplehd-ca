@@ -6,6 +6,7 @@ import "./globals.css";
 import Navbar from "./Navbar";
 import Footer from "../components/Footer";
 import FloatingContact from "../components/FloatingContact";
+import SalesBanner from "../components/SalesBanner";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -101,6 +102,7 @@ export default function RootLayout({
                         <div className="flex-1">{children}</div>
                         <Footer />
                         <FloatingContact />
+                        <SalesBanner />
                 </body>
           </html>
         );
