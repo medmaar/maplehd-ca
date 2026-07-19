@@ -39,11 +39,12 @@ import { FadeUp, StaggerList, StaggerItem, HoverCard, CountUp, SlideIn, ScaleIn 
 export const metadata: Metadata = {
   title: { absolute: "Best IPTV Service Canada 2026 — IPTV Québec & Free Trial | MapleHD" },
   description:
-    "Best IPTV service in Canada 2026. IPTV Québec, IPTV subscription Canada, IPTV with box — free trial available. 25,000+ channels, NHL, UFC, CFL zero blackouts from $9/month.",
+    "Best IPTV service in Canada 2026. IPTV Québec, IPTV subscription Canada, IPTV with box — free trial available. 25,000+ channels, NHL, UFC, CFL zero.",
   keywords:
     "iptv québec, best iptv service canada, iptv subscription canada, iptv resellers, iptv smarters, iptv with box, free iptv canada, iptv smarters pro, iptv providers canada, iptv firestick, MapleHD, NHL IPTV Canada",
   alternates: { canonical: "https://maplehd.ca" },
   openGraph: {
+      images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "MapleHD — Best IPTV Canada" }],
     title: "Best IPTV Service Canada 2026 — IPTV Québec & Free Trial | MapleHD",
     description:
       "Canada's #1 IPTV for live sports. Every NHL game, UFC PPV, CFL, NBA — zero blackouts, no extra PPV charges. TSN, Sportsnet, beIN Sports from $9/month.",

@@ -6,6 +6,7 @@ export const metadata: Metadata = {
     "Install IPTV on your Android TV box in Canada. MapleHD offers 25,000+ channels in 4K. TSN, NHL, Sportsnet, CTV & more. Free 24h trial.",
   alternates: { canonical: "https://maplehd.ca/iptv-android-tv-canada" },
   openGraph: {
+      images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "MapleHD — Best IPTV Canada" }],
     title: "Best IPTV for Android TV in Canada 2026 | MapleHD",
     description:
       "Install IPTV on your Android TV box in Canada. MapleHD offers 25,000+ channels in 4K. TSN, NHL, Sportsnet, CTV & more. Free 24h trial.",

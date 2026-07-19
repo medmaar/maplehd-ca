@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: { absolute: "IPTV Channels Canada — 25,000+ Live Channels | MapleHD" },
   description:
-    "Full MapleHD IPTV channel list for Canada 2026. Browse 25,000+ live channels including TSN, Sportsnet, CBC, CTV, RDS, TVA, NHL, NFL, NBA, and thousands of international channels.",
+    "Full MapleHD IPTV channel list for Canada 2026. Browse 25,000+ live channels including TSN, Sportsnet, CBC, CTV, RDS, TVA, NHL, NFL, NBA, and thousands of.",
   keywords:
     "IPTV channels Canada, MapleHD channel list, Canadian IPTV channels, TSN IPTV, Sportsnet IPTV Canada",
   openGraph: { images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "25,000+ IPTV Channels Canada — Full List | MapleHD" }] },

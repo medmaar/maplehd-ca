@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: { absolute: "Best IPTV Hamilton Ontario 2026 — 4K from $9 | MapleHD" },
   description:
-    "MapleHD is Hamilton's best IPTV service. Stream TSN, Sportsnet, CBC, CTV and 25,000+ channels in 4K. Watch Leafs, Raptors and TigerCats. Plans from $9. Free trial.",
+    "MapleHD is Hamilton's best IPTV service. Stream TSN, Sportsnet, CBC, CTV and 25,000+ channels in 4K. Watch Leafs, Raptors and TigerCats. Plans from $9.",
   keywords:
     "IPTV Hamilton, best IPTV Hamilton Ontario, IPTV service Hamilton, MapleHD Hamilton, IPTV Canada Hamilton, IPTV Hamilton Ontario",
   alternates: { canonical: "https://maplehd.ca/iptv-hamilton" },

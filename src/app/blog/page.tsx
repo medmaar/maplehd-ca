@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   keywords: "IPTV blog Canada, MapleHD guide 2026, best IPTV review Canada, IPTV Canada 2026",
   alternates: { canonical: "https://maplehd.ca/blog" },
   openGraph: {
+      images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "MapleHD — Best IPTV Canada" }],
     title: "MapleHD Blog 2026 | Guides, Reviews & News – MapleHD",
     description: "MapleHD blog — expert guides on IPTV setup, legality, pricing comparisons, and player reviews for Canada 2026.",
     url: "https://maplehd.ca/blog",

@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: { absolute: "Best IPTV Toronto 2026 — 4K from $9 | MapleHD" },
   description:
-    "MapleHD is Toronto's best IPTV service. Stream Maple Leafs, Raptors, Blue Jays, TSN, Sportsnet, CBC and 25,000+ channels in 4K. Plans from $9. Free trial available.",
+    "MapleHD is Toronto's best IPTV service. Stream Maple Leafs, Raptors, Blue Jays, TSN, Sportsnet, CBC and 25,000+ channels in 4K. Plans from $9. Free trial.",
   keywords:
     "IPTV Toronto, best IPTV Toronto, IPTV service Toronto, MapleHD Toronto, IPTV Canada Toronto, IPTV Ontario, IPTV Maple Leafs",
   alternates: { canonical: "https://maplehd.ca/iptv-toronto" },

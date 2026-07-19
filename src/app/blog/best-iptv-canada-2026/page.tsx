@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Best IPTV for Sports in Canada 2026: No Blackouts, All Games, HD Streaming | MapleHD",
   description:
-    "Stream every hockey, football, and UFC game in Canada without blackouts. NHL, TSN, Sportsnet, CFL, NBA on reliable 1080p HD IPTV. No sports packages, all included.",
+    "Stream every hockey, football, and UFC game in Canada without blackouts. NHL, TSN, Sportsnet, CFL, NBA on reliable 1080p HD IPTV. No sports packages, all.",
   keywords:
     "sports IPTV Canada, NHL streaming no blackouts, sports IPTV Canada 2026, Hockey streaming Canada, TSN Sportsnet streaming",
   alternates: { canonical: "https://maplehd.ca/blog/best-iptv-canada-2026" },

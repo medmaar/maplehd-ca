@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   keywords: "IPTV reseller Canada, IPTV reseller program Canada 2026, start IPTV business Canada",
   alternates: { canonical: "https://maplehd.ca/reseller" },
   openGraph: {
+      images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "MapleHD — Best IPTV Canada" }],
     title: "IPTV Reseller Canada 2026 | Start Your IPTV Business – MapleHD",
     description: "Become an IPTV reseller in Canada with MapleHD. Wholesale pricing, white-label options, and a fast reseller panel. Start your own IPTV business today.",
     url: "https://maplehd.ca/reseller",

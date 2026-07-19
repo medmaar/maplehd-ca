@@ -5,7 +5,7 @@ import PlanFAQ, { type FaqItem } from "../PlanFAQ";
 export const metadata: Metadata = {
   title: { absolute: "3 Month IPTV Canada — $29 | MapleHD" },
   description:
-    "Get 3 months of IPTV in Canada for only $29. 25,000+ live channels, 4K quality, NHL, TSN, CTV included. No contract. Login credentials sent within 5 minutes.",
+    "Get 3 months of IPTV in Canada for only $29. 25,000+ live channels, 4K quality, NHL, TSN, CTV included. No contract. Login credentials sent within 5.",
   keywords:
     "IPTV 3 months Canada, MapleHD 3 months, IPTV quarterly Canada, 3 month IPTV Canada $29",
   alternates: { canonical: "https://maplehd.ca/pricing/3-months" },

@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: { absolute: "IPTV Québec 2026 — Meilleur Service IPTV au Québec | MapleHD" },
   description:
-    "Meilleur service IPTV au Québec. TVA, RDS, Canal Vie, V Télé, Noovo et 25 000+ chaînes. Essai gratuit — sans carte de crédit. Abonnement IPTV Québec dès 9 $/mois.",
+    "Meilleur service IPTV au Québec. TVA, RDS, Canal Vie, V Télé, Noovo et 25 000+ chaînes. Essai gratuit — sans carte de crédit. Abonnement IPTV Québec dès 9.",
   keywords:
     "iptv québec, iptv subscription canada, iptv service canada, best iptv for canada, iptv providers in canada, service iptv, meilleur iptv québec, iptv montréal, iptv québec 2026",
   alternates: {

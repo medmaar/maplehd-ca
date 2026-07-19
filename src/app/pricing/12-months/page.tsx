@@ -60,7 +60,7 @@ const productSchema = {
   "@context": "https://schema.org",
   "@type": "Product",
   name: "MapleHD 1 Year IPTV Plan",
-  description: "12 months of IPTV access to 25,000+ live channels in Canada including NHL, TSN, CTV, Sportsnet and 120,000+ VOD titles in 4K. Includes IBO Player subscription.",
+  description: "12 months of IPTV access to 25,000+ live channels in Canada including NHL, TSN, CTV, Sportsnet and 120,000+ VOD titles in 4K. Includes IBO Player.",
   brand: { "@type": "Brand", name: "MapleHD" },
   offers: {
     "@type": "Offer",

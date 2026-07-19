@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     "IPTV Montreal, best IPTV Montreal, IPTV service Montreal, MapleHD Montreal, IPTV Canada Montreal, IPTV Quebec",
   alternates: { canonical: "https://maplehd.ca/iptv-montreal" },
   openGraph: {
+      images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "MapleHD — Best IPTV Canada" }],
     title: "Best IPTV Montreal 2026 — 4K from $9 | MapleHD",
     description:
       "MapleHD is Montreal's best IPTV service. Stream Canadiens, RDS, TVA Sports and 25,000+ channels in 4K. Plans from $9.",

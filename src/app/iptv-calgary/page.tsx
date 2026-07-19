@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     "IPTV Calgary, best IPTV Calgary, IPTV service Calgary, MapleHD Calgary, IPTV Canada Calgary, IPTV Alberta",
   alternates: { canonical: "https://maplehd.ca/iptv-calgary" },
   openGraph: {
+      images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "MapleHD — Best IPTV Canada" }],
     title: "Best IPTV Calgary 2026 — 4K from $9 | MapleHD",
     description:
       "MapleHD is Calgary's best IPTV service. Stream Flames, TSN, Sportsnet and 25,000+ channels in 4K. Plans from $9.",

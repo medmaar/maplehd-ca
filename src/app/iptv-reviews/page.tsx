@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: { absolute: "IPTV Reviews Canada 2026 — MapleHD Rated #1 | MapleHD" },
-  description: "Read verified IPTV reviews from Canadian subscribers. MapleHD is Canada's top-rated IPTV service — 4.8/5 stars across 347+ reviews. Free trial from $9/month.",
+  description: "Read verified IPTV reviews from Canadian subscribers. MapleHD is Canada's top-rated IPTV service — 4.8/5 stars across 347+ reviews. Free trial from.",
   keywords: "iptv reviews, iptv reviews canada, mapplehd reviews, best iptv canada reviews, iptv service reviews canada, iptv top rated canada, best iptv solutions canada",
   alternates: { canonical: "https://maplehd.ca/iptv-reviews" },
 };

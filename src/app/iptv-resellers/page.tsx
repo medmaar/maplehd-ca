@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: { absolute: "IPTV Resellers Canada — Best IPTV Reseller Program 2026 | MapleHD" },
-  description: "Become a MapleHD IPTV reseller in Canada. Best IPTV reseller program — white-label panels, competitive credits, 24/7 support. Start your IPTV resell business today.",
+  description: "Become a MapleHD IPTV reseller in Canada. Best IPTV reseller program — white-label panels, competitive credits, 24/7 support. Start your IPTV resell.",
   keywords: "iptv resellers, best iptv resell, iptv reseller canada, iptv reseller program canada, become iptv reseller canada, iptv resell business canada",
   alternates: { canonical: "https://maplehd.ca/iptv-resellers" },
 };

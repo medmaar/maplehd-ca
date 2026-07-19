@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     "IPTV Ottawa, best IPTV Ottawa, IPTV service Ottawa, MapleHD Ottawa, IPTV Canada Ottawa, IPTV Ontario Ottawa",
   alternates: { canonical: "https://maplehd.ca/iptv-ottawa" },
   openGraph: {
+      images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "MapleHD — Best IPTV Canada" }],
     title: "Best IPTV Service in Ottawa 2026 — 4K Streaming from $9 | MapleHD",
     description:
       "MapleHD is Ottawa's best IPTV service. Stream Senators, TSN, Sportsnet, CBC and 25,000+ channels in 4K. Plans from $9.",
