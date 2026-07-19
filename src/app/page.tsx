@@ -37,7 +37,7 @@ const HomePricing = dynamic(() => import("./components/HomePricing"));
 import { FadeUp, StaggerList, StaggerItem, HoverCard, CountUp, SlideIn, ScaleIn } from "../components/Animate";
 
 export const metadata: Metadata = {
-  title: { absolute: "Best IPTV Service Canada 2026 — IPTV Québec & Free Trial | MapleHD" },
+  title: { absolute: "Best IPTV Service Canada 2026 — IPTV Québec & Free | MapleHD" },
   description:
     "Best IPTV service in Canada 2026. IPTV Québec, IPTV subscription Canada, IPTV with box — free trial available. 25,000+ channels, NHL, UFC, CFL zero.",
   keywords:

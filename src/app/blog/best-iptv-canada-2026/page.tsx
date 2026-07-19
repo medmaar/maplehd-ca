@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Best IPTV for Sports in Canada 2026: No Blackouts, All Games, HD Streaming | MapleHD",
+  title: "Best IPTV for Sports in Canada 2026: No Blackouts, All | MapleHD",
   description:
     "Stream every hockey, football, and UFC game in Canada without blackouts. NHL, TSN, Sportsnet, CFL, NBA on reliable 1080p HD IPTV. No sports packages, all.",
   keywords:

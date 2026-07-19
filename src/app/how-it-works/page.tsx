@@ -55,7 +55,11 @@ const requirements = [
 
 export default function HowItWorksPage() {
   return (
-    <main className="bg-gray-950 text-white min-h-screen">
+    <main
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "MapleHD", "item": "https://maplehd.ca"}, {"@type": "ListItem", "position": 2, "name": "How IPTV Works in Canada", "item": "https://maplehd.ca/how-it-works"}]}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "How IPTV Works in Canada", "url": "https://maplehd.ca/how-it-works", "inLanguage": "en-CA", "dateModified": "2026-07-19", "isPartOf": {"@type": "WebSite", "name": "MapleHD", "url": "https://maplehd.ca"}}) }} />
+    </> className="bg-gray-950 text-white min-h-screen">
       {/* Hero */}
       <section className="bg-gradient-to-br from-gray-900 via-gray-950 to-black py-16 px-4 text-center">
         <div className="max-w-3xl mx-auto">

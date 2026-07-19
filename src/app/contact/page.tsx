@@ -28,7 +28,11 @@ const channels = [
 
 export default function ContactPage() {
   return (
-    <main className="bg-gray-950 text-white min-h-screen py-20 px-4">
+    <main
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "MapleHD", "item": "https://maplehd.ca"}, {"@type": "ListItem", "position": 2, "name": "Contact Us", "item": "https://maplehd.ca/contact"}]}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Contact Us", "url": "https://maplehd.ca/contact", "inLanguage": "en-CA", "dateModified": "2026-07-19", "isPartOf": {"@type": "WebSite", "name": "MapleHD", "url": "https://maplehd.ca"}}) }} />
+    </> className="bg-gray-950 text-white min-h-screen py-20 px-4">
       <div className="max-w-3xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
           Contact <span className="text-green-500">Us</span>

@@ -55,7 +55,11 @@ const posts = [
 
 export default function BlogPage() {
   return (
-    <main style={{ background: "#0a0a0a", color: "#fff", minHeight: "100vh" }}>
+    <main
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "MapleHD", "item": "https://maplehd.ca"}, {"@type": "ListItem", "position": 2, "name": "MapleHD Blog 2026", "item": "https://maplehd.ca/blog"}]}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "MapleHD Blog 2026", "url": "https://maplehd.ca/blog", "inLanguage": "en-CA", "dateModified": "2026-07-19", "isPartOf": {"@type": "WebSite", "name": "MapleHD", "url": "https://maplehd.ca"}}) }} />
+    </> style={{ background: "#0a0a0a", color: "#fff", minHeight: "100vh" }}>
       <section
         style={{
           background: "radial-gradient(ellipse 80% 55% at 50% 0%, rgba(174,36,72,0.12) 0%, transparent 65%), #0a0a0a",
