@@ -38,11 +38,10 @@ const features = [
 
 export default function ResellerPage() {
   return (
-    <main
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "MapleHD", "item": "https://maplehd.ca"}, {"@type": "ListItem", "position": 2, "name": "IPTV Reseller Canada 2026", "item": "https://maplehd.ca/reseller"}]}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "IPTV Reseller Canada 2026", "url": "https://maplehd.ca/reseller", "inLanguage": "en-CA", "dateModified": "2026-07-19", "isPartOf": {"@type": "WebSite", "name": "MapleHD", "url": "https://maplehd.ca"}}) }} />
-    </> style={{ background: "#0a0a0a", color: "#fff", minHeight: "100vh" }}>
+    <main style={{ background: "#0a0a0a", color: "#fff", minHeight: "100vh" }}>
       {/* Hero */}
       <section
         style={{
@@ -175,5 +174,6 @@ export default function ResellerPage() {
         </div>
       </section>
     </main>
+    </>
   );
 }
