@@ -30,6 +30,7 @@ export default function Footer() {
             <p className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-4">Pages</p>
             <div className="flex flex-col gap-2.5">
               <Link href="/" className="text-gray-400 hover:text-[#72BAA9] text-sm transition-colors">Home</Link>
+              <Link href="/about" className="text-gray-400 hover:text-[#72BAA9] text-sm transition-colors">About</Link>
               <Link href="/pricing" className="text-gray-400 hover:text-[#72BAA9] text-sm transition-colors">Pricing</Link>
               <Link href="/channels-list" className="text-gray-400 hover:text-[#72BAA9] text-sm transition-colors">Channels</Link>
               <Link href="/free-trial" className="text-gray-400 hover:text-[#72BAA9] text-sm transition-colors">Free Trial</Link>
