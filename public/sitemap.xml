@@ -100,6 +100,7 @@
 
   <!-- Informational pages -->
   <url><loc>https://maplehd.ca/channels-list</loc><lastmod>2026-05-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://maplehd.ca/about</loc><lastmod>2026-08-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://maplehd.ca/how-it-works</loc><lastmod>2026-05-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://maplehd.ca/referral</loc><lastmod>2026-05-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://maplehd.ca/reseller</loc><lastmod>2026-05-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
