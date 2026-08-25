@@ -282,10 +282,10 @@ async function handleFetch(request, env) {
     catch(_) { try { await new Promise(r => setTimeout(r, 1500)); await _kvPost(); } catch(__) {} }
 
     step = "email_client";
-    await sendEmail(email, "Your Maple HD Free Trial is Ready — 24H Access Activated ✓", welcomeEmail(name, username, password, m3uUrl, RESEND_KEY));
+    await sendEmail(email, "Your Maple HD Free Trial is Ready — 24H Access Activated ✓", welcomeEmail(name, username, password, m3uUrl), RESEND_KEY);
 
     step = "email_admin";
-    await sendEmail(ADMIN_EMAIL, `Automation / maplehd.ca / trial / ${name} / ${email}`, adminEmail(name, email, country, device, whatsapp, notes, username, password, m3uUrl, RESEND_KEY));
+    await sendEmail(ADMIN_EMAIL, `Automation / maplehd.ca / trial / ${name} / ${email}`, adminEmail(name, email, country, device, whatsapp, notes, username, password, m3uUrl), RESEND_KEY);
 
     return jsonRes({ success: true });
 
@@ -311,7 +311,7 @@ async function handleScheduled(env) {
 
     if (!reminder_sent && now >= expiry - FOUR_HOURS && now < expiry) {
       try {
-        await sendEmail(email, "⏳ Your Maple HD Trial Expires in 4 Hours", reminderEmail(name, username, password, m3uUrl, RESEND_KEY));
+        await sendEmail(email, "⏳ Your Maple HD Trial Expires in 4 Hours", reminderEmail(name, username, password, m3uUrl), RESEND_KEY);
         trial.reminder_sent = true;
         await env.TRIALS.put(key, JSON.stringify(trial), { expirationTtl: 30 * 24 * 60 * 60 });
         console.log(`[cron] Reminder → ${email}`);
@@ -320,7 +320,7 @@ async function handleScheduled(env) {
 
     if (!followup_sent && now >= expiry) {
       try {
-        await sendEmail(email, "Your Maple HD Trial Has Ended — Come Back Anytime 🎬", followupEmail(name, RESEND_KEY));
+        await sendEmail(email, "Your Maple HD Trial Has Ended — Come Back Anytime 🎬", followupEmail(name), RESEND_KEY);
         trial.followup_sent = true;
         await env.TRIALS.put(key, JSON.stringify(trial), { expirationTtl: 30 * 24 * 60 * 60 });
         console.log(`[cron] Follow-up → ${email}`);
