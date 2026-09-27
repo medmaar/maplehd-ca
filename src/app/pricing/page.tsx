@@ -154,7 +154,7 @@ export default function PricingPage() {
         </div>
       </section>
     <PlanLinks />
-      <SeoLinks heading="Learn more about IPTV pricing" slugs={["iptv-subscription","cheap-iptv-canada","iptv-deals","buy-iptv","premium-iptv","fr/abonnement-iptv"]} />
+      <SeoLinks heading="Learn more about IPTV pricing" slugs={["iptv-subscription","cheap-iptv-canada","iptv-deals","buy-iptv","premium-iptv","fr/abonnement-iptv","iptv-payment-canada"]} />
       </main>
     </>
   );

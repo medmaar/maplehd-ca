@@ -155,7 +155,7 @@ export default function IPTVSamsungPage() {
         </div>
       </section>
     <PageExtras slug="iptv-samsung-tv-canada" />
-      <SeoLinks heading="Related IPTV guides" slugs={["smart-iptv-app","siptv-app","flix-iptv","duplecast","iptv-smarters-pro-smart-tv","tivimate-smart-tv","iptv-devices"]} />
+      <SeoLinks heading="Related IPTV guides" slugs={["smart-iptv-app","siptv-app","flix-iptv","duplecast","iptv-smarters-pro-smart-tv","tivimate-smart-tv","iptv-devices","iptv-smarters-samsung-tv"]} />
       </main></>
   );
 }

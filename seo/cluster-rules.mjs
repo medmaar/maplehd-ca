@@ -39,10 +39,16 @@ export const RULES = [
   ["tivimate-smart-tv", /tivimate (apple|roku|samsung|lg)/i],
   ["tivimate", /tivi ?mate/i],
 
+  ["iptv-ctv", /^ctv iptv$/i],
+  ["iptv-smarters-samsung-tv", /(smarters|smasters).*samsung|samsung iptv smarters/i],
+  ["iptv-smarters-lg-tv", /(smarters|smasters).* lg( |$)/i],
+  ["iptv-smarters-roku", /(smarters|smasters).*roku/i],
+  ["iptv-smarters-apple", /(smarters|smasters).*(apple|iphone|ipad|ios)/i],
+  ["iptv-smarters-android", /(smarters|smasters|smarter).*android/i],
   ["iptv-smarters-pro-price", /smasters (pro )?(price|subscription|premium)|smasters pro subscription|smasters subscription/i],
   ["iptv-smarters-pro-firestick", /(smarters|smasters).*(fire ?stick|fire tv)|smarters pro firestick|smart iptv fire|xciptv.*fire/i],
   ["iptv-smarters-pro-pc-mac", /(smarters|smasters).*(\bpc\b|mac|macbook|web|online|browser|chromecast)|smarters pro pc|web iptv smarters/i],
-  ["iptv-smarters-pro-smart-tv", /(smarters|smasters).*(samsung| lg( |$)|roku|smart tv|sony|apple|android tv|tizen)|(smarters|smasters)( pro| player)? tv$|smarterstv|smarters pro tv|smarters player tv|smarters player pro|iptv smasters (pro )?tv/i],
+  ["iptv-smarters-pro-smart-tv", /(smarters|smasters).*(samsung| lg( |$)|roku|smart tv|sony|apple|android tv|tizen)|(smarters|smasters)( pro| player)? tv$|smarterstv|smarters pro tv|smarters tv pro|smarters player tv|smarters player pro|iptv smasters (pro )?tv/i],
   ["iptv-smarters-lite", /smarters (player )?lite|smart player lite|smasters player lite|smarters pro lite|smarters lite/i],
   ["iptv-smarters-pro-download", /(smarters|smasters|smarterspro|smarter pro|smarter).*(download|google play|free|android|iphone|m3u|com$|pro live|pro com)|ip ?tv smarters pro|iptv smarters pro|ip tv smarter|smarters pro|smarters iptv|iptv smarters|iptv smarter|smarter player|smarters player|smarterspro|ip smarters|iptvsmarterspro|tv smarters|iptv smasters|iptv smasters pro|smasters|ip smarter pro|iptv smarter pro/i],
 
@@ -70,7 +76,9 @@ export const RULES = [
   ["dreamlink-iptv", /dreamlink|dreamtv mini/i],
   ["buzztv-iptv", /buzztv/i],
   ["tvip-iptv-box", /tvip/i],
-  ["best-android-tv-box", /android tv box|android box|box android|best android|onn tv|mi box|xiaomi|homatics|ugoos|tanggula|dlta|nvidia shield|shield|neotv|iptv android tv|smart iptv android tv/i],
+  ["iptv-nvidia-shield", /nvidia shield|shield/i],
+  ["android-tv-box-models", /onn tv box|mi box|xiaomi|homatics|ugoos|tanggula|dlta|neotv/i],
+  ["best-android-tv-box", /android tv box|android box|box android|best android|iptv android tv|smart iptv android tv/i],
 
   // Sports & content
   ["iptv-ufc", /ufc/i],
@@ -108,6 +116,7 @@ export const RULES = [
 
   // Boxes (generic)
   ["iptv-near-me", /near me|local iptv|iptv areas/i],
+  ["iptv-enigma2", /enigma2/i],
   ["iptv-with-box", /enigma2|with box|set top box|iptv stb|set iptv|set ip tv|iptv set$|iptv receiver|iptv device|satellite/i],
   ["iptv-box", /\bbox\b|iptv sim|tv ip box/i],
 
@@ -128,6 +137,7 @@ export const RULES = [
   ["iptv-server", /server|sharing|connect|iptv main|iptv hub|iptv gen\b|iptv secured|iptv stable|iptv express/i],
   ["iptv-player", /player|app$|iptvapp|iptvpro|iptv streamer|stream pro|iptv media|ip player|live tv player|iptv studio|iptv go|iptv lite|iptv max|iptv tune/i],
   ["what-is-iptv", /what is it|beginners|ip television|digital iptv|television|^tv ip$|iptv tv$/i],
+  ["iptv-live-tv-24-7", /iptv 24|24 7|24h|live tv|watch tv online|iptv now|iptv today|iptv wifi|cloud stream|live iptv|iptv live|watch iptv|watched iptv|live ip tv|ip tv live|online iptv|iptv online|ip tv online|online ip tv/i],
   ["iptv-service-canada", /service|streaming|online|\blive\b|watch|iptv now|iptv today|stream|iptv tv|iptv 24|iptv wifi|cloud stream/i],
 
   // Brand-name searches (provider names) -> brand pages, fallback hub

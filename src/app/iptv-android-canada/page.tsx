@@ -153,7 +153,7 @@ export default function IPTVAndroidPage() {
         </div>
       </section>
     <PageExtras slug="iptv-android-canada" />
-      <SeoLinks heading="Related IPTV guides" slugs={["iptv-smarters-pro-download","xciptv","ott-navigator","iptv-player","iptv-apps","iptv-chromecast"]} />
+      <SeoLinks heading="Related IPTV guides" slugs={["iptv-smarters-pro-download","xciptv","ott-navigator","iptv-player","iptv-apps","iptv-chromecast","iptv-smarters-android","iptv-tablets"]} />
       </main></>
   );
 }

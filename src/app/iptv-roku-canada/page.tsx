@@ -153,7 +153,7 @@ export default function IPTVRokuPage() {
         </div>
       </section>
     <PageExtras slug="iptv-roku-canada" />
-      <SeoLinks heading="Related IPTV guides" slugs={["tivimate-smart-tv","iptv-chromecast","iptv-firestick-canada","iptv-devices","iptv-apps"]} />
+      <SeoLinks heading="Related IPTV guides" slugs={["tivimate-smart-tv","iptv-chromecast","iptv-firestick-canada","iptv-devices","iptv-apps","iptv-smarters-roku","iptv-tcl-tv"]} />
       </main></>
   );
 }

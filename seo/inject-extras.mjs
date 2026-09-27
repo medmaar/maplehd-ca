@@ -3,10 +3,15 @@ import { readFileSync, writeFileSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 import EXTRAS from "../src/content/seo/existing.mjs";
+import ALSO from "../src/content/seo/also-searched.mjs";
+import { existsSync } from "fs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..", "src", "app");
-for (const slug of Object.keys(EXTRAS)) {
+const slugs = new Set([...Object.keys(EXTRAS), ...Object.keys(ALSO)]);
+for (const slug of slugs) {
   const file = join(root, slug, "page.tsx");
+  if (!existsSync(file)) continue;
+  if (readFileSync(file, "utf8").includes("AUTO-GENERATED")) continue;
   let s = readFileSync(file, "utf8");
   if (s.includes("<PageExtras")) continue;
   const tag = `<PageExtras slug=${JSON.stringify(slug)} />\n      `;

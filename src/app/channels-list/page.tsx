@@ -8353,7 +8353,7 @@ export default function ChannelsListPage() {
         </div>
       </section>
     <PageExtras slug="channels-list" />
-      <SeoLinks heading="Related IPTV guides" slugs={["iptv-sports","iptv-ufc","iptv-nba","iptv-soccer","iptv-vod-movies-series","iptv-dvr-catch-up","iptv-canada"]} />
+      <SeoLinks heading="Related IPTV guides" slugs={["iptv-sports","iptv-ufc","iptv-nba","iptv-soccer","iptv-vod-movies-series","iptv-dvr-catch-up","iptv-canada","iptv-canadian-channels","iptv-cbc","iptv-ctv","iptv-global-tv","iptv-tsn","iptv-sportsnet"]} />
       </main>
     </>
   );

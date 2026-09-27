@@ -141,7 +141,7 @@ export default function IPTVWindowsPage() {
         </div>
       </section>
     <PageExtras slug="iptv-windows-canada" />
-      <SeoLinks heading="Related IPTV guides" slugs={["iptv-smarters-pro-pc-mac","iptv-vlc","iptv-mac","iptv-m3u-player","iptv-web-browser","tivimate-pc-mac","iptv-guides"]} />
+      <SeoLinks heading="Related IPTV guides" slugs={["iptv-smarters-pro-pc-mac","iptv-vlc","iptv-mac","iptv-m3u-player","iptv-web-browser","tivimate-pc-mac","iptv-guides","iptv-xbox"]} />
       </main>
     </>
   );

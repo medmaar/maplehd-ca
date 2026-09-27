@@ -5,7 +5,13 @@ import boxes from "./boxes.mjs";
 import guides from "./guides.mjs";
 import brands from "./brands.mjs";
 import fr from "./fr.mjs";
+import { BRAND_GROUPS } from "./brand-defs.mjs";
 import expansions from "./expansions.mjs";
+import geo from "./geo.mjs";
+import ALSO from "./also-searched.mjs";
+import canada from "./canada.mjs";
+import gaps from "./gaps.mjs";
+import { PROVINCES, CITIES, REGIONS, EXISTING_CITIES } from "./geo-data.mjs";
 
 // cluster -> default hub (breadcrumb parent) and pillar (cluster head page, may be an existing page)
 export const CLUSTER_META = {
@@ -25,9 +31,9 @@ export const CLUSTER_META = {
   fr: { hub: "fr", pillar: "fr" },
 };
 
-const BASE_PAGES = [...buy, ...appsTivimate, ...appsPlayers, ...boxes, ...guides, ...brands, ...fr].map((p) => {
+const BASE_PAGES = [...buy, ...appsTivimate, ...appsPlayers, ...boxes, ...guides, ...brands, ...fr, ...geo, ...canada, ...gaps].map((p) => {
   const meta = CLUSTER_META[p.cluster] || {};
-  const out = { lang: "en", published: "2026-09-27", ...p };
+  const out = { lang: "en", published: "2026-09-27", also: ALSO[p.slug], ...p };
   const exp = expansions[p.slug];
   if (exp) {
     if (exp.sections) out.sections = [...p.sections.slice(0, -1), ...exp.sections, ...p.sections.slice(-1)];
@@ -41,7 +47,50 @@ const BASE_PAGES = [...buy, ...appsTivimate, ...appsPlayers, ...boxes, ...guides
 });
 
 // hreflang must be reciprocal: when an fr page names an en counterpart that is also generated here, point back.
-export const PAGES = BASE_PAGES.map((p) => {
+// ---- hub wiring: make hubs list every child page ----
+const provSlugs = Object.values(PROVINCES).map((p) => p.slug);
+const regionSlugs = Object.keys(REGIONS);
+const citiesByProv = (k) => [...(EXISTING_CITIES[k] || []), ...Object.keys(CITIES).filter((c) => CITIES[c][1] === k)];
+const cityName = (slug) => (CITIES[slug] ? CITIES[slug][0] : slug.replace("iptv-", "").split("-").map((w) => w[0].toUpperCase() + w.slice(1)).join(" "));
+const HUB_EXTRA_CHILDREN = {
+  "iptv-apps": ["iptv-smarters-samsung-tv", "iptv-smarters-lg-tv", "iptv-smarters-roku", "iptv-smarters-apple", "iptv-smarters-android"],
+  "iptv-devices": ["iptv-fire-tv-stick-4k-max", "iptv-fire-tv-stick-lite", "iptv-google-tv", "iptv-tcl-tv", "iptv-nvidia-shield", "iptv-xbox", "iptv-generic-android-box", "iptv-tablets", "iptv-smarters-samsung-tv", "iptv-smarters-lg-tv"],
+  "iptv-boxes": ["android-tv-box-models", "iptv-enigma2", "iptv-nvidia-shield", "iptv-generic-android-box"],
+  "iptv-sports": ["iptv-nhl-canada", "iptv-cfl"],
+  "iptv-provider-alternatives": BRAND_GROUPS.map((g) => g.slug),
+  "iptv-guides": ["iptv-time-zones-canada", "iptv-winter-buffering", "iptv-rural-canada", "iptv-live-tv-24-7"],
+};
+const HUB_EXTRA_RELATED = {
+  "iptv-canada": ["iptv-canadian-channels", "iptv-nhl-canada", "iptv-vs-cable-hub", "iptv-time-zones-canada", "iptv-payment-canada", "iptv-canadian-holidays", "iptv-rural-canada", "iptv-winter-buffering"],
+  "iptv-subscription": ["iptv-payment-canada", "iptv-vs-cable-hub"],
+  "iptv-service-canada": ["iptv-live-tv-24-7"],
+  "iptv-smarters-pro-smart-tv": ["iptv-smarters-samsung-tv", "iptv-smarters-lg-tv", "iptv-smarters-roku", "iptv-smarters-apple", "iptv-smarters-android"],
+  "iptv-sports": ["iptv-canadian-channels"],
+  "best-android-tv-box": ["android-tv-box-models", "iptv-nvidia-shield", "iptv-generic-android-box"],
+};
+const withHubs = (p) => {
+  const out = { ...p };
+  if (HUB_EXTRA_CHILDREN[p.slug]) out.children = [...new Set([...(p.children || []), ...HUB_EXTRA_CHILDREN[p.slug]])];
+  if (HUB_EXTRA_RELATED[p.slug]) out.related = [...new Set([...(p.related || []), ...HUB_EXTRA_RELATED[p.slug]])];
+  if (p.slug === "iptv-cities") {
+    out.children = [...regionSlugs, ...provSlugs];
+    out.related = [...new Set([...(p.related || []), "iptv-rural-canada", "iptv-winter-buffering", "iptv-time-zones-canada"])];
+    out.sections = [
+      ...p.sections.slice(0, 1),
+      {
+        h: "Cities by province and territory",
+        ul: [
+          `Québec: ${["iptv-quebec", "iptv-montreal", ...Object.keys(CITIES).filter((c) => CITIES[c][1] === "QC")].map((c) => `[${c === "iptv-quebec" ? "Québec City" : cityName(c)}](/${c})`).join(", ")}`,
+          ...Object.entries(PROVINCES).map(([k, P]) => `[${P.name}](/${P.slug}): ${citiesByProv(k).map((c) => `[${cityName(c)}](/${c})`).join(", ")}`),
+        ],
+      },
+      ...p.sections.slice(1),
+    ];
+  }
+  return out;
+};
+
+export const PAGES = BASE_PAGES.map(withHubs).map((p) => {
   if (p.hreflangPair) return p;
   const fr = BASE_PAGES.find((x) => x.hreflangPair === p.slug);
   return fr ? { ...p, hreflangPair: fr.slug } : p;

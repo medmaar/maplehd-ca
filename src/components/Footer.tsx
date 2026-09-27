@@ -2,9 +2,24 @@ import Link from "next/link";
 import EmailLink from "./EmailLink";
 import Logo from "./Logo";
 
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://maplehd.ca/#organization",
+  name: "MapleHD",
+  url: "https://maplehd.ca",
+  logo: "https://maplehd.ca/favicon.svg",
+  email: "help@maplehd.ca",
+  address: { "@type": "PostalAddress", streetAddress: "9361 Rue Lajeunesse", addressLocality: "Montréal", addressRegion: "QC", postalCode: "H2M 1S5", addressCountry: "CA" },
+  sameAs: ["https://t.me/+z1lV-u1HmIA2YTQ0"],
+  contactPoint: { "@type": "ContactPoint", contactType: "customer support", email: "help@maplehd.ca", availableLanguage: ["English", "French"], areaServed: "CA" },
+};
+
 export default function Footer() {
   return (
-    <footer className="py-16 px-4 border-t" style={{ background: "#050508", borderColor: "rgba(255,255,255,0.06)" }}>
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
+      <footer className="py-16 px-4 border-t" style={{ background: "#050508", borderColor: "rgba(255,255,255,0.06)" }}>
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-6 pb-12 mb-12 border-b" style={{ borderColor: "rgba(255,255,255,0.06)" }}>
           <div>
@@ -118,6 +133,13 @@ export default function Footer() {
               ["/iptv-near-me", "IPTV Near Me"],
               ["/iptv-providers-canada", "IPTV Providers"],
               ["/iptv-4k", "4K IPTV"],
+              ["/iptv-nhl-canada", "IPTV NHL Canada"],
+              ["/iptv-canadian-channels", "Canadian Channels"],
+              ["/iptv-vs-cable-hub", "IPTV vs Carrier TV"],
+              ["/iptv-ontario", "IPTV Ontario"],
+              ["/iptv-british-columbia", "IPTV British Columbia"],
+              ["/iptv-alberta", "IPTV Alberta"],
+              ["/iptv-payment-canada", "Pay with Interac"],
               ["/fr", "IPTV en français"],
             ].map(([href, label]) => (
               <Link key={href} href={href} className="text-gray-400 hover:text-[#72BAA9] text-sm transition-colors">{label}</Link>
@@ -137,5 +159,6 @@ export default function Footer() {
         </div>
       </div>
     </footer>
+    </>
   );
 }

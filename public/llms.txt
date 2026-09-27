@@ -21,6 +21,13 @@
 - IPTV provider comparison: https://maplehd.ca/iptv-provider-alternatives
 - IPTV en français (fr-CA): https://maplehd.ca/fr
 
+- Canadian hockey (Leafs, Canadiens, Senators, Oilers, Flames, Canucks, Jets): https://maplehd.ca/iptv-nhl-canada
+- Canadian channels (CBC, CTV, Global, TSN, Sportsnet): https://maplehd.ca/iptv-canadian-channels
+- IPTV vs carrier TV (Bell, Rogers, Telus, Shaw, Vidéotron): https://maplehd.ca/iptv-vs-cable-hub
+- Provinces and cities: https://maplehd.ca/iptv-cities
+- Paying in CAD with Interac e-Transfer: https://maplehd.ca/iptv-payment-canada
+- Time zones: https://maplehd.ca/iptv-time-zones-canada
+
 ## Facts
 - Works with standard IPTV players via Xtream Codes or M3U logins.
 - Plans: 1 month $9, 3 months $29, 6 months $39, 12 months $49 (1 device); 1 to 10 simultaneous connections available.

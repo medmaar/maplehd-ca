@@ -115,7 +115,7 @@ export default function IPTVMagBoxCanadaPage() {
           </div>
         </section>
       <PageExtras slug="iptv-mag-box-canada" />
-      <SeoLinks heading="Related IPTV guides" slugs={["mag-254-iptv","mag-322-iptv","mag-524-iptv","stbemu","dreamlink-iptv","tvip-iptv-box","iptv-boxes","iptv-with-box"]} />
+      <SeoLinks heading="Related IPTV guides" slugs={["mag-254-iptv","mag-322-iptv","mag-524-iptv","stbemu","dreamlink-iptv","tvip-iptv-box","iptv-boxes","iptv-with-box","iptv-enigma2","android-tv-box-models"]} />
       </main>
     </>
   );

@@ -6,7 +6,7 @@ keyword,monthly_volume,intent,assigned_page,fallback_assignment
 "iptv canada",12100,Commercial,/iptv-canada,false
 "iptv québec",9900,Commercial,/iptv-quebec,false
 "iptv box",8400,Commercial,/iptv-box,false
-"cloud stream",5000,Commercial,/iptv-service-canada,false
+"cloud stream",5000,Commercial,/iptv-live-tv-24-7,false
 "diablo iptv",5000,Commercial,/diablo-iptv,false
 "forevertv",5000,Commercial,/forever-tv,false
 "formuler z11",5000,Commercial,/formuler-z11,false
@@ -27,7 +27,7 @@ keyword,monthly_volume,intent,assigned_page,fallback_assignment
 "iptvapp",5000,Commercial,/iptv-player,false
 "iptvpro",5000,Commercial,/iptv-player,false
 "mytvonline",5000,Commercial,/mytvonline,false
-"pandar tv",5000,Commercial,/iptv-provider-alternatives,true
+"pandar tv",5000,Commercial,/iptv-animal-brand-names,true
 "provider iptv",5000,Commercial,/iptv-providers-canada,false
 "smart4iptv",5000,Commercial,/smart-iptv-app,false
 "smarters players lite",5000,Commercial,/iptv-smarters-pro-download,false
@@ -61,9 +61,9 @@ keyword,monthly_volume,intent,assigned_page,fallback_assignment
 "canada iptv",880,Commercial,/iptv-canada,false
 "canadian iptv",880,Commercial,/iptv-canada,false
 "iptv in canada",880,Commercial,/iptv-canada,false
-"iptv world",880,Commercial,/iptv-provider-alternatives,true
-"online iptv",880,Commercial,/iptv-service-canada,false
-"edge iptv",720,Commercial,/iptv-provider-alternatives,true
+"iptv world",880,Commercial,/iptv-generic-brand-names,true
+"online iptv",880,Commercial,/iptv-live-tv-24-7,false
+"edge iptv",720,Commercial,/iptv-generic-brand-names,true
 "iptv areas",720,Informational,/iptv-near-me,false
 "iptv back canada",720,Commercial,/iptv-canada,false
 "best iptv canada 2026",590,Commercial,/best-iptv-canada,false
@@ -71,15 +71,15 @@ keyword,monthly_volume,intent,assigned_page,fallback_assignment
 "best iptv provider canada",590,Commercial,/best-iptv-canada,false
 "best iptv resell",590,Commercial,/iptv-resellers,false
 "best iptv services",590,Commercial,/best-iptv-service,false
-"ib iptv",590,Commercial,/iptv-provider-alternatives,true
+"ib iptv",590,Commercial,/iptv-generic-brand-names,true
 "iptv 4k",590,Commercial,/iptv-4k,false
 "iptv 4k near me",590,Commercial,/iptv-near-me,false
 "iptv canada reviews",590,Commercial,/iptv-reviews,false
 "iptv firestick",590,Commercial,/iptv-firestick-canada,false
 "iptv for canada",590,Commercial,/iptv-canada,false
-"iptv formula",590,Informational,/iptv-provider-alternatives,true
+"iptv formula",590,Informational,/iptv-other-brand-names,true
 "iptv in edmonton",590,Commercial,/iptv-edmonton,false
-"nap iptv",590,Commercial,/iptv-provider-alternatives,true
+"nap iptv",590,Commercial,/iptv-generic-brand-names,true
 "reddit iptv",590,Informational,/best-iptv-reddit,false
 "8k iptv",500,Commercial,/iptv-4k,false
 "abonnementiptv",500,Commercial,/fr/abonnement-iptv,false
@@ -90,8 +90,8 @@ keyword,monthly_volume,intent,assigned_page,fallback_assignment
 "android iptv player",500,Commercial,/iptv-android-canada,false
 "apollo iptv",500,Commercial,/apollo-iptv,false
 "atlaspro",500,Commercial,/atlas-pro-iptv,false
-"b1g iptv",500,Commercial,/iptv-provider-alternatives,true
-"beastiptv",500,Commercial,/iptv-provider-alternatives,true
+"b1g iptv",500,Commercial,/iptv-generic-brand-names,true
+"beastiptv",500,Commercial,/iptv-animal-brand-names,true
 "best android box for iptv",500,Commercial,/best-android-tv-box,false
 "best android tv box for iptv",500,Commercial,/best-android-tv-box,false
 "best iptv",500,Commercial,/best-iptv-service,false
@@ -112,17 +112,17 @@ keyword,monthly_volume,intent,assigned_page,fallback_assignment
 "buy iptv",500,Commercial,/buy-iptv,false
 "cheap iptv",500,Commercial,/cheap-iptv-canada,false
 "dino iptv",500,Commercial,/diablo-iptv,false
-"dodo iptv",500,Commercial,/iptv-provider-alternatives,true
-"dream iptv",500,Commercial,/iptv-provider-alternatives,true
+"dodo iptv",500,Commercial,/iptv-animal-brand-names,true
+"dream iptv",500,Commercial,/iptv-other-brand-names,true
 "dreamlink t2",500,Commercial,/dreamlink-iptv,false
-"e vision iptv",500,Commercial,/iptv-provider-alternatives,true
-"eagle iptv",500,Commercial,/iptv-provider-alternatives,true
-"elon iptv",500,Commercial,/iptv-provider-alternatives,true
-"epic iptv",500,Commercial,/iptv-provider-alternatives,true
+"e vision iptv",500,Commercial,/iptv-generic-brand-names,true
+"eagle iptv",500,Commercial,/iptv-animal-brand-names,true
+"elon iptv",500,Commercial,/iptv-character-brand-names,true
+"epic iptv",500,Commercial,/iptv-royal-premium-brand-names,true
 "evybuy",500,Commercial,/buy-iptv,false
 "extreme iptv",500,Commercial,/xtream-iptv-player,false
-"fast iptv",500,Commercial,/iptv-provider-alternatives,true
-"fastiptv",500,Commercial,/iptv-provider-alternatives,true
+"fast iptv",500,Commercial,/iptv-space-speed-brand-names,true
+"fastiptv",500,Commercial,/iptv-space-speed-brand-names,true
 "fire tv iptv",500,Commercial,/iptv-firestick-canada,false
 "fire tv stick iptv",500,Commercial,/iptv-firestick-canada,false
 "flix ip tv",500,Commercial,/flix-iptv,false
@@ -133,20 +133,20 @@ keyword,monthly_volume,intent,assigned_page,fallback_assignment
 "formuler tv box",500,Commercial,/formuler-iptv-box,false
 "formuler z8",500,Commercial,/formuler-z10-z8,false
 "formuler z8 pro",500,Commercial,/formuler-z10-z8,false
-"foxiptv",500,Commercial,/iptv-provider-alternatives,true
+"foxiptv",500,Commercial,/iptv-animal-brand-names,true
 "golden iptv",500,Commercial,/premium-iptv,false
 "goldiptv",500,Commercial,/premium-iptv,false
-"great iptv",500,Commercial,/iptv-provider-alternatives,true
-"guru ip tv",500,Commercial,/iptv-provider-alternatives,true
-"guru iptv",500,Commercial,/iptv-provider-alternatives,true
+"great iptv",500,Commercial,/iptv-royal-premium-brand-names,true
+"guru ip tv",500,Commercial,/iptv-character-brand-names,true
+"guru iptv",500,Commercial,/iptv-character-brand-names,true
 "hd iptv",500,Commercial,/iptv-4k,false
-"hot iptv",500,Commercial,/iptv-provider-alternatives,true
-"hotiptv",500,Commercial,/iptv-provider-alternatives,true
+"hot iptv",500,Commercial,/iptv-character-brand-names,true
+"hotiptv",500,Commercial,/iptv-character-brand-names,true
 "ip box tv",500,Commercial,/iptv-box,false
 "ip tv amazon",500,Commercial,/buy-iptv,false
 "ip tv best",500,Commercial,/best-iptv-service,false
 "ip tv list",500,Informational,/iptv-list,false
-"ip tv online",500,Commercial,/iptv-service-canada,false
+"ip tv online",500,Commercial,/iptv-live-tv-24-7,false
 "ip tv smart pro",500,Commercial,/smart-iptv-app,false
 "ip tv smarter pro",500,Commercial,/iptv-smarters-pro-download,false
 "ip tv smarters",500,Commercial,/iptv-smarters-pro-download,false
@@ -165,23 +165,23 @@ keyword,monthly_volume,intent,assigned_page,fallback_assignment
 "iptv deals",500,Commercial,/iptv-deals,false
 "iptv diablo",500,Commercial,/diablo-iptv,false
 "iptv downloader",500,Informational,/iptv-m3u-player,false
-"iptv epic",500,Commercial,/iptv-provider-alternatives,true
+"iptv epic",500,Commercial,/iptv-royal-premium-brand-names,true
 "iptv fire stick",500,Commercial,/iptv-firestick-canada,false
 "iptv firestick reddit",500,Commercial,/iptv-firestick-canada,false
 "iptv for firestick",500,Commercial,/iptv-firestick-canada,false
 "iptv for samsung tv",500,Informational,/iptv-samsung-tv-canada,false
-"iptv fox",500,Commercial,/iptv-provider-alternatives,true
+"iptv fox",500,Commercial,/iptv-animal-brand-names,true
 "iptv iphone",500,Informational,/iptv-ios-canada,false
 "iptv list",500,Informational,/iptv-list,false
-"iptv live",500,Commercial,/iptv-service-canada,false
+"iptv live",500,Commercial,/iptv-live-tv-24-7,false
 "iptv légal",500,Commercial,/fr/iptv-legal,false
 "iptv m3u",500,Informational,/iptv-m3u,false
 "iptv m3u list",500,Informational,/iptv-m3u,false
 "iptv max",500,Commercial,/iptv-player,false
 "iptv meilleur",500,Commercial,/fr/meilleur-iptv-canada,false
-"iptv monster",500,Commercial,/iptv-provider-alternatives,true
+"iptv monster",500,Commercial,/iptv-animal-brand-names,true
 "iptv on roku tv",500,Informational,/iptv-roku-canada,false
-"iptv one",500,Commercial,/iptv-provider-alternatives,true
+"iptv one",500,Commercial,/iptv-generic-brand-names,true
 "iptv online player",500,Commercial,/iptv-web-browser,false
 "iptv pc",500,Informational,/iptv-windows-canada,false
 "iptv plans",500,Commercial,/iptv-subscription,false
@@ -199,14 +199,14 @@ keyword,monthly_volume,intent,assigned_page,fallback_assignment
 "iptv service provider",500,Commercial,/iptv-providers-canada,false
 "iptv services reddit",500,Commercial,/best-iptv-reddit,false
 "iptv set top box",500,Commercial,/iptv-with-box,false
-"iptv shark",500,Commercial,/iptv-provider-alternatives,true
+"iptv shark",500,Commercial,/iptv-animal-brand-names,true
 "iptv site",500,Informational,/iptv-web-browser,false
 "iptv smart pro",500,Commercial,/smart-iptv-app,false
 "iptv smarter pro",500,Commercial,/iptv-smarters-pro-download,false
 "iptv smarters downloader",500,Informational,/iptv-smarters-pro-download,false
 "iptv smarters lite",500,Commercial,/iptv-smarters-lite,false
 "iptv smarters player",500,Commercial,/iptv-smarters-pro-download,false
-"iptv smarters pro android",500,Commercial,/iptv-smarters-pro-download,false
+"iptv smarters pro android",500,Commercial,/iptv-smarters-android,false
 "iptv smarters pro firestick",500,Commercial,/iptv-smarters-pro-firestick,false
 "iptv smarters pro free",500,Informational,/iptv-smarters-pro-download,false
 "iptv smarters pro pc",500,Informational,/iptv-smarters-pro-pc-mac,false
@@ -226,12 +226,12 @@ keyword,monthly_volume,intent,assigned_page,fallback_assignment
 "iptv vlc player",500,Informational,/iptv-vlc,false
 "iptv web",500,Informational,/iptv-web-browser,false
 "iptv website",500,Informational,/iptv-web-browser,false
-"iptv345",500,Commercial,/iptv-provider-alternatives,true
-"iptvforum",500,Informational,/iptv-provider-alternatives,true
-"iptvgreat",500,Commercial,/iptv-provider-alternatives,true
+"iptv345",500,Commercial,/iptv-generic-brand-names,true
+"iptvforum",500,Informational,/iptv-generic-brand-names,true
+"iptvgreat",500,Commercial,/iptv-royal-premium-brand-names,true
 "iptvisuel",500,Commercial,/fr/abonnement-iptv,false
 "iptvportal",500,Commercial,/iptv-web-browser,false
-"iptvx",500,Commercial,/iptv-provider-alternatives,true
+"iptvx",500,Commercial,/iptv-generic-brand-names,true
 "jellyfin iptv",500,Informational,/iptv-plex-emby-jellyfin,false
 "kemo iptv",500,Commercial,/kemo-iptv,false
 "kemo tv",500,Commercial,/kemo-iptv,false
@@ -240,9 +240,9 @@ keyword,monthly_volume,intent,assigned_page,fallback_assignment
 "kingiptv",500,Commercial,/king365-tv,false
 "kodi ip tv",500,Informational,/iptv-kodi,false
 "kodi iptv",500,Informational,/iptv-kodi,false
-"lion iptv",500,Commercial,/iptv-provider-alternatives,true
+"lion iptv",500,Commercial,/iptv-animal-brand-names,true
 "liste m3u iptv",500,Informational,/fr/liste-m3u-iptv,false
-"lux iptv",500,Commercial,/iptv-provider-alternatives,true
+"lux iptv",500,Commercial,/iptv-generic-brand-names,true
 "m3u",500,Informational,/iptv-m3u,false
 "m3u ip tv",500,Informational,/iptv-m3u,false
 "m3u iptv",500,Informational,/iptv-m3u,false
@@ -254,24 +254,24 @@ keyword,monthly_volume,intent,assigned_page,fallback_assignment
 "mag iptv box",500,Commercial,/iptv-mag-box-canada,false
 "mag iptv boxes",500,Commercial,/iptv-mag-box-canada,false
 "mag tv box",500,Commercial,/iptv-mag-box-canada,false
-"magic iptv",500,Commercial,/iptv-provider-alternatives,true
+"magic iptv",500,Commercial,/iptv-character-brand-names,true
 "mega ip tv",500,Commercial,/megaott-iptv,false
 "mega iptv",500,Commercial,/megaott-iptv,false
 "megaott",500,Commercial,/megaott-iptv,false
 "meilleur ip tv",500,Commercial,/fr/meilleur-iptv-canada,false
 "meilleur iptv",500,Commercial,/fr/meilleur-iptv-canada,false
 "meilleure iptv",500,Commercial,/fr/meilleur-iptv-canada,false
-"mom iptv",500,Commercial,/iptv-provider-alternatives,true
-"my iptv",500,Commercial,/iptv-provider-alternatives,true
+"mom iptv",500,Commercial,/iptv-character-brand-names,true
+"my iptv",500,Commercial,/iptv-generic-brand-names,true
 "my sip tv",500,Commercial,/siptv-app,false
 "my siptv",500,Commercial,/siptv-app,false
 "myiptv player",500,Commercial,/iptv-player,false
 "mytvonline 3",500,Commercial,/mytvonline,false
 "nanomid",500,Commercial,/nanomid,false
-"nasa iptv",500,Commercial,/iptv-provider-alternatives,true
-"ninja iptv",500,Commercial,/iptv-provider-alternatives,true
-"online ip tv",500,Commercial,/iptv-service-canada,false
-"onn tv box",500,Commercial,/best-android-tv-box,false
+"nasa iptv",500,Commercial,/iptv-space-speed-brand-names,true
+"ninja iptv",500,Commercial,/iptv-character-brand-names,true
+"online ip tv",500,Commercial,/iptv-live-tv-24-7,false
+"onn tv box",500,Commercial,/android-tv-box-models,false
 "ott tv",500,Commercial,/ott-navigator,false
 "ottiptv",500,Commercial,/ott-navigator,false
 "player m3u",500,Informational,/iptv-m3u,false
@@ -284,7 +284,7 @@ keyword,monthly_volume,intent,assigned_page,fallback_assignment
 "set ip tv",500,Commercial,/iptv-with-box,false
 "set iptv",500,Commercial,/iptv-with-box,false
 "set top box iptv",500,Commercial,/iptv-with-box,false
-"shark iptv",500,Commercial,/iptv-provider-alternatives,true
+"shark iptv",500,Commercial,/iptv-animal-brand-names,true
 "siptv",500,Commercial,/siptv-app,false
 "smart iptv player",500,Commercial,/smart-iptv-app,false
 "smart iptv pro",500,Commercial,/smart-iptv-app,false
@@ -292,15 +292,15 @@ keyword,monthly_volume,intent,assigned_page,fallback_assignment
 "smarters iptv pro",500,Commercial,/iptv-smarters-pro-download,false
 "smarters player",500,Commercial,/iptv-smarters-pro-download,false
 "smarters pro iptv",500,Commercial,/iptv-smarters-pro-download,false
-"smartone iptv",500,Commercial,/iptv-provider-alternatives,true
-"sonic iptv",500,Commercial,/iptv-provider-alternatives,true
-"starshare iptv",500,Commercial,/iptv-provider-alternatives,true
+"smartone iptv",500,Commercial,/iptv-space-speed-brand-names,true
+"sonic iptv",500,Commercial,/iptv-space-speed-brand-names,true
+"starshare iptv",500,Commercial,/iptv-space-speed-brand-names,true
 "stbemu iptv",500,Commercial,/stbemu,false
 "stream iptv",500,Commercial,/iptv-service-canada,false
 "stremio iptv",500,Informational,/iptv-plex-emby-jellyfin,false
-"strong iptv",500,Commercial,/iptv-provider-alternatives,true
+"strong iptv",500,Commercial,/iptv-royal-premium-brand-names,true
 "television iptv",500,Informational,/what-is-iptv,false
-"titan iptv",500,Commercial,/iptv-provider-alternatives,true
+"titan iptv",500,Commercial,/iptv-other-brand-names,true
 "tivimate account",500,Commercial,/tivimate-premium,false
 "tivimate apple tv",500,Commercial,/tivimate-smart-tv,false
 "tivimate com",500,Commercial,/tivimate,false
@@ -319,17 +319,17 @@ keyword,monthly_volume,intent,assigned_page,fallback_assignment
 "tivimate subscription",500,Commercial,/tivimate-premium,false
 "top iptv",500,Commercial,/best-iptv-service,false
 "top iptv providers",500,Commercial,/best-iptv-service,false
-"trex iptv",500,Commercial,/iptv-provider-alternatives,true
-"troypoint iptv",500,Commercial,/iptv-provider-alternatives,true
+"trex iptv",500,Commercial,/iptv-animal-brand-names,true
+"troypoint iptv",500,Commercial,/iptv-generic-brand-names,true
 "tv box mag",500,Commercial,/iptv-mag-box-canada,false
 "tv ip",500,Informational,/what-is-iptv,false
 "tvip s box",500,Commercial,/tvip-iptv-box,false
 "vlc ip tv",500,Informational,/iptv-vlc,false
-"bandwich iptv",490,Commercial,/iptv-provider-alternatives,true
+"bandwich iptv",490,Commercial,/iptv-generic-brand-names,true
 "best iptv providers",490,Commercial,/best-iptv-service,false
 "iptv control",490,Informational,/iptv-installer,false
-"iptv edge",490,Commercial,/iptv-provider-alternatives,true
-"iptv foster",490,Commercial,/iptv-provider-alternatives,true
+"iptv edge",490,Commercial,/iptv-generic-brand-names,true
+"iptv foster",490,Commercial,/iptv-other-brand-names,true
 "iptv installer",490,Informational,/iptv-installer,false
 "iptv providers in canada",490,Commercial,/iptv-providers-canada,false
 "iptv reviews",490,Commercial,/iptv-reviews,false
@@ -340,7 +340,7 @@ keyword,monthly_volume,intent,assigned_page,fallback_assignment
 "fire stick iptv",320,Commercial,/iptv-firestick-canada,false
 "iptv sim",320,Informational,/iptv-box,false
 "iptv top",320,Commercial,/best-iptv-service,false
-"la iptv",320,Commercial,/iptv-provider-alternatives,true
+"la iptv",320,Commercial,/iptv-generic-brand-names,true
 "list iptv",320,Informational,/iptv-list,false
 "service iptv",320,Commercial,/iptv-service-canada,false
 "best canadian iptv provider",260,Commercial,/best-iptv-canada,false
@@ -350,106 +350,106 @@ keyword,monthly_volume,intent,assigned_page,fallback_assignment
 "iptv provider canada",260,Commercial,/iptv-providers-canada,false
 "top rated iptv tool",260,Commercial,/best-iptv-apps,false
 "4k ott iptv",50,Commercial,/iptv-4k,false
-"5g iptv",50,Informational,/iptv-provider-alternatives,true
-"5giptv",50,Commercial,/iptv-provider-alternatives,true
-"ace iptv",50,Commercial,/iptv-provider-alternatives,true
-"all iptv",50,Commercial,/iptv-provider-alternatives,true
-"alliptv",50,Commercial,/iptv-provider-alternatives,true
+"5g iptv",50,Informational,/iptv-space-speed-brand-names,true
+"5giptv",50,Commercial,/iptv-space-speed-brand-names,true
+"ace iptv",50,Commercial,/iptv-character-brand-names,true
+"all iptv",50,Commercial,/iptv-generic-brand-names,true
+"alliptv",50,Commercial,/iptv-other-brand-names,true
 "apollo tv iptv",50,Commercial,/apollo-iptv,false
-"area51 iptv",50,Commercial,/iptv-provider-alternatives,true
-"aroma iptv",50,Commercial,/iptv-provider-alternatives,true
-"astra iptv",50,Commercial,/iptv-provider-alternatives,true
+"area51 iptv",50,Commercial,/iptv-character-brand-names,true
+"aroma iptv",50,Commercial,/iptv-character-brand-names,true
+"astra iptv",50,Commercial,/iptv-space-speed-brand-names,true
 "atlas iptv",50,Commercial,/atlas-pro-iptv,false
 "atlas pro iptv",50,Commercial,/atlas-pro-iptv,false
 "atlas pro ontv iphone",50,Informational,/iptv-ios-canada,false
 "atlas pro ott",50,Commercial,/atlas-pro-iptv,false
 "atlaspro in",50,Commercial,/atlas-pro-iptv,false
-"atv iptv",50,Commercial,/iptv-provider-alternatives,true
-"avatar iptv",50,Commercial,/iptv-provider-alternatives,true
-"awesome iptv",50,Commercial,/iptv-provider-alternatives,true
+"atv iptv",50,Commercial,/iptv-generic-brand-names,true
+"avatar iptv",50,Commercial,/iptv-character-brand-names,true
+"awesome iptv",50,Commercial,/iptv-royal-premium-brand-names,true
 "bestbuyiptv",50,Commercial,/best-iptv-service,false
-"bird iptv",50,Commercial,/iptv-provider-alternatives,true
-"blended iptv",50,Commercial,/iptv-provider-alternatives,true
-"blink iptv",50,Commercial,/iptv-provider-alternatives,true
-"blitzen iptv",50,Commercial,/iptv-provider-alternatives,true
-"blue tv iptv",50,Commercial,/iptv-provider-alternatives,true
-"bob iptv",50,Commercial,/iptv-provider-alternatives,true
+"bird iptv",50,Commercial,/iptv-animal-brand-names,true
+"blended iptv",50,Commercial,/iptv-character-brand-names,true
+"blink iptv",50,Commercial,/iptv-character-brand-names,true
+"blitzen iptv",50,Commercial,/iptv-space-speed-brand-names,true
+"blue tv iptv",50,Commercial,/iptv-character-brand-names,true
+"bob iptv",50,Commercial,/iptv-character-brand-names,true
 "box tv iptv",50,Commercial,/iptv-box,false
-"bravo iptv",50,Commercial,/iptv-provider-alternatives,true
-"briz iptv",50,Commercial,/iptv-provider-alternatives,true
+"bravo iptv",50,Commercial,/iptv-character-brand-names,true
+"briz iptv",50,Commercial,/iptv-generic-brand-names,true
 "buy iptv online",50,Commercial,/buy-iptv,false
 "buy iptv subscription",50,Commercial,/buy-iptv,false
 "buzztv xrs 4900",50,Commercial,/buzztv-iptv,false
 "buzztv xrs4500",50,Commercial,/buzztv-iptv,false
-"canal iptv",50,Commercial,/iptv-provider-alternatives,true
+"canal iptv",50,Commercial,/iptv-generic-brand-names,true
 "chrome iptv player",50,Informational,/iptv-web-browser,false
 "chromecast iptv",50,Commercial,/iptv-chromecast,false
 "cle amazon iptv",50,Informational,/buy-iptv,false
 "cle iptv amazon",50,Informational,/buy-iptv,false
-"clean iptv",50,Commercial,/iptv-provider-alternatives,true
-"cobraiptv",50,Commercial,/iptv-provider-alternatives,true
+"clean iptv",50,Commercial,/iptv-generic-brand-names,true
+"cobraiptv",50,Commercial,/iptv-animal-brand-names,true
 "comparatif iptv",50,Commercial,/fr/abonnement-iptv,false
-"coretv",50,Commercial,/iptv-provider-alternatives,true
-"crazy iptv",50,Commercial,/iptv-provider-alternatives,true
-"crystal iptv",50,Commercial,/iptv-provider-alternatives,true
-"crystal ott",50,Commercial,/iptv-provider-alternatives,true
-"crystal ott iptv",50,Commercial,/iptv-provider-alternatives,true
-"ctv iptv",50,Commercial,/iptv-provider-alternatives,true
-"dark iptv",50,Commercial,/iptv-provider-alternatives,true
-"dark media iptv",50,Commercial,/iptv-provider-alternatives,true
-"datoo iptv",50,Commercial,/iptv-provider-alternatives,true
-"delta iptv",50,Commercial,/iptv-provider-alternatives,true
-"deluxe iptv",50,Commercial,/iptv-provider-alternatives,true
+"coretv",50,Commercial,/iptv-generic-brand-names,true
+"crazy iptv",50,Commercial,/iptv-character-brand-names,true
+"crystal iptv",50,Commercial,/iptv-royal-premium-brand-names,true
+"crystal ott",50,Commercial,/iptv-royal-premium-brand-names,true
+"crystal ott iptv",50,Commercial,/iptv-royal-premium-brand-names,true
+"ctv iptv",50,Commercial,/iptv-ctv,false
+"dark iptv",50,Commercial,/iptv-character-brand-names,true
+"dark media iptv",50,Commercial,/iptv-character-brand-names,true
+"datoo iptv",50,Commercial,/iptv-character-brand-names,true
+"delta iptv",50,Commercial,/iptv-space-speed-brand-names,true
+"deluxe iptv",50,Commercial,/iptv-royal-premium-brand-names,true
 "digital iptv",50,Commercial,/what-is-iptv,false
-"dlta 4k",50,Commercial,/best-android-tv-box,false
-"dlta 4k iptv",50,Commercial,/best-android-tv-box,false
-"dlta 4k tango pro",50,Commercial,/best-android-tv-box,false
-"dmtn iptv",50,Commercial,/iptv-provider-alternatives,true
-"domino iptv",50,Commercial,/iptv-provider-alternatives,true
-"dragon iptv",50,Commercial,/iptv-provider-alternatives,true
-"dragoniptv",50,Commercial,/iptv-provider-alternatives,true
+"dlta 4k",50,Commercial,/android-tv-box-models,false
+"dlta 4k iptv",50,Commercial,/android-tv-box-models,false
+"dlta 4k tango pro",50,Commercial,/android-tv-box-models,false
+"dmtn iptv",50,Commercial,/iptv-generic-brand-names,true
+"domino iptv",50,Commercial,/iptv-character-brand-names,true
+"dragon iptv",50,Commercial,/iptv-animal-brand-names,true
+"dragoniptv",50,Commercial,/iptv-animal-brand-names,true
 "dream player iptv",50,Commercial,/iptv-player,false
-"dream tv iptv",50,Commercial,/iptv-provider-alternatives,true
+"dream tv iptv",50,Commercial,/iptv-other-brand-names,true
 "dreamlink box",50,Commercial,/dreamlink-iptv,false
 "dreamlink t3",50,Commercial,/dreamlink-iptv,false
 "dreamtv mini ultra hd",50,Commercial,/dreamlink-iptv,false
 "duplecast",50,Commercial,/duplecast,false
 "duplecast iptv",50,Commercial,/duplecast,false
-"dynasty iptv",50,Commercial,/iptv-provider-alternatives,true
-"eagle tv iptv",50,Commercial,/iptv-provider-alternatives,true
-"easy iptv",50,Commercial,/iptv-provider-alternatives,true
+"dynasty iptv",50,Commercial,/iptv-royal-premium-brand-names,true
+"eagle tv iptv",50,Commercial,/iptv-animal-brand-names,true
+"easy iptv",50,Commercial,/iptv-generic-brand-names,true
 "ebay iptv",50,Commercial,/buy-iptv,false
-"electro iptv",50,Commercial,/iptv-provider-alternatives,true
+"electro iptv",50,Commercial,/iptv-space-speed-brand-names,true
 "elite iptv",50,Commercial,/premium-iptv,false
-"eloniptv",50,Commercial,/iptv-provider-alternatives,true
+"eloniptv",50,Commercial,/iptv-character-brand-names,true
 "emby iptv",50,Informational,/iptv-plex-emby-jellyfin,false
-"empire iptv",50,Commercial,/iptv-provider-alternatives,true
-"eternal iptv",50,Commercial,/iptv-provider-alternatives,true
-"eternal tv iptv",50,Commercial,/iptv-provider-alternatives,true
-"euro iptv",50,Commercial,/iptv-provider-alternatives,true
-"euroiptv",50,Commercial,/iptv-provider-alternatives,true
-"eva iptv",50,Commercial,/iptv-provider-alternatives,true
-"evdtv",50,Commercial,/iptv-provider-alternatives,true
-"evo iptv",50,Commercial,/iptv-provider-alternatives,true
-"evolution iptv",50,Commercial,/iptv-provider-alternatives,true
+"empire iptv",50,Commercial,/iptv-royal-premium-brand-names,true
+"eternal iptv",50,Commercial,/iptv-royal-premium-brand-names,true
+"eternal tv iptv",50,Commercial,/iptv-royal-premium-brand-names,true
+"euro iptv",50,Commercial,/iptv-generic-brand-names,true
+"euroiptv",50,Commercial,/iptv-other-brand-names,true
+"eva iptv",50,Commercial,/iptv-generic-brand-names,true
+"evdtv",50,Commercial,/iptv-generic-brand-names,true
+"evo iptv",50,Commercial,/iptv-space-speed-brand-names,true
+"evolution iptv",50,Commercial,/iptv-space-speed-brand-names,true
 "expressiptv",50,Commercial,/siptv-app,false
-"extra iptv",50,Commercial,/iptv-provider-alternatives,true
+"extra iptv",50,Commercial,/iptv-generic-brand-names,true
 "extreme iptv pro",50,Commercial,/xtream-iptv-player,false
 "extreme tv",50,Commercial,/xtream-iptv-player,false
 "f1 iptv",50,Commercial,/iptv-f1,false
-"falconiptv",50,Commercial,/iptv-provider-alternatives,true
-"fame iptv",50,Commercial,/iptv-provider-alternatives,true
+"falconiptv",50,Commercial,/iptv-animal-brand-names,true
+"fame iptv",50,Commercial,/iptv-generic-brand-names,true
 "family 4k iptv",50,Commercial,/iptv-4k,false
-"family iptv",50,Commercial,/iptv-provider-alternatives,true
-"fastiger iptv",50,Commercial,/iptv-provider-alternatives,true
+"family iptv",50,Commercial,/iptv-generic-brand-names,true
+"fastiger iptv",50,Commercial,/iptv-animal-brand-names,true
 "firestick iptv reddit",50,Commercial,/iptv-firestick-canada,false
 "firestick ly73pr",50,Informational,/tivimate-firestick,false
 "firestick tivimate",50,Commercial,/tivimate-firestick,false
-"flex iptv",50,Commercial,/iptv-provider-alternatives,true
+"flex iptv",50,Commercial,/iptv-character-brand-names,true
 "flex iptv player",50,Commercial,/iptv-player,false
 "flix iptv player",50,Commercial,/flix-iptv,false
 "flixtv iptv",50,Commercial,/flix-iptv,false
-"flux iptv",50,Commercial,/iptv-provider-alternatives,true
+"flux iptv",50,Commercial,/iptv-space-speed-brand-names,true
 "forever iptv",50,Commercial,/forever-tv,false
 "formuler z nano",50,Commercial,/formuler-iptv-box,false
 "formuler z neo",50,Commercial,/formuler-iptv-box,false
@@ -461,39 +461,39 @@ keyword,monthly_volume,intent,assigned_page,fallback_assignment
 "formuler z7+",50,Commercial,/formuler-z10-z8,false
 "formuler z8 pro 4k",50,Commercial,/formuler-z10-z8,false
 "formuler zx",50,Commercial,/formuler-z10-z8,false
-"fortune iptv",50,Commercial,/iptv-provider-alternatives,true
-"full iptv",50,Commercial,/iptv-provider-alternatives,true
-"gamma iptv",50,Commercial,/iptv-provider-alternatives,true
+"fortune iptv",50,Commercial,/iptv-royal-premium-brand-names,true
+"full iptv",50,Commercial,/iptv-generic-brand-names,true
+"gamma iptv",50,Commercial,/iptv-space-speed-brand-names,true
 "gamma iptv subscription",50,Commercial,/iptv-subscription,false
-"gecko iptv",50,Commercial,/iptv-provider-alternatives,true
+"gecko iptv",50,Commercial,/iptv-animal-brand-names,true
 "gecko iptv player",50,Commercial,/iptv-player,false
 "gemini streamz",50,Commercial,/iptv-service-canada,false
 "gemini streamz iptv",50,Commercial,/iptv-service-canada,false
-"geo iptv",50,Commercial,/iptv-provider-alternatives,true
-"geoiptv",50,Commercial,/iptv-provider-alternatives,true
-"get iptv",50,Commercial,/iptv-provider-alternatives,true
-"ghost iptv",50,Commercial,/iptv-provider-alternatives,true
+"geo iptv",50,Commercial,/iptv-generic-brand-names,true
+"geoiptv",50,Commercial,/iptv-other-brand-names,true
+"get iptv",50,Commercial,/iptv-generic-brand-names,true
+"ghost iptv",50,Commercial,/iptv-character-brand-names,true
 "global tv box",50,Commercial,/iptv-box,false
-"glory iptv",50,Commercial,/iptv-provider-alternatives,true
+"glory iptv",50,Commercial,/iptv-royal-premium-brand-names,true
 "golds tv iptv",50,Commercial,/premium-iptv,false
-"good iptv",50,Commercial,/iptv-provider-alternatives,true
-"gotit iptv",50,Commercial,/iptv-provider-alternatives,true
-"gotv iptv",50,Commercial,/iptv-provider-alternatives,true
+"good iptv",50,Commercial,/iptv-royal-premium-brand-names,true
+"gotit iptv",50,Commercial,/iptv-generic-brand-names,true
+"gotv iptv",50,Commercial,/iptv-generic-brand-names,true
 "gse iptv chromecast",50,Informational,/iptv-web-browser,false
 "gseiptv",50,Commercial,/iptv-chromecast,false
-"harmo iptv",50,Commercial,/iptv-provider-alternatives,true
+"harmo iptv",50,Commercial,/iptv-space-speed-brand-names,true
 "hbo max iptv",50,Informational,/iptv-vod-movies-series,false
-"helix iptv",50,Commercial,/iptv-provider-alternatives,true
-"homatics box q",50,Commercial,/best-android-tv-box,false
-"hulk iptv",50,Commercial,/iptv-provider-alternatives,true
-"hydrogen iptv",50,Commercial,/iptv-provider-alternatives,true
-"hypersonic iptv",50,Commercial,/iptv-provider-alternatives,true
-"igate iptv",50,Commercial,/iptv-provider-alternatives,true
-"iliria iptv",50,Commercial,/iptv-provider-alternatives,true
+"helix iptv",50,Commercial,/iptv-space-speed-brand-names,true
+"homatics box q",50,Commercial,/android-tv-box-models,false
+"hulk iptv",50,Commercial,/iptv-animal-brand-names,true
+"hydrogen iptv",50,Commercial,/iptv-space-speed-brand-names,true
+"hypersonic iptv",50,Commercial,/iptv-space-speed-brand-names,true
+"igate iptv",50,Commercial,/iptv-space-speed-brand-names,true
+"iliria iptv",50,Commercial,/iptv-generic-brand-names,true
 "im infomir",50,Commercial,/iptv-mag-box-canada,false
 "implayer premium",50,Commercial,/implayer,false
 "implayer tv",50,Informational,/implayer,false
-"infinity iptv",50,Commercial,/iptv-provider-alternatives,true
+"infinity iptv",50,Commercial,/iptv-royal-premium-brand-names,true
 "infomir iptv",50,Commercial,/iptv-mag-box-canada,false
 "infomir mag",50,Commercial,/iptv-mag-box-canada,false
 "infomir mag 254",50,Commercial,/mag-254-iptv,false
@@ -503,25 +503,25 @@ keyword,monthly_volume,intent,assigned_page,fallback_assignment
 "ip smarter pro",50,Commercial,/iptv-smarters-pro-download,false
 "ip smarters pro",50,Commercial,/iptv-smarters-pro-download,false
 "ip tv 4k",50,Commercial,/iptv-4k,false
-"ip tv live",50,Commercial,/iptv-service-canada,false
+"ip tv live",50,Commercial,/iptv-live-tv-24-7,false
 "ip tv m3u",50,Informational,/iptv-m3u,false
 "ip tv netflix",50,Informational,/flix-iptv,false
 "ip tv pc",50,Informational,/iptv-windows-canada,false
 "ip tv samsung",50,Informational,/iptv-samsung-tv-canada,false
 "ip tv smart tv",50,Informational,/iptv-smart-tv-canada,false
-"ipguys",50,Commercial,/iptv-provider-alternatives,true
+"ipguys",50,Commercial,/iptv-generic-brand-names,true
 "iplay iptv",50,Commercial,/implayer,false
 "iplaytv android",50,Informational,/implayer,false
 "iplaytv apple tv",50,Informational,/implayer,false
 "ipstreamz",50,Commercial,/iptv-service-canada,false
-"iptv 1",50,Commercial,/iptv-provider-alternatives,true
+"iptv 1",50,Commercial,/iptv-generic-brand-names,true
 "iptv 1 mois",50,Commercial,/fr/liste-m3u-iptv,false
 "iptv 12 mois",50,Commercial,/fr/abonnement-iptv,false
 "iptv 12 months",50,Commercial,/iptv-subscription,false
-"iptv 24",50,Commercial,/iptv-service-canada,false
-"iptv 24 7",50,Commercial,/iptv-service-canada,false
-"iptv 24h",50,Commercial,/iptv-service-canada,false
-"iptv 345",50,Commercial,/iptv-provider-alternatives,true
+"iptv 24",50,Commercial,/iptv-live-tv-24-7,false
+"iptv 24 7",50,Commercial,/iptv-live-tv-24-7,false
+"iptv 24h",50,Commercial,/iptv-live-tv-24-7,false
+"iptv 345",50,Commercial,/iptv-generic-brand-names,true
 "iptv 365",50,Commercial,/king365-tv,false
 "iptv 4k ott",50,Commercial,/iptv-4k,false
 "iptv 8k",50,Commercial,/iptv-4k,false
@@ -549,28 +549,28 @@ keyword,monthly_volume,intent,assigned_page,fallback_assignment
 "iptv connect",50,Commercial,/iptv-server,false
 "iptv connect pro",50,Commercial,/iptv-server,false
 "iptv customer service",50,Informational,/iptv-customer-service,false
-"iptv deluxe",50,Commercial,/iptv-provider-alternatives,true
+"iptv deluxe",50,Commercial,/iptv-royal-premium-brand-names,true
 "iptv device",50,Commercial,/iptv-with-box,false
 "iptv dino",50,Commercial,/diablo-iptv,false
 "iptv dvr",50,Informational,/iptv-dvr-catch-up,false
-"iptv enigma2",50,Informational,/iptv-with-box,false
+"iptv enigma2",50,Informational,/iptv-enigma2,false
 "iptv espn",50,Commercial,/iptv-espn-sky-sports,false
 "iptv eurosport",50,Commercial,/iptv-espn-sky-sports,false
 "iptv express",50,Commercial,/iptv-server,false
 "iptv f1",50,Commercial,/iptv-f1,false
 "iptv fiable",50,Commercial,/fr/abonnement-iptv,false
-"iptv flex",50,Commercial,/iptv-provider-alternatives,true
+"iptv flex",50,Commercial,/iptv-character-brand-names,true
 "iptv for lg webos",50,Informational,/nanomid,false
 "iptv formuler",50,Commercial,/formuler-iptv-box,false
 "iptv full hd",50,Commercial,/iptv-4k,false
 "iptv gen",50,Commercial,/iptv-server,false
-"iptv global",50,Commercial,/iptv-provider-alternatives,true
+"iptv global",50,Commercial,/iptv-generic-brand-names,true
 "iptv go",50,Commercial,/iptv-player,false
 "iptv google chromecast",50,Informational,/iptv-chromecast,false
 "iptv google tv",50,Informational,/iptv-chromecast,false
 "iptv hbo",50,Informational,/iptv-vod-movies-series,false
 "iptv hbo max",50,Informational,/iptv-vod-movies-series,false
-"iptv high tech",50,Commercial,/iptv-provider-alternatives,true
+"iptv high tech",50,Commercial,/iptv-other-brand-names,true
 "iptv hisense",50,Informational,/iptv-sony-hisense-tv,false
 "iptv hub",50,Commercial,/iptv-server,false
 "iptv ipad",50,Informational,/iptv-ios-canada,false
@@ -585,7 +585,7 @@ keyword,monthly_volume,intent,assigned_page,fallback_assignment
 "iptv listas m3u",50,Informational,/fr/liste-m3u-iptv,false
 "iptv liste",50,Informational,/fr/liste-m3u-iptv,false
 "iptv lite",50,Commercial,/iptv-player,false
-"iptv live tv",50,Commercial,/iptv-service-canada,false
+"iptv live tv",50,Commercial,/iptv-live-tv-24-7,false
 "iptv m3u8",50,Informational,/iptv-m3u,false
 "iptv macbook",50,Informational,/iptv-mac,false
 "iptv main",50,Commercial,/iptv-server,false
@@ -593,12 +593,12 @@ keyword,monthly_volume,intent,assigned_page,fallback_assignment
 "iptv meilleur rapport qualité prix",50,Commercial,/fr/abonnement-iptv,false
 "iptv mobile",50,Commercial,/iptv-ios-canada,false
 "iptv mu3",50,Commercial,/iptv-m3u,false
-"iptv mxl",50,Commercial,/iptv-provider-alternatives,true
+"iptv mxl",50,Commercial,/iptv-space-speed-brand-names,true
 "iptv nba",50,Commercial,/iptv-nba,false
 "iptv ne fonctionne plus",50,Informational,/fr/abonnement-iptv,false
 "iptv netflix",50,Informational,/flix-iptv,false
-"iptv now",50,Commercial,/iptv-service-canada,false
-"iptv nvidia shield",50,Commercial,/best-android-tv-box,false
+"iptv now",50,Commercial,/iptv-live-tv-24-7,false
+"iptv nvidia shield",50,Commercial,/iptv-nvidia-shield,false
 "iptv on apple tv 4k",50,Informational,/iptv-apple-tv-canada,false
 "iptv on firestick reddit",50,Commercial,/iptv-firestick-canada,false
 "iptv packages",50,Commercial,/iptv-subscription,false
@@ -611,10 +611,10 @@ keyword,monthly_volume,intent,assigned_page,fallback_assignment
 "iptv promo",50,Commercial,/fr/abonnement-iptv,false
 "iptv promotions",50,Commercial,/fr/abonnement-iptv,false
 "iptv ps5",50,Informational,/iptv-ps5,false
-"iptv purple",50,Commercial,/iptv-provider-alternatives,true
-"iptv rapid",50,Commercial,/iptv-provider-alternatives,true
+"iptv purple",50,Commercial,/iptv-character-brand-names,true
+"iptv rapid",50,Commercial,/iptv-space-speed-brand-names,true
 "iptv receiver",50,Commercial,/iptv-with-box,false
-"iptv revolution",50,Commercial,/iptv-provider-alternatives,true
+"iptv revolution",50,Commercial,/iptv-space-speed-brand-names,true
 "iptv rive nord",50,Commercial,/iptv-quebec,false
 "iptv samsung",50,Informational,/iptv-samsung-tv-canada,false
 "iptv samsung smart tv",50,Informational,/iptv-samsung-tv-canada,false
@@ -632,57 +632,57 @@ keyword,monthly_volume,intent,assigned_page,fallback_assignment
 "iptv smart tv",50,Informational,/iptv-smart-tv-canada,false
 "iptv smarter pc",50,Informational,/iptv-smarters-pro-download,false
 "iptv smarter pro downloader",50,Informational,/iptv-smarters-pro-download,false
-"iptv smarters android",50,Informational,/iptv-smarters-pro-download,false
-"iptv smarters apple tv",50,Commercial,/iptv-smarters-pro-smart-tv,false
+"iptv smarters android",50,Informational,/iptv-smarters-android,false
+"iptv smarters apple tv",50,Commercial,/iptv-smarters-apple,false
 "iptv smarters chromecast",50,Informational,/iptv-smarters-pro-pc-mac,false
 "iptv smarters com",50,Commercial,/iptv-smarters-pro-download,false
 "iptv smarters customer service",50,Informational,/iptv-customer-service,false
-"iptv smasters android tv",50,Informational,/iptv-smarters-pro-smart-tv,false
+"iptv smasters android tv",50,Informational,/iptv-smarters-android,false
 "iptv smasters fire stick",50,Informational,/iptv-smarters-pro-firestick,false
 "iptv smasters firestick",50,Commercial,/iptv-smarters-pro-firestick,false
 "iptv smasters for firestick",50,Commercial,/iptv-smarters-pro-firestick,false
 "iptv smasters for pc",50,Informational,/iptv-smarters-pro-pc-mac,false
 "iptv smasters free",50,Informational,/iptv-smarters-pro-download,false
 "iptv smasters google play",50,Informational,/iptv-smarters-pro-download,false
-"iptv smasters iphone",50,Informational,/iptv-smarters-pro-download,false
-"iptv smasters lg",50,Informational,/iptv-smarters-pro-smart-tv,false
-"iptv smasters lg tv",50,Informational,/iptv-smarters-pro-smart-tv,false
+"iptv smasters iphone",50,Informational,/iptv-smarters-apple,false
+"iptv smasters lg",50,Informational,/iptv-smarters-lg-tv,false
+"iptv smasters lg tv",50,Informational,/iptv-smarters-lg-tv,false
 "iptv smasters m3u",50,Informational,/iptv-smarters-pro-download,false
 "iptv smasters mac",50,Informational,/iptv-smarters-pro-pc-mac,false
 "iptv smasters on firestick",50,Commercial,/iptv-smarters-pro-firestick,false
-"iptv smasters on roku tv",50,Informational,/iptv-smarters-pro-smart-tv,false
+"iptv smasters on roku tv",50,Informational,/iptv-smarters-roku,false
 "iptv smasters online",50,Commercial,/iptv-smarters-pro-pc-mac,false
 "iptv smasters pc",50,Informational,/iptv-smarters-pro-pc-mac,false
-"iptv smasters player android",50,Informational,/iptv-smarters-pro-download,false
+"iptv smasters player android",50,Informational,/iptv-smarters-android,false
 "iptv smasters player lite",50,Commercial,/iptv-smarters-lite,false
-"iptv smasters player samsung",50,Informational,/iptv-smarters-pro-smart-tv,false
+"iptv smasters player samsung",50,Informational,/iptv-smarters-samsung-tv,false
 "iptv smasters pour pc",50,Informational,/fr/iptv-smarters-pro,false
 "iptv smasters premium",50,Commercial,/iptv-smarters-pro-price,false
-"iptv smasters pro android tv",50,Informational,/iptv-smarters-pro-smart-tv,false
-"iptv smasters pro apple tv",50,Informational,/iptv-smarters-pro-smart-tv,false
+"iptv smasters pro android tv",50,Informational,/iptv-smarters-android,false
+"iptv smasters pro apple tv",50,Informational,/iptv-smarters-apple,false
 "iptv smasters pro com",50,Commercial,/iptv-smarters-pro-download,false
 "iptv smasters pro downloader",50,Informational,/iptv-smarters-pro-download,false
 "iptv smasters pro fire stick",50,Informational,/iptv-smarters-pro-firestick,false
 "iptv smasters pro for pc",50,Informational,/iptv-smarters-pro-pc-mac,false
 "iptv smasters pro introuvable google play",50,Informational,/fr/iptv-smarters-pro,false
-"iptv smasters pro iphone",50,Informational,/iptv-smarters-pro-download,false
-"iptv smasters pro lg",50,Informational,/iptv-smarters-pro-smart-tv,false
+"iptv smasters pro iphone",50,Informational,/iptv-smarters-apple,false
+"iptv smasters pro lg",50,Informational,/iptv-smarters-lg-tv,false
 "iptv smasters pro live",50,Commercial,/iptv-smarters-pro-download,false
 "iptv smasters pro m3u",50,Informational,/iptv-smarters-pro-download,false
 "iptv smasters pro mac",50,Informational,/iptv-smarters-pro-pc-mac,false
 "iptv smasters pro macbook",50,Informational,/iptv-smarters-pro-pc-mac,false
 "iptv smasters pro ne fonctionne pas sur tv samsung",50,Informational,/fr/iptv-smarters-pro,false
 "iptv smasters pro price",50,Commercial,/iptv-smarters-pro-price,false
-"iptv smasters pro roku",50,Informational,/iptv-smarters-pro-smart-tv,false
-"iptv smasters pro samsung tv",50,Informational,/iptv-smarters-pro-smart-tv,false
+"iptv smasters pro roku",50,Informational,/iptv-smarters-roku,false
+"iptv smasters pro samsung tv",50,Informational,/iptv-smarters-samsung-tv,false
 "iptv smasters pro smart tv",50,Informational,/iptv-smarters-pro-smart-tv,false
 "iptv smasters pro sur pc",50,Informational,/fr/iptv-smarters-pro,false
 "iptv smasters pro tv",50,Commercial,/iptv-smarters-pro-smart-tv,false
 "iptv smasters reddit",50,Informational,/iptv-smarters-pro-download,false
-"iptv smasters roku",50,Informational,/iptv-smarters-pro-smart-tv,false
-"iptv smasters roku tv",50,Informational,/iptv-smarters-pro-smart-tv,false
-"iptv smasters samsung",50,Informational,/iptv-smarters-pro-smart-tv,false
-"iptv smasters samsung tv",50,Informational,/iptv-smarters-pro-smart-tv,false
+"iptv smasters roku",50,Informational,/iptv-smarters-roku,false
+"iptv smasters roku tv",50,Informational,/iptv-smarters-roku,false
+"iptv smasters samsung",50,Informational,/iptv-smarters-samsung-tv,false
+"iptv smasters samsung tv",50,Informational,/iptv-smarters-samsung-tv,false
 "iptv smasters smart tv",50,Informational,/iptv-smarters-pro-smart-tv,false
 "iptv smasters subscription",50,Commercial,/iptv-smarters-pro-price,false
 "iptv smasters subscription reddit",50,Commercial,/iptv-smarters-pro-price,false
@@ -712,47 +712,47 @@ keyword,monthly_volume,intent,assigned_page,fallback_assignment
 "iptv tester",50,Informational,/iptv-m3u-player,false
 "iptv tivimate",50,Commercial,/tivimate,false
 "iptv tizen",50,Informational,/iptv-samsung-tv-canada,false
-"iptv today",50,Commercial,/iptv-service-canada,false
+"iptv today",50,Commercial,/iptv-live-tv-24-7,false
 "iptv trustpilot",50,Informational,/iptv-reviews,false
 "iptv tune",50,Commercial,/iptv-player,false
 "iptv viewer",50,Commercial,/iptv-web-browser,false
 "iptv vod",50,Commercial,/iptv-vod-movies-series,false
-"iptv watch tv online",50,Commercial,/iptv-service-canada,false
+"iptv watch tv online",50,Commercial,/iptv-live-tv-24-7,false
 "iptv web browser",50,Informational,/iptv-web-browser,false
 "iptv what is it",50,Informational,/what-is-iptv,false
-"iptv wifi",50,Informational,/iptv-service-canada,false
+"iptv wifi",50,Informational,/iptv-live-tv-24-7,false
 "iptv world cup",50,Commercial,/iptv-soccer,false
-"iptv x",50,Commercial,/iptv-provider-alternatives,true
-"iptv1",50,Commercial,/iptv-provider-alternatives,true
+"iptv x",50,Commercial,/iptv-generic-brand-names,true
+"iptv1",50,Commercial,/iptv-generic-brand-names,true
 "iptv12k",50,Commercial,/iptv-4k,false
-"iptv24",50,Commercial,/iptv-provider-alternatives,true
+"iptv24",50,Commercial,/iptv-generic-brand-names,true
 "iptv365",50,Commercial,/king365-tv,false
 "iptv4less",50,Commercial,/buy-iptv,false
-"iptv4sat",50,Commercial,/iptv-provider-alternatives,true
-"iptv4u",50,Commercial,/iptv-provider-alternatives,true
-"iptv66",50,Commercial,/iptv-provider-alternatives,true
+"iptv4sat",50,Commercial,/iptv-generic-brand-names,true
+"iptv4u",50,Commercial,/iptv-generic-brand-names,true
+"iptv66",50,Commercial,/iptv-generic-brand-names,true
 "iptv8k",50,Commercial,/iptv-4k,false
-"iptvfarm",50,Commercial,/iptv-provider-alternatives,true
+"iptvfarm",50,Commercial,/iptv-generic-brand-names,true
 "iptvgold",50,Commercial,/premium-iptv,false
-"iptvhut",50,Commercial,/iptv-provider-alternatives,true
-"iptvone",50,Commercial,/iptv-provider-alternatives,true
-"iptvplus",50,Commercial,/iptv-provider-alternatives,true
+"iptvhut",50,Commercial,/iptv-generic-brand-names,true
+"iptvone",50,Commercial,/iptv-generic-brand-names,true
+"iptvplus",50,Commercial,/iptv-generic-brand-names,true
 "iptvresale",50,Commercial,/iptv-resellers,false
 "iptvshop",50,Commercial,/buy-iptv,false
 "iptvsmarterspro",50,Commercial,/iptv-smarters-pro-download,false
 "iptvstore",50,Commercial,/buy-iptv,false
 "iptvx android",50,Commercial,/iptv-android-canada,false
 "iptvx apple tv",50,Commercial,/iptv-apple-tv-canada,false
-"ironiptv",50,Commercial,/iptv-provider-alternatives,true
-"istar iptv",50,Commercial,/iptv-provider-alternatives,true
-"itec iptv",50,Commercial,/iptv-provider-alternatives,true
-"iview iptv",50,Commercial,/iptv-provider-alternatives,true
-"jarvis iptv",50,Commercial,/iptv-provider-alternatives,true
-"joker iptv",50,Commercial,/iptv-provider-alternatives,true
+"ironiptv",50,Commercial,/iptv-space-speed-brand-names,true
+"istar iptv",50,Commercial,/iptv-space-speed-brand-names,true
+"itec iptv",50,Commercial,/iptv-space-speed-brand-names,true
+"iview iptv",50,Commercial,/iptv-space-speed-brand-names,true
+"jarvis iptv",50,Commercial,/iptv-space-speed-brand-names,true
+"joker iptv",50,Commercial,/iptv-character-brand-names,true
 "kemo iptv reddit",50,Commercial,/best-iptv-reddit,false
 "kemo sat iptv",50,Commercial,/kemo-iptv,false
 "kemo sat tv",50,Commercial,/kemo-iptv,false
-"key iptv",50,Commercial,/iptv-provider-alternatives,true
+"key iptv",50,Commercial,/iptv-generic-brand-names,true
 "king365 iptv",50,Commercial,/king365-tv,false
 "king365 tv",50,Commercial,/king365-tv,false
 "king365tv",50,Commercial,/king365-tv,false
@@ -762,22 +762,22 @@ keyword,monthly_volume,intent,assigned_page,fallback_assignment
 "kodi iptv m3u",50,Informational,/iptv-kodi,false
 "kodi live tv",50,Informational,/iptv-kodi,false
 "kodi m3u",50,Informational,/iptv-kodi,false
-"lazy iptv",50,Commercial,/iptv-provider-alternatives,true
-"lazyiptv deluxe",50,Commercial,/iptv-provider-alternatives,true
+"lazy iptv",50,Commercial,/iptv-character-brand-names,true
+"lazyiptv deluxe",50,Commercial,/iptv-royal-premium-brand-names,true
 "le meilleur iptv",50,Commercial,/fr/meilleur-iptv-canada,false
 "lecteur iptv",50,Commercial,/fr/lecteur-iptv,false
 "lecteur m3u en ligne",50,Informational,/fr/lecteur-iptv,false
-"legends iptv",50,Commercial,/iptv-provider-alternatives,true
+"legends iptv",50,Commercial,/iptv-royal-premium-brand-names,true
 "les meilleurs iptv",50,Commercial,/fr/meilleur-iptv-canada,false
-"lex iptv",50,Commercial,/iptv-provider-alternatives,true
+"lex iptv",50,Commercial,/iptv-character-brand-names,true
 "lifetime iptv",50,Commercial,/iptv-subscription,false
-"lionz iptv",50,Commercial,/iptv-provider-alternatives,true
+"lionz iptv",50,Commercial,/iptv-animal-brand-names,true
 "liste iptv m3u fr",50,Informational,/fr/liste-m3u-iptv,false
 "liste m3u",50,Informational,/fr/liste-m3u-iptv,false
-"live ip tv",50,Commercial,/iptv-service-canada,false
-"live iptv",50,Commercial,/iptv-service-canada,false
+"live ip tv",50,Commercial,/iptv-live-tv-24-7,false
+"live iptv",50,Commercial,/iptv-live-tv-24-7,false
 "live tv player",50,Commercial,/iptv-player,false
-"livego iptv",50,Commercial,/iptv-provider-alternatives,true
+"livego iptv",50,Commercial,/iptv-generic-brand-names,true
 "local iptv",50,Commercial,/iptv-near-me,false
 "lxtream",50,Commercial,/xtream-iptv-player,false
 "lxtream android tv",50,Informational,/xtream-iptv-player,false
@@ -796,7 +796,7 @@ keyword,monthly_volume,intent,assigned_page,fallback_assignment
 "m3u8 list",50,Informational,/iptv-m3u,false
 "m3u8 tv",50,Informational,/iptv-m3u,false
 "mac iptv",50,Informational,/iptv-mac,false
-"maestro iptv",50,Commercial,/iptv-provider-alternatives,true
+"maestro iptv",50,Commercial,/iptv-royal-premium-brand-names,true
 "mag 250",50,Commercial,/mag-254-iptv,false
 "mag 256",50,Commercial,/mag-254-iptv,false
 "mag 324",50,Commercial,/mag-322-iptv,false
@@ -810,15 +810,15 @@ keyword,monthly_volume,intent,assigned_page,fallback_assignment
 "mag box 322",50,Commercial,/iptv-mag-box-canada,false
 "mag box 4k",50,Commercial,/iptv-mag-box-canada,false
 "mag322w1",50,Commercial,/mag-322-iptv,false
-"magic tv iptv",50,Commercial,/iptv-provider-alternatives,true
-"magnum iptv",50,Commercial,/iptv-provider-alternatives,true
-"magnum ott",50,Commercial,/iptv-provider-alternatives,true
-"mario iptv",50,Commercial,/iptv-provider-alternatives,true
-"marvel iptv",50,Commercial,/iptv-provider-alternatives,true
-"matrix iptv",50,Commercial,/iptv-provider-alternatives,true
-"max iptv",50,Commercial,/iptv-provider-alternatives,true
-"maxiptv",50,Commercial,/iptv-provider-alternatives,true
-"media iptv",50,Commercial,/iptv-provider-alternatives,true
+"magic tv iptv",50,Commercial,/iptv-character-brand-names,true
+"magnum iptv",50,Commercial,/iptv-royal-premium-brand-names,true
+"magnum ott",50,Commercial,/iptv-royal-premium-brand-names,true
+"mario iptv",50,Commercial,/iptv-character-brand-names,true
+"marvel iptv",50,Commercial,/iptv-character-brand-names,true
+"matrix iptv",50,Commercial,/iptv-space-speed-brand-names,true
+"max iptv",50,Commercial,/iptv-generic-brand-names,true
+"maxiptv",50,Commercial,/iptv-generic-brand-names,true
+"media iptv",50,Commercial,/iptv-generic-brand-names,true
 "mega ott",50,Commercial,/megaott-iptv,false
 "megaiptv",50,Commercial,/megaott-iptv,false
 "megaott iptv",50,Commercial,/megaott-iptv,false
@@ -827,91 +827,91 @@ keyword,monthly_volume,intent,assigned_page,fallback_assignment
 "meilleur lecteur iptv",50,Commercial,/fr/lecteur-iptv,false
 "meilleur lecteur iptv android",50,Commercial,/fr/lecteur-iptv,false
 "meilleur service iptv",50,Commercial,/fr/meilleur-iptv-canada,false
-"mi box iptv",50,Commercial,/best-android-tv-box,false
-"mitvpro",50,Commercial,/iptv-provider-alternatives,true
-"momiptv",50,Commercial,/iptv-provider-alternatives,true
-"moul iptv",50,Commercial,/iptv-provider-alternatives,true
+"mi box iptv",50,Commercial,/android-tv-box-models,false
+"mitvpro",50,Commercial,/iptv-generic-brand-names,true
+"momiptv",50,Commercial,/iptv-character-brand-names,true
+"moul iptv",50,Commercial,/iptv-character-brand-names,true
 "mu3 iptv",50,Commercial,/iptv-m3u,false
-"mxl iptv",50,Commercial,/iptv-provider-alternatives,true
-"mxl tv",50,Commercial,/iptv-provider-alternatives,true
+"mxl iptv",50,Commercial,/iptv-space-speed-brand-names,true
+"mxl tv",50,Commercial,/iptv-space-speed-brand-names,true
 "my hd iptv",50,Commercial,/iptv-4k,false
-"my ip tv",50,Commercial,/iptv-provider-alternatives,true
+"my ip tv",50,Commercial,/iptv-generic-brand-names,true
 "myhd iptv",50,Commercial,/iptv-4k,false
 "myiptv 4k",50,Commercial,/iptv-4k,false
 "nanomid com",50,Commercial,/nanomid,false
 "nanomid iptv",50,Commercial,/nanomid,false
-"nasaiptv",50,Commercial,/iptv-provider-alternatives,true
-"necro iptv",50,Commercial,/iptv-provider-alternatives,true
-"neo iptv",50,Commercial,/iptv-provider-alternatives,true
-"neotv pro",50,Commercial,/best-android-tv-box,false
-"neox2 iptv",50,Commercial,/iptv-provider-alternatives,true
-"nettv iptv",50,Commercial,/iptv-provider-alternatives,true
-"new iptv",50,Commercial,/iptv-provider-alternatives,true
-"nikon iptv",50,Commercial,/iptv-provider-alternatives,true
-"nikoniptv",50,Commercial,/iptv-provider-alternatives,true
-"nitro iptv",50,Commercial,/iptv-provider-alternatives,true
-"nord iptv",50,Commercial,/iptv-provider-alternatives,true
-"nova iptv",50,Commercial,/iptv-provider-alternatives,true
-"nova max iptv",50,Commercial,/iptv-provider-alternatives,true
-"nvidia shield iptv",50,Commercial,/best-android-tv-box,false
-"ok2 iptv",50,Commercial,/iptv-provider-alternatives,true
-"one iptv",50,Commercial,/iptv-provider-alternatives,true
-"one tv iptv",50,Commercial,/iptv-provider-alternatives,true
-"onetv iptv",50,Commercial,/iptv-provider-alternatives,true
-"onpoint iptv",50,Commercial,/iptv-provider-alternatives,true
-"open iptv",50,Commercial,/iptv-provider-alternatives,true
-"opus iptv",50,Commercial,/iptv-provider-alternatives,true
+"nasaiptv",50,Commercial,/iptv-space-speed-brand-names,true
+"necro iptv",50,Commercial,/iptv-character-brand-names,true
+"neo iptv",50,Commercial,/iptv-space-speed-brand-names,true
+"neotv pro",50,Commercial,/android-tv-box-models,false
+"neox2 iptv",50,Commercial,/iptv-space-speed-brand-names,true
+"nettv iptv",50,Commercial,/iptv-generic-brand-names,true
+"new iptv",50,Commercial,/iptv-generic-brand-names,true
+"nikon iptv",50,Commercial,/iptv-character-brand-names,true
+"nikoniptv",50,Commercial,/iptv-character-brand-names,true
+"nitro iptv",50,Commercial,/iptv-space-speed-brand-names,true
+"nord iptv",50,Commercial,/iptv-generic-brand-names,true
+"nova iptv",50,Commercial,/iptv-space-speed-brand-names,true
+"nova max iptv",50,Commercial,/iptv-space-speed-brand-names,true
+"nvidia shield iptv",50,Commercial,/iptv-nvidia-shield,false
+"ok2 iptv",50,Commercial,/iptv-generic-brand-names,true
+"one iptv",50,Commercial,/iptv-generic-brand-names,true
+"one tv iptv",50,Commercial,/iptv-generic-brand-names,true
+"onetv iptv",50,Commercial,/iptv-other-brand-names,true
+"onpoint iptv",50,Commercial,/iptv-generic-brand-names,true
+"open iptv",50,Commercial,/iptv-generic-brand-names,true
+"opus iptv",50,Commercial,/iptv-royal-premium-brand-names,true
 "ott navigator premium",50,Commercial,/ott-navigator,false
 "ott pro box",50,Commercial,/ott-navigator,false
 "paid iptv",50,Commercial,/premium-iptv,false
-"panda iptv",50,Commercial,/iptv-provider-alternatives,true
-"pandaiptv",50,Commercial,/iptv-provider-alternatives,true
-"pandar iptv",50,Commercial,/iptv-provider-alternatives,true
-"pelican iptv",50,Commercial,/iptv-provider-alternatives,true
-"perfect iptv",50,Commercial,/iptv-provider-alternatives,true
-"perfectiptv",50,Commercial,/iptv-provider-alternatives,true
-"phoenix iptv",50,Commercial,/iptv-provider-alternatives,true
+"panda iptv",50,Commercial,/iptv-animal-brand-names,true
+"pandaiptv",50,Commercial,/iptv-animal-brand-names,true
+"pandar iptv",50,Commercial,/iptv-animal-brand-names,true
+"pelican iptv",50,Commercial,/iptv-animal-brand-names,true
+"perfect iptv",50,Commercial,/iptv-royal-premium-brand-names,true
+"perfectiptv",50,Commercial,/iptv-royal-premium-brand-names,true
+"phoenix iptv",50,Commercial,/iptv-character-brand-names,true
 "platinum iptv",50,Commercial,/premium-iptv,false
 "play list iptv",50,Informational,/iptv-list,false
-"playiptv",50,Commercial,/iptv-provider-alternatives,true
+"playiptv",50,Commercial,/iptv-generic-brand-names,true
 "plex iptv m3u",50,Informational,/iptv-plex-emby-jellyfin,false
 "plex m3u",50,Informational,/iptv-plex-emby-jellyfin,false
-"plus iptv",50,Commercial,/iptv-provider-alternatives,true
+"plus iptv",50,Commercial,/iptv-generic-brand-names,true
 "pluto iptv",50,Commercial,/iptv-plex-emby-jellyfin,false
 "pluto tv m3u",50,Informational,/iptv-plex-emby-jellyfin,false
-"premier iptv",50,Commercial,/iptv-provider-alternatives,true
+"premier iptv",50,Commercial,/iptv-royal-premium-brand-names,true
 "prestige iptv",50,Commercial,/premium-iptv,false
-"primeiptv",50,Commercial,/iptv-provider-alternatives,true
+"primeiptv",50,Commercial,/iptv-royal-premium-brand-names,true
 "prix iptv",50,Commercial,/fr/abonnement-iptv,false
-"pro iptv",50,Commercial,/iptv-provider-alternatives,true
-"pure iptv",50,Commercial,/iptv-provider-alternatives,true
-"pureiptv",50,Commercial,/iptv-provider-alternatives,true
-"purple iptv",50,Commercial,/iptv-provider-alternatives,true
-"quzu iptv",50,Commercial,/iptv-provider-alternatives,true
-"quzu tv",50,Commercial,/iptv-provider-alternatives,true
-"rapidiptv",50,Commercial,/iptv-provider-alternatives,true
-"real iptv",50,Commercial,/iptv-provider-alternatives,true
-"realiptv",50,Commercial,/iptv-provider-alternatives,true
+"pro iptv",50,Commercial,/iptv-generic-brand-names,true
+"pure iptv",50,Commercial,/iptv-royal-premium-brand-names,true
+"pureiptv",50,Commercial,/iptv-royal-premium-brand-names,true
+"purple iptv",50,Commercial,/iptv-character-brand-names,true
+"quzu iptv",50,Commercial,/iptv-space-speed-brand-names,true
+"quzu tv",50,Commercial,/iptv-space-speed-brand-names,true
+"rapidiptv",50,Commercial,/iptv-space-speed-brand-names,true
+"real iptv",50,Commercial,/iptv-royal-premium-brand-names,true
+"realiptv",50,Commercial,/iptv-royal-premium-brand-names,true
 "reddit tivimate",50,Informational,/tivimate,false
-"rediptv",50,Commercial,/iptv-provider-alternatives,true
-"redline iptv",50,Commercial,/iptv-provider-alternatives,true
+"rediptv",50,Commercial,/iptv-generic-brand-names,true
+"redline iptv",50,Commercial,/iptv-character-brand-names,true
 "roku express iptv",50,Informational,/iptv-roku-canada,false
-"room iptv",50,Commercial,/iptv-provider-alternatives,true
-"roomiptv",50,Commercial,/iptv-provider-alternatives,true
-"royal iptv",50,Commercial,/iptv-provider-alternatives,true
-"royaliptv",50,Commercial,/iptv-provider-alternatives,true
-"samsung iptv smarters",50,Informational,/iptv-smarters-pro-download,false
+"room iptv",50,Commercial,/iptv-generic-brand-names,true
+"roomiptv",50,Commercial,/iptv-generic-brand-names,true
+"royal iptv",50,Commercial,/iptv-royal-premium-brand-names,true
+"royaliptv",50,Commercial,/iptv-royal-premium-brand-names,true
+"samsung iptv smarters",50,Informational,/iptv-smarters-samsung-tv,false
 "samsung tizen iptv",50,Informational,/iptv-samsung-tv-canada,false
-"sapphire iptv",50,Commercial,/iptv-provider-alternatives,true
-"sapphire tv",50,Commercial,/iptv-provider-alternatives,true
-"sat iptv",50,Commercial,/iptv-provider-alternatives,true
-"simpleiptv",50,Commercial,/iptv-provider-alternatives,true
+"sapphire iptv",50,Commercial,/iptv-royal-premium-brand-names,true
+"sapphire tv",50,Commercial,/iptv-royal-premium-brand-names,true
+"sat iptv",50,Commercial,/iptv-generic-brand-names,true
+"simpleiptv",50,Commercial,/iptv-generic-brand-names,true
 "sip tv",50,Commercial,/siptv-app,false
 "siptv list",50,Informational,/siptv-app,false
 "siptv my list",50,Informational,/siptv-app,false
-"sky iptv",50,Commercial,/iptv-provider-alternatives,true
-"skyline iptv",50,Commercial,/iptv-provider-alternatives,true
-"sleek iptv",50,Commercial,/iptv-provider-alternatives,true
+"sky iptv",50,Commercial,/iptv-generic-brand-names,true
+"skyline iptv",50,Commercial,/iptv-generic-brand-names,true
+"sleek iptv",50,Commercial,/iptv-character-brand-names,true
 "smart iptv android tv",50,Informational,/smart-iptv-app,false
 "smart iptv com",50,Commercial,/smart-iptv-app,false
 "smart iptv downloader",50,Informational,/smart-iptv-app,false
@@ -933,7 +933,7 @@ keyword,monthly_volume,intent,assigned_page,fallback_assignment
 "smarters lite",50,Commercial,/iptv-smarters-lite,false
 "smarters player lite chromecast",50,Informational,/iptv-smarters-pro-pc-mac,false
 "smarters player lite firestick",50,Commercial,/iptv-smarters-pro-firestick,false
-"smarters player lite samsung tv",50,Informational,/iptv-smarters-pro-smart-tv,false
+"smarters player lite samsung tv",50,Informational,/iptv-smarters-samsung-tv,false
 "smarters player lite sur tv samsung",50,Informational,/fr/iptv-smarters-pro,false
 "smarters player lite tv",50,Informational,/iptv-smarters-lite,false
 "smarters player pro",50,Commercial,/iptv-smarters-pro-smart-tv,false
@@ -943,37 +943,37 @@ keyword,monthly_volume,intent,assigned_page,fallback_assignment
 "smarters pro pc",50,Informational,/iptv-smarters-pro-pc-mac,false
 "smarters pro tv",50,Commercial,/iptv-smarters-pro-smart-tv,false
 "smarters tv",50,Commercial,/iptv-smarters-pro-smart-tv,false
-"smarters tv pro",50,Commercial,/iptv-provider-alternatives,true
+"smarters tv pro",50,Commercial,/iptv-smarters-pro-smart-tv,false
 "smarterstv",50,Commercial,/iptv-smarters-pro-smart-tv,false
-"smartgo iptv",50,Commercial,/iptv-provider-alternatives,true
+"smartgo iptv",50,Commercial,/iptv-space-speed-brand-names,true
 "smartone iptv com",50,Commercial,/iptv-web-browser,false
-"smartone iptv com generate",50,Commercial,/iptv-provider-alternatives,true
-"smartone iptv generate",50,Commercial,/iptv-provider-alternatives,true
+"smartone iptv com generate",50,Commercial,/iptv-space-speed-brand-names,true
+"smartone iptv generate",50,Commercial,/iptv-space-speed-brand-names,true
 "smasters player lite télécharger",50,Informational,/fr/iptv-smarters-pro,false
-"sniper iptv",50,Commercial,/iptv-provider-alternatives,true
+"sniper iptv",50,Commercial,/iptv-character-brand-names,true
 "soplayer iptv",50,Commercial,/iptv-player,false
-"space iptv",50,Commercial,/iptv-provider-alternatives,true
-"spider iptv",50,Commercial,/iptv-provider-alternatives,true
+"space iptv",50,Commercial,/iptv-space-speed-brand-names,true
+"spider iptv",50,Commercial,/iptv-animal-brand-names,true
 "sportz iptv",50,Commercial,/iptv-sports,false
 "sportz tv iptv",50,Commercial,/iptv-sports,false
-"sstv iptv",50,Commercial,/iptv-provider-alternatives,true
-"star iptv",50,Commercial,/iptv-provider-alternatives,true
-"stariptv",50,Commercial,/iptv-provider-alternatives,true
-"starlink iptv",50,Informational,/iptv-provider-alternatives,true
-"starsat iptv",50,Commercial,/iptv-provider-alternatives,true
+"sstv iptv",50,Commercial,/iptv-generic-brand-names,true
+"star iptv",50,Commercial,/iptv-space-speed-brand-names,true
+"stariptv",50,Commercial,/iptv-space-speed-brand-names,true
+"starlink iptv",50,Informational,/iptv-space-speed-brand-names,true
+"starsat iptv",50,Commercial,/iptv-space-speed-brand-names,true
 "stbemu 4k",50,Commercial,/stbemu,false
 "stbemu pro firestick",50,Commercial,/stbemu,false
 "streamy iptv",50,Commercial,/iptv-service-canada,false
 "streamz iptv",50,Commercial,/iptv-service-canada,false
 "strymtv for pc",50,Commercial,/iptv-windows-canada,false
-"super iptv",50,Commercial,/iptv-provider-alternatives,true
-"supernova iptv",50,Commercial,/iptv-provider-alternatives,true
-"tanggula x5",50,Commercial,/best-android-tv-box,false
-"tele iptv",50,Commercial,/iptv-provider-alternatives,true
+"super iptv",50,Commercial,/iptv-royal-premium-brand-names,true
+"supernova iptv",50,Commercial,/iptv-royal-premium-brand-names,true
+"tanggula x5",50,Commercial,/android-tv-box-models,false
+"tele iptv",50,Commercial,/iptv-generic-brand-names,true
 "the best iptv",50,Commercial,/best-iptv-service,false
 "the best iptv service",50,Commercial,/best-iptv-service,false
-"thunder iptv",50,Commercial,/iptv-provider-alternatives,true
-"tiger iptv",50,Commercial,/iptv-provider-alternatives,true
+"thunder iptv",50,Commercial,/iptv-space-speed-brand-names,true
+"tiger iptv",50,Commercial,/iptv-animal-brand-names,true
 "tivimate account premium",50,Commercial,/tivimate-premium,false
 "tivimate android tv",50,Informational,/tivimate-firestick,false
 "tivimate chromecast",50,Informational,/tivimate-firestick,false
@@ -1002,53 +1002,53 @@ keyword,monthly_volume,intent,assigned_page,fallback_assignment
 "trustpilot iptv",50,Informational,/iptv-reviews,false
 "tv ip box",50,Commercial,/iptv-box,false
 "tv m3u",50,Informational,/iptv-m3u,false
-"tv plus iptv",50,Commercial,/iptv-provider-alternatives,true
+"tv plus iptv",50,Commercial,/iptv-generic-brand-names,true
 "tv smarters",50,Commercial,/iptv-smarters-pro-download,false
 "tv smarters pro",50,Commercial,/iptv-smarters-pro-download,false
-"tv team iptv",50,Commercial,/iptv-provider-alternatives,true
+"tv team iptv",50,Commercial,/iptv-generic-brand-names,true
 "tvip 605",50,Commercial,/tvip-iptv-box,false
 "tvip s box 605",50,Commercial,/tvip-iptv-box,false
 "tvip s box v 525",50,Commercial,/tvip-iptv-box,false
 "tvip s box v 605",50,Commercial,/tvip-iptv-box,false
-"tvzon",50,Commercial,/iptv-provider-alternatives,true
-"ugoos am7",50,Commercial,/best-android-tv-box,false
-"ukiptv",50,Commercial,/iptv-provider-alternatives,true
-"ultimate iptv",50,Commercial,/iptv-provider-alternatives,true
-"unifi iptv",50,Commercial,/iptv-provider-alternatives,true
-"universal iptv",50,Commercial,/iptv-provider-alternatives,true
-"universe iptv",50,Commercial,/iptv-provider-alternatives,true
-"unoiptv",50,Commercial,/iptv-provider-alternatives,true
+"tvzon",50,Commercial,/iptv-generic-brand-names,true
+"ugoos am7",50,Commercial,/android-tv-box-models,false
+"ukiptv",50,Commercial,/iptv-generic-brand-names,true
+"ultimate iptv",50,Commercial,/iptv-royal-premium-brand-names,true
+"unifi iptv",50,Commercial,/iptv-space-speed-brand-names,true
+"universal iptv",50,Commercial,/iptv-royal-premium-brand-names,true
+"universe iptv",50,Commercial,/iptv-royal-premium-brand-names,true
+"unoiptv",50,Commercial,/iptv-generic-brand-names,true
 "vavoo iptv",50,Commercial,/iptv-kodi,false
 "vavoo kodi",50,Informational,/iptv-kodi,false
-"venom iptv",50,Commercial,/iptv-provider-alternatives,true
+"venom iptv",50,Commercial,/iptv-character-brand-names,true
 "vidaa iptv",50,Informational,/iptv-sony-hisense-tv,false
-"viper iptv",50,Commercial,/iptv-provider-alternatives,true
-"vipiptv",50,Commercial,/iptv-provider-alternatives,true
-"vision iptv",50,Commercial,/iptv-provider-alternatives,true
+"viper iptv",50,Commercial,/iptv-animal-brand-names,true
+"vipiptv",50,Commercial,/iptv-other-brand-names,true
+"vision iptv",50,Commercial,/iptv-generic-brand-names,true
 "vod m3u",50,Informational,/iptv-vod-movies-series,false
-"voodoo iptv",50,Commercial,/iptv-provider-alternatives,true
-"watch iptv",50,Commercial,/iptv-service-canada,false
-"watched iptv",50,Commercial,/iptv-service-canada,false
+"voodoo iptv",50,Commercial,/iptv-character-brand-names,true
+"watch iptv",50,Commercial,/iptv-live-tv-24-7,false
+"watched iptv",50,Commercial,/iptv-live-tv-24-7,false
 "web iptv smarters",50,Informational,/iptv-smarters-pro-pc-mac,false
 "webos iptv",50,Informational,/nanomid,false
-"wise iptv",50,Commercial,/iptv-provider-alternatives,true
+"wise iptv",50,Commercial,/iptv-generic-brand-names,true
 "wise iptv player",50,Commercial,/iptv-player,false
-"wizard iptv",50,Commercial,/iptv-provider-alternatives,true
-"wolf iptv",50,Commercial,/iptv-provider-alternatives,true
+"wizard iptv",50,Commercial,/iptv-character-brand-names,true
+"wolf iptv",50,Commercial,/iptv-animal-brand-names,true
 "world cup iptv",50,Commercial,/iptv-soccer,false
-"worldwide iptv",50,Commercial,/iptv-provider-alternatives,true
-"x iptv",50,Commercial,/iptv-provider-alternatives,true
+"worldwide iptv",50,Commercial,/iptv-generic-brand-names,true
+"x iptv",50,Commercial,/iptv-generic-brand-names,true
 "xciptv firestick",50,Commercial,/iptv-smarters-pro-firestick,false
 "xciptv for firestick",50,Commercial,/iptv-smarters-pro-firestick,false
 "xciptv pro",50,Commercial,/xciptv,false
 "xciptv tv",50,Commercial,/xciptv,false
-"xiaomi iptv",50,Commercial,/best-android-tv-box,false
-"xiaomi iptv box",50,Commercial,/best-android-tv-box,false
-"xiptv",50,Commercial,/iptv-provider-alternatives,true
+"xiaomi iptv",50,Commercial,/android-tv-box-models,false
+"xiaomi iptv box",50,Commercial,/android-tv-box-models,false
+"xiptv",50,Commercial,/iptv-generic-brand-names,true
 "xtream iptv m3u",50,Informational,/xtream-iptv-player,false
 "xtream tv",50,Commercial,/xtream-iptv-player,false
 "xtreamtv",50,Commercial,/xtream-iptv-player,false
 "xtreme hd iptv reddit",50,Commercial,/xtream-iptv-player,false
-"yeah iptv",50,Commercial,/iptv-provider-alternatives,true
-"zina iptv",50,Commercial,/iptv-provider-alternatives,true
-"zoom iptv",50,Commercial,/iptv-provider-alternatives,true
+"yeah iptv",50,Commercial,/iptv-character-brand-names,true
+"zina iptv",50,Commercial,/iptv-character-brand-names,true
+"zoom iptv",50,Commercial,/iptv-space-speed-brand-names,true

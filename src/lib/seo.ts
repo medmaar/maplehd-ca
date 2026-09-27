@@ -35,6 +35,7 @@ export interface SeoPageData {
   children?: string[]; // hub pages: slugs listed as cards
   hreflangPair?: string; // slug of the en/fr counterpart
   published?: string;
+  also?: string[]; // uncovered keyword variants (generated)
 }
 
 export const bySlug = (slug: string): SeoPageData | undefined => (PAGES as SeoPageData[]).find((p) => p.slug === slug);

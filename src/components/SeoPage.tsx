@@ -28,6 +28,7 @@ const T = {
     midBtn: "Get a Free Trial",
     months: ["January","February","March","April","May","June","July","August","September","October","November","December"],
     lang: "en-CA",
+    also: "People also search for this topic as",
   },
   fr: {
     home: "MapleHD",
@@ -48,6 +49,7 @@ const T = {
     midBtn: "Obtenir un essai gratuit",
     months: ["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"],
     lang: "fr-CA",
+    also: "Recherches associées",
   },
 } as const;
 
@@ -133,6 +135,12 @@ export default function SeoPage({ slug }: { slug: string }) {
       acceptedAnswer: { "@type": "Answer", text: stripLinks(f.a) },
     })),
   };
+  const geoName = p.cluster.startsWith("geo-") && p.kind === "landing" ? p.anchor.replace(/^IPTV /, "") : null;
+  const areaServed: object = geoName
+    ? { "@type": "City", name: geoName, containedInPlace: { "@type": "Country", name: "Canada" } }
+    : p.cluster === "geo-prov"
+      ? { "@type": "AdministrativeArea", name: p.anchor.replace(/^IPTV /, ""), containedInPlace: { "@type": "Country", name: "Canada" } }
+      : { "@type": "Country", name: "Canada" };
   const isArticle = p.kind === "guide" || p.kind === "compare" || p.kind === "hub";
   const mainSchema = isArticle
     ? {
@@ -143,7 +151,7 @@ export default function SeoPage({ slug }: { slug: string }) {
         inLanguage: t.lang,
         image: `${SITE}/iptv-subscription-canada-1.jpg`,
         author: { "@type": "Organization", name: "MapleHD Support Team", url: SITE },
-        publisher: { "@type": "Organization", name: "MapleHD", url: SITE },
+        publisher: { "@id": `${SITE}/#organization` },
         datePublished: p.published ?? "2026-09-27",
         dateModified: modified,
         mainEntityOfPage: { "@type": "WebPage", "@id": url },
@@ -156,8 +164,27 @@ export default function SeoPage({ slug }: { slug: string }) {
         serviceType: "IPTV subscription",
         inLanguage: t.lang,
         url,
-        provider: { "@type": "Organization", name: "MapleHD", url: SITE },
-        areaServed: { "@type": "Country", name: "Canada" },
+        "@id": `${url}#service`,
+        provider: { "@id": `${SITE}/#organization` },
+        areaServed: areaServed,
+        availableChannel: { "@type": "ServiceChannel", serviceUrl: `${SITE}/free-trial`, availableLanguage: ["en-CA", "fr-CA"] },
+        hasOfferCatalog: {
+          "@type": "OfferCatalog",
+          name: "MapleHD IPTV plans (1 device)",
+          itemListElement: [
+            ["1 month", "9"],
+            ["3 months", "29"],
+            ["6 months", "39"],
+            ["12 months", "49"],
+          ].map(([n, price]) => ({
+            "@type": "Offer",
+            name: `MapleHD IPTV ${n}`,
+            price,
+            priceCurrency: "CAD",
+            availability: "https://schema.org/InStock",
+            url: `${SITE}/pricing`,
+          })),
+        },
         offers: {
           "@type": "Offer",
           price: "9",
@@ -375,6 +402,12 @@ export default function SeoPage({ slug }: { slug: string }) {
               ))}
             </div>
           </div>
+
+          {p.also && p.also.length > 0 && (
+            <p style={{ color: "#9ca3af", fontSize: 14, lineHeight: 1.8, marginBottom: 32 }}>
+              <strong style={{ color: "#d1d5db" }}>{t.also}:</strong> {p.also.join(", ")}.
+            </p>
+          )}
 
           {/* Related */}
           {rel.length > 0 && (

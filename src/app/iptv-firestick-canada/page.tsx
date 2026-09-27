@@ -486,7 +486,7 @@ export default function IPTVFirestickCanadaPage() {
           </div>
         </section>
       <PageExtras slug="iptv-firestick-canada" />
-      <SeoLinks heading="Related IPTV guides" slugs={["best-iptv-for-firestick","tivimate-firestick","iptv-smarters-pro-firestick","xciptv","iptv-4k","iptv-devices","iptv-apps","iptv-subscription"]} />
+      <SeoLinks heading="Related IPTV guides" slugs={["best-iptv-for-firestick","tivimate-firestick","iptv-smarters-pro-firestick","xciptv","iptv-4k","iptv-devices","iptv-apps","iptv-subscription","iptv-fire-tv-stick-4k-max","iptv-fire-tv-stick-lite"]} />
       </main>
     </>
   );

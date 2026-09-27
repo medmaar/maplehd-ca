@@ -1,0 +1,213 @@
+// Data for city, province and region pages. Facts are deliberately conservative (no populations or rights claims).
+// isps: providers commonly available in the province "where available"; tz: time-zone note.
+
+export const PROVINCES = {
+  ON: {
+    slug: "iptv-ontario", name: "Ontario", fr: false,
+    isps: ["Bell", "Rogers", "Cogeco", "TekSavvy", "Beanfield (parts of Toronto)"],
+    tz: "Eastern Time, with a small area in the far northwest on Central Time",
+    teams: ["Toronto Maple Leafs", "Ottawa Senators", "Toronto Raptors", "Toronto Blue Jays", "Toronto FC", "Toronto Argonauts", "Hamilton Tiger-Cats", "Ottawa Redblacks"],
+    intro: "Ontario is Canada's most populous province, from the dense Greater Toronto Area to Ottawa, the Niagara region and the long northern stretch around Sudbury and Thunder Bay.",
+    winter: "Ontario winters range from lake-effect snow in the south to long, hard cold in the north, which means more time indoors and more hours of TV. Ice storms can knock out cable and DSL lines, so a wired home network and a second device on standby make outages less painful.",
+    tzCity: "Eastern Time",
+    regionalPage: "iptv-gta",
+  },
+  BC: {
+    slug: "iptv-british-columbia", name: "British Columbia", fr: false,
+    isps: ["Telus", "Shaw (now part of Rogers)", "Bell", "regional and independent providers"],
+    tz: "Pacific Time, with parts of the northeast (Peace River region) on Mountain Time",
+    tzCity: "Pacific Time",
+    teams: ["Vancouver Canucks", "Vancouver Whitecaps", "BC Lions", "Abbotsford Canucks (AHL)", "Victoria Royals (WHL)", "Kelowna Rockets (WHL)"],
+    intro: "British Columbia stretches from Metro Vancouver and Victoria across the Okanagan and Kootenays to the far north, with very different internet options depending on where you live.",
+    winter: "Coastal BC deals with rain and windstorms more than deep cold, while the Interior and north see heavy snow. Rural valleys can have limited internet, so check your speed before choosing 4K.",
+    regionalPage: "iptv-lower-mainland",
+  },
+  AB: {
+    slug: "iptv-alberta", name: "Alberta", fr: false,
+    isps: ["Telus", "Shaw (now part of Rogers)", "Bell", "regional providers"],
+    tz: "Mountain Time",
+    teams: ["Calgary Flames", "Edmonton Oilers", "Calgary Stampeders", "Edmonton Elks", "Calgary Wranglers (AHL)", "Lethbridge Hurricanes (WHL)"],
+    intro: "Alberta's hockey rivalry between Calgary and Edmonton, Stampeders and Elks football and a strong junior scene make sports the main reason many households look at IPTV.",
+    winter: "Long cold spells are normal in Alberta, so people spend evenings indoors watching games. Rural areas may rely on fixed wireless or satellite internet, so plan around your real speed.",
+    regionalPage: "iptv-prairies",
+  },
+  MB: {
+    slug: "iptv-manitoba", name: "Manitoba", fr: false,
+    isps: ["Bell MTS", "Shaw (now part of Rogers)", "regional providers"],
+    tz: "Central Time",
+    teams: ["Winnipeg Jets", "Winnipeg Blue Bombers", "Valour FC", "Winnipeg Goldeyes", "Brandon Wheat Kings (WHL)"],
+    intro: "Manitoba's TV habits centre on the Winnipeg Jets and Blue Bombers, with a large rural population across the Prairies and a francophone community in Saint-Boniface and surrounding areas.",
+    winter: "Winnipeg winters are among the coldest of any major Canadian city. Indoor viewing rises sharply, and rural connectivity can be the limiting factor rather than the IPTV service itself.",
+    regionalPage: "iptv-prairies",
+  },
+  SK: {
+    slug: "iptv-saskatchewan", name: "Saskatchewan", fr: false,
+    isps: ["SaskTel", "Access Communications", "Shaw (now part of Rogers)", "regional providers"],
+    tz: "Central Standard Time all year (Saskatchewan does not change its clocks)",
+    teams: ["Saskatchewan Roughriders", "Saskatoon Blades (WHL)", "Regina Pats (WHL)", "Prince Albert Raiders (WHL)", "Moose Jaw Warriors (WHL)"],
+    intro: "Saskatchewan is Roughrider country, with a strong junior hockey tradition and a widely spread population that makes reliable internet the main question for many households.",
+    winter: "Prairie winters and blizzards are part of life, and long distances between communities mean service quality varies. Choose HD over 4K if your speed is limited.",
+    regionalPage: "iptv-prairies",
+  },
+  NS: {
+    slug: "iptv-nova-scotia", name: "Nova Scotia", fr: false,
+    isps: ["Eastlink", "Bell Aliant", "regional providers"],
+    tz: "Atlantic Time",
+    teams: ["Halifax Mooseheads (QMJHL)", "Cape Breton Eagles (QMJHL)", "Halifax Wanderers FC (CPL)"],
+    intro: "Nova Scotia combines the Halifax metro area with a long coastline and rural communities in Cape Breton and the Annapolis Valley.",
+    winter: "Nor'easters and coastal storms can interrupt power and internet. Keep devices charged and know how to check your router after an outage.",
+    regionalPage: "iptv-maritimes",
+  },
+  NB: {
+    slug: "iptv-new-brunswick", name: "New Brunswick", fr: false,
+    isps: ["Bell Aliant", "Rogers", "Xplore (rural)", "regional providers"],
+    tz: "Atlantic Time",
+    teams: ["Moncton Wildcats (QMJHL)", "Saint John Sea Dogs (QMJHL)"],
+    intro: "New Brunswick is Canada's officially bilingual province, so French and English channels both matter to households in Moncton, Fredericton, Saint John and the Acadian north.",
+    winter: "Heavy snow and ice storms can affect rural lines. Households outside the main cities should test their real speed before choosing a plan with several connections.",
+    regionalPage: "iptv-maritimes",
+  },
+  NL: {
+    slug: "iptv-newfoundland-and-labrador", name: "Newfoundland and Labrador", fr: false,
+    isps: ["Bell Aliant", "Rogers", "Eastlink", "regional providers"],
+    tz: "Newfoundland Time (most of the province, half an hour ahead of Atlantic Time), with parts of Labrador on Atlantic Time",
+    tzCity: "Newfoundland Time, half an hour ahead of Atlantic Time",
+    teams: ["St. John's Regals (senior hockey)", "regional junior and senior teams"],
+    intro: "Newfoundland and Labrador has a proud local TV culture, and being half an hour ahead of Atlantic Time means game and guide times need a second look.",
+    winter: "Wind, snow and coastal storms are frequent, so power and internet outages happen. A stable wired connection and a backup mobile hotspot help you keep watching.",
+    regionalPage: "iptv-maritimes",
+  },
+  PE: {
+    slug: "iptv-prince-edward-island", name: "Prince Edward Island", fr: false,
+    isps: ["Bell Aliant", "Eastlink", "regional providers"],
+    tz: "Atlantic Time",
+    teams: ["Charlottetown Islanders (QMJHL)"],
+    intro: "Prince Edward Island is small but well connected, with Charlottetown and Summerside as the main population centres and a strong Island identity around local sport.",
+    winter: "Island storms and drifting snow can affect service. A simple wired setup and a router restart routine solve most short interruptions.",
+    regionalPage: "iptv-maritimes",
+  },
+  YT: {
+    slug: "iptv-yukon", name: "Yukon", fr: false,
+    isps: ["Northwestel", "satellite-based options"],
+    tz: "Yukon Standard Time (Mountain Time all year, no daylight saving)",
+    teams: ["local recreational and junior leagues"],
+    intro: "Yukon households rely on a small number of northern providers and often on satellite links, so connectivity, not channel choice, is the main practical question.",
+    winter: "Extreme cold and limited infrastructure make backups important. Keep the streaming device indoors and near the router, and test quality settings in winter.",
+    regionalPage: "iptv-northern-canada",
+  },
+  NT: {
+    slug: "iptv-northwest-territories", name: "Northwest Territories", fr: false,
+    isps: ["Northwestel", "satellite-based options"],
+    tz: "Mountain Time",
+    teams: ["local recreational and junior leagues"],
+    intro: "In the Northwest Territories, Yellowknife and smaller communities depend on northern networks where bandwidth is precious and data limits matter.",
+    winter: "Very long winters and remote distances make reliable TV valuable, but data caps and shared links can limit HD and 4K streaming. Check your plan's data allowance first.",
+    regionalPage: "iptv-northern-canada",
+  },
+  NU: {
+    slug: "iptv-nunavut", name: "Nunavut", fr: false,
+    isps: ["Northwestel", "satellite-based providers"],
+    tz: "Nunavut spans more than one time zone, so always check the time zone for your community",
+    teams: ["local recreational leagues"],
+    intro: "Nunavut's communities are fly-in and satellite-connected, so internet speed and data allowances shape every streaming decision.",
+    winter: "Winters are extreme and connections are often satellite-based. Use lower stream quality and check data allowances before choosing a plan.",
+    regionalPage: "iptv-northern-canada",
+  },
+};
+
+const ON = "ON", QC = "QC", BC = "BC", AB = "AB", MB = "MB", SK = "SK", NS = "NS", NB = "NB", NL = "NL", PE = "PE", YT = "YT", NT = "NT", NU = "NU";
+const TO = ["Toronto Maple Leafs", "Toronto Raptors", "Toronto Blue Jays"];
+
+// slug -> [name, province, local teams, nearby slugs, local note]
+export const CITIES = {
+  "iptv-mississauga": ["Mississauga", ON, ["Mississauga Steelheads (OHL)", ...TO], ["iptv-toronto", "iptv-brampton", "iptv-oakville"], "Mississauga sits in the middle of the Greater Toronto Area, so households follow the big Toronto teams as closely as local junior hockey."],
+  "iptv-brampton": ["Brampton", ON, TO, ["iptv-mississauga", "iptv-vaughan", "iptv-toronto"], "Brampton is one of the GTA's largest and fastest-growing cities, and many homes run several screens at once, which makes a multi-connection plan worthwhile."],
+  "iptv-markham": ["Markham", ON, TO, ["iptv-richmond-hill", "iptv-vaughan", "iptv-toronto"], "Markham is part of York Region in the northeast GTA, with diverse households that often want channels in several languages alongside Canadian TV."],
+  "iptv-vaughan": ["Vaughan", ON, TO, ["iptv-brampton", "iptv-markham", "iptv-richmond-hill"], "Vaughan is a York Region city north of Toronto where large homes and family viewing make multi-device plans popular."],
+  "iptv-richmond-hill": ["Richmond Hill", ON, TO, ["iptv-markham", "iptv-vaughan", "iptv-barrie"], "Richmond Hill is in York Region, just north of Toronto, and shares Toronto's sports teams and channels."],
+  "iptv-oakville": ["Oakville", ON, [...TO, "Hamilton Tiger-Cats"], ["iptv-burlington", "iptv-mississauga", "iptv-hamilton"], "Oakville sits between Toronto and Hamilton, so fans split between the Leafs and the Tiger-Cats."],
+  "iptv-burlington": ["Burlington", ON, ["Hamilton Tiger-Cats", "Hamilton Bulldogs (OHL)", ...TO], ["iptv-oakville", "iptv-hamilton", "iptv-guelph"], "Burlington is at the western end of Lake Ontario, near Hamilton and the Niagara escarpment."],
+  "iptv-kitchener-waterloo": ["Kitchener-Waterloo", ON, ["Kitchener Rangers (OHL)", ...TO], ["iptv-guelph", "iptv-london-ontario", "iptv-hamilton"], "Kitchener-Waterloo is a tech and university region where students and young families expect streaming to just work."],
+  "iptv-guelph": ["Guelph", ON, ["Guelph Storm (OHL)", ...TO], ["iptv-kitchener-waterloo", "iptv-burlington", "iptv-mississauga"], "Guelph is a university city west of Toronto with a strong junior hockey following."],
+  "iptv-windsor": ["Windsor", ON, ["Windsor Spitfires (OHL)", ...TO], ["iptv-london-ontario", "iptv-kitchener-waterloo"], "Windsor faces Detroit across the river, so many households also follow US sports and want national and cross-border sports channels."],
+  "iptv-barrie": ["Barrie", ON, ["Barrie Colts (OHL)", ...TO], ["iptv-richmond-hill", "iptv-vaughan", "iptv-sudbury"], "Barrie is the gateway to cottage country north of the GTA, where seasonal residents often need TV at more than one address."],
+  "iptv-oshawa": ["Oshawa", ON, ["Oshawa Generals (OHL)", ...TO], ["iptv-toronto", "iptv-markham", "iptv-kingston"], "Oshawa is the east end of the GTA and Durham Region, with a long junior hockey tradition."],
+  "iptv-st-catharines": ["St. Catharines", ON, ["Niagara IceDogs (OHL)", ...TO], ["iptv-hamilton", "iptv-burlington", "iptv-guelph"], "St. Catharines is in the Niagara Region, close to the US border and the Buffalo market."],
+  "iptv-kingston": ["Kingston", ON, ["Kingston Frontenacs (OHL)", "Ottawa Senators", "Toronto Maple Leafs"], ["iptv-ottawa", "iptv-oshawa", "iptv-toronto"], "Kingston sits between Toronto and Ottawa, so fans follow both the Leafs and the Senators."],
+  "iptv-sudbury": ["Sudbury", ON, ["Sudbury Wolves (OHL)", ...TO], ["iptv-barrie", "iptv-thunder-bay"], "Sudbury is the largest city in northeastern Ontario, where long distances and winter weather make reliable home entertainment valuable."],
+  "iptv-thunder-bay": ["Thunder Bay", ON, ["Toronto Maple Leafs", "Winnipeg Jets"], ["iptv-sudbury", "iptv-winnipeg"], "Thunder Bay is in northwestern Ontario, where fans often follow both Toronto and Winnipeg teams."],
+
+  "iptv-laval": ["Laval", QC, ["Rocket de Laval (LAH)", "Canadiens de Montréal"], ["iptv-montreal", "iptv-terrebonne", "iptv-longueuil"], "Laval, juste au nord de Montréal, suit les Canadiens de près et compte de nombreux foyers bilingues."],
+  "iptv-longueuil": ["Longueuil", QC, ["Canadiens de Montréal", "CF Montréal"], ["iptv-montreal", "iptv-laval", "iptv-sherbrooke"], "Longueuil, sur la Rive-Sud de Montréal, partage les équipes et les chaînes de la métropole."],
+  "iptv-terrebonne": ["Terrebonne", QC, ["Canadiens de Montréal"], ["iptv-laval", "iptv-montreal", "iptv-trois-rivieres"], "Terrebonne, dans la couronne nord de Montréal, est un secteur familial où plusieurs écrans fonctionnent souvent en même temps."],
+  "iptv-gatineau": ["Gatineau", QC, ["Olympiques de Gatineau (LHJMQ)", "Sénateurs d'Ottawa", "Canadiens de Montréal"], ["iptv-ottawa", "iptv-montreal"], "Gatineau fait face à Ottawa: les foyers suivent à la fois les Sénateurs et les Canadiens, en français et en anglais."],
+  "iptv-sherbrooke": ["Sherbrooke", QC, ["Phoenix de Sherbrooke (LHJMQ)", "Canadiens de Montréal"], ["iptv-longueuil", "iptv-montreal", "iptv-trois-rivieres"], "Sherbrooke, en Estrie, est une ville universitaire et un carrefour régional."],
+  "iptv-trois-rivieres": ["Trois-Rivières", QC, ["Lions de Trois-Rivières (LHJMQ)", "Canadiens de Montréal"], ["iptv-terrebonne", "iptv-quebec", "iptv-sherbrooke"], "Trois-Rivières se situe à mi-chemin entre Montréal et la ville de Québec."],
+  "iptv-levis": ["Lévis", QC, ["Remparts de Québec (LHJMQ)", "Canadiens de Montréal"], ["iptv-quebec", "iptv-trois-rivieres"], "Lévis, sur la rive sud de la ville de Québec, partage les chaînes et les équipes de la capitale."],
+  "iptv-saguenay": ["Saguenay", QC, ["Saguenéens de Chicoutimi (LHJMQ)", "Canadiens de Montréal"], ["iptv-quebec", "iptv-trois-rivieres"], "Saguenay, au Saguenay–Lac-Saint-Jean, est une région éloignée où une connexion stable compte beaucoup pour la télé en direct."],
+
+  "iptv-surrey": ["Surrey", BC, ["Vancouver Canucks", "Vancouver Whitecaps", "BC Lions"], ["iptv-vancouver", "iptv-burnaby", "iptv-abbotsford"], "Surrey is one of Metro Vancouver's largest cities, with many multi-generational households that watch on several screens."],
+  "iptv-burnaby": ["Burnaby", BC, ["Vancouver Canucks", "Vancouver Whitecaps", "BC Lions"], ["iptv-vancouver", "iptv-coquitlam", "iptv-richmond-bc"], "Burnaby sits at the centre of Metro Vancouver, with fast fibre in many areas."],
+  "iptv-richmond-bc": ["Richmond", BC, ["Vancouver Canucks", "Vancouver Whitecaps", "BC Lions"], ["iptv-vancouver", "iptv-burnaby", "iptv-surrey"], "Richmond, next to Vancouver International Airport, is a multilingual city where households often want international channels alongside Canadian TV."],
+  "iptv-coquitlam": ["Coquitlam", BC, ["Vancouver Canucks", "Vancouver Whitecaps", "BC Lions"], ["iptv-burnaby", "iptv-surrey", "iptv-abbotsford"], "Coquitlam is in the northeast of Metro Vancouver, popular with families and commuters."],
+  "iptv-abbotsford": ["Abbotsford", BC, ["Abbotsford Canucks (AHL)", "Vancouver Canucks", "BC Lions"], ["iptv-surrey", "iptv-chilliwack", "iptv-coquitlam"], "Abbotsford is in the Fraser Valley and is home to the Canucks' AHL affiliate."],
+  "iptv-chilliwack": ["Chilliwack", BC, ["Vancouver Canucks", "BC Lions"], ["iptv-abbotsford", "iptv-kamloops"], "Chilliwack is in the eastern Fraser Valley, where internet quality varies between town and rural areas."],
+  "iptv-victoria": ["Victoria", BC, ["Victoria Royals (WHL)", "Vancouver Canucks"], ["iptv-nanaimo", "iptv-vancouver"], "Victoria is on southern Vancouver Island, where the ferry-dependent geography makes home entertainment especially valued."],
+  "iptv-nanaimo": ["Nanaimo", BC, ["Nanaimo Clippers (BCHL)", "Vancouver Canucks"], ["iptv-victoria", "iptv-vancouver"], "Nanaimo is Vancouver Island's central city, a hub for the island's mid and north regions."],
+  "iptv-kelowna": ["Kelowna", BC, ["Kelowna Rockets (WHL)", "Vancouver Canucks", "Calgary Flames"], ["iptv-kamloops", "iptv-vancouver"], "Kelowna is the Okanagan's largest city, with many part-time residents who need TV in a second home."],
+  "iptv-kamloops": ["Kamloops", BC, ["Kamloops Blazers (WHL)", "Vancouver Canucks"], ["iptv-kelowna", "iptv-prince-george", "iptv-chilliwack"], "Kamloops is a Thompson-Okanagan hub with a devoted WHL following."],
+  "iptv-prince-george": ["Prince George", BC, ["Prince George Cougars (WHL)", "Vancouver Canucks", "Edmonton Oilers"], ["iptv-kamloops", "iptv-edmonton"], "Prince George is northern BC's regional centre, where winters are long and viewers follow both the Canucks and the Oilers."],
+
+  "iptv-red-deer": ["Red Deer", AB, ["Red Deer Rebels (WHL)", "Calgary Flames", "Edmonton Oilers"], ["iptv-calgary", "iptv-edmonton", "iptv-airdrie"], "Red Deer sits halfway between Calgary and Edmonton, so the rivalry is fought in living rooms here."],
+  "iptv-lethbridge": ["Lethbridge", AB, ["Lethbridge Hurricanes (WHL)", "Calgary Flames"], ["iptv-medicine-hat", "iptv-calgary"], "Lethbridge is in southern Alberta, known for wind and a strong WHL fan base."],
+  "iptv-st-albert": ["St. Albert", AB, ["Edmonton Oilers", "Edmonton Elks"], ["iptv-edmonton", "iptv-red-deer"], "St. Albert is just north of Edmonton and shares its teams and channels."],
+  "iptv-medicine-hat": ["Medicine Hat", AB, ["Medicine Hat Tigers (WHL)", "Calgary Flames"], ["iptv-lethbridge", "iptv-calgary"], "Medicine Hat is in southeastern Alberta, with one of the region's oldest junior hockey clubs."],
+  "iptv-grande-prairie": ["Grande Prairie", AB, ["Edmonton Oilers", "Calgary Flames"], ["iptv-edmonton", "iptv-red-deer", "iptv-prince-george"], "Grande Prairie is the main city of northwestern Alberta, where distance and winter make good home viewing important."],
+  "iptv-airdrie": ["Airdrie", AB, ["Calgary Flames", "Calgary Stampeders"], ["iptv-calgary", "iptv-red-deer"], "Airdrie is a fast-growing city just north of Calgary."],
+
+  "iptv-brandon": ["Brandon", MB, ["Brandon Wheat Kings (WHL)", "Winnipeg Jets"], ["iptv-winnipeg", "iptv-steinbach", "iptv-regina"], "Brandon is Manitoba's second city, with a strong WHL identity."],
+  "iptv-steinbach": ["Steinbach", MB, ["Winnipeg Jets", "Winnipeg Blue Bombers"], ["iptv-winnipeg", "iptv-brandon"], "Steinbach is southeast of Winnipeg, in one of Manitoba's fastest-growing communities."],
+
+  "iptv-saskatoon": ["Saskatoon", SK, ["Saskatoon Blades (WHL)", "Saskatchewan Roughriders"], ["iptv-regina", "iptv-prince-albert", "iptv-moose-jaw"], "Saskatoon is Saskatchewan's largest city, and Roughriders game days shape the weekend."],
+  "iptv-regina": ["Regina", SK, ["Saskatchewan Roughriders", "Regina Pats (WHL)"], ["iptv-saskatoon", "iptv-moose-jaw", "iptv-brandon"], "Regina is the home of the Roughriders and the Saskatchewan capital."],
+  "iptv-prince-albert": ["Prince Albert", SK, ["Prince Albert Raiders (WHL)", "Saskatchewan Roughriders"], ["iptv-saskatoon", "iptv-regina"], "Prince Albert is the gateway to northern Saskatchewan."],
+  "iptv-moose-jaw": ["Moose Jaw", SK, ["Moose Jaw Warriors (WHL)", "Saskatchewan Roughriders"], ["iptv-regina", "iptv-saskatoon"], "Moose Jaw is just west of Regina and has a devoted WHL following."],
+
+  "iptv-halifax": ["Halifax", NS, ["Halifax Mooseheads (QMJHL)", "Halifax Wanderers FC (CPL)", "Toronto Maple Leafs", "Montréal Canadiens"], ["iptv-dartmouth", "iptv-truro", "iptv-moncton"], "Halifax is the Atlantic region's largest city, with a strong pub and sports-watching culture."],
+  "iptv-dartmouth": ["Dartmouth", NS, ["Halifax Mooseheads (QMJHL)", "Toronto Maple Leafs", "Montréal Canadiens"], ["iptv-halifax", "iptv-truro"], "Dartmouth is across the harbour from Halifax and part of the same metro area."],
+  "iptv-sydney": ["Sydney", NS, ["Cape Breton Eagles (QMJHL)", "Toronto Maple Leafs", "Montréal Canadiens"], ["iptv-halifax", "iptv-truro"], "Sydney is on Cape Breton Island, where rural connectivity can differ sharply from Halifax."],
+  "iptv-truro": ["Truro", NS, ["Halifax Mooseheads (QMJHL)", "Toronto Maple Leafs"], ["iptv-halifax", "iptv-moncton", "iptv-dartmouth"], "Truro is a central Nova Scotia crossroads between Halifax and New Brunswick."],
+
+  "iptv-moncton": ["Moncton", NB, ["Moncton Wildcats (QMJHL)", "Montréal Canadiens", "Toronto Maple Leafs"], ["iptv-fredericton", "iptv-saint-john", "iptv-halifax"], "Moncton is a bilingual hub where English and French channels are equally in demand."],
+  "iptv-saint-john": ["Saint John", NB, ["Saint John Sea Dogs (QMJHL)", "Toronto Maple Leafs", "Montréal Canadiens"], ["iptv-moncton", "iptv-fredericton"], "Saint John is a port city on the Bay of Fundy."],
+  "iptv-fredericton": ["Fredericton", NB, ["Toronto Maple Leafs", "Montréal Canadiens", "Boston Bruins"], ["iptv-moncton", "iptv-saint-john"], "Fredericton is the provincial capital and a university city."],
+
+  "iptv-st-johns": ["St. John's", NL, ["St. John's Regals (senior hockey)", "Toronto Maple Leafs", "Montréal Canadiens"], ["iptv-mount-pearl", "iptv-corner-brook"], "St. John's is North America's easternmost major city, and being half an hour ahead of Atlantic Time affects game and guide times."],
+  "iptv-mount-pearl": ["Mount Pearl", NL, ["Toronto Maple Leafs", "Montréal Canadiens"], ["iptv-st-johns", "iptv-corner-brook"], "Mount Pearl is next to St. John's on the Avalon Peninsula."],
+  "iptv-corner-brook": ["Corner Brook", NL, ["Toronto Maple Leafs", "Montréal Canadiens"], ["iptv-st-johns", "iptv-mount-pearl"], "Corner Brook is the largest city on Newfoundland's west coast."],
+
+  "iptv-charlottetown": ["Charlottetown", PE, ["Charlottetown Islanders (QMJHL)", "Toronto Maple Leafs", "Montréal Canadiens"], ["iptv-summerside", "iptv-moncton"], "Charlottetown is PEI's capital and its main population centre."],
+  "iptv-summerside": ["Summerside", PE, ["Charlottetown Islanders (QMJHL)", "Toronto Maple Leafs"], ["iptv-charlottetown", "iptv-moncton"], "Summerside is PEI's second city, in the western half of the Island."],
+
+  "iptv-whitehorse": ["Whitehorse", YT, ["Vancouver Canucks", "Edmonton Oilers"], ["iptv-yellowknife"], "Whitehorse is the Yukon's capital, where northern networks and long winters shape how people watch TV."],
+  "iptv-yellowknife": ["Yellowknife", NT, ["Edmonton Oilers", "Calgary Flames"], ["iptv-whitehorse", "iptv-edmonton"], "Yellowknife is the capital of the Northwest Territories, where data allowances often decide how much you can stream."],
+  "iptv-iqaluit": ["Iqaluit", NU, ["Montréal Canadiens", "Toronto Maple Leafs"], ["iptv-yellowknife", "iptv-ottawa"], "Iqaluit is Nunavut's capital, with satellite-linked internet where lower stream quality and data limits are practical realities."],
+};
+
+// Existing hand-written city pages that province hubs should also list.
+export const EXISTING_CITIES = {
+  ON: ["iptv-toronto", "iptv-ottawa", "iptv-hamilton", "iptv-london-ontario"],
+  QC: ["iptv-montreal", "iptv-quebec"],
+  BC: ["iptv-vancouver"],
+  AB: ["iptv-calgary", "iptv-edmonton"],
+  MB: ["iptv-winnipeg"],
+};
+
+export const REGIONS = {
+  "iptv-gta": { short: "GTA", kw: "iptv gta", name: "the Greater Toronto Area (GTA)", cities: ["iptv-toronto", "iptv-mississauga", "iptv-brampton", "iptv-markham", "iptv-vaughan", "iptv-richmond-hill", "iptv-oakville", "iptv-burlington", "iptv-oshawa"], prov: "ON" },
+  "iptv-lower-mainland": { short: "Lower Mainland", kw: "iptv lower mainland", name: "Metro Vancouver and the Lower Mainland", cities: ["iptv-vancouver", "iptv-surrey", "iptv-burnaby", "iptv-richmond-bc", "iptv-coquitlam", "iptv-abbotsford", "iptv-chilliwack"], prov: "BC" },
+  "iptv-vancouver-island": { short: "Vancouver Island", kw: "iptv vancouver island", name: "Vancouver Island", cities: ["iptv-victoria", "iptv-nanaimo"], prov: "BC" },
+  "iptv-prairies": { short: "Prairies", kw: "iptv prairies", name: "the Prairie provinces", cities: ["iptv-calgary", "iptv-edmonton", "iptv-winnipeg", "iptv-saskatoon", "iptv-regina", "iptv-red-deer", "iptv-lethbridge", "iptv-brandon"], prov: "AB" },
+  "iptv-maritimes": { short: "Maritimes", kw: "iptv maritimes", name: "the Maritimes and Atlantic Canada", cities: ["iptv-halifax", "iptv-moncton", "iptv-saint-john", "iptv-fredericton", "iptv-charlottetown", "iptv-st-johns", "iptv-sydney"], prov: "NS" },
+  "iptv-northern-canada": { short: "Northern Canada", kw: "iptv northern canada", name: "Northern Canada", cities: ["iptv-whitehorse", "iptv-yellowknife", "iptv-iqaluit", "iptv-thunder-bay", "iptv-prince-george", "iptv-grande-prairie"], prov: "YT" },
+};

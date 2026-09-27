@@ -290,7 +290,7 @@ export default function IPTVMontrealPage() {
           </a>
         </section>
       <PageExtras slug="iptv-montreal" />
-      <SeoLinks heading="More IPTV in Canada" slugs={["fr","fr/meilleur-iptv-canada","fr/abonnement-iptv","iptv-cities","iptv-near-me","iptv-canada","iptv-sports","best-iptv-canada","iptv-subscription"]} />
+      <SeoLinks heading="More IPTV in Canada" slugs={["fr","fr/meilleur-iptv-canada","fr/abonnement-iptv","iptv-cities","iptv-near-me","iptv-canada","iptv-sports","best-iptv-canada","iptv-subscription","fr/iptv-canadiens","iptv-canadiens","iptv-laval","iptv-longueuil","iptv-terrebonne"]} />
       </main>
     </>
   );

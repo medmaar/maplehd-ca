@@ -128,7 +128,7 @@ export default function IPTVSmartTVCanadaPage() {
           </div>
         </section>
       <PageExtras slug="iptv-smart-tv-canada" />
-      <SeoLinks heading="Related IPTV guides" slugs={["fr/iptv-sur-smart-tv","iptv-sony-hisense-tv","smart-iptv-app","nanomid","flix-iptv","iptv-smarters-pro-smart-tv","iptv-devices"]} />
+      <SeoLinks heading="Related IPTV guides" slugs={["fr/iptv-sur-smart-tv","iptv-sony-hisense-tv","smart-iptv-app","nanomid","flix-iptv","iptv-smarters-pro-smart-tv","iptv-devices","iptv-tcl-tv","iptv-google-tv"]} />
       </main>
     </>
   );

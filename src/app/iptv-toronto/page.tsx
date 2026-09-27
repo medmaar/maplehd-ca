@@ -295,7 +295,7 @@ export default function IPTVTorontoPage() {
           </a>
         </section>
       <PageExtras slug="iptv-toronto" />
-      <SeoLinks heading="More IPTV in Canada" slugs={["iptv-cities","iptv-near-me","iptv-canada","iptv-sports","best-iptv-canada","iptv-subscription"]} />
+      <SeoLinks heading="More IPTV in Canada" slugs={["iptv-cities","iptv-near-me","iptv-canada","iptv-sports","best-iptv-canada","iptv-subscription","iptv-ontario","iptv-gta","iptv-maple-leafs","iptv-mississauga","iptv-brampton"]} />
       </main>
     </>
   );

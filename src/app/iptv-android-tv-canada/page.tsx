@@ -500,7 +500,7 @@ export default function IPTVAndroidTVCanadaPage() {
           </div>
         </section>
       <PageExtras slug="iptv-android-tv-canada" />
-      <SeoLinks heading="Related IPTV guides" slugs={["best-android-tv-box","tivimate","ott-navigator","xciptv","iptv-boxes","iptv-4k","iptv-devices"]} />
+      <SeoLinks heading="Related IPTV guides" slugs={["best-android-tv-box","tivimate","ott-navigator","xciptv","iptv-boxes","iptv-4k","iptv-devices","iptv-google-tv","iptv-nvidia-shield","iptv-tcl-tv","android-tv-box-models","iptv-smarters-android"]} />
       </main>
     </>
   );

@@ -90,3 +90,34 @@ https://www.maplehd.ca/* https://maplehd.ca/:splat 301
 /iptv-francais                   /fr                          301
 /iptv-canada-francais            /fr                          301
 /iptv-legal-quebec               /fr/iptv-legal               301
+
+# Canada angles (aliases)
+/iptv-leafs                      /iptv-maple-leafs            301
+/iptv-habs                       /iptv-canadiens              301
+/iptv-hockey                     /iptv-nhl-canada             301
+/iptv-nhl                        /iptv-nhl-canada             301
+/iptv-playoffs                   /iptv-stanley-cup-playoffs   301
+/iptv-vs-cable                   /iptv-vs-cable-hub           301
+/iptv-interac                    /iptv-payment-canada         301
+/iptv-time-zones                 /iptv-time-zones-canada      301
+/iptv-rural                      /iptv-rural-canada           301
+/iptv-winter                     /iptv-winter-buffering       301
+/iptv-canada-holidays            /iptv-canadian-holidays      301
+/iptv-bc                         /iptv-british-columbia       301
+/iptv-sask                       /iptv-saskatchewan           301
+/iptv-pei                        /iptv-prince-edward-island   301
+/iptv-newfoundland               /iptv-newfoundland-and-labrador 301
+/iptv-nwt                        /iptv-northwest-territories  301
+/iptv-quebec-city                /iptv-quebec                 301
+/iptv-kitchener                  /iptv-kitchener-waterloo     301
+/iptv-waterloo                   /iptv-kitchener-waterloo     301
+/iptv-london                     /iptv-london-ontario         301
+/iptv-st-catherines              /iptv-st-catharines          301
+/iptv-richmond                   /iptv-richmond-bc            301
+/iptv-firestick-4k-max           /iptv-fire-tv-stick-4k-max   301
+/iptv-firestick-lite             /iptv-fire-tv-stick-lite     301
+/iptv-shield                     /iptv-nvidia-shield          301
+/iptv-live                       /iptv-live-tv-24-7           301
+/iptv-smarters-samsung           /iptv-smarters-samsung-tv    301
+/iptv-smarters-lg                /iptv-smarters-lg-tv         301
+/iptv-smarters-iphone            /iptv-smarters-apple         301

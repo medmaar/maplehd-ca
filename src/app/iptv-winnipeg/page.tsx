@@ -152,7 +152,7 @@ export default function IPTVWinnipegPage() {
           <a href="/pricing" style={{ background: "#AE2448", color: "#fff", padding: "16px 48px", borderRadius: 12, fontWeight: 700, textDecoration: "none", display: "inline-block" }}>View MapleHD Plans →</a>
         </section>
       <PageExtras slug="iptv-winnipeg" />
-      <SeoLinks heading="More IPTV in Canada" slugs={["iptv-cities","iptv-near-me","iptv-canada","iptv-sports","best-iptv-canada","iptv-subscription"]} />
+      <SeoLinks heading="More IPTV in Canada" slugs={["iptv-cities","iptv-near-me","iptv-canada","iptv-sports","best-iptv-canada","iptv-subscription","iptv-manitoba","iptv-jets","iptv-brandon","iptv-prairies"]} />
       </main>
     </>
   );

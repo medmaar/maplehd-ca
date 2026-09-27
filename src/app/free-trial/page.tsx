@@ -117,7 +117,7 @@ export default function FreeTrialPage() {
           </div>
         </section>
       <PageExtras slug="free-trial" />
-      <SeoLinks heading="Related IPTV guides" slugs={["iptv-subscription","best-iptv-canada","iptv-deals","what-is-iptv","iptv-devices","iptv-apps"]} />
+      <SeoLinks heading="Related IPTV guides" slugs={["iptv-subscription","best-iptv-canada","iptv-deals","what-is-iptv","iptv-devices","iptv-apps","iptv-time-zones-canada"]} />
       </main>
     </>
   );

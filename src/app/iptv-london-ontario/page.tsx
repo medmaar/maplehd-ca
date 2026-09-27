@@ -81,7 +81,7 @@ export default function IPTVLondonOntarioPage() {
           <a href="/pricing" style={{ background: "#AE2448", color: "#fff", padding: "16px 48px", borderRadius: 12, fontWeight: 700, textDecoration: "none", display: "inline-block" }}>View MapleHD Plans →</a>
         </section>
       <PageExtras slug="iptv-london-ontario" />
-      <SeoLinks heading="More IPTV in Canada" slugs={["iptv-cities","iptv-near-me","iptv-canada","iptv-sports","best-iptv-canada","iptv-subscription"]} />
+      <SeoLinks heading="More IPTV in Canada" slugs={["iptv-cities","iptv-near-me","iptv-canada","iptv-sports","best-iptv-canada","iptv-subscription","iptv-ontario","iptv-windsor","iptv-kitchener-waterloo"]} />
       </main>
     </>
   );

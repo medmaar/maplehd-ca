@@ -268,7 +268,7 @@ export default function IPTVvsCableCanada() {
           </div>
         </article>
       <PageExtras slug="blog/iptv-vs-cable-canada" />
-      <SeoLinks heading="Related IPTV guides" slugs={["cheap-iptv-canada","iptv-subscription","iptv-deals","iptv-canada","what-is-iptv"]} />
+      <SeoLinks heading="Related IPTV guides" slugs={["cheap-iptv-canada","iptv-subscription","iptv-deals","iptv-canada","what-is-iptv","iptv-vs-cable-hub","iptv-vs-bell","iptv-vs-rogers","iptv-vs-telus","iptv-vs-shaw","iptv-vs-videotron"]} />
       </main>
     </>
   );

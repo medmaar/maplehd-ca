@@ -97,7 +97,7 @@ export default function IPTVSmartersPage() {
       </section>
 
     <PageExtras slug="iptv-smarters" />
-      <SeoLinks heading="Related IPTV guides" slugs={["iptv-smarters-pro-download","iptv-smarters-pro-firestick","iptv-smarters-pro-pc-mac","iptv-smarters-pro-smart-tv","iptv-smarters-pro-price","iptv-smarters-lite","fr/iptv-smarters-pro","xtream-iptv-player","iptv-apps","tivimate"]} />
+      <SeoLinks heading="Related IPTV guides" slugs={["iptv-smarters-pro-download","iptv-smarters-pro-firestick","iptv-smarters-pro-pc-mac","iptv-smarters-pro-smart-tv","iptv-smarters-pro-price","iptv-smarters-lite","fr/iptv-smarters-pro","xtream-iptv-player","iptv-apps","tivimate","iptv-smarters-samsung-tv","iptv-smarters-lg-tv","iptv-smarters-roku","iptv-smarters-apple","iptv-smarters-android"]} />
       </main>
   );
 }

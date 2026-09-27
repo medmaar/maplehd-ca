@@ -161,7 +161,7 @@ export default function IPTVLGTVPage() {
         </div>
       </section>
     <PageExtras slug="iptv-lg-tv-canada" />
-      <SeoLinks heading="Related IPTV guides" slugs={["nanomid","smart-iptv-app","flix-iptv","iptv-smarters-pro-smart-tv","tivimate-smart-tv","iptv-devices"]} />
+      <SeoLinks heading="Related IPTV guides" slugs={["nanomid","smart-iptv-app","flix-iptv","iptv-smarters-pro-smart-tv","tivimate-smart-tv","iptv-devices","iptv-smarters-lg-tv"]} />
       </main>
     </>
   );

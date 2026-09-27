@@ -153,7 +153,7 @@ export default function IPTVIOSPage() {
         </div>
       </section>
     <PageExtras slug="iptv-ios-canada" />
-      <SeoLinks heading="Related IPTV guides" slugs={["implayer","iptv-smarters-lite","iptv-chromecast","iptv-apple-tv-canada","iptv-devices","iptv-apps"]} />
+      <SeoLinks heading="Related IPTV guides" slugs={["implayer","iptv-smarters-lite","iptv-chromecast","iptv-apple-tv-canada","iptv-devices","iptv-apps","iptv-tablets","iptv-smarters-apple"]} />
       </main></>
   );
 }

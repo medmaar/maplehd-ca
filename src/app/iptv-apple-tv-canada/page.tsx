@@ -115,7 +115,7 @@ export default function IPTVAppleTVCanadaPage() {
           </div>
         </section>
       <PageExtras slug="iptv-apple-tv-canada" />
-      <SeoLinks heading="Related IPTV guides" slugs={["implayer","iptv-smarters-lite","iptv-smarters-pro-smart-tv","iptv-mac","iptv-devices","iptv-apps"]} />
+      <SeoLinks heading="Related IPTV guides" slugs={["implayer","iptv-smarters-lite","iptv-smarters-pro-smart-tv","iptv-mac","iptv-devices","iptv-apps","iptv-smarters-apple"]} />
       </main>
     </>
   );
