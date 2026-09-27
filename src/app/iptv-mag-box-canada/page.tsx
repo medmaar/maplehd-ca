@@ -4,12 +4,12 @@ import SeoLinks from "@/components/SeoLinks";
 import PageExtras from "@/components/PageExtras";
 
 export const metadata: Metadata = {
-  title: "IPTV MAG Box Canada – Setup & Best Plans 2026 | MapleHD",
+  title: { absolute: "IPTV MAG Box Canada — Setup & Plans 2026 | MapleHD" },
   description:
     "Set up MapleHD IPTV on your MAG Box in Canada. Full portal URL setup guide. 25,000+ live channels, NHL, TSN in 4K. Plans from $9/month.",
   keywords: "IPTV MAG Box Canada, MAG 322 MapleHD, MAG Box setup Canada 2026",
   alternates: { canonical: "https://maplehd.ca/iptv-mag-box-canada" },
-  openGraph: {
+  openGraph: { locale: "en_CA", 
       images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "MapleHD — Best IPTV Canada" }],
     title: "IPTV MAG Box Canada – Setup & Best Plans 2026 | MapleHD",
     description: "Set up MapleHD IPTV on your MAG Box in Canada. Full portal URL setup guide. 25,000+ live channels, NHL, TSN in 4K. Plans from $9/month.",

@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   description:
     "Legal disclaimer for MapleHD. We do not host or stream any copyrighted content. All content is provided by third-party providers.",
   alternates: { canonical: "https://maplehd.ca/disclaimer" },
+  openGraph: { url: "https://maplehd.ca/disclaimer", siteName: "MapleHD", locale: "en_CA", type: "website", images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "MapleHD IPTV Canada" }] },
 };
 
 export default function DisclaimerPage() {

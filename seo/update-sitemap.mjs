@@ -16,6 +16,8 @@ const marker = "\n  <!-- SEO cluster pages";
 const at = xml.indexOf(marker);
 if (at >= 0) xml = xml.slice(0, at) + "\n</urlset>\n";
 
+// multi-device plan pages are canonicalised to /pricing (near-duplicates) and kept out of the sitemap
+xml = xml.split("\n").filter((l) => !(l.includes("/pricing/") && l.includes("-devices/"))).join("\n");
 const url = (slug) => (slug === "" ? BASE : `${BASE}/${slug}`);
 
 // Replace text between two markers on the single line that contains `<loc>LOC</loc>`.

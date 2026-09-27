@@ -50,7 +50,7 @@ const broadcaster = ({ slug, name, kw, kws, anchor, owner, what, watch, faqQ, fa
   related: ["channels-list", "iptv-canada", "iptv-sports", "iptv-quebec"],
 });
 
-const isp = ({ slug, name, kw, kws, anchor, product, note }) => ({
+const isp = ({ slug, name, kw, kws, anchor, product, note, about, where }) => ({
   slug, cluster: "isp", kind: "compare", hub: "iptv-vs-cable-hub", pillar: "iptv-vs-cable-hub",
   title: `IPTV vs ${name} TV — Cost & Features Compared | MapleHD`.slice(0, 60),
   desc: `IPTV vs ${name} TV in Canada: how an IPTV subscription compares with ${product} on cost, contracts, devices and channels, and how to keep your internet.`.slice(0, 160),
@@ -60,6 +60,7 @@ const isp = ({ slug, name, kw, kws, anchor, product, note }) => ({
   answer: `IPTV is a TV subscription delivered over any internet connection, while ${product} is ${name}'s own TV bundle. Many Canadians keep their ${name} internet and replace only the TV bundle with an IPTV subscription such as MapleHD, which starts at $9/month with no contract.`,
   sections: [
     { h: `${name} TV vs IPTV at a glance`, table: { head: ["", `${product}`, "MapleHD IPTV"], rows: [["Needs the provider's internet?", note, "No, works over any good connection"], ["Contract", "Often a term or bundle discount", "None; prepaid plans"], ["Devices", "Provider box or app", "Firestick, Android TV, Smart TV, phone, PC"], ["Typical monthly cost", "Bundle-dependent, often $80+ with fees", "From $9"], ["On demand", "Included, provider library", "120,000+ titles"]] }, p2: ["Prices and packages change; check your current bill and the provider's current offers."] },
+    { h: `About ${product}`, p: [about, where] },
     { h: "How to switch only the TV part", ol: ["Check whether your internet is sold separately from the TV bundle and what changes in price.", "Test IPTV first with a [free trial](/free-trial) while your current TV service is active.", "Confirm you have enough internet speed: about 15 Mbps per HD stream.", "Then downgrade or cancel the TV bundle, keeping the internet plan."] },
     { h: "What you might miss and what you gain", ul: ["Provider bundles may include set-top box features and support you are used to.", "IPTV can run on devices you already own and costs far less.", "IPTV depends entirely on your internet quality, so a stable connection matters."] },
     { h: "Related comparisons", p: ["See the [IPTV vs cable in Canada](/blog/iptv-vs-cable-canada) article and the other carrier comparisons in our [IPTV vs cable hub](/iptv-vs-cable-hub)."] },
@@ -208,11 +209,11 @@ export default [
     ],
     related: ["cheap-iptv-canada", "iptv-canada", "iptv-subscription"],
   },
-  isp({ slug: "iptv-vs-bell", name: "Bell", kw: "iptv vs bell fibe", kws: ["bell fibe tv alternative", "iptv vs bell", "replace bell tv", "bell fibe tv cost"], anchor: "IPTV vs Bell Fibe TV", product: "Bell Fibe TV", note: "Fibe TV is sold with Bell internet" }),
-  isp({ slug: "iptv-vs-rogers", name: "Rogers", kw: "iptv vs rogers ignite", kws: ["rogers ignite tv alternative", "iptv vs rogers", "replace rogers tv", "rogers ignite tv cost"], anchor: "IPTV vs Rogers Ignite TV", product: "Rogers Ignite TV", note: "Ignite TV is sold with Rogers internet" }),
-  isp({ slug: "iptv-vs-telus", name: "Telus", kw: "iptv vs telus tv", kws: ["telus tv alternative", "iptv vs telus", "replace telus tv", "telus optik tv alternative"], anchor: "IPTV vs Telus TV", product: "Telus TV (formerly Optik TV)", note: "Telus TV is sold with Telus internet" }),
-  isp({ slug: "iptv-vs-shaw", name: "Shaw", kw: "iptv vs shaw tv", kws: ["shaw tv alternative", "iptv vs shaw", "replace shaw tv", "shaw cable alternative"], anchor: "IPTV vs Shaw TV", product: "Shaw's TV service (now part of Rogers)", note: "Shaw TV was sold with Shaw internet; the company is now part of Rogers" }),
-  isp({ slug: "iptv-vs-videotron", name: "Vidéotron", kw: "iptv vs videotron helix", kws: ["videotron helix alternative", "iptv vs videotron", "remplacer videotron tv", "illico alternative"], anchor: "IPTV vs Vidéotron Helix", product: "Vidéotron Helix and illico TV", note: "Helix is sold with Vidéotron internet" }),
+  isp({ slug: "iptv-vs-bell", name: "Bell", kw: "iptv vs bell fibe", kws: ["bell fibe tv alternative", "iptv vs bell", "replace bell tv", "bell fibe tv cost"], anchor: "IPTV vs Bell Fibe TV", product: "Bell Fibe TV", note: "Fibe TV is sold with Bell internet", about: "Bell is one of Canada's national carriers. Its TV product, Fibe TV, is sold with Bell internet and delivered through a set-top box and the Fibe TV app, and Bell Media owns channels such as CTV and TSN.", where: "Bell service is strongest in Ontario, Québec and Atlantic Canada. Because Bell owns sports and news networks, some viewers want to keep those channels; check that the specific channels you need are in your IPTV lineup before cancelling." }),
+  isp({ slug: "iptv-vs-rogers", name: "Rogers", kw: "iptv vs rogers ignite", kws: ["rogers ignite tv alternative", "iptv vs rogers", "replace rogers tv", "rogers ignite tv cost"], anchor: "IPTV vs Rogers Ignite TV", product: "Rogers Ignite TV", note: "Ignite TV is sold with Rogers internet", about: "Rogers is a national carrier whose TV product, Ignite TV, is sold with Rogers internet and uses the Ignite TV box and app. Rogers also owns Sportsnet, and Shaw is now part of Rogers.", where: "Rogers is strongest in Ontario, the Atlantic provinces and, with Shaw, Western Canada. Many customers keep Rogers internet, which suits IPTV, and drop only the TV package." }),
+  isp({ slug: "iptv-vs-telus", name: "Telus", kw: "iptv vs telus tv", kws: ["telus tv alternative", "iptv vs telus", "replace telus tv", "telus optik tv alternative"], anchor: "IPTV vs Telus TV", product: "Telus TV (formerly Optik TV)", note: "Telus TV is sold with Telus internet", about: "Telus is a major carrier in Western Canada. Its TV service, formerly Optik TV, is sold with Telus internet and available on a set-top box or app.", where: "Telus service is strongest in British Columbia and Alberta, with fibre in many neighbourhoods. Telus fibre suits IPTV well, so many households keep the internet and replace only the TV bundle." }),
+  isp({ slug: "iptv-vs-shaw", name: "Shaw", kw: "iptv vs shaw tv", kws: ["shaw tv alternative", "iptv vs shaw", "replace shaw tv", "shaw cable alternative"], anchor: "IPTV vs Shaw TV", product: "Shaw's TV service (now part of Rogers)", note: "Shaw TV was sold with Shaw internet; the company is now part of Rogers", about: "Shaw was Western Canada's cable and internet provider and is now part of Rogers. Its TV service was offered with Shaw internet through set-top boxes and apps.", where: "If you are on a Shaw plan, check with Rogers what changes apply to your account. IPTV works over Shaw or Rogers internet in the same way, so you can compare your TV bundle price with an IPTV plan." }),
+  isp({ slug: "iptv-vs-videotron", name: "Vidéotron", kw: "iptv vs videotron helix", kws: ["videotron helix alternative", "iptv vs videotron", "remplacer videotron tv", "illico alternative"], anchor: "IPTV vs Vidéotron Helix", product: "Vidéotron Helix and illico TV", note: "Helix is sold with Vidéotron internet", about: "Vidéotron is Québec's leading cable and internet provider. Its Helix platform combines TV, internet and a smart-home ecosystem, with French-language channels central to the lineup.", where: "Vidéotron is strongest in Québec. Francophone households should check that the French-language channels they use, such as TVA, RDS and Noovo, are in the IPTV lineup; see [IPTV Québec](/iptv-quebec) and [IPTV en français](/fr)." }),
 
   // ---------------- Practical Canada pages ----------------
   {
@@ -240,7 +241,7 @@ export default [
   },
   {
     slug: "iptv-payment-canada", cluster: "practical", kind: "guide", hub: "iptv-canada", pillar: "iptv-subscription",
-    title: "Pay for IPTV in Canada — CAD & Interac e-Transfer | MapleHD",
+    title: "Pay for IPTV in Canada — CAD & Interac | MapleHD",
     desc: "How to pay for IPTV in Canada: prices in Canadian dollars, Interac e-Transfer and other methods, payment safety tips, and MapleHD's refund policy.",
     h1: "Paying for IPTV in Canada: CAD Pricing and Interac e-Transfer",
     badge: "IPTV Payment · CAD · Interac",

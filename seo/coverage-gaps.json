@@ -1,10 +1,5 @@
 [
  {
-  "kw": "ip tv smarters pro",
-  "vol": 50000,
-  "slug": "iptv-smarters-pro-download"
- },
- {
   "kw": "tivi mate",
   "vol": 50000,
   "slug": "tivimate"
@@ -73,16 +68,6 @@
   "kw": "smarterspro",
   "vol": 5000,
   "slug": "iptv-smarters-pro-download"
- },
- {
-  "kw": "stb emu pro",
-  "vol": 5000,
-  "slug": "stbemu"
- },
- {
-  "kw": "xc iptv",
-  "vol": 5000,
-  "slug": "xciptv"
  },
  {
   "kw": "free trial iptv",
@@ -155,11 +140,6 @@
   "slug": "best-iptv-service"
  },
  {
-  "kw": "iptv 4k",
-  "vol": 590,
-  "slug": "iptv-4k"
- },
- {
   "kw": "iptv 4k near me",
   "vol": 590,
   "slug": "iptv-near-me"
@@ -228,11 +208,6 @@
   "kw": "box android iptv",
   "vol": 500,
   "slug": "best-android-tv-box"
- },
- {
-  "kw": "box formuler",
-  "vol": 500,
-  "slug": "formuler-iptv-box"
  },
  {
   "kw": "box iptv",
@@ -325,11 +300,6 @@
   "slug": "iptv-smarters-pro-download"
  },
  {
-  "kw": "ip tv smarters",
-  "vol": 500,
-  "slug": "iptv-smarters-pro-download"
- },
- {
   "kw": "ip tv stream player",
   "vol": 500,
   "slug": "iptv-player"
@@ -365,11 +335,6 @@
   "slug": "diablo-iptv"
  },
  {
-  "kw": "iptv downloader",
-  "vol": 500,
-  "slug": "iptv-m3u-player"
- },
- {
   "kw": "iptv fire stick",
   "vol": 500,
   "slug": "iptv-firestick-canada"
@@ -403,11 +368,6 @@
   "kw": "iptv on roku tv",
   "vol": 500,
   "slug": "iptv-roku-canada"
- },
- {
-  "kw": "iptv online player",
-  "vol": 500,
-  "slug": "iptv-web-browser"
  },
  {
   "kw": "iptv plans",
@@ -485,16 +445,6 @@
   "slug": "iptv-smarters-android"
  },
  {
-  "kw": "iptv smarters pro pc",
-  "vol": 500,
-  "slug": "iptv-smarters-pro-pc-mac"
- },
- {
-  "kw": "iptv smasters pro subscription",
-  "vol": 500,
-  "slug": "iptv-smarters-pro-price"
- },
- {
   "kw": "iptv sport",
   "vol": 500,
   "slug": "iptv-sports"
@@ -535,6 +485,11 @@
   "slug": "iptv-vlc"
  },
  {
+  "kw": "iptv web",
+  "vol": 500,
+  "slug": "iptv-web-browser"
+ },
+ {
   "kw": "iptv website",
   "vol": 500,
   "slug": "iptv-web-browser"
@@ -550,22 +505,12 @@
   "slug": "iptv-web-browser"
  },
  {
-  "kw": "jellyfin iptv",
-  "vol": 500,
-  "slug": "iptv-plex-emby-jellyfin"
- },
- {
   "kw": "kemoiptv",
   "vol": 500,
   "slug": "kemo-iptv"
  },
  {
   "kw": "kodi ip tv",
-  "vol": 500,
-  "slug": "iptv-kodi"
- },
- {
-  "kw": "kodi iptv",
   "vol": 500,
   "slug": "iptv-kodi"
  },
@@ -628,11 +573,6 @@
   "kw": "online ip tv",
   "vol": 500,
   "slug": "iptv-live-tv-24-7"
- },
- {
-  "kw": "onn tv box",
-  "vol": 500,
-  "slug": "android-tv-box-models"
  },
  {
   "kw": "ottiptv",
@@ -700,11 +640,6 @@
   "slug": "iptv-smarters-pro-download"
  },
  {
-  "kw": "smarters pro iptv",
-  "vol": 500,
-  "slug": "iptv-smarters-pro-download"
- },
- {
   "kw": "stbemu iptv",
   "vol": 500,
   "slug": "stbemu"
@@ -720,19 +655,9 @@
   "slug": "iptv-plex-emby-jellyfin"
  },
  {
-  "kw": "television iptv",
-  "vol": 500,
-  "slug": "what-is-iptv"
- },
- {
   "kw": "tivimate account",
   "vol": 500,
   "slug": "tivimate-premium"
- },
- {
-  "kw": "tivimate apple tv",
-  "vol": 500,
-  "slug": "tivimate-smart-tv"
  },
  {
   "kw": "tivimate com",
@@ -925,11 +850,6 @@
   "slug": "iptv-web-browser"
  },
  {
-  "kw": "chromecast iptv",
-  "vol": 50,
-  "slug": "iptv-chromecast"
- },
- {
   "kw": "cle amazon iptv",
   "vol": 50,
   "slug": "buy-iptv"
@@ -988,11 +908,6 @@
   "kw": "extreme tv",
   "vol": 50,
   "slug": "xtream-iptv-player"
- },
- {
-  "kw": "f1 iptv",
-  "vol": 50,
-  "slug": "iptv-f1"
  },
  {
   "kw": "family 4k iptv",
@@ -1155,11 +1070,6 @@
   "slug": "mag-322-iptv"
  },
  {
-  "kw": "infomir mag 524",
-  "vol": 50,
-  "slug": "mag-524-iptv"
- },
- {
   "kw": "ip player",
   "vol": 50,
   "slug": "iptv-player"
@@ -1300,11 +1210,6 @@
   "slug": "iptv-apple-tv-canada"
  },
  {
-  "kw": "iptv bein",
-  "vol": 50,
-  "slug": "iptv-soccer"
- },
- {
   "kw": "iptv bein sport",
   "vol": 50,
   "slug": "iptv-soccer"
@@ -1405,11 +1310,6 @@
   "slug": "iptv-chromecast"
  },
  {
-  "kw": "iptv google tv",
-  "vol": 50,
-  "slug": "iptv-chromecast"
- },
- {
   "kw": "iptv hbo",
   "vol": 50,
   "slug": "iptv-vod-movies-series"
@@ -1418,11 +1318,6 @@
   "kw": "iptv hbo max",
   "vol": 50,
   "slug": "iptv-vod-movies-series"
- },
- {
-  "kw": "iptv hisense",
-  "vol": 50,
-  "slug": "iptv-sony-hisense-tv"
  },
  {
   "kw": "iptv hub",
@@ -1470,19 +1365,9 @@
   "slug": "iptv-player"
  },
  {
-  "kw": "iptv live tv",
-  "vol": 50,
-  "slug": "iptv-live-tv-24-7"
- },
- {
   "kw": "iptv m3u8",
   "vol": 50,
   "slug": "iptv-m3u"
- },
- {
-  "kw": "iptv macbook",
-  "vol": 50,
-  "slug": "iptv-mac"
  },
  {
   "kw": "iptv main",
@@ -1695,16 +1580,6 @@
   "slug": "iptv-smarters-apple"
  },
  {
-  "kw": "iptv smasters lg",
-  "vol": 50,
-  "slug": "iptv-smarters-lg-tv"
- },
- {
-  "kw": "iptv smasters lg tv",
-  "vol": 50,
-  "slug": "iptv-smarters-lg-tv"
- },
- {
   "kw": "iptv smasters m3u",
   "vol": 50,
   "slug": "iptv-smarters-pro-download"
@@ -1865,24 +1740,9 @@
   "slug": "iptv-smarters-pro-download"
  },
  {
-  "kw": "iptv smasters roku",
-  "vol": 50,
-  "slug": "iptv-smarters-roku"
- },
- {
   "kw": "iptv smasters roku tv",
   "vol": 50,
   "slug": "iptv-smarters-roku"
- },
- {
-  "kw": "iptv smasters samsung",
-  "vol": 50,
-  "slug": "iptv-smarters-samsung-tv"
- },
- {
-  "kw": "iptv smasters samsung tv",
-  "vol": 50,
-  "slug": "iptv-smarters-samsung-tv"
  },
  {
   "kw": "iptv smasters smart tv",
@@ -1908,6 +1768,11 @@
   "kw": "iptv smasters web",
   "vol": 50,
   "slug": "iptv-smarters-pro-pc-mac"
+ },
+ {
+  "kw": "iptv sony",
+  "vol": 50,
+  "slug": "iptv-sony-hisense-tv"
  },
  {
   "kw": "iptv stable",
@@ -2018,6 +1883,11 @@
   "kw": "iptv watch tv online",
   "vol": 50,
   "slug": "iptv-live-tv-24-7"
+ },
+ {
+  "kw": "iptv web browser",
+  "vol": 50,
+  "slug": "iptv-web-browser"
  },
  {
   "kw": "iptv what is it",
@@ -2525,16 +2395,6 @@
   "slug": "iptv-smarters-lite"
  },
  {
-  "kw": "smarters pro pc",
-  "vol": 50,
-  "slug": "iptv-smarters-pro-pc-mac"
- },
- {
-  "kw": "smarters pro tv",
-  "vol": 50,
-  "slug": "iptv-smarters-pro-smart-tv"
- },
- {
   "kw": "smarters tv",
   "vol": 50,
   "slug": "iptv-smarters-pro-smart-tv"
@@ -2640,6 +2500,11 @@
   "slug": "tivimate-pc-mac"
  },
  {
+  "kw": "tivimate pc",
+  "vol": 50,
+  "slug": "tivimate-pc-mac"
+ },
+ {
   "kw": "tivimate player",
   "vol": 50,
   "slug": "tivimate"
@@ -2708,11 +2573,6 @@
   "kw": "tv m3u",
   "vol": 50,
   "slug": "iptv-m3u"
- },
- {
-  "kw": "tv smarters pro",
-  "vol": 50,
-  "slug": "iptv-smarters-pro-download"
  },
  {
   "kw": "tvip 605",

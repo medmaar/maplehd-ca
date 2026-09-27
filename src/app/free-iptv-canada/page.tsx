@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   description: "Try MapleHD IPTV free in Canada. 24-hour free trial — no credit card required. Access 25,000+ channels, NHL, UFC, CFL. Free IPTV Canada trial from MapleHD.",
   keywords: "iptv free, free iptv canada, free trial iptv canada, free iptv subscription canada, iptv free trial canada, best free iptv canada 2026",
   alternates: { canonical: "https://maplehd.ca/free-iptv-canada" },
+  openGraph: { url: "https://maplehd.ca/free-iptv-canada", siteName: "MapleHD", locale: "en_CA", type: "website", images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "MapleHD IPTV Canada" }] },
 };
 
 const breadcrumbSchema = {

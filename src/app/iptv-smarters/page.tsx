@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     canonical: "https://maplehd.ca/iptv-smarters",
     languages: { "en-CA": "https://maplehd.ca/iptv-smarters", "fr-CA": "https://maplehd.ca/fr/iptv-smarters-pro", "x-default": "https://maplehd.ca/iptv-smarters" },
   },
+  openGraph: { url: "https://maplehd.ca/iptv-smarters", siteName: "MapleHD", locale: "en_CA", type: "website", images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "MapleHD IPTV Canada" }] },
 };
 
 const breadcrumbSchema = {

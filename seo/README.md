@@ -28,3 +28,10 @@ Target market: **Canada** (en-CA + fr-CA). Rendered with the site's existing des
 - Removed as excluded/off-market: 26 — Middle East/Arab 8, Asian 8, African 3, non-Canada (Georgia, Balkans, Romania, French ISP/telco brands) 7
 - Kept: 1,053 → 105 page assignments (87 new pages, 18 existing pages including the homepage)
 - No existing page targeted an excluded market, so nothing had to be deleted or tombstoned.
+
+## Deep audit (page-by-page)
+`next build && node seo/audit-deep.mjs` checks every exported HTML page: title/description length and duplicates, canonical, OG/Twitter,
+hreflang reciprocity, h1/heading order, primary keyword placement, JSON-LD validity (FAQPage must match visible text), internal/external
+links, CTA and trust signals, word count, near-duplicate text, `_redirects` sanity. Output: `seo/audit-report.json`.
+Patch scripts used in the audit pass: `patch-heads.mjs`, `patch-plans.mjs`, `patch-seopage.mjs`, `patch-extras*.mjs`, `patch-geo*.mjs`, `patch-isp.mjs`.
+Multi-device plan pages (`/pricing/N-devices/*`) are near-duplicates, so they are `noindex,follow` with a canonical to `/pricing` and are not in the sitemap.

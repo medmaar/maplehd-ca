@@ -3,7 +3,7 @@ import SeoLinks from "@/components/SeoLinks";
 import PageExtras from "@/components/PageExtras";
 
 export const metadata: Metadata = {
-  title: { absolute: "Best IPTV Service in Ottawa 2026 — 4K Streaming from $9 | MapleHD" },
+  title: { absolute: "Best IPTV Service in Ottawa 2026 — 4K From $9 | MapleHD" },
   description:
     "MapleHD is Ottawa's best IPTV service. Stream Senators, TSN, Sportsnet, CBC, CPAC and 25,000+ channels in 4K. Plans from $9. Free trial available.",
   keywords:

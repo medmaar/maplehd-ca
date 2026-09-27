@@ -3,7 +3,7 @@ import SeoLinks from "@/components/SeoLinks";
 import PageExtras from "@/components/PageExtras";
 
 export const metadata: Metadata = {
-  title: "IPTV LG TV Canada 2026 | Best IPTV for LG Smart TV (webOS)",
+  title: { absolute: "IPTV LG TV Canada 2026 — webOS Guide | MapleHD" },
   description:
     "Stream IPTV on your LG Smart TV in Canada. 25,000+ channels, 4K quality, NHL, TSN, CTV and more. Easy webOS setup. Try free today.",
   keywords:

@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     metadataBase: new URL("https://maplehd.ca"),
     alternates: { canonical: "https://maplehd.ca", languages: { "en-CA": "https://maplehd.ca", "x-default": "https://maplehd.ca" } },
     icons: { icon: "/favicon.svg" },
+    robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 } },
     title: {
         default: "Best IPTV Service Canada — Free Trial, No Blackouts | MapleHD",
         template: "%s | MapleHD — Best IPTV Service Canada",

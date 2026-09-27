@@ -3,12 +3,13 @@ import SeoLinks from "@/components/SeoLinks";
 import PageExtras from "@/components/PageExtras";
 
 export const metadata: Metadata = {
-  title: "IPTV Windows PC Canada 2026 | Best IPTV for Windows & Mac",
+  title: { absolute: "IPTV Windows & Mac Canada 2026 — PC Guide | MapleHD" },
   description:
     "Stream IPTV on Windows PC or Mac in Canada. 25,000+ channels, 4K quality, NHL, TSN, CTV and more. Works with VLC, IPTV Smarters, and more. Try free today.",
   keywords:
     "IPTV Windows Canada, IPTV PC Canada, IPTV computer Canada, IPTV Mac Canada, best IPTV for PC Canada",
   alternates: { canonical: "https://maplehd.ca/iptv-windows-canada" },
+  openGraph: { url: "https://maplehd.ca/iptv-windows-canada", siteName: "MapleHD", locale: "en_CA", type: "website", images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "MapleHD IPTV Canada" }] },
 };
 
 const steps = [

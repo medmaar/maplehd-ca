@@ -6,7 +6,9 @@ import guides from "./guides.mjs";
 import brands from "./brands.mjs";
 import fr from "./fr.mjs";
 import { BRAND_GROUPS } from "./brand-defs.mjs";
-import expansions from "./expansions.mjs";
+import expansions1 from "./expansions.mjs";
+import expansions2 from "./expansions2.mjs";
+import expansions3 from "./expansions3.mjs";
 import geo from "./geo.mjs";
 import ALSO from "./also-searched.mjs";
 import canada from "./canada.mjs";
@@ -34,7 +36,8 @@ export const CLUSTER_META = {
 const BASE_PAGES = [...buy, ...appsTivimate, ...appsPlayers, ...boxes, ...guides, ...brands, ...fr, ...geo, ...canada, ...gaps].map((p) => {
   const meta = CLUSTER_META[p.cluster] || {};
   const out = { lang: "en", published: "2026-09-27", also: ALSO[p.slug], ...p };
-  const exp = expansions[p.slug];
+  const e1 = expansions1[p.slug], e2 = expansions2[p.slug], e3 = expansions3[p.slug];
+  const exp = e1 || e2 || e3 ? { sections: [...(e1?.sections || []), ...(e2?.sections || []), ...(e3?.sections || [])], faq: [...(e1?.faq || []), ...(e2?.faq || []), ...(e3?.faq || [])] } : null;
   if (exp) {
     if (exp.sections) out.sections = [...p.sections.slice(0, -1), ...exp.sections, ...p.sections.slice(-1)];
     if (exp.faq) out.faq = [...p.faq, ...exp.faq];
@@ -90,8 +93,22 @@ const withHubs = (p) => {
   return out;
 };
 
-export const PAGES = BASE_PAGES.map(withHubs).map((p) => {
+const PAGES0 = BASE_PAGES.map(withHubs).map((p) => {
   if (p.hreflangPair) return p;
   const fr = BASE_PAGES.find((x) => x.hreflangPair === p.slug);
   return fr ? { ...p, hreflangPair: fr.slug } : p;
 });
+
+// ---- keyword presence: make sure the exact primary keyword appears in the badge and the answer-first paragraph ----
+const _norm = (s) => s.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, " ").replace(/\s+/g, " ").trim();
+const _cap = (kw) =>
+  kw.split(" ").map((w) => (/^(iptv|tv|nhl|cfl|ott|vod|epg|m3u|vlc|4k|8k|ps5|lg|hd)$/i.test(w) ? w.toUpperCase() : w[0].toUpperCase() + w.slice(1))).join(" ");
+const _has = (text, kw) => ` ${_norm(text.replace(/\[([^\]]+)\]\([^)]+\)/g, "$1"))} `.includes(` ${_norm(kw)} `);
+const ENRICHED = PAGES0.map((p) => {
+  if (p.lang === "fr") return p;
+  const out = { ...p };
+  if (!_has(out.badge, p.kw)) out.badge = `${_cap(p.kw)} · ${out.badge.split(" · ").slice(-1)[0]}`.slice(0, 48);
+  if (!_has(out.answer, p.kw)) out.answer = `${_cap(p.kw)}: ${out.answer}`;
+  return out;
+});
+export const PAGES = ENRICHED;

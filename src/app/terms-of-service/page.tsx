@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms of Service | IPTV Subscription Canada",
-  description: "Terms of service for IPTV Subscription Canada. Read our terms before using our IPTV service.",
+  title: { absolute: "Terms of Service | MapleHD IPTV Canada" },
+  description: "Read the MapleHD terms of service: plans, payments, refunds, acceptable use and support for our IPTV subscription in Canada.",
   alternates: { canonical: "https://maplehd.ca/terms-of-service" },
+  openGraph: { url: "https://maplehd.ca/terms-of-service", siteName: "MapleHD", locale: "en_CA", type: "website", images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "MapleHD IPTV Canada" }] },
 };
 
 export default function TermsOfServicePage() {

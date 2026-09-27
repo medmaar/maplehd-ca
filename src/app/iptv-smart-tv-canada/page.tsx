@@ -4,7 +4,7 @@ import SeoLinks from "@/components/SeoLinks";
 import PageExtras from "@/components/PageExtras";
 
 export const metadata: Metadata = {
-  title: "IPTV for Samsung & LG Smart TV in Canada 2026 | MapleHD",
+  title: { absolute: "IPTV for Samsung & LG Smart TV Canada 2026 | MapleHD" },
   description:
     "Install MapleHD IPTV on your Samsung or LG Smart TV in Canada. 25,000+ live channels, NHL, TSN, CTV in 4K. Easy setup in minutes. From $9/month.",
   keywords: "IPTV Samsung TV Canada, IPTV LG Smart TV Canada, Smart TV MapleHD",
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     canonical: "https://maplehd.ca/iptv-smart-tv-canada",
     languages: { "en-CA": "https://maplehd.ca/iptv-smart-tv-canada", "fr-CA": "https://maplehd.ca/fr/iptv-sur-smart-tv", "x-default": "https://maplehd.ca/iptv-smart-tv-canada" },
   },
-  openGraph: {
+  openGraph: { locale: "en_CA", 
       images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "MapleHD — Best IPTV Canada" }],
     title: "IPTV for Samsung & LG Smart TV in Canada 2026 | MapleHD",
     description: "Install MapleHD IPTV on your Samsung or LG Smart TV in Canada. 25,000+ live channels, NHL, TSN, CTV in 4K. Easy setup in minutes. From $9/month.",

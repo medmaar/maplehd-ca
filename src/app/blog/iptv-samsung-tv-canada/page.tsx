@@ -4,7 +4,7 @@ import SeoLinks from "@/components/SeoLinks";
 import PageExtras from "@/components/PageExtras";
 
 export const metadata: Metadata = {
-  title: { absolute: "IPTV on Samsung TV Canada 2026 — Setup Guide | MapleHD" },
+  title: { absolute: "IPTV on Samsung TV in Canada — Setup Guide | MapleHD" },
   description:
     "How to get IPTV on your Samsung Smart TV in Canada. Step-by-step guide for Tizen OS — IPTV Smarters Pro setup. Free trial from $9/month.",
   keywords:

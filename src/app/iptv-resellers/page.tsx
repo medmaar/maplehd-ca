@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 import SeoLinks from "@/components/SeoLinks";
 import PageExtras from "@/components/PageExtras";
 export const metadata: Metadata = {
-  title: { absolute: "IPTV Resellers Canada — Best IPTV Reseller Program 2026 | MapleHD" },
+  title: { absolute: "IPTV Resellers Canada — Reseller Program 2026 | MapleHD" },
   description: "Become a MapleHD IPTV reseller in Canada. Best IPTV reseller program — white-label panels, competitive credits, 24/7 support. Start your IPTV resell.",
   keywords: "iptv resellers, best iptv resell, iptv reseller canada, iptv reseller program canada, become iptv reseller canada, iptv resell business canada",
   alternates: { canonical: "https://maplehd.ca/iptv-resellers" },
+  openGraph: { url: "https://maplehd.ca/iptv-resellers", siteName: "MapleHD", locale: "en_CA", type: "website", images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "MapleHD IPTV Canada" }] },
 };
 
 const breadcrumbSchema = {

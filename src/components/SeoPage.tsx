@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { PAGES } from "@/content/seo";
+import SOURCES, { geoSources } from "@/content/seo/sources.mjs";
 import { LAST_UPDATED, SITE, bySlug, labelFor, urlFor, type SeoPageData } from "@/lib/seo";
 
 const ACCENT = "#AE2448";
@@ -29,6 +30,8 @@ const T = {
     months: ["January","February","March","April","May","June","July","August","September","October","November","December"],
     lang: "en-CA",
     also: "People also search for this topic as",
+    sources: "Further reading",
+    trust: ["Free trial, no credit card", "CAD pricing, Interac e-Transfer accepted", "WhatsApp and email support", "No contract, see our refund policy"],
   },
   fr: {
     home: "MapleHD",
@@ -50,6 +53,8 @@ const T = {
     months: ["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"],
     lang: "fr-CA",
     also: "Recherches associées",
+    sources: "Pour aller plus loin",
+    trust: ["Essai gratuit, sans carte de crédit", "Prix en dollars canadiens, virement Interac accepté", "Soutien par WhatsApp et courriel", "Sans contrat, voir la politique de remboursement"],
   },
 } as const;
 
@@ -194,6 +199,29 @@ export default function SeoPage({ slug }: { slug: string }) {
         },
       };
 
+  const webPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${url}#webpage`,
+    url,
+    name: p.title,
+    description: p.desc,
+    inLanguage: t.lang,
+    dateModified: modified,
+    isPartOf: { "@type": "WebSite", name: "MapleHD", url: SITE },
+    primaryImageOfPage: { "@type": "ImageObject", url: `${SITE}/iptv-subscription-canada-1.jpg` },
+    speakable: { "@type": "SpeakableSpecification", cssSelector: ["h1", "[data-speakable]"] },
+  };
+  const itemListSchema =
+    p.kind === "hub" && (p.children ?? []).length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          name: p.h1,
+          itemListElement: (p.children ?? []).map((c, i) => ({ "@type": "ListItem", position: i + 1, url: urlFor(c), name: labelFor(c) })),
+        }
+      : null;
+  const sources: string[][] = ((SOURCES as unknown as Record<string, string[][]>)[p.slug] ?? (p.cluster.startsWith("geo-") ? (geoSources as unknown as string[][]) : [])) as string[][];
   const rel = relatedSlugs(p);
   const showToc = p.sections.length >= 4;
   const cards = p.kind === "hub" ? p.children ?? [] : [];
@@ -203,6 +231,8 @@ export default function SeoPage({ slug }: { slug: string }) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(mainSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
+      {itemListSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />}
       <main lang={t.lang} style={{ background: "#0a0a0a", color: "#fff", minHeight: "100vh" }}>
         {/* Hero */}
         <section
@@ -257,7 +287,7 @@ export default function SeoPage({ slug }: { slug: string }) {
                 textAlign: "left",
               }}
             >
-              <p style={{ margin: 0, color: "#e5e7eb", fontSize: "1.05rem", lineHeight: 1.7 }}>
+              <p data-speakable style={{ margin: 0, color: "#e5e7eb", fontSize: "1.05rem", lineHeight: 1.7 }}>
                 <strong style={{ color: "#fff" }}>{t.quick}: </strong>
                 <Rich text={p.answer} />
               </p>
@@ -403,6 +433,19 @@ export default function SeoPage({ slug }: { slug: string }) {
             </div>
           </div>
 
+          {sources.length > 0 && (
+            <div style={{ marginBottom: 32 }}>
+              <h2 style={{ ...H2, fontSize: "1.25rem", marginBottom: 12 }}>{t.sources}</h2>
+              <ul style={{ ...P, paddingLeft: 22, lineHeight: 1.9, fontSize: 15 }}>
+                {sources.map(([label, href]) => (
+                  <li key={href}>
+                    <a href={href} target="_blank" rel="noopener noreferrer" style={linkStyle}>{label}</a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
           {p.also && p.also.length > 0 && (
             <p style={{ color: "#9ca3af", fontSize: 14, lineHeight: 1.8, marginBottom: 32 }}>
               <strong style={{ color: "#d1d5db" }}>{t.also}:</strong> {p.also.join(", ")}.
@@ -443,6 +486,14 @@ export default function SeoPage({ slug }: { slug: string }) {
           <Link href="/free-trial" style={{ background: ACCENT, color: "#fff", padding: "16px 48px", borderRadius: 12, fontWeight: 700, textDecoration: "none", display: "inline-block" }}>
             {t.ctaBtn}
           </Link>
+          <ul style={{ listStyle: "none", padding: 0, margin: "28px auto 0", maxWidth: 760, display: "flex", flexWrap: "wrap", gap: "8px 22px", justifyContent: "center", color: "#9ca3af", fontSize: 13.5 }}>
+            {t.trust.map((x) => (
+              <li key={x}>✓ {x}</li>
+            ))}
+          </ul>
+          <p style={{ color: "#6b7280", fontSize: 12.5, marginTop: 14 }}>
+            <Link href="/refund-policy" style={{ color: "#9ca3af" }}>Refund policy</Link> · <Link href="/terms-of-service" style={{ color: "#9ca3af" }}>Terms</Link> · <Link href="/contact" style={{ color: "#9ca3af" }}>Contact support</Link>
+          </p>
         </section>
       </main>
     </>

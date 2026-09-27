@@ -4,9 +4,10 @@ import SeoLinks from "@/components/SeoLinks";
 import PageExtras from "@/components/PageExtras";
 
 export const metadata: Metadata = {
-  title: "Contact Us | MapleHD Sports IPTV Canada — 24/7 Support",
+  title: { absolute: "Contact MapleHD — 24/7 IPTV Support in Canada" },
   description: "Contact MapleHD via live chat, WhatsApp, or email. Sports streaming support team available 24/7 in English and French.",
   alternates: { canonical: "https://maplehd.ca/contact" },
+  openGraph: { url: "https://maplehd.ca/contact", siteName: "MapleHD", locale: "en_CA", type: "website", images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "MapleHD IPTV Canada" }] },
 };
 
 const channels = [

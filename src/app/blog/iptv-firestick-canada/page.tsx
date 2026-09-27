@@ -3,12 +3,13 @@ import SeoLinks from "@/components/SeoLinks";
 import PageExtras from "@/components/PageExtras";
 
 export const metadata: Metadata = {
-  title: "How to Install IPTV on Firestick Canada 2026 — Step by Step Guide",
+  title: { absolute: "Install IPTV on Firestick in Canada (2026 Guide) | MapleHD" },
   description:
     "Complete guide to installing IPTV on Amazon Fire Stick in Canada. Works on Fire Stick 4K, Lite, and all Fire TV devices. Easy step-by-step setup.",
   keywords:
     "IPTV Firestick Canada, install IPTV Fire Stick Canada, how to set up IPTV Firestick Canada, IPTV Fire TV Canada",
   alternates: { canonical: "https://maplehd.ca/blog/iptv-firestick-canada" },
+  openGraph: { url: "https://maplehd.ca/blog/iptv-firestick-canada", siteName: "MapleHD", locale: "en_CA", type: "website", images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "MapleHD IPTV Canada" }] },
 };
 
 const steps = [

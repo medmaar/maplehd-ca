@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "DMCA Policy | IPTV Subscription Canada",
+  title: { absolute: "DMCA and Copyright Policy | MapleHD IPTV" },
   description:
     "DMCA policy for IPTV Subscription Canada. Learn how to submit a DMCA takedown notice and our process for handling copyright claims.",
   alternates: { canonical: "https://maplehd.ca/dmca" },
+  openGraph: { url: "https://maplehd.ca/dmca", siteName: "MapleHD", locale: "en_CA", type: "website", images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "MapleHD IPTV Canada" }] },
 };
 
 export default function DMCAPage() {

@@ -3,12 +3,13 @@ import SeoLinks from "@/components/SeoLinks";
 import PageExtras from "@/components/PageExtras";
 
 export const metadata: Metadata = {
-  title: "IPTV Android Canada 2026 | Best App for Android | MapleHD",
+  title: { absolute: "IPTV Android Canada 2026 — Best Apps | MapleHD" },
   description:
     "Stream IPTV on your Android phone or tablet in Canada. 25,000+ channels, HD & 4K quality, NHL, TSN, CTV and more. Easy APK install. Try free today.",
   keywords:
     "IPTV Android Canada, IPTV Android phone Canada, IPTV Android tablet Canada, best IPTV app Android Canada",
   alternates: { canonical: "https://maplehd.ca/iptv-android-canada" },
+  openGraph: { url: "https://maplehd.ca/iptv-android-canada", siteName: "MapleHD", locale: "en_CA", type: "website", images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "MapleHD IPTV Canada" }] },
 };
 
 const steps = [

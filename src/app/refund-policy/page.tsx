@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Refund Policy | IPTV Subscription Canada",
+  title: { absolute: "Refund Policy | MapleHD IPTV Canada" },
   description: "Refund policy for IPTV Subscription Canada. Learn about our no-refund policy and how our free trial protects you before you subscribe.",
   alternates: { canonical: "https://maplehd.ca/refund-policy" },
+  openGraph: { url: "https://maplehd.ca/refund-policy", siteName: "MapleHD", locale: "en_CA", type: "website", images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "MapleHD IPTV Canada" }] },
 };
 
 export default function RefundPolicyPage() {

@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | IPTV Subscription Canada",
+  title: { absolute: "Privacy Policy | MapleHD IPTV Canada" },
   description: "Privacy policy for IPTV Subscription Canada. Learn how we collect, use, and protect your personal information.",
   alternates: { canonical: "https://maplehd.ca/privacy-policy" },
+  openGraph: { url: "https://maplehd.ca/privacy-policy", siteName: "MapleHD", locale: "en_CA", type: "website", images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "MapleHD IPTV Canada" }] },
 };
 
 export default function PrivacyPolicyPage() {

@@ -4,12 +4,12 @@ import SeoLinks from "@/components/SeoLinks";
 import PageExtras from "@/components/PageExtras";
 
 export const metadata: Metadata = {
-  title: "MapleHD Blog 2026 | Guides, Reviews & News – MapleHD",
+  title: { absolute: "MapleHD Blog: IPTV Guides, Reviews & News (2026)" },
   description:
     "MapleHD blog — expert guides on IPTV setup, legality, pricing comparisons, player reviews, and the best IPTV services in Canada for 2026.",
   keywords: "IPTV blog Canada, MapleHD guide 2026, best IPTV review Canada, IPTV Canada 2026",
   alternates: { canonical: "https://maplehd.ca/blog" },
-  openGraph: {
+  openGraph: { locale: "en_CA", 
       images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "MapleHD — Best IPTV Canada" }],
     title: "MapleHD Blog 2026 | Guides, Reviews & News – MapleHD",
     description: "MapleHD blog — expert guides on IPTV setup, legality, pricing comparisons, and player reviews for Canada 2026.",

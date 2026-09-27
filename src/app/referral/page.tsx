@@ -4,12 +4,13 @@ import SeoLinks from "@/components/SeoLinks";
 import PageExtras from "@/components/PageExtras";
 
 export const metadata: Metadata = {
-  title: "Referral Program | MapleHD — Refer a Friend, Get +1 Year Free",
+  title: { absolute: "Referral Program — Refer a Friend | MapleHD" },
   description:
     "Refer a friend to MapleHD and earn +1 free year of service. No limits — every successful referral adds 12 months to your account.",
   keywords:
     "MapleHD referral, refer a friend IPTV, MapleHD free year, IPTV affiliate Canada",
   alternates: { canonical: "https://maplehd.ca/referral" },
+  openGraph: { url: "https://maplehd.ca/referral", siteName: "MapleHD", locale: "en_CA", type: "website", images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "MapleHD IPTV Canada" }] },
 };
 
 const steps = [

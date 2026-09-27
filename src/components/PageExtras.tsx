@@ -3,6 +3,7 @@ import React from "react";
 import EXTRAS, { HAS_BREADCRUMB } from "@/content/seo/existing.mjs";
 import ALSO from "@/content/seo/also-searched.mjs";
 import DEEP from "@/content/seo/deep.mjs";
+import SOURCES from "@/content/seo/sources.mjs";
 import { bySlug, labelFor, SITE } from "@/lib/seo";
 
 type DeepSection = { h: string; p?: string[]; ul?: string[]; ol?: string[]; table?: { head: string[]; rows: string[][] }; p2?: string[] };
@@ -36,7 +37,7 @@ export default function PageExtras({ slug }: { slug: string }) {
   const also = (ALSO as unknown as Record<string, string[]>)[slug];
   if (!extra && !also) return null;
   const deep = (DEEP as unknown as Record<string, DeepSection[]>)[slug];
-  if (!extra) return <AlsoBlock terms={also} />;
+  if (!extra) return <><AlsoBlock terms={also} /><TrialStrip slug={slug} /></>;
   const [name, parent] = extra.crumb;
   const parentPage = parent ? bySlug(parent) : undefined;
   const items = [{ name: "MapleHD", url: SITE }];
@@ -70,7 +71,9 @@ export default function PageExtras({ slug }: { slug: string }) {
       {!(HAS_BREADCRUMB as unknown as Set<string>).has(slug) && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />}
       {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
       {deep && <DeepBlock sections={deep} />}
+      {(SOURCES as unknown as Record<string, string[][]>)[slug] && <SourcesBlock items={(SOURCES as unknown as Record<string, string[][]>)[slug]} />}
       {also && <AlsoBlock terms={also} />}
+      <TrialStrip slug={slug} />
       {extra.faq && (
         <section style={{ background: "#0a0a0a", padding: "48px 16px 8px" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
@@ -125,6 +128,41 @@ function DeepBlock({ sections }: { sections: DeepSection[] }) {
           </div>
         ))}
       </div>
+    </section>
+  );
+}
+
+function SourcesBlock({ items }: { items: string[][] }) {
+  return (
+    <section style={{ background: "#0a0a0a", padding: "24px 16px 0" }}>
+      <div style={{ maxWidth: 900, margin: "0 auto" }}>
+        <h2 style={{ fontSize: "1.25rem", fontWeight: 800, marginBottom: 12, color: "#fff" }}>Further reading</h2>
+        <ul style={{ color: "#d1d5db", paddingLeft: 22, lineHeight: 1.9, fontSize: 15, margin: 0 }}>
+          {items.map(([label, href]) => (
+            <li key={href}>
+              <a href={href} target="_blank" rel="noopener noreferrer" style={linkStyle}>{label}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  );
+}
+
+const TRIAL_STRIP = new Set(["blog", "blog/best-iptv-player-canada", "blog/is-iptv-legal-canada", "blog/best-iptv-canada-2026", "blog/iptv-vs-cable-canada", "blog/iptv-firestick-canada", "blog/iptv-samsung-tv-canada", "iptv-resellers", "reseller", "iptv-reviews", "how-it-works", "about", "contact"]);
+export function TrialStrip({ slug }: { slug: string }) {
+  if (!TRIAL_STRIP.has(slug)) return null;
+  return (
+    <section style={{ background: "radial-gradient(ellipse 80% 60% at 50% 50%, rgba(174,36,72,0.12) 0%, transparent 70%), #111", padding: "44px 16px", textAlign: "center", borderTop: "1px solid rgba(255,255,255,0.06)" }}>
+      <h2 style={{ fontSize: "1.5rem", fontWeight: 800, marginBottom: 10, color: "#fff" }}>Try MapleHD Free Before You Pay</h2>
+      <p style={{ color: "#9ca3af", maxWidth: 520, margin: "0 auto 22px", lineHeight: 1.7 }}>Plans from $9/month, no contract. Test the channels on your own devices and internet connection first.</p>
+      <Link href="/free-trial" style={{ background: "#AE2448", color: "#fff", padding: "14px 40px", borderRadius: 12, fontWeight: 700, textDecoration: "none", display: "inline-block" }}>Start Free Trial →</Link>
+      <ul style={{ listStyle: "none", padding: 0, margin: "22px auto 0", display: "flex", flexWrap: "wrap", gap: "8px 22px", justifyContent: "center", color: "#9ca3af", fontSize: 13.5 }}>
+        <li>✓ No credit card for the trial</li>
+        <li>✓ CAD pricing, Interac e-Transfer accepted</li>
+        <li>✓ WhatsApp and email support</li>
+        <li>✓ <Link href="/refund-policy" style={{ color: "#9ca3af" }}>Refund policy</Link> and <Link href="/terms-of-service" style={{ color: "#9ca3af" }}>terms</Link></li>
+      </ul>
     </section>
   );
 }

@@ -3,6 +3,7 @@ import PricingSection from "../PricingSection";
 import FaqAccordion from "../components/FaqAccordion";
 import SeoLinks from "@/components/SeoLinks";
 import PlanLinks from "@/components/PlanLinks";
+import PageExtras from "@/components/PageExtras";
 
 export const metadata: Metadata = {
   title: { absolute: "Sports IPTV Plans Canada — NHL, UFC, CFL from $9 | MapleHD" },
@@ -154,6 +155,7 @@ export default function PricingPage() {
         </div>
       </section>
     <PlanLinks />
+      <PageExtras slug="pricing" />
       <SeoLinks heading="Learn more about IPTV pricing" slugs={["iptv-subscription","cheap-iptv-canada","iptv-deals","buy-iptv","premium-iptv","fr/abonnement-iptv","iptv-payment-canada"]} />
       </main>
     </>

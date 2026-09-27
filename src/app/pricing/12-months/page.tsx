@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import PlanOrderForm from "../PlanOrderForm";
 import PlanFAQ, { type FaqItem } from "../PlanFAQ";
+import PlanExtras from "@/components/PlanExtras";
 
 export const metadata: Metadata = {
   title: { absolute: "1 Year IPTV Canada — $49 Best Value | MapleHD" },
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
   keywords:
     "IPTV annual Canada, MapleHD 1 year, best value IPTV Canada, 12 month IPTV Canada $49, yearly IPTV Canada",
   alternates: { canonical: "https://maplehd.ca/pricing/12-months" },
+  openGraph: { url: "https://maplehd.ca/pricing/12-months", siteName: "MapleHD", locale: "en_CA", type: "website", images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "MapleHD IPTV Canada" }] },
 };
 
 const faqItems: FaqItem[] = [
@@ -109,10 +111,10 @@ export default function Pricing12MonthsPage() {
                   fontWeight: 800,
                   color: "#fff",
                   lineHeight: 1.2,
-                  whiteSpace: "nowrap",
+                  
                 }}
               >
-                1 Year
+                IPTV 1 Device for 12 Months
               </h1>
               <div style={{ display: "flex", alignItems: "center", gap: 16, marginTop: 10 }}>
 
@@ -150,6 +152,7 @@ export default function Pricing12MonthsPage() {
           </div>
         </section>
 
+      <PlanExtras devices={1} index={3} />
       </main>
     </>
   );

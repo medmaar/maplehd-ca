@@ -434,7 +434,7 @@ export default [
     slug: "mag-524-iptv",
     cluster: "mag",
     kind: "device",
-    title: "MAG 524, 424 & 420 4K IPTV Box Guide | MapleHD",
+    title: "Infomir MAG 524, 424 & 420 4K IPTV Box | MapleHD",
     desc: "MAG 524, 524w3, 424, 425A, 420w1 and 410 4K IPTV boxes: what's different, how to set up the portal and connect MapleHD in Canada.",
     h1: "MAG 524, 424, 425 and 420: 4K IPTV Boxes",
     badge: "MAG 524 · 4K IPTV Box",

@@ -129,7 +129,7 @@ export default [
   brandPage({
     slug: "forever-tv",
     name: "Forever TV",
-    kw: "forevertv",
+    kw: "forever tv",
     kws: ["forever iptv", "forever tv iptv", "forever tv alternative"],
     anchor: "Forever TV alternative",
     title: "Forever TV / Forever IPTV Alternative | MapleHD",
@@ -185,7 +185,7 @@ export default [
   brandPage({
     slug: "atlas-pro-iptv",
     name: "Atlas Pro",
-    kw: "atlaspro",
+    kw: "atlas pro",
     kws: ["atlas iptv", "atlas pro iptv", "atlas pro ott", "atlaspro in", "atlas pro ontv iphone", "atlas pro alternative"],
     anchor: "Atlas Pro alternative",
     title: "Atlas Pro IPTV Alternative in Canada | MapleHD",

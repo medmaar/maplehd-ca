@@ -3,12 +3,13 @@ import SeoLinks from "@/components/SeoLinks";
 import PageExtras from "@/components/PageExtras";
 
 export const metadata: Metadata = {
-  title: "How IPTV Works in Canada | Setup Guide — IPTV Subscription Canada",
+  title: { absolute: "How IPTV Works in Canada — Setup Guide | MapleHD" },
   description:
     "Learn how IPTV works in Canada. Simple 3-step setup, compatible devices, internet requirements, and everything you need to start streaming today.",
   keywords:
     "how does IPTV work Canada, how to set up MapleHD, IPTV setup Canada, IPTV explained Canada",
   alternates: { canonical: "https://maplehd.ca/how-it-works" },
+  openGraph: { url: "https://maplehd.ca/how-it-works", siteName: "MapleHD", locale: "en_CA", type: "website", images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "MapleHD IPTV Canada" }] },
 };
 
 const steps = [

@@ -4,12 +4,12 @@ import SeoLinks from "@/components/SeoLinks";
 import PageExtras from "@/components/PageExtras";
 
 export const metadata: Metadata = {
-  title: "IPTV on Apple TV & iPhone in Canada 2026 | MapleHD",
+  title: { absolute: "IPTV on Apple TV & iPhone in Canada 2026 | MapleHD" },
   description:
     "Use MapleHD IPTV on Apple TV, iPhone, and iPad in Canada. 25,000+ live channels, NHL, TSN, CBC in 4K. Easy Infuse or IPTV Smarters setup. From $9/month.",
   keywords: "IPTV Apple TV Canada, IPTV iPhone Canada, IPTV iPad Canada 2026",
   alternates: { canonical: "https://maplehd.ca/iptv-apple-tv-canada" },
-  openGraph: {
+  openGraph: { locale: "en_CA", 
       images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "MapleHD — Best IPTV Canada" }],
     title: "IPTV on Apple TV & iPhone in Canada 2026 | MapleHD",
     description: "Use MapleHD IPTV on Apple TV, iPhone, and iPad in Canada. 25,000+ live channels, NHL, TSN, CBC in 4K. Easy Infuse or IPTV Smarters setup. From $9/month.",

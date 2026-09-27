@@ -3,12 +3,13 @@ import SeoLinks from "@/components/SeoLinks";
 import PageExtras from "@/components/PageExtras";
 
 export const metadata: Metadata = {
-  title: "IPTV Roku Canada 2026 | Best IPTV for Roku Streaming Stick",
+  title: { absolute: "IPTV Roku Canada 2026 — Streaming Stick Guide | MapleHD" },
   description:
     "Stream IPTV on Roku in Canada. 25,000+ channels, HD & 4K quality, NHL, TSN, CTV and more. Easy channel store setup. Try free today.",
   keywords:
     "IPTV Roku Canada, Roku MapleHD, best IPTV for Roku Canada, Roku streaming MapleHD",
   alternates: { canonical: "https://maplehd.ca/iptv-roku-canada" },
+  openGraph: { url: "https://maplehd.ca/iptv-roku-canada", siteName: "MapleHD", locale: "en_CA", type: "website", images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "MapleHD IPTV Canada" }] },
 };
 
 const steps = [

@@ -1,12 +1,15 @@
 import type { Metadata } from "next";
 import PlanOrderForm from "../../PlanOrderForm";
 import PlanFAQ, { type FaqItem } from "../../PlanFAQ";
+import PlanExtras from "@/components/PlanExtras";
 
 export const metadata: Metadata = {
   title: { absolute: "7 Connections IPTV Canada 6 Months — $245 | MapleHD" },
   description:
     "Get 7 simultaneous connections for $245. 25,000+ live channels, 4K quality, NHL, TSN, CTV and more. No contract. Credentials sent within 5 minutes.",
-  alternates: { canonical: "https://maplehd.ca/pricing/7-devices/6-months" },
+  alternates: { canonical: "https://maplehd.ca/pricing" },
+  robots: { index: false, follow: true },
+  openGraph: { url: "https://maplehd.ca/pricing/7-devices/6-months", siteName: "MapleHD", locale: "en_CA", type: "website", images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "MapleHD IPTV Canada" }] },
 };
 
 const faqItems: FaqItem[] = [
@@ -99,10 +102,10 @@ export default function Page() {
                   fontWeight: 800,
                   color: "#fff",
                   lineHeight: 1.2,
-                  whiteSpace: "nowrap",
+                  
                 }}
               >
-                6 Months - 7 Devices
+                IPTV 7 Devices for 6 Months
               </h1>
               <div style={{ display: "flex", alignItems: "center", gap: 16, marginTop: 10 }}>
                 <span style={{ color: "#AE2448", fontWeight: 800, fontSize: "2rem" }}>Price : $245</span>
@@ -144,6 +147,7 @@ export default function Page() {
             </div>
           </div>
         </section>
+      <PlanExtras devices={7} index={2} />
       </main>
     </>
   );

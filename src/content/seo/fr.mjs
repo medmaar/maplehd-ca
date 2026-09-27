@@ -9,11 +9,11 @@ export default [
     desc: "IPTV Canada en français : abonnement dès 9 $/mois, meilleur IPTV, Smarters Pro, listes M3U, lecteurs et installation sur Smart TV. Essai gratuit MapleHD.",
     h1: "IPTV Canada en français : guides, abonnement et installation",
     badge: "IPTV Canada · Français",
-    kw: "iptv canada français",
+    kw: "iptv canada en français",
     kws: ["iptv", "iptv francais canada", "service iptv canada", "iptv québec", "iptv montréal"],
     anchor: "IPTV en français",
     answer:
-      "L'IPTV diffuse la télévision par Internet au lieu du câble. MapleHD offre un service IPTV au Canada avec plus de 25 000 chaînes, les chaînes québécoises et francophones, la 4K et un essai gratuit, dès 9 $/mois. Ces guides expliquent comment choisir, installer et utiliser votre IPTV.",
+      "IPTV Canada en français: l'IPTV diffuse la télévision par Internet au lieu du câble. MapleHD offre un service IPTV au Canada avec plus de 25 000 chaînes, les chaînes québécoises et francophones, la 4K et un essai gratuit, dès 9 $/mois. Ces guides expliquent comment choisir, installer et utiliser votre IPTV.",
     children: [
       "fr/meilleur-iptv-canada", "fr/abonnement-iptv", "fr/iptv-legal", "fr/iptv-smarters-pro", "fr/lecteur-iptv", "fr/liste-m3u-iptv", "fr/iptv-sur-smart-tv", "iptv-quebec", "iptv-montreal",
     ],
@@ -183,7 +183,7 @@ export default [
     kind: "guide",
     hreflangPair: "blog/is-iptv-legal-canada",
     title: "L'IPTV est-il légal au Canada? Guide clair | MapleHD",
-    desc: "L'IPTV est-il légal au Canada? Explication simple : technologie légale, droits d'auteur, responsabilités de l'utilisateur et comment choisir un service prudent.",
+    desc: "L'IPTV est-il légal au Canada? Explication simple: technologie légale, droits d'auteur, responsabilités de l'utilisateur et choix prudent.",
     h1: "L'IPTV est-il légal au Canada?",
     badge: "IPTV légal · Canada",
     kw: "iptv légal",

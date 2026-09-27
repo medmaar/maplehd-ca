@@ -4,7 +4,7 @@ import SeoLinks from "@/components/SeoLinks";
 import PageExtras from "@/components/PageExtras";
 
 export const metadata: Metadata = {
-  title: "Is IPTV Legal in Canada? (2026 Honest Answer) | MapleHD",
+  title: { absolute: "Is IPTV Legal in Canada? (2026 Answer) | MapleHD" },
   description:
     "Is IPTV legal in Canada in 2026? We explain CRTC rules, legal vs illegal IPTV, and what you need to know as a Canadian consumer.",
   keywords: "is iptv legal in canada, iptv legal canada 2026, crtc iptv canada",
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     canonical: "https://maplehd.ca/blog/is-iptv-legal-canada",
     languages: { "en-CA": "https://maplehd.ca/blog/is-iptv-legal-canada", "fr-CA": "https://maplehd.ca/fr/iptv-legal", "x-default": "https://maplehd.ca/blog/is-iptv-legal-canada" },
   },
-  openGraph: {
+  openGraph: { locale: "en_CA", 
     images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "Is IPTV Legal in Canada 2026?" }],
     title: "Is IPTV Legal in Canada? (2026 Honest Answer) | MapleHD",
     description:

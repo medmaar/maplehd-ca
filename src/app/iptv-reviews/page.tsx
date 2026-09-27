@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   description: "Read verified IPTV reviews from Canadian subscribers. MapleHD is Canada's top-rated IPTV service — 4.8/5 stars across 347+ reviews. Free trial from.",
   keywords: "iptv reviews, iptv reviews canada, mapplehd reviews, best iptv canada reviews, iptv service reviews canada, iptv top rated canada, best iptv solutions canada",
   alternates: { canonical: "https://maplehd.ca/iptv-reviews" },
+  openGraph: { url: "https://maplehd.ca/iptv-reviews", siteName: "MapleHD", locale: "en_CA", type: "website", images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "MapleHD IPTV Canada" }] },
 };
 const reviews = [
   { name: "Kevin T.", city: "Toronto, ON", stars: 5, date: "March 2026", text: "Been using MapleHD for 8 months. NHL Leafs games crystal clear on all TSN feeds, zero blackouts. UFC PPV included — no more paying $70 per card. Best IPTV I've tried in Canada, and I've tried a few." },

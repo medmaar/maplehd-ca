@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   description: "How to install IPTV in Canada — step-by-step installer guide for Fire Stick, Smart TV, Android, iPhone and MAG box. MapleHD IPTV installer from $9/month.",
   keywords: "iptv installer, iptv installer canada, how to install iptv canada, iptv installation guide canada, iptv setup installer canada 2026, best iptv installer canada",
   alternates: { canonical: "https://maplehd.ca/iptv-installer" },
+  openGraph: { url: "https://maplehd.ca/iptv-installer", siteName: "MapleHD", locale: "en_CA", type: "website", images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "MapleHD IPTV Canada" }] },
 };
 const installs = [
   { device: "Amazon Fire Stick", steps: ["Press Home → Settings → My Fire TV → Developer Options → Apps from Unknown Sources: ON","Press Home → Search → type 'Downloader' → Install","Open Downloader → enter URL for IPTV Smarters Pro APK","Install APK → Open app → Add new user → Xtream Codes → enter MapleHD credentials","Done — all channels available instantly"] },

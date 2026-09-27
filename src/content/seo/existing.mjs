@@ -174,6 +174,16 @@ export default {
       { q: "Can you help me set up my device?", a: "Yes, setup help is included. See [IPTV devices](/iptv-devices)." },
     ],
   },
+  pricing: {
+    crumb: ["IPTV Pricing"],
+    faq: [
+      { q: "How much does MapleHD cost?", a: "MapleHD starts at $9 for 1 month on one device. Longer plans cost less per month: $29 for 3 months, $39 for 6 months and $49 for 12 months. More simultaneous connections cost more, up to 10 devices." },
+      { q: "What payment methods can I use?", a: "Prices are in Canadian dollars and you can pay by Interac e-Transfer or the other methods shown on the order form. See [paying for IPTV in Canada](/iptv-payment-canada)." },
+      { q: "Is there a contract or automatic renewal?", a: "No. Plans are prepaid for the duration you choose, with no contract and no automatic charges. Read the [refund policy](/refund-policy) and [terms](/terms-of-service)." },
+      { q: "How many devices do I need?", a: "Choose the number of screens that will watch at the same time. Each simultaneous stream uses one connection. See the [IPTV subscription guide](/iptv-subscription)." },
+      { q: "Can I try before buying?", a: "Yes. Request a [free trial](/free-trial) with no credit card and test on your own devices." },
+    ],
+  },
   referral: {
     crumb: ["Referral Program"],
     faq: [
@@ -272,7 +282,7 @@ export default {
 
 // Pages that already render their own BreadcrumbList JSON-LD (avoid duplicates).
 export const HAS_BREADCRUMB = new Set([
-  "channels-list", "how-it-works", "iptv-reviews", "about", "contact", "referral", "reseller", "blog",
+  "channels-list", "how-it-works", "pricing", "iptv-reviews", "about", "contact", "referral", "reseller", "blog",
   "blog/best-iptv-player-canada", "blog/iptv-firestick-canada", "blog/iptv-samsung-tv-canada",
   "blog/iptv-vs-cable-canada", "blog/is-iptv-legal-canada", "blog/best-iptv-canada-2026",
 ]);

@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     languages: {
       "fr-CA": "https://maplehd.ca/iptv-quebec",
       "en-CA": "https://maplehd.ca/iptv-quebec",
+      "x-default": "https://maplehd.ca/iptv-quebec",
     }
   },
   openGraph: {

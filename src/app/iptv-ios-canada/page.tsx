@@ -3,12 +3,13 @@ import SeoLinks from "@/components/SeoLinks";
 import PageExtras from "@/components/PageExtras";
 
 export const metadata: Metadata = {
-  title: "IPTV iPhone iPad Canada 2026 | Best IPTV for iOS Devices",
+  title: { absolute: "IPTV iPhone & iPad Canada 2026 | MapleHD" },
   description:
     "Stream IPTV on iPhone or iPad in Canada. 25,000+ channels, HD & 4K quality, NHL, TSN, CTV and more. Easy App Store setup. Try free today.",
   keywords:
     "IPTV iPhone Canada, IPTV iPad Canada, IPTV iOS Canada, best IPTV for iPhone Canada, IPTV app Canada iOS",
   alternates: { canonical: "https://maplehd.ca/iptv-ios-canada" },
+  openGraph: { url: "https://maplehd.ca/iptv-ios-canada", siteName: "MapleHD", locale: "en_CA", type: "website", images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "MapleHD IPTV Canada" }] },
 };
 
 const steps = [

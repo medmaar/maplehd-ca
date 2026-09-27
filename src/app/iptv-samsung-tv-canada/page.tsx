@@ -3,12 +3,13 @@ import SeoLinks from "@/components/SeoLinks";
 import PageExtras from "@/components/PageExtras";
 
 export const metadata: Metadata = {
-  title: "IPTV Samsung TV Canada 2026 | Best IPTV for Samsung Smart TV",
+  title: { absolute: "IPTV Samsung TV Canada 2026 — Smart TV Guide | MapleHD" },
   description:
     "Stream IPTV on your Samsung Smart TV in Canada. 25,000+ channels, 4K quality, NHL, TSN and more. Easy setup with Tizen OS. Try free today.",
   keywords:
     "IPTV Samsung TV Canada, IPTV Samsung Smart TV Canada, Samsung TV MapleHD, best IPTV Samsung Canada",
   alternates: { canonical: "https://maplehd.ca/iptv-samsung-tv-canada" },
+  openGraph: { url: "https://maplehd.ca/iptv-samsung-tv-canada", siteName: "MapleHD", locale: "en_CA", type: "website", images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "MapleHD IPTV Canada" }] },
 };
 
 const steps = [

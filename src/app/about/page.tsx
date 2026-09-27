@@ -4,10 +4,10 @@ import SeoLinks from "@/components/SeoLinks";
 import PageExtras from "@/components/PageExtras";
 
 export const metadata: Metadata = {
-  title: "About MapleHD | Canada's #1 IPTV Service",
-  description:
-    "Learn about MapleHD — Canada's leading IPTV subscription service. 25,000+ live channels, 120,000+ movies & series in 4K. Based in Montréal, serving all of Canada.",
+  title: { absolute: "About MapleHD — Canada's IPTV Service | MapleHD" },
+  description: "Learn about MapleHD, a Canadian IPTV service based in Montréal: 25,000+ live channels, 120,000+ movies and series in 4K, plans from $9/month.",
   alternates: { canonical: "https://maplehd.ca/about" },
+  openGraph: { url: "https://maplehd.ca/about", siteName: "MapleHD", locale: "en_CA", type: "website", images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "MapleHD IPTV Canada" }] },
 };
 
 const stats = [

@@ -35,6 +35,17 @@ export default {
   "iptv-smarters": [
     { h: "IPTV Smarters Pro vs TiviMate", table: { head: ["", "IPTV Smarters Pro", "TiviMate"], rows: [["Platforms", "Android, iOS, PC, Fire TV, some TVs", "Android TV, Google TV, Fire TV"], ["Cost", "Free", "Free + Premium"], ["Interface", "Live, movies, series menus", "Cable-style guide"], ["Best for", "One app on every device", "Main living-room TV"]] }, p2: ["Read the [TiviMate guide](/tivimate) or compare on the [IPTV apps hub](/iptv-apps)."] },
   ],
+  "iptv-hamilton": [
+    { h: "Local teams, internet and time zone in Hamilton", table: { head: ["Team", "League"], rows: [["Hamilton Tiger-Cats", "CFL"], ["Hamilton Bulldogs", "OHL"], ["Toronto Maple Leafs", "NHL"], ["Toronto Raptors", "NBA"], ["Toronto Blue Jays", "MLB"]] }, p2: ["Hamilton is on Eastern Time. Households commonly use Bell, Rogers, Cogeco or independent providers where available; aim for about 15 Mbps per HD stream. Nearby guides: [IPTV Burlington](/iptv-burlington), [IPTV Oakville](/iptv-oakville), [IPTV St. Catharines](/iptv-st-catharines) and [IPTV Ontario](/iptv-ontario)."] },
+    { h: "Game-day viewing tips for Hamilton", ul: ["Tiger-Cats games are on Canadian sports channels: confirm the feed in the guide.", "Use Ethernet for football and hockey, where fast movement exposes weak Wi-Fi.", "Keep a second device logged in for playoff nights.", "Read the [CFL guide](/iptv-cfl) for the season calendar."] },
+  ],
+  "iptv-london-ontario": [
+    { h: "Local teams, internet and time zone in London", table: { head: ["Team", "League"], rows: [["London Knights", "OHL"], ["Toronto Maple Leafs", "NHL"], ["Toronto Raptors", "NBA"], ["Toronto Blue Jays", "MLB"]] }, p2: ["London is on Eastern Time. Households commonly use Bell, Rogers or independent providers where available. Nearby guides: [IPTV Kitchener-Waterloo](/iptv-kitchener-waterloo), [IPTV Windsor](/iptv-windsor), [IPTV Guelph](/iptv-guelph) and [IPTV Ontario](/iptv-ontario)."] },
+    { h: "Winter viewing tips for London", ul: ["Lake-effect snow belts can affect outdoor lines: keep a mobile hotspot as backup.", "Use a wired connection to the main TV for hockey nights.", "Students in shared houses should place the router centrally and use 5 GHz Wi-Fi.", "See the [winter buffering guide](/iptv-winter-buffering)."] },
+  ],
+  "iptv-quebec": [
+    { h: "Suggestions pratiques pour les foyers québécois", ul: ["Ajoutez TVA, TVA Sports, RDS et Noovo à vos favoris pour y accéder d'une seule touche.", "Pendant les séries des Canadiens, gardez un deuxième appareil connecté avec les mêmes identifiants.", "Utilisez Ethernet pour la 4K et le sport en direct.", "Vérifiez le fuseau horaire de l'appareil si les heures du guide semblent décalées.", "Consultez le [guide IPTV en français](/fr) et les pages de villes ci-dessous pour les détails locaux."] },
+  ],
   "iptv-installer": [
     { h: "What remote installation covers", ul: ["Choosing the right app for your device", "Entering your login and loading the channel list", "Setting favourites, guide and hardware decoding", "Testing a live channel with you", "Fixing common buffering issues"] },
   ],

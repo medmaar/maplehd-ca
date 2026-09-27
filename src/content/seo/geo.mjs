@@ -9,6 +9,81 @@ const cap = (s, n) => (s.length > n ? s.slice(0, n - 1).trimEnd() + "…" : s);
 
 const provKey = (name) => Object.keys(PROVINCES).find((k) => PROVINCES[k].name === name);
 
+const hash = (str) => [...str].reduce((a, c) => (a * 31 + c.charCodeAt(0)) >>> 0, 7);
+const LEAGUE = { "Maple Leafs": "NHL", Raptors: "NBA", "Blue Jays": "MLB", "Toronto FC": "MLS", Argonauts: "CFL", "Tiger-Cats": "CFL", Senators: "NHL", Redblacks: "CFL", Canucks: "NHL", Whitecaps: "MLS", "BC Lions": "CFL", Flames: "NHL", Oilers: "NHL", Stampeders: "CFL", Elks: "CFL", Jets: "NHL", "Blue Bombers": "CFL", Roughriders: "CFL", Canadiens: "NHL", "CF Montréal": "MLS", Bruins: "NHL" };
+const leagueOf = (t) => { const m = t.match(/\(([^)]+)\)/); if (m) return m[1]; const k = Object.keys(LEAGUE).find((x) => t.includes(x)); return k ? LEAGUE[k] : "Local"; };
+const TIPS = [
+  "In condos and apartments, neighbouring Wi-Fi networks crowd the same channels: move the router near the TV or use Ethernet.",
+  "Basements and older houses with thick walls weaken Wi-Fi. A mesh system or a wired run to the TV fixes most buffering.",
+  "If several people work or study from home, streaming competes with video calls: choose HD instead of 4K during work hours.",
+  "Game consoles and phones downloading updates can eat bandwidth during a live game. Pause big downloads before puck drop.",
+  "Keep a second device ready with the same login, for example a phone, in case a TV app needs a restart.",
+  "After a power cut, restart the modem first, then the router, then the streaming device, in that order.",
+  "Family members visiting? A plan with extra connections lets them watch on their own screens without kicking your stream off.",
+  "Rentals and shared houses often have one router for everyone: ask the landlord where it is and place your TV device near it.",
+  "Smart TVs update themselves and can slow down over time. An external Firestick or Android box usually stays snappier.",
+  "Use the programme guide reminders for the games you follow so you never miss a start time.",
+  "Second homes and cottages: install your login on a separate device and check the property's internet speed before the season.",
+  "Change your device's time zone setting after travel, or the programme guide will show the wrong times.",
+];
+const pickTips = (slug) => { const h = hash(slug); return [0, 1, 2, 3].map((i) => TIPS[(h + i * 5) % TIPS.length]).filter((x, i, a) => a.indexOf(x) === i); };
+const INTROS = [
+  (n, t) => `Sports fans in ${n} typically follow ${t}.`,
+  (n, t) => `Around ${n}, the teams people talk about most are ${t}.`,
+  (n, t) => `Game night in ${n} usually means ${t}.`,
+];
+
+const TIPS_FR = [
+  "Dans un condo ou un appartement, les réseaux Wi-Fi voisins se gênent: rapprochez le routeur du téléviseur ou utilisez Ethernet.",
+  "Les sous-sols et les vieilles maisons affaiblissent le Wi-Fi: un réseau maillé ou un câble jusqu'au téléviseur règle la plupart des saccades.",
+  "Si plusieurs personnes télétravaillent, choisissez la HD plutôt que la 4K pendant les heures de bureau.",
+  "Les mises à jour de consoles et de téléphones consomment de la bande passante: mettez-les en pause avant la mise au jeu.",
+  "Gardez un deuxième appareil connecté avec les mêmes identifiants, au cas où une application doive redémarrer.",
+  "Après une panne de courant, redémarrez d'abord le modem, puis le routeur, puis l'appareil de diffusion.",
+  "Avec de la visite, un forfait à plus de connexions évite de couper votre flux.",
+  "Utilisez les rappels du guide pour ne pas manquer le début des matchs que vous suivez.",
+  "Au chalet, vérifiez la vitesse d'Internet avant la saison et installez vos identifiants sur un appareil dédié.",
+  "Après un voyage, corrigez le fuseau horaire de l'appareil, sinon le guide affichera de mauvaises heures.",
+];
+const pickTipsFr = (slug) => { const h = hash(slug); return [0, 1, 2, 3].map((i) => TIPS_FR[(h + i * 3) % TIPS_FR.length]).filter((x, i, a) => a.indexOf(x) === i); };
+
+const pickV = (slug, variants) => variants[hash(slug) % variants.length];
+const CHAN_EN = [
+  ["Canadian networks such as CBC, CTV, Global and City, plus regional feeds", "TSN and Sportsnet channels for hockey, basketball, baseball, football and more", "French-language channels alongside English ones", "Movies, series and kids' content on demand"],
+  ["National and regional Canadian stations, from CBC to City", "Sports networks covering the NHL, CFL, NBA, MLB and soccer", "News, weather and 24-hour channels", "A large on-demand library of films and series"],
+  ["Local and national Canadian TV, including CBC, CTV and Global", "TSN and Sportsnet feeds for the leagues you follow", "International channels in many languages", "Kids' programming and box-set style series on demand"],
+  ["Everyday Canadian channels for news, weather and entertainment", "Live sport from hockey to soccer on national and regional feeds", "French and English options side by side", "Movies and series to fill the gaps between games"],
+  ["CBC, CTV, Global and City feeds where available", "Game coverage on TSN and Sportsnet", "Channels in other languages for multilingual households", "On-demand titles for every age group"],
+];
+const STEPS_EN = (name) => [
+  ["Choose a plan on the [pricing page](/pricing) or start a [free trial](/free-trial).", "Pick a device: [Firestick](/iptv-firestick-canada), [Android TV box](/best-android-tv-box), [Smart TV](/iptv-smart-tv-canada) or phone.", "Install a player such as [TiviMate](/tivimate) or [IPTV Smarters Pro](/iptv-smarters) and enter your login.", `Set favourites for your ${name} teams and local channels, then test a live game.`],
+  ["Request a [free trial](/free-trial) first, then pick a duration on the [pricing page](/pricing).", "Use hardware you already own, such as a [Firestick](/iptv-firestick-canada) or a [smart TV](/iptv-smart-tv-canada), or add an [Android box](/best-android-tv-box).", "Add your Xtream Codes login in a free player: [TiviMate](/tivimate) or [IPTV Smarters](/iptv-smarters).", `Save the channels people in ${name} watch most and check tonight's guide.`],
+  ["Compare durations on the [pricing page](/pricing); longer plans cost less per month.", "Decide where you will watch: living-room TV, phone, tablet or laptop. See [IPTV devices](/iptv-devices).", "Install the app and sign in with the details we email you.", `Test a live channel at peak time in ${name} before you commit to a longer plan.`],
+];
+const CHAN_FR = [
+  ["Chaînes québécoises : TVA, TVA Sports, RDS, Noovo, ICI Radio-Canada Télé", "Chaînes anglophones : CBC, CTV, Global, City, TSN, Sportsnet", "Films, séries et contenu jeunesse sur demande", "Chaînes internationales en plusieurs langues"],
+  ["Télé québécoise et francophone, du sport à l'information", "Chaînes canadiennes anglophones et sports nationaux", "Grande bibliothèque de films et de séries", "Émissions pour enfants et chaînes en continu"],
+];
+const STEPS_FR = [
+  ["Choisissez un forfait sur la [page des prix](/pricing) ou demandez un [essai gratuit](/free-trial).", "Choisissez un appareil : [Fire Stick, Smart TV, iPhone ou PC](/fr/iptv-sur-smart-tv).", "Installez un [lecteur IPTV](/fr/lecteur-iptv) et entrez vos identifiants.", "Ajoutez vos chaînes favorites et testez un match en direct."],
+  ["Demandez d'abord l'[essai gratuit](/free-trial), puis choisissez une durée sur la [page des prix](/pricing).", "Utilisez un appareil que vous avez déjà, ou ajoutez un [boîtier Android](/best-android-tv-box).", "Entrez vos identifiants Xtream Codes dans un [lecteur gratuit](/fr/lecteur-iptv).", "Enregistrez les chaînes les plus regardées et consultez le guide du soir."],
+];
+
+const ISP_FR = [
+  () => "L'IPTV dépend de votre connexion Internet à la maison. Au Québec, les foyers utilisent souvent Vidéotron, Bell, Cogeco ou des fournisseurs régionaux, selon la disponibilité. Prévoyez environ 15 Mb/s par flux HD et 25 Mb/s pour la 4K, et privilégiez Ethernet ou un routeur Wi-Fi récent pour le sport en direct.",
+  (n) => `Peu importe où vous habitez à ${n}, c'est votre abonnement Internet, et non un bureau local, qui compte. Vidéotron, Bell, Cogeco et des fournisseurs indépendants desservent le Québec selon les secteurs. Comptez 15 Mb/s par écran en HD et 25 Mb/s en 4K.`,
+  (n) => `À ${n}, la qualité de l'IPTV se joue à la maison: vitesse de connexion, position du routeur et appareil utilisé. Un câble Ethernet jusqu'au téléviseur donne le flux le plus stable pour les matchs.`,
+];
+const TZ_FR = [
+  (n) => `${n} est à l'heure de l'Est. Le guide affiche les horaires selon le fuseau horaire de votre appareil: vérifiez-le si les heures de match semblent décalées. Voir notre [guide des fuseaux horaires](/iptv-time-zones-canada) (en anglais).`,
+  (n) => `Les horaires du guide suivent l'heure de l'appareil. À ${n}, réglez-le sur l'heure de l'Est pour voir les matchs et les émissions au bon moment, puis actualisez le guide dans votre lecteur. Détails: [fuseaux horaires au Canada](/iptv-time-zones-canada).`,
+];
+const WINTER_FR = [
+  "Les hivers québécois et les tempêtes de verglas peuvent perturber Internet. Une connexion filaire et un deuxième appareil de secours limitent les interruptions pendant les séries.",
+  "Neige, verglas et pannes de courant font partie de l'hiver. Gardez un point d'accès sur téléphone en secours et redémarrez le modem, puis le routeur, puis l'appareil de diffusion après une panne.",
+  "Pendant les grands froids, on regarde plus de télé: prévoyez une connexion filaire et évitez les téléchargements lourds pendant les matchs.",
+];
+
 // ---------- English city pages ----------
 function enCity(slug, [name, pk, teams, near, note]) {
   const P = PROVINCES[pk];
@@ -30,14 +105,16 @@ function enCity(slug, [name, pk, teams, near, note]) {
         h: `Watching TV in ${name}`,
         p: [
           note,
-          `Local sports fans in ${name} typically follow ${list(teams.slice(0, 4))}. Game coverage is spread across national and regional sports channels, so open the programme guide in your player to see which feed carries tonight's game. Our [IPTV for sports](/iptv-sports) guide explains how to prepare for busy nights.`,
+          `${INTROS[hash(slug) % 3](name, list(teams.slice(0, 4)))} Game coverage is spread across national and regional sports channels, so open the programme guide in your player to see which feed carries tonight's game. Our [IPTV for sports](/iptv-sports) guide explains how to prepare for busy nights.`,
         ],
         ul: [
-          "Canadian networks such as CBC, CTV, Global and City, plus regional feeds",
-          "TSN and Sportsnet channels for hockey, basketball, baseball, football and more",
-          "French-language channels alongside English ones",
-          "Movies, series and kids' content on demand",
+          ...pickV(slug, CHAN_EN)
         ],
+      },
+      {
+        h: `Local teams and leagues in ${name}`,
+        table: { head: ["Team", "League"], rows: teams.map((t) => [t.replace(/ \([^)]+\)/, ""), leagueOf(t)]) },
+        p2: ["Confirm each game's channel in your programme guide on the day; rights differ by league and market."],
       },
       {
         h: `Internet and setup for IPTV in ${name}`,
@@ -45,10 +122,7 @@ function enCity(slug, [name, pk, teams, near, note]) {
           `IPTV depends on your home internet rather than on where the servers are. In ${P.name}, households commonly use ${list(P.isps)}, where available. Aim for about 15 Mbps per HD stream and 25 Mbps per 4K stream, and use Ethernet or a modern Wi-Fi router for live sport.`,
         ],
         ol: [
-          `Choose a plan on the [pricing page](/pricing) or start a [free trial](/free-trial).`,
-          `Pick a device: [Firestick](/iptv-firestick-canada), [Android TV box](/best-android-tv-box), [Smart TV](/iptv-smart-tv-canada) or phone.`,
-          `Install a player such as [TiviMate](/tivimate) or [IPTV Smarters Pro](/iptv-smarters) and enter your login.`,
-          `Set favourites for your ${name} teams and local channels, then test a live game.`,
+          ...pickV(slug, STEPS_EN(name))
         ],
       },
       {
@@ -60,6 +134,10 @@ function enCity(slug, [name, pk, teams, near, note]) {
       {
         h: `Winter, storms and reliability in ${name}`,
         p: [P.winter],
+      },
+      {
+        h: `Practical viewing tips for ${name} households`,
+        ul: pickTips(slug),
       },
       {
         h: `IPTV near ${name}`,
@@ -102,35 +180,38 @@ function frCity(slug, [name, pk, teams, near, note]) {
           `Les amateurs de sport de ${name} suivent surtout ${list(teams.slice(0, 3))}. Les matchs passent sur des chaînes sportives nationales et régionales, comme RDS, TVA Sports, TSN et Sportsnet: ouvrez le guide des programmes de votre lecteur pour voir la chaîne qui diffuse le match du soir.`,
         ],
         ul: [
-          "Chaînes québécoises : TVA, TVA Sports, RDS, Noovo, ICI Radio-Canada Télé",
-          "Chaînes anglophones : CBC, CTV, Global, City, TSN, Sportsnet",
-          "Films, séries et contenu jeunesse sur demande",
-          "Chaînes internationales en plusieurs langues",
+          ...pickV(slug, CHAN_FR)
         ],
       },
       {
         h: `Internet et installation à ${name}`,
         p: [
-          `L'IPTV dépend de votre connexion Internet à la maison. Au Québec, les foyers utilisent souvent Vidéotron, Bell, Cogeco ou des fournisseurs régionaux, selon la disponibilité. Prévoyez environ 15 Mb/s par flux HD et 25 Mb/s pour la 4K, et privilégiez Ethernet ou un routeur Wi-Fi récent pour le sport en direct.`,
+          pickV(slug, ISP_FR)(name),
         ],
         ol: [
-          "Choisissez un forfait sur la [page des prix](/pricing) ou demandez un [essai gratuit](/free-trial).",
-          "Choisissez un appareil : [Fire Stick, Smart TV, iPhone ou PC](/fr/iptv-sur-smart-tv).",
-          "Installez un [lecteur IPTV](/fr/lecteur-iptv) et entrez vos identifiants.",
-          `Ajoutez vos chaînes favorites et testez un match en direct.`,
+          ...pickV(slug, STEPS_FR)
         ],
       },
       {
         h: `Fuseau horaire et guide des programmes`,
         p: [
-          `${name} est à l'heure de l'Est. Le guide affiche les horaires selon le fuseau horaire de votre appareil: vérifiez-le si les heures de match semblent décalées. Voir notre [guide des fuseaux horaires](/iptv-time-zones-canada) (en anglais).`,
+          pickV(slug, TZ_FR)(name),
         ],
       },
       {
         h: `Hiver et fiabilité`,
         p: [
-          `Les hivers québécois et les tempêtes de verglas peuvent perturber Internet. Une connexion filaire et un deuxième appareil de secours limitent les interruptions pendant les séries.`,
+          pickV(slug, WINTER_FR),
         ],
+      },
+      {
+        h: `Équipes et ligues à ${name}`,
+        table: { head: ["Équipe", "Ligue"], rows: teams.map((t) => [t.replace(/ ([^)]+)/, ""), leagueOf(t)]) },
+        p2: ["Confirmez la chaîne de chaque match dans le guide le jour même: les droits varient selon la ligue et le marché."],
+      },
+      {
+        h: `Conseils pratiques pour les foyers de ${name}`,
+        ul: pickTipsFr(slug),
       },
       {
         h: `IPTV près de ${name}`,

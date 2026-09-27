@@ -3,11 +3,11 @@ import SeoLinks from "@/components/SeoLinks";
 import PageExtras from "@/components/PageExtras";
 
 export const metadata: Metadata = {
-  title: "IPTV on Amazon Firestick in Canada 2026 | MapleHD Setup Guide",
+  title: { absolute: "IPTV on Amazon Firestick in Canada 2026 | MapleHD" },
   description:
     "Set up IPTV on your Amazon Firestick in Canada in under 5 minutes. MapleHD offers 25,000+ channels, NHL, TSN & 4K quality. Free 24h trial.",
   alternates: { canonical: "https://maplehd.ca/iptv-firestick-canada" },
-  openGraph: {
+  openGraph: { locale: "en_CA", 
       images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "MapleHD — Best IPTV Canada" }],
     title: "IPTV on Amazon Firestick in Canada 2026 | MapleHD Setup Guide",
     description:

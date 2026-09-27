@@ -4,13 +4,13 @@ import SeoLinks from "@/components/SeoLinks";
 import PageExtras from "@/components/PageExtras";
 
 export const metadata: Metadata = {
-  title: "Best IPTV for Sports in Canada 2026: No Blackouts, All | MapleHD",
+  title: { absolute: "Best IPTV for Sports in Canada 2026 | MapleHD" },
   description:
     "Stream every hockey, football, and UFC game in Canada without blackouts. NHL, TSN, Sportsnet, CFL, NBA on reliable 1080p HD IPTV. No sports packages, all.",
   keywords:
     "sports IPTV Canada, NHL streaming no blackouts, sports IPTV Canada 2026, Hockey streaming Canada, TSN Sportsnet streaming",
   alternates: { canonical: "https://maplehd.ca/blog/best-iptv-canada-2026" },
-  openGraph: {
+  openGraph: { locale: "en_CA", 
       images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "MapleHD — Best Sports IPTV Canada 2026" }],
     title: "Watch Every Game Without Blackouts — Sports IPTV Canada 2026",
     description:
@@ -104,9 +104,6 @@ export default function MapleHDBlogPost() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script
       />
