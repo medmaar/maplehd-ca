@@ -645,8 +645,8 @@ keyword,monthly_volume,intent,assigned_page,fallback_assignment
 "iptv smasters free",50,Informational,/iptv-smarters-pro-download,false
 "iptv smasters google play",50,Informational,/iptv-smarters-pro-download,false
 "iptv smasters iphone",50,Informational,/iptv-smarters-pro-download,false
-"iptv smasters lg",50,Informational,/iptv-smarters-pro-download,false
-"iptv smasters lg tv",50,Informational,/iptv-smarters-pro-download,false
+"iptv smasters lg",50,Informational,/iptv-smarters-pro-smart-tv,false
+"iptv smasters lg tv",50,Informational,/iptv-smarters-pro-smart-tv,false
 "iptv smasters m3u",50,Informational,/iptv-smarters-pro-download,false
 "iptv smasters mac",50,Informational,/iptv-smarters-pro-pc-mac,false
 "iptv smasters on firestick",50,Commercial,/iptv-smarters-pro-firestick,false
@@ -666,7 +666,7 @@ keyword,monthly_volume,intent,assigned_page,fallback_assignment
 "iptv smasters pro for pc",50,Informational,/iptv-smarters-pro-pc-mac,false
 "iptv smasters pro introuvable google play",50,Informational,/fr/iptv-smarters-pro,false
 "iptv smasters pro iphone",50,Informational,/iptv-smarters-pro-download,false
-"iptv smasters pro lg",50,Informational,/iptv-smarters-pro-download,false
+"iptv smasters pro lg",50,Informational,/iptv-smarters-pro-smart-tv,false
 "iptv smasters pro live",50,Commercial,/iptv-smarters-pro-download,false
 "iptv smasters pro m3u",50,Informational,/iptv-smarters-pro-download,false
 "iptv smasters pro mac",50,Informational,/iptv-smarters-pro-pc-mac,false
