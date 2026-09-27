@@ -1,0 +1,92 @@
+# Cloudflare Pages redirects (301). Static-export pages are served at clean URLs (no .html, no trailing slash).
+# Canonical host
+https://www.maplehd.ca/* https://maplehd.ca/:splat 301
+
+# Legacy duplicate plan pages (had a conflicting $15 price) -> canonical plan pages
+/1-month     /pricing/1-month     301
+/3-months    /pricing/3-months    301
+/6-months    /pricing/6-months    301
+/12-months   /pricing/12-months   301
+
+# Old / alternate spellings -> canonical pages
+/iptv-subscription-canada        /iptv-subscription           301
+/iptv-plans                      /iptv-subscription           301
+/iptv-price                      /cheap-iptv-canada           301
+/iptv-cost                       /cheap-iptv-canada           301
+/iptv-pricing                    /pricing                     301
+/iptv-promo                      /iptv-deals                  301
+/iptv-promotions                 /iptv-deals                  301
+/iptv-free-trial                 /free-trial                  301
+/free-iptv-trial                 /free-trial                  301
+/iptv-trial                      /free-trial                  301
+
+/canada-iptv                     /iptv-canada                 301
+/canadian-iptv                   /iptv-canada                 301
+/best-iptv                       /best-iptv-service           301
+/best-iptv-2026                  /best-iptv-service           301
+/best-iptv-canada-2026           /best-iptv-canada            301
+/iptv-providers                  /iptv-providers-canada       301
+/iptv-service                    /iptv-service-canada         301
+/iptv-legal                      /blog/is-iptv-legal-canada   301
+/iptv-legal-canada               /blog/is-iptv-legal-canada   301
+/iptv-reddit                     /best-iptv-reddit            301
+/reddit-iptv                     /best-iptv-reddit            301
+/iptv-support                    /iptv-customer-service       301
+/iptv-server-canada              /iptv-server                 301
+
+/iptv-firestick                  /iptv-firestick-canada       301
+/firestick-iptv                  /iptv-firestick-canada       301
+/iptv-fire-stick                 /iptv-firestick-canada       301
+/iptv-roku                       /iptv-roku-canada            301
+/iptv-samsung                    /iptv-samsung-tv-canada      301
+/iptv-samsung-tv                 /iptv-samsung-tv-canada      301
+/iptv-lg                         /iptv-lg-tv-canada           301
+/iptv-lg-tv                      /iptv-lg-tv-canada           301
+/iptv-apple-tv                   /iptv-apple-tv-canada        301
+/iptv-android                    /iptv-android-canada         301
+/iptv-android-tv                 /iptv-android-tv-canada      301
+/iptv-smart-tv                   /iptv-smart-tv-canada        301
+/iptv-windows                    /iptv-windows-canada         301
+/iptv-pc                         /iptv-windows-canada         301
+/iptv-iphone                     /iptv-ios-canada             301
+/iptv-ipad                       /iptv-ios-canada             301
+/iptv-mag-box                    /iptv-mag-box-canada         301
+/mag-box                         /iptv-mag-box-canada         301
+/infomir-mag                     /iptv-mag-box-canada         301
+/iptv-box-canada                 /iptv-box                    301
+/iptv-macbook                    /iptv-mac                    301
+
+/iptv-smarters-pro               /iptv-smarters               301
+/smarters-pro                    /iptv-smarters               301
+/iptv-smarters-pro-canada        /iptv-smarters               301
+/tivimate-iptv                   /tivimate                    301
+/tivimate-pro                    /tivimate-premium            301
+/tivimate-price                  /tivimate-premium            301
+/formuler                        /formuler-iptv-box           301
+/formuler-z11-pro                /formuler-z11                301
+/formuler-z11-pro-max            /formuler-z11                301
+/formuler-z8                     /formuler-z10-z8             301
+/formuler-z10                    /formuler-z10-z8             301
+/mag-322                         /mag-322-iptv                301
+/mag-254                         /mag-254-iptv                301
+/mag-524                         /mag-524-iptv                301
+/stb-emu                         /stbemu                      301
+/stb-emu-pro                     /stbemu                      301
+/xtream-iptv                     /xtream-iptv-player          301
+/xtream-codes                    /xtream-iptv-player          301
+/m3u                             /iptv-m3u                    301
+/m3u8                            /iptv-m3u                    301
+/m3u-player                      /iptv-m3u-player             301
+/iptv-playlist                   /iptv-list                   301
+/kodi-iptv                       /iptv-kodi                   301
+/vlc-iptv                        /iptv-vlc                    301
+/iptv-player-app                 /iptv-player                 301
+/iptv-app                        /iptv-apps                   301
+
+# French (fr-CA)
+/meilleur-iptv                   /fr/meilleur-iptv-canada     301
+/meilleur-iptv-canada            /fr/meilleur-iptv-canada     301
+/abonnement-iptv                 /fr/abonnement-iptv          301
+/iptv-francais                   /fr                          301
+/iptv-canada-francais            /fr                          301
+/iptv-legal-quebec               /fr/iptv-legal               301

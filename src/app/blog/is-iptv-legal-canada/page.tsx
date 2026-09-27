@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import SeoLinks from "@/components/SeoLinks";
+import PageExtras from "@/components/PageExtras";
 
 export const metadata: Metadata = {
   title: "Is IPTV Legal in Canada? (2026 Honest Answer) | MapleHD",
   description:
     "Is IPTV legal in Canada in 2026? We explain CRTC rules, legal vs illegal IPTV, and what you need to know as a Canadian consumer.",
   keywords: "is iptv legal in canada, iptv legal canada 2026, crtc iptv canada",
-  alternates: { canonical: "https://maplehd.ca/blog/is-iptv-legal-canada" },
+  alternates: {
+    canonical: "https://maplehd.ca/blog/is-iptv-legal-canada",
+    languages: { "en-CA": "https://maplehd.ca/blog/is-iptv-legal-canada", "fr-CA": "https://maplehd.ca/fr/iptv-legal", "x-default": "https://maplehd.ca/blog/is-iptv-legal-canada" },
+  },
   openGraph: {
     images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "Is IPTV Legal in Canada 2026?" }],
     title: "Is IPTV Legal in Canada? (2026 Honest Answer) | MapleHD",
@@ -295,6 +300,8 @@ export default function IsIPTVLegalCanada() {
             </Link>
           </div>
         </article>
+      <PageExtras slug="blog/is-iptv-legal-canada" />
+      <SeoLinks heading="Related IPTV guides" slugs={["fr/iptv-legal","what-is-iptv","iptv-canada","iptv-service-canada","best-iptv-canada"]} />
       </main>
     </>
   );

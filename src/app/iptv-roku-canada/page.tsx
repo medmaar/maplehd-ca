@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import SeoLinks from "@/components/SeoLinks";
+import PageExtras from "@/components/PageExtras";
 
 export const metadata: Metadata = {
   title: "IPTV Roku Canada 2026 | Best IPTV for Roku Streaming Stick",
@@ -150,6 +152,8 @@ export default function IPTVRokuPage() {
           </a>
         </div>
       </section>
-    </main></>
+    <PageExtras slug="iptv-roku-canada" />
+      <SeoLinks heading="Related IPTV guides" slugs={["tivimate-smart-tv","iptv-chromecast","iptv-firestick-canada","iptv-devices","iptv-apps"]} />
+      </main></>
   );
 }

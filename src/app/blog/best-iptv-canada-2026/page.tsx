@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import SeoLinks from "@/components/SeoLinks";
+import PageExtras from "@/components/PageExtras";
 
 export const metadata: Metadata = {
   title: "Best IPTV for Sports in Canada 2026: No Blackouts, All | MapleHD",
@@ -304,6 +306,8 @@ export default function MapleHDBlogPost() {
           </Link>
         </div>
       </article>
-    </main>
+    <PageExtras slug="blog/best-iptv-canada-2026" />
+      <SeoLinks heading="Related IPTV guides" slugs={["best-iptv-canada","best-iptv-service","iptv-providers-canada","best-iptv-reddit","iptv-subscription","cheap-iptv-canada"]} />
+      </main>
   );
 }

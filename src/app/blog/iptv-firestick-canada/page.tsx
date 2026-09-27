@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import SeoLinks from "@/components/SeoLinks";
+import PageExtras from "@/components/PageExtras";
 
 export const metadata: Metadata = {
   title: "How to Install IPTV on Firestick Canada 2026 — Step by Step Guide",
@@ -233,6 +235,8 @@ export default function IPTVFirestickBlogPost() {
             </div>
           </div>
           </article>
-    </main></>
+    <PageExtras slug="blog/iptv-firestick-canada" />
+      <SeoLinks heading="Related IPTV guides" slugs={["best-iptv-for-firestick","tivimate-firestick","iptv-smarters-pro-firestick","iptv-4k"]} />
+      </main></>
   );
 }

@@ -1,0 +1,27 @@
+# MapleHD
+> MapleHD is a Canadian-focused IPTV service: 25,000+ live channels, 120,000+ movies and series on demand, 4K, EPG and 7-day catch-up on supported channels, from $9/month with a free trial and support by WhatsApp and email.
+> Target market: Canada (English en-CA and French fr-CA).
+
+## Main pages
+- Pricing: https://maplehd.ca/pricing
+- Free trial: https://maplehd.ca/free-trial
+- IPTV subscription: https://maplehd.ca/iptv-subscription
+- IPTV Canada: https://maplehd.ca/iptv-canada
+- Best IPTV in Canada: https://maplehd.ca/best-iptv-canada
+- Channel list: https://maplehd.ca/channels-list
+- Blog: https://maplehd.ca/blog
+
+## Hubs
+- IPTV apps and players (TiviMate, IPTV Smarters Pro, XCIPTV, Smart IPTV, IMPlayer): https://maplehd.ca/iptv-apps
+- IPTV devices (Firestick, Android TV, Apple TV, Samsung, LG, Roku, PC, Mac): https://maplehd.ca/iptv-devices
+- IPTV boxes (Android TV, Formuler, MAG, Dreamlink, BuzzTV, TVIP): https://maplehd.ca/iptv-boxes
+- IPTV how-to guides (M3U, VLC, Kodi, Plex, catch-up): https://maplehd.ca/iptv-guides
+- IPTV for sports (NHL, NBA, UFC, F1, soccer): https://maplehd.ca/iptv-sports
+- IPTV by city (Toronto, Montréal, Vancouver, Calgary, Ottawa, Edmonton, Winnipeg, Hamilton, London): https://maplehd.ca/iptv-cities
+- IPTV provider comparison: https://maplehd.ca/iptv-provider-alternatives
+- IPTV en français (fr-CA): https://maplehd.ca/fr
+
+## Facts
+- Works with standard IPTV players via Xtream Codes or M3U logins.
+- Plans: 1 month $9, 3 months $29, 6 months $39, 12 months $49 (1 device); 1 to 10 simultaneous connections available.
+- MapleHD is independent and is not affiliated with third-party player apps, box makers or other IPTV brands named on its comparison pages.

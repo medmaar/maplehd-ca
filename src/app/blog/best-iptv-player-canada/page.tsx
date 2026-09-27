@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import SeoLinks from "@/components/SeoLinks";
+import PageExtras from "@/components/PageExtras";
 
 export const metadata: Metadata = {
   title: "Best IPTV Player Canada 2026 — TiviMate & Smarters | MapleHD",
@@ -177,6 +179,8 @@ export default function BestIPTVPlayerCanadaPage() {
             </Link>
           </div>
         </section>
+      <PageExtras slug="blog/best-iptv-player-canada" />
+      <SeoLinks heading="Related IPTV guides" slugs={["best-iptv-apps","iptv-player","iptv-apps","tivimate","iptv-smarters-pro-download","xciptv"]} />
       </main>
     </>
   );

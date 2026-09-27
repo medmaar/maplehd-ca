@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import ReferralForm from "../../components/ReferralForm";
+import SeoLinks from "@/components/SeoLinks";
+import PageExtras from "@/components/PageExtras";
 
 export const metadata: Metadata = {
   title: "Referral Program | MapleHD — Refer a Friend, Get +1 Year Free",
@@ -189,7 +191,9 @@ export default function ReferralPage() {
           </div>
         </div>
       </section>
-    </main>
+    <PageExtras slug="referral" />
+      <SeoLinks heading="Related IPTV guides" slugs={["iptv-deals","iptv-subscription","free-trial","cheap-iptv-canada"]} />
+      </main>
     </>
   );
 }

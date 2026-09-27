@@ -91,6 +91,40 @@ export default function Footer() {
           </div>
         </div>
 
+        <div className="border-t border-white/5 pt-8 mb-8">
+          <p className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-4">Popular IPTV Guides</p>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-2.5">
+            {[
+              ["/iptv-canada", "IPTV Canada"],
+              ["/iptv-subscription", "IPTV Subscription"],
+              ["/best-iptv-canada", "Best IPTV Canada"],
+              ["/cheap-iptv-canada", "Cheap IPTV"],
+              ["/buy-iptv", "Buy IPTV"],
+              ["/iptv-deals", "IPTV Deals"],
+              ["/what-is-iptv", "What Is IPTV?"],
+              ["/iptv-apps", "IPTV Apps & Players"],
+              ["/tivimate", "TiviMate"],
+              ["/iptv-smarters-pro-download", "IPTV Smarters Pro Download"],
+              ["/iptv-player", "IPTV Player"],
+              ["/iptv-devices", "IPTV Devices"],
+              ["/iptv-boxes", "IPTV Boxes"],
+              ["/iptv-box", "IPTV Box"],
+              ["/formuler-iptv-box", "Formuler Box"],
+              ["/best-android-tv-box", "Best Android TV Box"],
+              ["/iptv-m3u", "IPTV M3U Guide"],
+              ["/iptv-guides", "IPTV How-To Guides"],
+              ["/iptv-sports", "IPTV Sports"],
+              ["/iptv-cities", "IPTV by City"],
+              ["/iptv-near-me", "IPTV Near Me"],
+              ["/iptv-providers-canada", "IPTV Providers"],
+              ["/iptv-4k", "4K IPTV"],
+              ["/fr", "IPTV en français"],
+            ].map(([href, label]) => (
+              <Link key={href} href={href} className="text-gray-400 hover:text-[#72BAA9] text-sm transition-colors">{label}</Link>
+            ))}
+          </div>
+        </div>
+
         <div className="pt-4 flex flex-wrap justify-center gap-4 mb-4">
           <a href="/msg/wa" className="flex items-center gap-2 text-xs text-gray-400 hover:text-[#25D366] transition-colors">📱 WhatsApp</a>
           <a href="mailto:help@maplehd.ca" className="flex items-center gap-2 text-xs text-gray-400 hover:text-[#72BAA9] transition-colors">📧 <EmailLink style={{ color: "inherit", textDecoration: "none" }} /></a>

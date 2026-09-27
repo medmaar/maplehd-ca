@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import SeoLinks from "@/components/SeoLinks";
+import PageExtras from "@/components/PageExtras";
 export const metadata: Metadata = {
   title: { absolute: "IPTV Reviews Canada 2026 — MapleHD Rated #1 | MapleHD" },
   description: "Read verified IPTV reviews from Canadian subscribers. MapleHD is Canada's top-rated IPTV service — 4.8/5 stars across 347+ reviews. Free trial from.",
@@ -87,6 +89,8 @@ export default function IPTVReviewsPage() {
             <a href="/free-trial" style={{ background: "#F96E5B", color: "#fff", padding: "14px 40px", borderRadius: 10, fontWeight: 700, textDecoration: "none" }}>Start Free Trial →</a>
           </div>
         </section>
+      <PageExtras slug="iptv-reviews" />
+      <SeoLinks heading="Related IPTV guides" slugs={["iptv-customer-service","best-iptv-canada","best-iptv-reddit","best-iptv-service","iptv-providers-canada"]} />
       </main>
 
       <section style={{ maxWidth: 900, margin: "0 auto", padding: "0 16px 60px" }}>

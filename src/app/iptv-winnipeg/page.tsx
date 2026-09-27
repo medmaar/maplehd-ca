@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import SeoLinks from "@/components/SeoLinks";
+import PageExtras from "@/components/PageExtras";
 
 export const metadata: Metadata = {
   title: { absolute: "Best IPTV Winnipeg 2026 — 4K from $9 | MapleHD" },
@@ -149,6 +151,8 @@ export default function IPTVWinnipegPage() {
           <p style={{ color: "#9ca3af", marginBottom: 32, maxWidth: 500, margin: "0 auto 32px" }}>Plans from $9/month. Free trial available. No contracts, no hidden fees.</p>
           <a href="/pricing" style={{ background: "#AE2448", color: "#fff", padding: "16px 48px", borderRadius: 12, fontWeight: 700, textDecoration: "none", display: "inline-block" }}>View MapleHD Plans →</a>
         </section>
+      <PageExtras slug="iptv-winnipeg" />
+      <SeoLinks heading="More IPTV in Canada" slugs={["iptv-cities","iptv-near-me","iptv-canada","iptv-sports","best-iptv-canada","iptv-subscription"]} />
       </main>
     </>
   );

@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import SeoLinks from "@/components/SeoLinks";
+import PageExtras from "@/components/PageExtras";
 
 export const metadata: Metadata = {
   title: "IPTV iPhone iPad Canada 2026 | Best IPTV for iOS Devices",
@@ -150,6 +152,8 @@ export default function IPTVIOSPage() {
           </a>
         </div>
       </section>
-    </main></>
+    <PageExtras slug="iptv-ios-canada" />
+      <SeoLinks heading="Related IPTV guides" slugs={["implayer","iptv-smarters-lite","iptv-chromecast","iptv-apple-tv-canada","iptv-devices","iptv-apps"]} />
+      </main></>
   );
 }

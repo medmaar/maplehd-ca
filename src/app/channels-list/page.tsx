@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import SeoLinks from "@/components/SeoLinks";
+import PageExtras from "@/components/PageExtras";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV Channels Canada — 25,000+ Live Channels | MapleHD" },
@@ -8350,7 +8352,9 @@ export default function ChannelsListPage() {
           </div>
         </div>
       </section>
-    </main>
+    <PageExtras slug="channels-list" />
+      <SeoLinks heading="Related IPTV guides" slugs={["iptv-sports","iptv-ufc","iptv-nba","iptv-soccer","iptv-vod-movies-series","iptv-dvr-catch-up","iptv-canada"]} />
+      </main>
     </>
   );
 }

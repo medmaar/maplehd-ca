@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import SeoLinks from "@/components/SeoLinks";
+import PageExtras from "@/components/PageExtras";
 export const metadata: Metadata = {
   title: { absolute: "IPTV Installer Canada — How to Install IPTV 2026 | MapleHD" },
   description: "How to install IPTV in Canada — step-by-step installer guide for Fire Stick, Smart TV, Android, iPhone and MAG box. MapleHD IPTV installer from $9/month.",
@@ -94,6 +96,8 @@ export default function IPTVInstallerPage() {
         </div>
       </section>
 
-    </main>
+    <PageExtras slug="iptv-installer" />
+      <SeoLinks heading="Related IPTV guides" slugs={["iptv-near-me","iptv-devices","iptv-apps","iptv-boxes","what-is-iptv"]} />
+      </main>
   );
 }

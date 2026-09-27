@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import SeoLinks from "@/components/SeoLinks";
+import PageExtras from "@/components/PageExtras";
 
 export const metadata: Metadata = {
   title: "IPTV MAG Box Canada – Setup & Best Plans 2026 | MapleHD",
@@ -112,6 +114,8 @@ export default function IPTVMagBoxCanadaPage() {
             </div>
           </div>
         </section>
+      <PageExtras slug="iptv-mag-box-canada" />
+      <SeoLinks heading="Related IPTV guides" slugs={["mag-254-iptv","mag-322-iptv","mag-524-iptv","stbemu","dreamlink-iptv","tvip-iptv-box","iptv-boxes","iptv-with-box"]} />
       </main>
     </>
   );

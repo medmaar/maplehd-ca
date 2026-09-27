@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import SeoLinks from "@/components/SeoLinks";
+import PageExtras from "@/components/PageExtras";
 
 export const metadata: Metadata = {
   title: "About MapleHD | Canada's #1 IPTV Service",
@@ -226,6 +228,8 @@ export default function AboutPage() {
             </div>
           </div>
         </section>
+      <PageExtras slug="about" />
+      <SeoLinks heading="Related IPTV guides" slugs={["best-iptv-canada","iptv-canada","iptv-customer-service","iptv-cities"]} />
       </main>
     </>
   );

@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import SeoLinks from "@/components/SeoLinks";
+import PageExtras from "@/components/PageExtras";
 
 export const metadata: Metadata = {
   title: "How IPTV Works in Canada | Setup Guide — IPTV Subscription Canada",
@@ -214,7 +216,9 @@ export default function HowItWorksPage() {
           </div>
         </div>
       </section>
-    </main>
+    <PageExtras slug="how-it-works" />
+      <SeoLinks heading="Related IPTV guides" slugs={["what-is-iptv","iptv-apps","iptv-devices","iptv-server","iptv-m3u","iptv-guides"]} />
+      </main>
     </>
   );
 }

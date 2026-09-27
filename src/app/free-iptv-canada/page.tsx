@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import SeoLinks from "@/components/SeoLinks";
+import PageExtras from "@/components/PageExtras";
 export const metadata: Metadata = {
   title: { absolute: "Free IPTV Canada — Free Trial, No Credit Card | MapleHD" },
   description: "Try MapleHD IPTV free in Canada. 24-hour free trial — no credit card required. Access 25,000+ channels, NHL, UFC, CFL. Free IPTV Canada trial from MapleHD.",
@@ -94,6 +96,8 @@ export default function FreeIPTVCanadaPage() {
         </div>
       </section>
 
-    </main>
+    <PageExtras slug="free-iptv-canada" />
+      <SeoLinks heading="Related IPTV guides" slugs={["iptv-list","iptv-m3u","iptv-deals","cheap-iptv-canada","premium-iptv","iptv-subscription"]} />
+      </main>
   );
 }

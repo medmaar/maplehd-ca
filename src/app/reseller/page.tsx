@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import SeoLinks from "@/components/SeoLinks";
+import PageExtras from "@/components/PageExtras";
 
 export const metadata: Metadata = {
   title: "IPTV Reseller Canada 2026 | Start Your IPTV Business – MapleHD",
@@ -173,7 +175,9 @@ export default function ResellerPage() {
           </p>
         </div>
       </section>
-    </main>
+    <PageExtras slug="reseller" />
+      <SeoLinks heading="Related IPTV guides" slugs={["iptv-resellers","iptv-providers-canada","iptv-provider-alternatives","iptv-subscription"]} />
+      </main>
     </>
   );
 }

@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import SeoLinks from "@/components/SeoLinks";
+import PageExtras from "@/components/PageExtras";
 
 export const metadata: Metadata = {
   title: { absolute: "Best IPTV Service in Ottawa 2026 — 4K Streaming from $9 | MapleHD" },
@@ -287,6 +289,8 @@ export default function IPTVOttawaPage() {
             View MapleHD Plans →
           </a>
         </section>
+      <PageExtras slug="iptv-ottawa" />
+      <SeoLinks heading="More IPTV in Canada" slugs={["iptv-cities","iptv-near-me","iptv-canada","iptv-sports","best-iptv-canada","iptv-subscription"]} />
       </main>
     </>
   );

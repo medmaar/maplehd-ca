@@ -8,6 +8,7 @@ const links = [
   { label: "Channels", href: "/channels-list" },
   { label: "Free Trial", href: "/free-trial" },
   { label: "Blog", href: "/blog" },
+  { label: "Guides", href: "/iptv-guides" },
   { label: "Referral", href: "/referral" },
   { label: "DMCA", href: "/dmca" },
   { label: "Reseller", href: "/reseller" },

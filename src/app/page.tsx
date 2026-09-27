@@ -35,6 +35,7 @@ import Link from "next/link";
 import dynamic from "next/dynamic";
 const HomePricing = dynamic(() => import("./components/HomePricing"));
 import { FadeUp, StaggerList, StaggerItem, HoverCard, CountUp, SlideIn, ScaleIn } from "../components/Animate";
+import SeoLinks from "@/components/SeoLinks";
 
 export const metadata: Metadata = {
   title: { absolute: "Best IPTV Service Canada 2026 — IPTV Québec & Free | MapleHD" },
@@ -518,6 +519,8 @@ export default function HomePage() {
             </div>
           </div>
         </section>
+
+        <SeoLinks heading="Explore MapleHD IPTV" slugs={["iptv-canada","iptv-subscription","best-iptv-canada","iptv-apps","iptv-devices","iptv-boxes","iptv-guides","iptv-sports","iptv-cities","tivimate","iptv-smarters","iptv-player","what-is-iptv","cheap-iptv-canada","iptv-near-me","fr"]} />
 
         {/* ── FINAL CTA ── */}
         <section

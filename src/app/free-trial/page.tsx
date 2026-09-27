@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import FreeTrialForm from "./FreeTrialForm";
 import PlanFAQ, { type FaqItem } from "../pricing/PlanFAQ";
+import SeoLinks from "@/components/SeoLinks";
+import PageExtras from "@/components/PageExtras";
 
 export const metadata: Metadata = {
   title: { absolute: "Free IPTV Trial Canada — Test MapleHD Risk-Free | MapleHD" },
@@ -114,6 +116,8 @@ export default function FreeTrialPage() {
             </div>
           </div>
         </section>
+      <PageExtras slug="free-trial" />
+      <SeoLinks heading="Related IPTV guides" slugs={["iptv-subscription","best-iptv-canada","iptv-deals","what-is-iptv","iptv-devices","iptv-apps"]} />
       </main>
     </>
   );

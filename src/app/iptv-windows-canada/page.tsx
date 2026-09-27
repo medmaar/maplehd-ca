@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import SeoLinks from "@/components/SeoLinks";
+import PageExtras from "@/components/PageExtras";
 
 export const metadata: Metadata = {
   title: "IPTV Windows PC Canada 2026 | Best IPTV for Windows & Mac",
@@ -138,7 +140,9 @@ export default function IPTVWindowsPage() {
           </a>
         </div>
       </section>
-    </main>
+    <PageExtras slug="iptv-windows-canada" />
+      <SeoLinks heading="Related IPTV guides" slugs={["iptv-smarters-pro-pc-mac","iptv-vlc","iptv-mac","iptv-m3u-player","iptv-web-browser","tivimate-pc-mac","iptv-guides"]} />
+      </main>
     </>
   );
 }

@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import SeoLinks from "@/components/SeoLinks";
+import PageExtras from "@/components/PageExtras";
 
 export const metadata: Metadata = {
   title: "IPTV vs Cable Canada 2026: Which Is Better? | MapleHD",
@@ -265,6 +267,8 @@ export default function IPTVvsCableCanada() {
             </Link>
           </div>
         </article>
+      <PageExtras slug="blog/iptv-vs-cable-canada" />
+      <SeoLinks heading="Related IPTV guides" slugs={["cheap-iptv-canada","iptv-subscription","iptv-deals","iptv-canada","what-is-iptv"]} />
       </main>
     </>
   );

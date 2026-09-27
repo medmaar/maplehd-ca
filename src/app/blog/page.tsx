@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import SeoLinks from "@/components/SeoLinks";
+import PageExtras from "@/components/PageExtras";
 
 export const metadata: Metadata = {
   title: "MapleHD Blog 2026 | Guides, Reviews & News – MapleHD",
@@ -118,7 +120,9 @@ export default function BlogPage() {
           ))}
         </div>
       </section>
-    </main>
+    <PageExtras slug="blog" />
+      <SeoLinks heading="IPTV guides and resources" slugs={["blog/iptv-vs-cable-canada","blog/iptv-firestick-canada","blog/iptv-samsung-tv-canada","blog/is-iptv-legal-canada","iptv-guides","iptv-apps","iptv-devices","iptv-boxes","iptv-sports","what-is-iptv","best-iptv-canada","iptv-canada"]} />
+      </main>
     </>
   );
 }

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import SeoLinks from "@/components/SeoLinks";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV Québec 2026 — Meilleur Service IPTV au Québec | MapleHD" },
@@ -141,6 +142,7 @@ export default function IPTVQuebecPage() {
             <a href="/pricing" style={{ border: "2px solid rgba(255,255,255,0.4)", color: "#fff", padding: "16px 40px", borderRadius: 12, fontWeight: 700, textDecoration: "none" }}>Voir les Plans</a>
           </div>
         </section>
+      <SeoLinks heading="More IPTV in Canada" slugs={["fr","fr/meilleur-iptv-canada","fr/abonnement-iptv","fr/iptv-legal","fr/iptv-sur-smart-tv","iptv-cities","iptv-canada","iptv-sports"]} />
       </main>
     </>
   );

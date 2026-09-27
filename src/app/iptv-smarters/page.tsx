@@ -1,9 +1,14 @@
 import type { Metadata } from "next";
+import SeoLinks from "@/components/SeoLinks";
+import PageExtras from "@/components/PageExtras";
 export const metadata: Metadata = {
   title: { absolute: "IPTV Smarters Pro Canada — Setup Guide 2026 | MapleHD" },
   description: "Use MapleHD with IPTV Smarters Pro in Canada. Best IPTV Smarters setup guide — iPhone, Android, Smart TV, Fire TV. Free trial from $9/month.",
   keywords: "iptv smarters, iptv smarters pro, iptv smarter canada, iptv smarters setup canada, best iptv smarters canada 2026, smarters iptv canada",
-  alternates: { canonical: "https://maplehd.ca/iptv-smarters" },
+  alternates: {
+    canonical: "https://maplehd.ca/iptv-smarters",
+    languages: { "en-CA": "https://maplehd.ca/iptv-smarters", "fr-CA": "https://maplehd.ca/fr/iptv-smarters-pro", "x-default": "https://maplehd.ca/iptv-smarters" },
+  },
 };
 
 const breadcrumbSchema = {
@@ -91,6 +96,8 @@ export default function IPTVSmartersPage() {
         </div>
       </section>
 
-    </main>
+    <PageExtras slug="iptv-smarters" />
+      <SeoLinks heading="Related IPTV guides" slugs={["iptv-smarters-pro-download","iptv-smarters-pro-firestick","iptv-smarters-pro-pc-mac","iptv-smarters-pro-smart-tv","iptv-smarters-pro-price","iptv-smarters-lite","fr/iptv-smarters-pro","xtream-iptv-player","iptv-apps","tivimate"]} />
+      </main>
   );
 }

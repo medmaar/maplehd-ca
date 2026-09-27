@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import SeoLinks from "@/components/SeoLinks";
+import PageExtras from "@/components/PageExtras";
 
 export const metadata: Metadata = {
   title: "IPTV on Amazon Firestick in Canada 2026 | MapleHD Setup Guide",
@@ -483,6 +485,8 @@ export default function IPTVFirestickCanadaPage() {
             </div>
           </div>
         </section>
+      <PageExtras slug="iptv-firestick-canada" />
+      <SeoLinks heading="Related IPTV guides" slugs={["best-iptv-for-firestick","tivimate-firestick","iptv-smarters-pro-firestick","xciptv","iptv-4k","iptv-devices","iptv-apps","iptv-subscription"]} />
       </main>
     </>
   );

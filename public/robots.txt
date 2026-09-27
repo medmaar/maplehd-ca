@@ -4,5 +4,19 @@ Disallow: /order
 Disallow: /whatsapp-contact
 Disallow: /admin
 Disallow: /api
+Disallow: /*?*
+
+# AI / answer-engine crawlers are welcome
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
 
 Sitemap: https://maplehd.ca/sitemap.xml

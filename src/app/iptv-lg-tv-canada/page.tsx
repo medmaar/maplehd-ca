@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import SeoLinks from "@/components/SeoLinks";
+import PageExtras from "@/components/PageExtras";
 
 export const metadata: Metadata = {
   title: "IPTV LG TV Canada 2026 | Best IPTV for LG Smart TV (webOS)",
@@ -158,7 +160,9 @@ export default function IPTVLGTVPage() {
           </a>
         </div>
       </section>
-    </main>
+    <PageExtras slug="iptv-lg-tv-canada" />
+      <SeoLinks heading="Related IPTV guides" slugs={["nanomid","smart-iptv-app","flix-iptv","iptv-smarters-pro-smart-tv","tivimate-smart-tv","iptv-devices"]} />
+      </main>
     </>
   );
 }

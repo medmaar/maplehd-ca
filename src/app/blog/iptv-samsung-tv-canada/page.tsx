@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import SeoLinks from "@/components/SeoLinks";
+import PageExtras from "@/components/PageExtras";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV on Samsung TV Canada 2026 — Setup Guide | MapleHD" },
@@ -111,6 +113,8 @@ export default function SamsungIPTVPage() {
             </div>
           </div>
         </section>
+      <PageExtras slug="blog/iptv-samsung-tv-canada" />
+      <SeoLinks heading="Related IPTV guides" slugs={["smart-iptv-app","flix-iptv","siptv-app","iptv-smarters-pro-smart-tv","iptv-devices"]} />
       </main>
     </>
   );

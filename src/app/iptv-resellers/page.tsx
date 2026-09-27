@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import SeoLinks from "@/components/SeoLinks";
+import PageExtras from "@/components/PageExtras";
 export const metadata: Metadata = {
   title: { absolute: "IPTV Resellers Canada — Best IPTV Reseller Program 2026 | MapleHD" },
   description: "Become a MapleHD IPTV reseller in Canada. Best IPTV reseller program — white-label panels, competitive credits, 24/7 support. Start your IPTV resell.",
@@ -95,6 +97,8 @@ export default function IPTVResellersPage() {
         </div>
       </section>
 
-    </main>
+    <PageExtras slug="iptv-resellers" />
+      <SeoLinks heading="Related IPTV guides" slugs={["iptv-provider-alternatives","iptv-providers-canada","best-iptv-service","iptv-subscription"]} />
+      </main>
   );
 }

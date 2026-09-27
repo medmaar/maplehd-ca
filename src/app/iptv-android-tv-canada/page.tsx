@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import SeoLinks from "@/components/SeoLinks";
+import PageExtras from "@/components/PageExtras";
 
 export const metadata: Metadata = {
   title: "Best IPTV for Android TV in Canada 2026 | MapleHD",
@@ -497,6 +499,8 @@ export default function IPTVAndroidTVCanadaPage() {
             </div>
           </div>
         </section>
+      <PageExtras slug="iptv-android-tv-canada" />
+      <SeoLinks heading="Related IPTV guides" slugs={["best-android-tv-box","tivimate","ott-navigator","xciptv","iptv-boxes","iptv-4k","iptv-devices"]} />
       </main>
     </>
   );
