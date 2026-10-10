@@ -4,6 +4,7 @@ import PlanFAQ, { type FaqItem } from "../PlanFAQ";
 import PlanExtras from "@/components/PlanExtras";
 import PlanTrust from "@/components/PlanTrust";
 import { PRODUCT_IMAGE, OFFER_POLICIES } from "@/lib/productSchema";
+import PlanRating from "@/components/PlanRating";
 
 export const metadata: Metadata = {
   title: { absolute: "3 Month IPTV Canada — $29 | MapleHD" },
@@ -116,11 +117,13 @@ export default function Pricing3MonthsPage() {
               >
                 IPTV 1 Device for 3 Months
               </h1>
-              <div style={{ display: "flex", alignItems: "center", gap: 16, marginTop: 10 }}>
+              <div style={{ display: "flex", alignItems: "center", flexWrap: "wrap", gap: 16, marginTop: 10 }}>
 
                 <span style={{ color: "#AE2448", fontWeight: 800, fontSize: "2rem" }}>Price : $29</span>
 
                 <span style={{ background: "rgba(174,36,72,0.15)", color: "#AE2448", border: "1px solid rgba(174,36,72,0.4)", fontWeight: 700, fontSize: 12, padding: "4px 12px", borderRadius: 999, whiteSpace: "nowrap" }}>50% OFF</span>
+
+                <PlanRating />
 
               </div>
             </div>

@@ -204,15 +204,57 @@ function adminEmail(name, email, country, device, whatsapp, notes, username, pas
 </body></html>`;
 }
 
+// ── Plan star ratings ───────────────────────────────────────────
+// GET  /rating?plan=/pricing/3-months  -> { count, average }
+// POST /rating { plan, stars }         -> one vote per IP per plan (re-voting replaces it)
+const PLAN_RE = /^\/pricing\/[a-z0-9-]+(\/[a-z0-9-]+)?$/;
+
+async function ipHash(ip) {
+  const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode("maplehd-rating:" + ip));
+  return [...new Uint8Array(buf)].slice(0, 12).map(b => b.toString(16).padStart(2, "0")).join("");
+}
+
+async function handleRating(request, env, url) {
+  if (request.method === "GET") {
+    const plan = url.searchParams.get("plan") || "";
+    if (!PLAN_RE.test(plan)) return jsonRes({ success: false, error: "Bad plan" }, 400);
+    const agg = JSON.parse(await env.TRIALS.get("rating:" + plan) || '{"n":0,"sum":0}');
+    return jsonRes({ success: true, count: agg.n, average: agg.n ? Math.round(agg.sum / agg.n * 10) / 10 : null });
+  }
+  if (request.method !== "POST") return jsonRes({ success: false, error: "GET or POST only" }, 405);
+
+  let body;
+  try { body = await request.json(); } catch { return jsonRes({ success: false, error: "Invalid JSON" }, 400); }
+  const plan = String(body.plan || "");
+  const stars = Number(body.stars);
+  if (!PLAN_RE.test(plan) || !Number.isInteger(stars) || stars < 1 || stars > 5) {
+    return jsonRes({ success: false, error: "Bad rating" }, 400);
+  }
+
+  const voter = await ipHash(request.headers.get("CF-Connecting-IP") || "unknown");
+  const voteKey = `rvote:${plan}:${voter}`;
+  const aggKey = "rating:" + plan;
+  const prev = Number(await env.TRIALS.get(voteKey) || 0);
+  const agg = JSON.parse(await env.TRIALS.get(aggKey) || '{"n":0,"sum":0}');
+  if (prev) agg.sum += stars - prev;
+  else { agg.n += 1; agg.sum += stars; }
+  await env.TRIALS.put(aggKey, JSON.stringify(agg));
+  await env.TRIALS.put(voteKey, String(stars), { expirationTtl: 365 * 24 * 60 * 60 });
+  return jsonRes({ success: true });
+}
+
 async function handleFetch(request, env) {
   const RESEND_KEY = env.RESEND_KEY;
   if (request.method === "OPTIONS") {
     return new Response(null, { headers: {
       "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Methods": "POST, OPTIONS",
+      "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
       "Access-Control-Allow-Headers": "Content-Type",
     }});
   }
+
+  const reqUrl = new URL(request.url);
+  if (reqUrl.pathname === "/rating") return handleRating(request, env, reqUrl);
 
   if (request.method === "GET") {
     const u = new URL(request.url);
