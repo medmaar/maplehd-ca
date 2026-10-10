@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import PlanOrderForm from "../PlanOrderForm";
 import PlanFAQ, { type FaqItem } from "../PlanFAQ";
 import PlanExtras from "@/components/PlanExtras";
+import PlanTrust from "@/components/PlanTrust";
 import { PRODUCT_IMAGE, OFFER_POLICIES } from "@/lib/productSchema";
 
 export const metadata: Metadata = {
@@ -134,6 +135,9 @@ export default function Pricing3MonthsPage() {
             >
               <PlanOrderForm plan="3 Months - 1 Device — $29" />
             </div>
+
+            {/* Trust signals */}
+            <PlanTrust price={29} months={3} devices={1} />
 
             {/* 4. FAQ */}
             <div>
