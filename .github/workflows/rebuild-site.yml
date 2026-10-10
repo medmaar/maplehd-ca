@@ -1,0 +1,25 @@
+name: Daily site rebuild
+
+# Plan pages read approved reviews and star ratings at build time, so a daily
+# Cloudflare Pages rebuild publishes new reviews (and their Google markup).
+on:
+  schedule:
+    - cron: '0 9 * * *'
+  workflow_dispatch:
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Cloudflare Pages production build
+        run: |
+          RESULT=$(curl -s -X POST \
+            "https://api.cloudflare.com/client/v4/accounts/${{ secrets.CF_ACCOUNT_ID }}/pages/projects/maplehd-ca/deployments" \
+            -H "Authorization: Bearer ${{ secrets.CF_API_TOKEN }}" \
+            -F "branch=main")
+          echo "$RESULT" | python3 -c "
+          import sys,json
+          d=json.load(sys.stdin)
+          if d.get('success'): print('Started deployment:', d['result'].get('id'), d['result'].get('url'))
+          else: print('Error:', d.get('errors')); exit(1)
+          "

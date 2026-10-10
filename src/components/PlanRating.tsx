@@ -1,9 +1,9 @@
 "use client";
 import { useEffect, useState } from "react";
+import { WORKER_URL } from "@/lib/reviews";
 
 // Discreet 1-5 star picker shown next to the price on plan pages. Votes go to the
 // trial worker (one per visitor IP per plan; voting again replaces the earlier vote).
-const WORKER_URL = "https://iptv-trial-maplehd.medmaar.workers.dev";
 
 export default function PlanRating() {
   const [plan, setPlan] = useState("");

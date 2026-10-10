@@ -4,6 +4,8 @@ import PlanFAQ, { type FaqItem } from "../PlanFAQ";
 import PlanExtras from "@/components/PlanExtras";
 import { PRODUCT_IMAGE, OFFER_POLICIES } from "@/lib/productSchema";
 import PlanRating from "@/components/PlanRating";
+import PlanReviews from "@/components/PlanReviews";
+import { getPlanReviews, reviewSchema, jsonLd } from "@/lib/reviews";
 
 export const metadata: Metadata = {
   title: { absolute: "1 Year IPTV Canada — $49 Best Value | MapleHD" },
@@ -77,7 +79,8 @@ const productSchema = {
   },
 };
 
-export default function Pricing12MonthsPage() {
+export default async function Pricing12MonthsPage() {
+  const reviews = await getPlanReviews("/pricing/12-months");
   return (
     <>
       <script
@@ -86,7 +89,7 @@ export default function Pricing12MonthsPage() {
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+        dangerouslySetInnerHTML={{ __html: jsonLd({ ...productSchema, ...reviewSchema(reviews) }) }}
       />
       <main style={{ background: "#10131E", color: "#fff", minHeight: "100vh" }}>
         <section
@@ -157,6 +160,8 @@ export default function Pricing12MonthsPage() {
             </div>
           </div>
         </section>
+
+      <PlanReviews plan="/pricing/12-months" data={reviews} />
 
       <PlanExtras devices={1} index={3} />
       </main>

@@ -204,34 +204,34 @@ function adminEmail(name, email, country, device, whatsapp, notes, username, pas
 </body></html>`;
 }
 
-// ── Plan star ratings ───────────────────────────────────────────
-// GET  /rating?plan=/pricing/3-months  -> { count, average }
-// POST /rating { plan, stars }         -> one vote per IP per plan (re-voting replaces it)
+// ── Plan star ratings and reviews ───────────────────────────────
+// GET  /rating?plan=/pricing/3-months   -> { count, average }
+// POST /rating { plan, stars }          -> one vote per IP per plan (re-voting replaces it)
+// GET  /reviews?plan=/pricing/3-months  -> { rating, reviews } (approved reviews only)
+// POST /review { plan, stars, name, text, website } -> saved as pending, admin emailed
+// GET/POST /review/moderate?id=..&sig=.. -> approve or reject (link from the admin email)
 const PLAN_RE = /^\/pricing\/[a-z0-9-]+(\/[a-z0-9-]+)?$/;
+const MAX_APPROVED = 100;
+
+const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
 async function ipHash(ip) {
   const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode("maplehd-rating:" + ip));
   return [...new Uint8Array(buf)].slice(0, 12).map(b => b.toString(16).padStart(2, "0")).join("");
 }
 
-async function handleRating(request, env, url) {
-  if (request.method === "GET") {
-    const plan = url.searchParams.get("plan") || "";
-    if (!PLAN_RE.test(plan)) return jsonRes({ success: false, error: "Bad plan" }, 400);
-    const agg = JSON.parse(await env.TRIALS.get("rating:" + plan) || '{"n":0,"sum":0}');
-    return jsonRes({ success: true, count: agg.n, average: agg.n ? Math.round(agg.sum / agg.n * 10) / 10 : null });
-  }
-  if (request.method !== "POST") return jsonRes({ success: false, error: "GET or POST only" }, 405);
+async function hmac(secret, msg) {
+  const key = await crypto.subtle.importKey("raw", new TextEncoder().encode(secret), { name: "HMAC", hash: "SHA-256" }, false, ["sign"]);
+  const sig = await crypto.subtle.sign("HMAC", key, new TextEncoder().encode("review:" + msg));
+  return [...new Uint8Array(sig)].map(b => b.toString(16).padStart(2, "0")).join("");
+}
 
-  let body;
-  try { body = await request.json(); } catch { return jsonRes({ success: false, error: "Invalid JSON" }, 400); }
-  const plan = String(body.plan || "");
-  const stars = Number(body.stars);
-  if (!PLAN_RE.test(plan) || !Number.isInteger(stars) || stars < 1 || stars > 5) {
-    return jsonRes({ success: false, error: "Bad rating" }, 400);
-  }
+async function readAgg(env, plan) {
+  const agg = JSON.parse(await env.TRIALS.get("rating:" + plan) || '{"n":0,"sum":0}');
+  return { count: agg.n, average: agg.n ? Math.round(agg.sum / agg.n * 10) / 10 : null };
+}
 
-  const voter = await ipHash(request.headers.get("CF-Connecting-IP") || "unknown");
+async function recordVote(env, plan, stars, voter) {
   const voteKey = `rvote:${plan}:${voter}`;
   const aggKey = "rating:" + plan;
   const prev = Number(await env.TRIALS.get(voteKey) || 0);
@@ -240,7 +240,110 @@ async function handleRating(request, env, url) {
   else { agg.n += 1; agg.sum += stars; }
   await env.TRIALS.put(aggKey, JSON.stringify(agg));
   await env.TRIALS.put(voteKey, String(stars), { expirationTtl: 365 * 24 * 60 * 60 });
+}
+
+async function readBody(request) {
+  try { return await request.json(); } catch { return null; }
+}
+
+async function handleRating(request, env, url) {
+  if (request.method === "GET") {
+    const plan = url.searchParams.get("plan") || "";
+    if (!PLAN_RE.test(plan)) return jsonRes({ success: false, error: "Bad plan" }, 400);
+    return jsonRes({ success: true, ...(await readAgg(env, plan)) });
+  }
+  if (request.method !== "POST") return jsonRes({ success: false, error: "GET or POST only" }, 405);
+  const body = await readBody(request);
+  if (!body) return jsonRes({ success: false, error: "Invalid JSON" }, 400);
+  const plan = String(body.plan || "");
+  const stars = Number(body.stars);
+  if (!PLAN_RE.test(plan) || !Number.isInteger(stars) || stars < 1 || stars > 5) {
+    return jsonRes({ success: false, error: "Bad rating" }, 400);
+  }
+  await recordVote(env, plan, stars, await ipHash(request.headers.get("CF-Connecting-IP") || "unknown"));
   return jsonRes({ success: true });
+}
+
+async function handleReviews(env, url) {
+  const plan = url.searchParams.get("plan") || "";
+  if (!PLAN_RE.test(plan)) return jsonRes({ success: false, error: "Bad plan" }, 400);
+  const reviews = JSON.parse(await env.TRIALS.get("reviews:" + plan) || "[]");
+  return jsonRes({ success: true, rating: await readAgg(env, plan), reviews });
+}
+
+async function handleReviewSubmit(request, env) {
+  if (request.method !== "POST") return jsonRes({ success: false, error: "POST only" }, 405);
+  const body = await readBody(request);
+  if (!body) return jsonRes({ success: false, error: "Invalid JSON" }, 400);
+  if (body.website) return jsonRes({ success: true }); // honeypot: bots fill hidden fields
+  const plan = String(body.plan || "");
+  const stars = Number(body.stars);
+  const name = String(body.name || "").replace(/\s+/g, " ").trim();
+  const text = String(body.text || "").replace(/\r/g, "").trim();
+  if (!PLAN_RE.test(plan) || !Number.isInteger(stars) || stars < 1 || stars > 5) return jsonRes({ success: false, error: "Please choose a star rating." }, 400);
+  if (name.length < 2 || name.length > 40) return jsonRes({ success: false, error: "Please enter your name (2 to 40 characters)." }, 400);
+  if (text.length < 10 || text.length > 1000) return jsonRes({ success: false, error: "Please write 10 to 1000 characters." }, 400);
+
+  const voter = await ipHash(request.headers.get("CF-Connecting-IP") || "unknown");
+  const limitKey = `rrev:${plan}:${voter}`;
+  if (await env.TRIALS.get(limitKey)) return jsonRes({ success: false, error: "You already sent a review for this plan today." }, 429);
+  await env.TRIALS.put(limitKey, "1", { expirationTtl: 24 * 60 * 60 });
+
+  const id = Date.now().toString(36) + crypto.getRandomValues(new Uint32Array(1))[0].toString(36);
+  const review = { id, plan, stars, name, text, date: new Date().toISOString().slice(0, 10), status: "pending" };
+  await env.TRIALS.put("review:" + id, JSON.stringify(review), { expirationTtl: 400 * 24 * 60 * 60 });
+  await recordVote(env, plan, stars, voter);
+
+  const link = `${new URL(request.url).origin}/review/moderate?id=${id}&sig=${await hmac(env.RESEND_KEY, id)}`;
+  try {
+    await sendEmail(ADMIN_EMAIL, `New review (${stars}/5) / maplehd.ca${plan} / ${name}`, emailWrap(`
+      <h2 style="margin:0 0 12px;color:${RED};">New review waiting for approval</h2>
+      <p><strong>Plan:</strong> ${esc(SITE_URL + plan)}<br><strong>Rating:</strong> ${"★".repeat(stars)}${"☆".repeat(5 - stars)} (${stars}/5)<br><strong>Name:</strong> ${esc(name)}</p>
+      <p style="white-space:pre-wrap;background:#f6f6f6;padding:12px;border-radius:6px;">${esc(text)}</p>
+      <p><a href="${link}" style="display:inline-block;background:${RED};color:#fff;padding:12px 22px;border-radius:6px;text-decoration:none;font-weight:bold;">Approve or reject</a></p>
+      <p style="color:#888;font-size:12px;">Approved reviews appear on the plan page after the next daily site rebuild. Only reject spam or abuse; Google and Canadian law require honest negative reviews to stay.</p>`), env.RESEND_KEY);
+  } catch (e) { console.error("[review] admin email failed:", e.message); }
+  return jsonRes({ success: true });
+}
+
+function modPage(title, body) {
+  return new Response(`<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>${esc(title)}</title></head>
+<body style="font-family:Arial,sans-serif;max-width:560px;margin:40px auto;padding:0 16px;color:#222;">${body}</body></html>`, { headers: { "Content-Type": "text/html; charset=utf-8" } });
+}
+
+async function handleModerate(request, env, url) {
+  if (!env.RESEND_KEY) return modPage("Unavailable", "<h2>Moderation is not configured</h2>");
+  const id = url.searchParams.get("id") || "";
+  const sig = url.searchParams.get("sig") || "";
+  if (!/^[a-z0-9]{6,20}$/.test(id) || sig !== await hmac(env.RESEND_KEY, id)) return modPage("Invalid link", "<h2>Invalid or expired link</h2>");
+  const raw = await env.TRIALS.get("review:" + id);
+  if (!raw) return modPage("Not found", "<h2>Review not found</h2>");
+  const review = JSON.parse(raw);
+  const listKey = "reviews:" + review.plan;
+
+  if (request.method === "POST") {
+    const form = await request.formData();
+    const action = form.get("action");
+    const list = JSON.parse(await env.TRIALS.get(listKey) || "[]").filter(r => r.id !== id);
+    if (action === "approve") {
+      list.unshift({ id, name: review.name, stars: review.stars, text: review.text, date: review.date });
+      review.status = "approved";
+    } else if (action === "reject") {
+      review.status = "rejected";
+    } else return modPage("Error", "<h2>Unknown action</h2>");
+    await env.TRIALS.put(listKey, JSON.stringify(list.slice(0, MAX_APPROVED)));
+    await env.TRIALS.put("review:" + id, JSON.stringify(review), { expirationTtl: 400 * 24 * 60 * 60 });
+  }
+
+  const color = { approved: "#1a7f37", rejected: "#b42318", pending: "#9a6700" }[review.status];
+  const btn = (action, label, bg) => `<button name="action" value="${action}" style="background:${bg};color:#fff;border:0;padding:12px 22px;border-radius:6px;font-size:15px;font-weight:bold;cursor:pointer;margin-right:8px;">${label}</button>`;
+  return modPage("Review moderation", `
+    <h2 style="margin-bottom:4px;">Review for ${esc(review.plan)}</h2>
+    <p style="margin-top:0;">Status: <strong style="color:${color};">${review.status}</strong></p>
+    <p><strong>${esc(review.name)}</strong> · ${"★".repeat(review.stars)}${"☆".repeat(5 - review.stars)} · ${review.date}</p>
+    <p style="white-space:pre-wrap;background:#f6f6f6;padding:12px;border-radius:6px;">${esc(review.text)}</p>
+    <form method="POST">${btn("approve", review.status === "approved" ? "Approved ✓" : "Approve", "#1a7f37")}${btn("reject", review.status === "rejected" ? "Rejected" : "Reject", "#b42318")}</form>
+    <p style="color:#666;font-size:13px;margin-top:20px;">Approved reviews show on the plan page and in Google markup after the next daily rebuild. You can change your decision later with this same link.</p>`);
 }
 
 async function handleFetch(request, env) {
@@ -255,6 +358,9 @@ async function handleFetch(request, env) {
 
   const reqUrl = new URL(request.url);
   if (reqUrl.pathname === "/rating") return handleRating(request, env, reqUrl);
+  if (reqUrl.pathname === "/reviews" && request.method === "GET") return handleReviews(env, reqUrl);
+  if (reqUrl.pathname === "/review") return handleReviewSubmit(request, env);
+  if (reqUrl.pathname === "/review/moderate") return handleModerate(request, env, reqUrl);
 
   if (request.method === "GET") {
     const u = new URL(request.url);
