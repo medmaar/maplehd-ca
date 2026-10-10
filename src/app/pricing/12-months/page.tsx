@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import PlanOrderForm from "../PlanOrderForm";
 import PlanFAQ, { type FaqItem } from "../PlanFAQ";
 import PlanExtras from "@/components/PlanExtras";
+import { PRODUCT_IMAGE, OFFER_POLICIES } from "@/lib/productSchema";
 
 export const metadata: Metadata = {
   title: { absolute: "1 Year IPTV Canada — $49 Best Value | MapleHD" },
@@ -63,6 +64,7 @@ const productSchema = {
   "@type": "Product",
   name: "MapleHD 1 Year IPTV Plan",
   description: "12 months of IPTV access to 25,000+ live channels in Canada including NHL, TSN, CTV, Sportsnet and 120,000+ VOD titles in 4K. Includes IBO Player.",
+  image: PRODUCT_IMAGE,
   brand: { "@type": "Brand", name: "MapleHD" },
   offers: {
     "@type": "Offer",
@@ -70,6 +72,7 @@ const productSchema = {
     priceCurrency: "CAD",
     availability: "https://schema.org/InStock",
     url: "https://maplehd.ca/pricing/12-months",
+    ...OFFER_POLICIES,
   },
 };
 
