@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: { absolute: "3 Connections IPTV Canada 6 Months — $105 | MapleHD" },
   description:
     "Get 3 simultaneous connections for $105. 25,000+ live channels, 4K quality, NHL, TSN, CTV and more. No contract. Credentials sent within 5 minutes.",
-  alternates: { canonical: "https://maplehd.ca/pricing" },
+  alternates: { canonical: "https://maplehd.ca/pricing/3-devices/6-months" },
   robots: { index: false, follow: true },
   openGraph: { url: "https://maplehd.ca/pricing/3-devices/6-months", siteName: "MapleHD", locale: "en_CA", type: "website", images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "MapleHD IPTV Canada" }] },
 };

@@ -3,9 +3,9 @@ import SeoLinks from "@/components/SeoLinks";
 import PageExtras from "@/components/PageExtras";
 
 export const metadata: Metadata = {
-  title: { absolute: "IPTV Roku Canada 2026 — Streaming Stick Guide | MapleHD" },
+  title: { absolute: "IPTV on Roku Canada 2026 — What Actually Works | MapleHD" },
   description:
-    "Stream IPTV on Roku in Canada. 25,000+ channels, HD & 4K quality, NHL, TSN, CTV and more. Easy channel store setup. Try free today.",
+    "How to watch IPTV on a Roku TV in Canada: why Roku has no reliable IPTV app, and the Firestick, AirPlay and mirroring options that work.",
   keywords:
     "IPTV Roku Canada, Roku MapleHD, best IPTV for Roku Canada, Roku streaming MapleHD",
   alternates: { canonical: "https://maplehd.ca/iptv-roku-canada" },
@@ -14,10 +14,10 @@ export const metadata: Metadata = {
 
 const steps = [
   { step: "1", title: "Subscribe & Get Credentials", desc: "Choose a plan and contact us via WhatsApp, Telegram, or email. Your credentials arrive within minutes." },
-  { step: "2", title: "Add a Private Channel", desc: "Go to my.roku.com on a browser, sign in, and add the private channel code we provide to your Roku account." },
-  { step: "3", title: "Install on Your Roku", desc: "Open the Roku Channel Store on your device and find the newly added private channel. Install it." },
-  { step: "4", title: "Enter Your Credentials", desc: "Open the IPTV channel on your Roku, enter your server URL, username, and password, and connect." },
-  { step: "5", title: "Start Watching", desc: "Your full channel list and EPG load automatically. Use your Roku remote to browse and enjoy." },
+  { step: "2", title: "Plug a Fire TV Stick into Your Roku TV", desc: "Roku's store has no dependable IPTV player, so add a Fire TV Stick to a spare HDMI port and select that input from the Roku Home screen." },
+  { step: "3", title: "Install an IPTV Player", desc: "On the Fire TV Stick, install TiviMate or IPTV Smarters Pro using our Firestick guide." },
+  { step: "4", title: "Enter Your Credentials", desc: "Open the player, choose Xtream Codes, and enter the server URL, username, and password we sent." },
+  { step: "5", title: "Start Watching", desc: "Your channel list and guide load automatically. Turn on HDMI-CEC so one remote switches inputs for you." },
 ];
 
 
@@ -28,10 +28,10 @@ const howToSchema = {
   "url": "https://maplehd.ca/iptv-roku-canada",
   "step": [
       { "@type": "HowToStep", "name": "Subscribe & Get Credentials", "text": "Choose a MapleHD plan. We send your login credentials within minutes." },
-      { "@type": "HowToStep", "name": "Add a Private Channel", "text": "Go to my.roku.com on a browser and add the private channel code we provide." },
-      { "@type": "HowToStep", "name": "Install on Your Roku", "text": "Open the Roku Channel Store on your device and install the newly added channel." },
-      { "@type": "HowToStep", "name": "Enter Your Credentials", "text": "Launch the channel and enter your MapleHD server URL, username, and password." },
-      { "@type": "HowToStep", "name": "Start Streaming", "text": "Browse 25,000+ Canadian and international channels on your Roku device." }
+      { "@type": "HowToStep", "name": "Plug a Fire TV Stick into Your Roku TV", "text": "Connect a Fire TV Stick to a spare HDMI port and select that input from the Roku Home screen." },
+      { "@type": "HowToStep", "name": "Install an IPTV Player", "text": "Install TiviMate or IPTV Smarters Pro on the Fire TV Stick." },
+      { "@type": "HowToStep", "name": "Enter Your Credentials", "text": "Choose Xtream Codes and enter your MapleHD server URL, username, and password." },
+      { "@type": "HowToStep", "name": "Start Streaming", "text": "Browse Canadian and international channels with a full guide on your Roku TV." }
   ]
 };
 
@@ -48,8 +48,8 @@ export default function IPTVRokuPage() {
             IPTV for <span className="text-[#AE2448]">Roku Canada</span>
           </h1>
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            Watch Canadian TV on any Roku device. Simple private channel setup,
-            no jailbreak, no sideloading. Works on all Roku sticks and Roku TVs.
+            Roku doesn't offer a dependable IPTV player, but you can still watch
+            MapleHD on a Roku TV. Here is the honest setup that works today.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="/free-trial" className="bg-[#AE2448] hover:bg-[#6E1A37] text-white px-8 py-4 rounded-xl font-bold text-lg transition-colors">
@@ -65,7 +65,7 @@ export default function IPTVRokuPage() {
       {/* Compatible devices */}
       <section className="py-12 px-4 bg-gray-900">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-xl font-bold mb-6 text-gray-300">Compatible Roku Devices</h2>
+          <h2 className="text-xl font-bold mb-6 text-gray-300">Roku Devices This Guide Covers</h2>
           <div className="flex flex-wrap justify-center gap-4">
             {["Roku Express", "Roku Streaming Stick", "Roku Streaming Stick 4K", "Roku Ultra", "Roku Ultra LT", "Roku TV (all brands)", "Roku Smart Soundbar"].map((d) => (
               <span key={d} className="bg-gray-800 border border-gray-700 px-4 py-2 rounded-full text-sm text-gray-300">
@@ -82,7 +82,7 @@ export default function IPTVRokuPage() {
           <h2 className="text-3xl font-bold text-center mb-4">
             How to Set Up IPTV on <span className="text-[#AE2448]">Roku</span>
           </h2>
-          <p className="text-center text-gray-400 mb-12">Private channel setup — clean and straightforward.</p>
+          <p className="text-center text-gray-400 mb-12">The most reliable route: a Fire TV Stick on a spare HDMI port.</p>
           <div className="space-y-6">
             {steps.map((s) => (
               <div key={s.step} className="flex gap-5 bg-gray-900 rounded-2xl p-6 border border-gray-800">
@@ -103,14 +103,14 @@ export default function IPTVRokuPage() {
       <section className="py-20 px-4 bg-gray-900">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-10">
-            Why Roku is a <span className="text-[#AE2448]">Great IPTV Device</span>
+            Why a Stick Is the <span className="text-[#AE2448]">Best Roku Fix</span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
-              { title: "Affordable & Accessible", desc: "Roku devices start at under $40, making them the most affordable way to get IPTV on your TV in Canada." },
-              { title: "4K HDR on Roku Ultra", desc: "The Roku Streaming Stick 4K and Roku Ultra support 4K HDR10+ streams for a premium picture quality." },
-              { title: "Simple Remote", desc: "Roku's simple remote with dedicated shortcut buttons makes navigating channels and VOD fast and easy." },
-              { title: "No Account Lock-In", desc: "Your Roku private channel works regardless of your Roku account region. Watch Canadian content anywhere." },
+              { title: "Keep Your Roku TV", desc: "No need to replace the TV. A Fire TV Stick on a spare HDMI port adds full IPTV apps for a small one-time cost." },
+              { title: "Full Guide and Catch-Up", desc: "TiviMate and Smarters on the stick give you a TV guide, favourites and catch-up that casting can't match." },
+              { title: "One Remote with HDMI-CEC", desc: "Turn on HDMI-CEC in the Roku TV settings so the Fire TV remote can switch inputs and control the volume." },
+              { title: "AirPlay as a Backup", desc: "Many 4K Roku models accept AirPlay from an iPhone or iPad, which is handy for a quick game away from the main setup." },
             ].map((f) => (
               <div key={f.title} className="bg-gray-950 rounded-2xl p-6 border border-gray-800">
                 <h3 className="font-bold text-lg mb-2">{f.title}</h3>
@@ -121,33 +121,12 @@ export default function IPTVRokuPage() {
         </div>
       </section>
 
-      {/* FAQ */}
-      <section className="py-20 px-4">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-10">
-            Roku IPTV <span className="text-[#AE2448]">FAQ</span>
-          </h2>
-          <div className="space-y-6">
-            {[
-              { q: "Does IPTV work on all Roku models?", a: "Yes, IPTV works on all Roku models running Roku OS 9.2 or newer. The Roku Streaming Stick 4K and Ultra offer the best performance." },
-              { q: "Do I need to jailbreak my Roku?", a: "No jailbreak required. Roku's private channel feature allows installing IPTV apps cleanly through the official Roku website." },
-              { q: "Can I use my Roku and phone at the same time?", a: "Yes — with a 2-device or higher plan, you can stream on your Roku and any other device simultaneously." },
-              { q: "Which Roku model is best for IPTV in Canada?", a: "The Roku Streaming Stick 4K is our top pick — great 4K HDR performance, compact design, and excellent value for Canadians." },
-            ].map((item) => (
-              <div key={item.q} className="bg-gray-900 rounded-xl p-6 border border-gray-800">
-                <h3 className="font-bold text-lg mb-3 text-[#72BAA9]">{item.q}</h3>
-                <p className="text-gray-400 text-sm leading-relaxed">{item.a}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* CTA */}
       <section className="py-16 px-4 bg-gradient-to-r from-[#6E1A37] to-gray-900 text-center">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-3xl font-bold mb-4">Ready for IPTV on Your Roku?</h2>
-          <p className="text-gray-300 mb-8">Try it free for 5 minutes — no credit card required.</p>
+          <p className="text-gray-300 mb-8">Test MapleHD on your phone or a stick first, with no credit card required.</p>
           <a href="/free-trial" className="inline-block bg-[#AE2448] hover:bg-[#6E1A37] text-white px-10 py-4 rounded-xl font-bold text-lg transition-colors">
             Get Free Trial
           </a>

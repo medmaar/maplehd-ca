@@ -4,7 +4,6 @@ Disallow: /order
 Disallow: /whatsapp-contact
 Disallow: /admin
 Disallow: /api
-Disallow: /*?*
 
 # AI / answer-engine crawlers are welcome
 User-agent: GPTBot

@@ -5,7 +5,7 @@ import PageExtras from "@/components/PageExtras";
 export const metadata: Metadata = {
   title: { absolute: "IPTV Android Canada 2026 — Best Apps | MapleHD" },
   description:
-    "Stream IPTV on your Android phone or tablet in Canada. 25,000+ channels, HD & 4K quality, NHL, TSN, CTV and more. Easy APK install. Try free today.",
+    "Stream IPTV on your Android phone or tablet in Canada. 25,000+ channels, HD & 4K quality, NHL, TSN, CTV and more. Easy Google Play setup. Try free today.",
   keywords:
     "IPTV Android Canada, IPTV Android phone Canada, IPTV Android tablet Canada, best IPTV app Android Canada",
   alternates: { canonical: "https://maplehd.ca/iptv-android-canada" },
@@ -14,8 +14,8 @@ export const metadata: Metadata = {
 
 const steps = [
   { step: "1", title: "Subscribe & Get Credentials", desc: "Choose a plan and contact us via WhatsApp, Telegram, or email. Credentials arrive within minutes." },
-  { step: "2", title: "Allow Unknown Sources", desc: "Go to Settings > Security and enable 'Install Unknown Apps' so you can sideload our IPTV app." },
-  { step: "3", title: "Download the IPTV App", desc: "Download the APK file we send you, or find our recommended app on the Google Play Store." },
+  { step: "2", title: "Open Google Play", desc: "No sideloading needed. Every player we recommend for phones and tablets is on the Google Play Store." },
+  { step: "3", title: "Install an IPTV Player", desc: "Install IPTV Smarters Pro, XCIPTV or OTT Navigator. Each one accepts your MapleHD Xtream Codes login." },
   { step: "4", title: "Enter Your Credentials", desc: "Open the app, enter the server URL, username, and password we sent, and tap Connect." },
   { step: "5", title: "Watch Anywhere in Canada", desc: "Your full channel list and VOD library load instantly. Stream on the go over Wi-Fi or mobile data." },
 ];
@@ -28,8 +28,8 @@ const howToSchema = {
   "url": "https://maplehd.ca/iptv-android-canada",
   "step": [
       { "@type": "HowToStep", "name": "Subscribe & Get Credentials", "text": "Choose a MapleHD plan and contact us. Login credentials arrive within minutes." },
-      { "@type": "HowToStep", "name": "Allow Unknown Sources", "text": "Go to Settings > Security and enable Install Unknown Apps to sideload our IPTV app." },
-      { "@type": "HowToStep", "name": "Download the IPTV App", "text": "Download the APK we send you, or get our recommended app from the Google Play Store." },
+      { "@type": "HowToStep", "name": "Open Google Play", "text": "Every recommended player for Android phones and tablets is on the Google Play Store." },
+      { "@type": "HowToStep", "name": "Install an IPTV Player", "text": "Install IPTV Smarters Pro, XCIPTV or OTT Navigator from Google Play." },
       { "@type": "HowToStep", "name": "Enter Your Credentials", "text": "Open the app, enter the server URL, username, and password, then tap Connect." },
       { "@type": "HowToStep", "name": "Watch Anywhere in Canada", "text": "Your full channel list loads instantly. Stream live TV on Wi-Fi or mobile data." }
   ]
@@ -130,7 +130,7 @@ export default function IPTVAndroidPage() {
           <div className="space-y-6">
             {[
               { q: "Which IPTV app is best for Android?", a: "We recommend IPTV Smarters Pro or TiviMate for the best experience. Both support Xtream Codes and offer excellent EPG integration." },
-              { q: "Is the IPTV app on the Google Play Store?", a: "Some of our recommended apps are on the Play Store. Others may require APK sideloading — we provide a safe, virus-free download link." },
+              { q: "Is the IPTV app on the Google Play Store?", a: "Yes. IPTV Smarters Pro, XCIPTV and OTT Navigator are all on Google Play, so you never need to install an app from an unknown website." },
               { q: "How much data does IPTV use on Android?", a: "SD streams use roughly 700 MB/hour, HD uses 1.5–3 GB/hour. We recommend Wi-Fi for extended sessions." },
               { q: "Can I use IPTV on two Android phones at once?", a: "Yes — with a 2-device or higher plan, you can stream on multiple devices simultaneously, including two Android phones." },
             ].map((item) => (

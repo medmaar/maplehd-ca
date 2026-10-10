@@ -41,19 +41,12 @@ export const metadata: Metadata = {
 
 
 
-const sitelinksSearchSchema = {
+const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "MapleHD",
-  "url": "https://maplehd.ca",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": {
-      "@type": "EntryPoint",
-      "urlTemplate": "https://maplehd.ca/?q={search_term_string}"
-    },
-    "query-input": "required name=search_term_string"
-  }
+  "alternateName": "MapleHD IPTV",
+  "url": "https://maplehd.ca/"
 };
 
 export default function RootLayout({
@@ -77,7 +70,7 @@ export default function RootLayout({
                     main>section:first-child picture img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;opacity:.3;z-index:0}
                     .flex-1{flex:1}
                   `}} />
-                  <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(sitelinksSearchSchema) }} />
+                  <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
                   {/* GA4 — loads after user interaction only */}
                   <script dangerouslySetInnerHTML={{ __html: `
                     window.dataLayer=window.dataLayer||[];
