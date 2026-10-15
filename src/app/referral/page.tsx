@@ -6,9 +6,9 @@ import PageExtras from "@/components/PageExtras";
 export const metadata: Metadata = {
   title: { absolute: "Referral Program — Refer a Friend | MapleHD" },
   description:
-    "Refer a friend to MapleHD and earn +1 free year of service. No limits — every successful referral adds 12 months to your account.",
+    "Refer a friend to MapleHD and earn 6 free months of service. No limits — every successful referral adds 6 months to your account.",
   keywords:
-    "MapleHD referral, refer a friend IPTV, MapleHD free year, IPTV affiliate Canada",
+    "MapleHD referral, refer a friend IPTV, MapleHD 6 free months, IPTV affiliate Canada",
   alternates: { canonical: "https://maplehd.ca/referral" },
   openGraph: { url: "https://maplehd.ca/referral", siteName: "MapleHD", locale: "en_CA", type: "website", images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "MapleHD IPTV Canada" }] },
 };
@@ -28,20 +28,20 @@ const steps = [
   },
   {
     number: "03",
-    title: "You Get +1 Year FREE",
+    title: "You Get 6 Months FREE",
     description:
-      "Once their payment is verified, 12 months are added to your account automatically. No cap — refer as many friends as you want!",
+      "Once their payment is verified, 6 months are added to your account automatically. No cap — refer as many friends as you want!",
   },
 ];
 
 const rewardCards = [
   {
-    title: "+1 Year Per Referral",
-    desc: "Every approved referral adds 12 free months to your subscription.",
+    title: "+6 Months Per Referral",
+    desc: "Every approved referral adds 6 free months to your subscription.",
   },
   {
     title: "No Limit",
-    desc: "Refer as many people as you want. Each successful referral earns another bonus year.",
+    desc: "Refer as many people as you want. Each successful referral earns another 6 free months.",
   },
   {
     title: "Fast Review",
@@ -53,7 +53,7 @@ const rules = [
   "The referred person must purchase at least a 1-year MapleHD subscription.",
   "Your bonus is added after payment verification is completed.",
   "The referred person must be a new customer who has never used MapleHD before.",
-  "Referrals are unlimited — each successful referral gives you +12 more months.",
+  "Referrals are unlimited — each successful referral gives you +6 more months.",
 ];
 
 export default function ReferralPage() {
@@ -70,7 +70,7 @@ export default function ReferralPage() {
           </span>
           <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
             Refer a Friend,{" "}
-            <span className="text-[#AE2448]">Get +1 Year Free</span>
+            <span className="text-[#AE2448]">Get 6 Months Free</span>
           </h1>
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
             Share MapleHD with people you know and earn free subscription time when they join.
@@ -80,12 +80,19 @@ export default function ReferralPage() {
               <span className="text-green-400">✓</span> Unlimited referrals
             </span>
             <span className="flex items-center gap-2">
-              <span className="text-green-400">✓</span> +12 months per referral
+              <span className="text-green-400">✓</span> +6 months per referral
             </span>
             <span className="flex items-center gap-2">
               <span className="text-green-400">✓</span> Fast review
             </span>
           </div>
+        </div>
+      </section>
+
+      {/* Referral form */}
+      <section id="refer" style={{ padding: "8px 16px 64px" }}>
+        <div style={{ maxWidth: 720, margin: "0 auto" }}>
+          <ReferralForm />
         </div>
       </section>
 
@@ -136,19 +143,6 @@ export default function ReferralPage() {
         </div>
       </section>
 
-      {/* Referral form */}
-      <section className="py-20 px-4">
-        <div className="max-w-xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-4">
-            Submit Your <span className="text-[#AE2448]">Referral</span>
-          </h2>
-          <p className="text-center text-gray-400 mb-10 text-sm">
-            Fill in your details and your friend&apos;s details below. We&apos;ll take care of the rest.
-          </p>
-          <ReferralForm />
-        </div>
-      </section>
-
       {/* Rules */}
       <section className="py-20 px-4 bg-gray-900">
         <div className="max-w-3xl mx-auto">
@@ -174,7 +168,7 @@ export default function ReferralPage() {
         <div className="max-w-2xl mx-auto">
           <h2 className="text-3xl font-bold mb-4">Not a Customer Yet?</h2>
           <p className="text-gray-300 mb-8">
-            Try MapleHD free for 5 minutes — no credit card required. Then start referring and earn free years.
+            Try MapleHD free for 5 minutes — no credit card required. Then start referring and earn free months.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
