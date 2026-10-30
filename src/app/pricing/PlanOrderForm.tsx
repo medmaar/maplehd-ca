@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
+import { sendInvoice } from "@/lib/invoice";
 import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
 
@@ -76,6 +77,7 @@ export default function PlanOrderForm({ plan }: Props) {
           site_name: "MapleHD.ca",
         }
       );
+      sendInvoice(form.full_name || "Not provided", form.email || "Not provided", plan);
       console.log("EmailJS success:", result);
       setStatus("success");
       setForm({ full_name: "", email: "", country: "Canada", device: "", message: "" });
