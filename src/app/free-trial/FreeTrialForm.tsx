@@ -2,6 +2,7 @@
 import { useState } from "react";
 import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
+import { celebrate } from "@/lib/celebrate";
 
 const WORKER_URL = "https://iptv-trial-maplehd.medmaar.workers.dev";
 
@@ -72,6 +73,7 @@ export default function FreeTrialForm() {
       if (!res.ok || !data.success) throw new Error(data.error || "Worker error");
 
       setStatus("success");
+      celebrate("trial", form.email);
       setForm({ full_name: "", email: "", country: "Canada", device: "", message: "" });
       setPhone("");
     } catch (err) {

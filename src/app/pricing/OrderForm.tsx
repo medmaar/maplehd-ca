@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import { sendInvoice } from "@/lib/invoice";
+import { celebrate } from "@/lib/celebrate";
 
 const countries = [
   "Canada", "United States", "United Kingdom", "Australia", "France", "Germany",
@@ -58,6 +59,7 @@ export default function OrderForm({ plan, price, devices }: Props) {
     } finally {
       setLoading(false);
       setSubmitted(true);
+      celebrate("order", form.email);
     }
   }
 

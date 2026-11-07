@@ -7,6 +7,7 @@ import Navbar from "./Navbar";
 import Footer from "../components/Footer";
 import FloatingContact from "../components/FloatingContact";
 import SalesBanner from "../components/SalesBanner";
+import CelebratePreview from "../components/CelebratePreview";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -97,6 +98,7 @@ export default function RootLayout({
                         <Footer />
                         <FloatingContact />
                         <SalesBanner />
+                        <CelebratePreview />
                 </body>
           </html>
         );
