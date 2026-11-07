@@ -1,5 +1,6 @@
 // Full-screen celebration shown after a free-trial request or a plan order.
 // Preview without submitting: add ?celebrate=trial or ?celebrate=order to any page URL.
+// It cannot be dismissed: its only button takes the visitor to the homepage.
 // Edit the jokes in CELEBRATE below. The client's email is filled into every <b data-c-email>.
 
 type Kind = "trial" | "order";
@@ -12,7 +13,7 @@ const CELEBRATE: Record<Kind, { title: string; lines: string[]; btn: string }> =
       "It usually lands within 2 minutes. Check your <b>inbox</b> AND your <b>spam</b> folder, because some email providers are pickier than a goalie in overtime.",
       "Your 24 hours start now. Grab a double-double and claim the best spot on the chesterfield. ☕",
     ],
-    btn: "Beauty, I&rsquo;m on it!",
+    btn: "Beauty, take me home!",
   },
   order: {
     title: "You did it! Order placed.",
@@ -21,7 +22,7 @@ const CELEBRATE: Record<Kind, { title: string; lines: string[]; btn: string }> =
       "Your invoice is heading to <b data-c-email></b> right now. Check your <b>inbox</b> AND your <b>spam</b> folder, it sometimes goes missing like a toque in a snowbank.",
       "Pay the invoice and your channels go live faster than a Canadian apologizing to a door they bumped into. 📺",
     ],
-    btn: "Sounds good, thanks!",
+    btn: "Sounds good, take me home!",
   },
 };
 
@@ -30,7 +31,6 @@ export function celebrate(kind: Kind, email?: string) {
   const c = CELEBRATE[kind];
   if (!c) return;
   document.querySelector(".celebrate")?.remove();
-  const back = document.activeElement as HTMLElement | null;
   const el = document.createElement("div");
   el.className = "celebrate";
   el.setAttribute("role", "dialog");
@@ -41,31 +41,17 @@ export function celebrate(kind: Kind, email?: string) {
   ).join("");
   el.innerHTML = `<div class="celebrate-bits" aria-hidden="true">${bits}</div>
 <div class="celebrate-box">
-  <button class="celebrate-x" type="button" aria-label="Close">&times;</button>
   <svg class="celebrate-mark" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="54"/><path d="M36 62 53 79 86 44"/></svg>
   <h2 id="celebrate-title">${c.title}</h2>
   ${c.lines.map((l) => `<p>${l}</p>`).join("")}
-  <button class="celebrate-go" type="button">${c.btn}</button>
+  <a class="celebrate-go" href="/">${c.btn}</a>
 </div>`;
   el.querySelectorAll("[data-c-email]").forEach((b) => {
     b.textContent = (email || "").trim() || "your email address";
   });
-  const go = el.querySelector(".celebrate-go") as HTMLButtonElement;
-  const x = el.querySelector(".celebrate-x") as HTMLButtonElement;
-  const close = () => {
-    document.removeEventListener("keydown", onKey);
-    el.classList.add("is-out");
-    document.documentElement.classList.remove("celebrating");
-    setTimeout(() => el.remove(), 250);
-    back?.focus?.({ preventScroll: true });
-  };
-  const onKey = (e: KeyboardEvent) => {
-    if (e.key === "Escape") close();
-    if (e.key === "Tab") { e.preventDefault(); (document.activeElement === go ? x : go).focus(); }
-  };
-  document.addEventListener("keydown", onKey);
-  x.addEventListener("click", close);
-  go.addEventListener("click", close);
+  const go = el.querySelector(".celebrate-go") as HTMLAnchorElement;
+  // keep keyboard focus on the only button; Escape does nothing
+  el.addEventListener("keydown", (e) => { if (e.key === "Tab") { e.preventDefault(); go.focus(); } });
   document.body.append(el);
   document.documentElement.classList.add("celebrating");
   go.focus({ preventScroll: true });

@@ -63,20 +63,9 @@ export default function OrderForm({ plan, price, devices }: Props) {
     }
   }
 
-  if (submitted) {
-    return (
-      <div className="text-center py-10">
-        <div className="text-green-400 text-5xl mb-4">✓</div>
-        <h3 className="text-2xl font-bold mb-2">Order Received!</h3>
-        <p className="text-gray-400 text-sm mb-1">
-          Thanks, <span className="text-white font-semibold">{form.name}</span>. We&apos;ll contact you shortly on WhatsApp or email.
-        </p>
-        <p className="text-gray-500 text-xs mt-4">
-          Usually activated within 15 minutes. Check WhatsApp and your inbox.
-        </p>
-      </div>
-    );
-  }
+  // the full-screen celebration (src/lib/celebrate.ts) is the only confirmation
+  if (submitted) return null;
+
 
   const inputStyle = {
     width: "100%",
