@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import HomePricing from "./components/HomePricing";
 
 // Homepage (SEO page type E). Primary keyword: "iptv" + market "Canada".
 // Two calls to action only, everywhere on the page: Free Trial (primary) and Pricing (secondary).
@@ -53,13 +54,6 @@ const features = [
     title: "24/7 Canadian support",
     text: "Real people help you set up your IPTV box or app in minutes, in English or French, any time of day.",
   },
-];
-
-const plans = [
-  { name: "1 Month", price: 9, note: "Try a full month" },
-  { name: "3 Months", price: 29, note: "About $9.67 / month" },
-  { name: "6 Months", price: 39, note: "About $6.50 / month", badge: "Popular" },
-  { name: "12 Months", price: 49, note: "About $4.08 / month", badge: "Best value" },
 ];
 
 const trust = [
@@ -249,7 +243,10 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* ── 2. FEATURES ── */}
+        {/* ── 2. PRICING PLANS (connection selector + plan cards) ── */}
+        <HomePricing />
+
+        {/* ── 3. FEATURES ── */}
         <section className="bg-[#0d0d0d] px-4 py-20">
           <div className="mx-auto max-w-[1080px]">
             <h2 className={h2}>Why Canadians Choose MapleHD IPTV</h2>
@@ -262,31 +259,6 @@ export default function HomePage() {
                 </div>
               ))}
             </div>
-          </div>
-        </section>
-
-        {/* ── 3. PLANS PREVIEW ── */}
-        <section className="bg-[#0a0a0a] px-4 py-20">
-          <div className="mx-auto max-w-[1080px]">
-            <h2 className={h2}>IPTV Subscription Canada: Simple Plans</h2>
-            <p className={lead}>
-              One connection, every channel and every feature. Need more screens? Plans for 2 to 10 connections are on the pricing page.
-            </p>
-            <div className="mb-10 grid grid-cols-2 gap-4 lg:grid-cols-4">
-              {plans.map((p) => (
-                <div key={p.name} className={`relative rounded-2xl border p-6 text-center ${p.badge ? "border-[#AE2448]/60 bg-[#AE2448]/[0.06]" : "border-white/10 bg-white/[0.03]"}`}>
-                  {p.badge && (
-                    <span className="absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-[#AE2448] px-3 py-0.5 text-[11px] font-bold uppercase tracking-wide text-white">
-                      {p.badge}
-                    </span>
-                  )}
-                  <div className="mb-1 text-sm font-semibold text-gray-400">{p.name}</div>
-                  <div className="text-4xl font-black text-white">${p.price}</div>
-                  <div className="mt-1 text-xs text-gray-500">{p.note}</div>
-                </div>
-              ))}
-            </div>
-            <Ctas />
           </div>
         </section>
 

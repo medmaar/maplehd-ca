@@ -63,7 +63,7 @@ export default function HomePricing() {
           Transparent Pricing
         </p>
         <h2 style={{ textAlign: "center", fontSize: "clamp(28px, 4vw, 40px)", fontWeight: 900, marginBottom: 12, color: "#fff" }}>
-          MapleHD Subscription Plans
+          IPTV Subscription Canada: MapleHD Plans
         </h2>
         <div style={{ textAlign: "center", marginBottom: 20 }}>
           <span style={{ display: "inline-block", background: "#AE2448", color: "#fff", fontSize: 13, fontWeight: 700, padding: "5px 18px", borderRadius: 999 }}>
