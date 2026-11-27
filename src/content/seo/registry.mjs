@@ -13,6 +13,7 @@ import geo from "./geo.mjs";
 import ALSO from "./also-searched.mjs";
 import canada from "./canada.mjs";
 import gaps from "./gaps.mjs";
+import appsExtra from "./apps-extra.mjs";
 import { PROVINCES, CITIES, REGIONS, EXISTING_CITIES } from "./geo-data.mjs";
 
 // cluster -> default hub (breadcrumb parent) and pillar (cluster head page, may be an existing page)
@@ -33,7 +34,7 @@ export const CLUSTER_META = {
   fr: { hub: "fr", pillar: "fr" },
 };
 
-const BASE_PAGES = [...buy, ...appsTivimate, ...appsPlayers, ...boxes, ...guides, ...brands, ...fr, ...geo, ...canada, ...gaps].map((p) => {
+const BASE_PAGES = [...buy, ...appsTivimate, ...appsPlayers, ...boxes, ...guides, ...brands, ...fr, ...geo, ...canada, ...gaps, ...appsExtra].map((p) => {
   const meta = CLUSTER_META[p.cluster] || {};
   const out = { lang: "en", published: "2026-09-27", also: ALSO[p.slug], ...p };
   const e1 = expansions1[p.slug], e2 = expansions2[p.slug], e3 = expansions3[p.slug];
@@ -56,15 +57,15 @@ const regionSlugs = Object.keys(REGIONS);
 const citiesByProv = (k) => [...(EXISTING_CITIES[k] || []), ...Object.keys(CITIES).filter((c) => CITIES[c][1] === k)];
 const cityName = (slug) => (CITIES[slug] ? CITIES[slug][0] : slug.replace("iptv-", "").split("-").map((w) => w[0].toUpperCase() + w.slice(1)).join(" "));
 const HUB_EXTRA_CHILDREN = {
-  "iptv-apps": ["iptv-smarters-samsung-tv", "iptv-smarters-lg-tv", "iptv-smarters-roku", "iptv-smarters-apple", "iptv-smarters-android"],
+  "iptv-apps": ["cloudstream", "stremio-iptv", "smartone-iptv", "iptv-smarters-samsung-tv", "iptv-smarters-lg-tv", "iptv-smarters-roku", "iptv-smarters-apple", "iptv-smarters-android"],
   "iptv-devices": ["iptv-fire-tv-stick-4k-max", "iptv-fire-tv-stick-lite", "iptv-google-tv", "iptv-tcl-tv", "iptv-nvidia-shield", "iptv-xbox", "iptv-generic-android-box", "iptv-tablets", "iptv-smarters-samsung-tv", "iptv-smarters-lg-tv"],
   "iptv-boxes": ["android-tv-box-models", "iptv-enigma2", "iptv-nvidia-shield", "iptv-generic-android-box"],
   "iptv-sports": ["iptv-nhl-canada", "iptv-cfl"],
   "iptv-provider-alternatives": BRAND_GROUPS.map((g) => g.slug),
-  "iptv-guides": ["iptv-time-zones-canada", "iptv-winter-buffering", "iptv-rural-canada", "iptv-live-tv-24-7"],
+  "iptv-guides": ["iptv-time-zones-canada", "iptv-winter-buffering", "iptv-rural-canada", "iptv-live-tv-24-7", "iptv-starlink", "plex-iptv", "jellyfin-iptv", "pluto-tv-iptv"],
 };
 const HUB_EXTRA_RELATED = {
-  "iptv-canada": ["iptv-canadian-channels", "iptv-nhl-canada", "iptv-vs-cable-hub", "iptv-time-zones-canada", "iptv-payment-canada", "iptv-canadian-holidays", "iptv-rural-canada", "iptv-winter-buffering"],
+  "iptv-canada": ["iptv-starlink", "iptv-canadian-channels", "iptv-nhl-canada", "iptv-vs-cable-hub", "iptv-time-zones-canada", "iptv-payment-canada", "iptv-canadian-holidays", "iptv-rural-canada", "iptv-winter-buffering"],
   "iptv-subscription": ["iptv-payment-canada", "iptv-vs-cable-hub"],
   "iptv-service-canada": ["iptv-live-tv-24-7"],
   "iptv-smarters-pro-smart-tv": ["iptv-smarters-samsung-tv", "iptv-smarters-lg-tv", "iptv-smarters-roku", "iptv-smarters-apple", "iptv-smarters-android"],
@@ -111,4 +112,6 @@ const ENRICHED = PAGES0.map((p) => {
   if (!_has(out.answer, p.kw)) out.answer = `${_cap(p.kw)}: ${out.answer}`;
   return out;
 });
-export const PAGES = ENRICHED;
+// pages materially changed in the Nov 2026 cluster split (new pages carry their own dates in apps-extra.mjs)
+const UPDATED = { "iptv-plex-emby-jellyfin": "2026-11-27", "iptv-rural-canada": "2026-11-27" };
+export const PAGES = ENRICHED.map((p) => (UPDATED[p.slug] && !p.updated ? { ...p, updated: UPDATED[p.slug] } : p));

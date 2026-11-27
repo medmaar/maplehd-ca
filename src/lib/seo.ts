@@ -35,6 +35,7 @@ export interface SeoPageData {
   children?: string[]; // hub pages: slugs listed as cards
   hreflangPair?: string; // slug of the en/fr counterpart
   published?: string;
+  updated?: string; // dateModified / sitemap lastmod when the page changed after LAST_UPDATED
   also?: string[]; // uncovered keyword variants (generated)
 }
 

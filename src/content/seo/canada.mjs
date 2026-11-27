@@ -316,7 +316,7 @@ export default [
     answer: "IPTV works in rural Canada if you have about 5 to 8 Mbps for a low-quality stream and about 15 Mbps for HD. On slower, capped or satellite connections, choose lower quality, avoid multiple simultaneous streams and check your data allowance before subscribing.",
     sections: [
       { h: "Speeds that work", table: { head: ["Quality", "Suggested speed per stream", "Approx. data per hour"], rows: [["SD / low", "3 to 5 Mbps", "1 to 2 GB"], ["HD", "15 Mbps", "About 3 GB or more"], ["4K", "25 Mbps", "10 GB or more"]] }, p2: ["Figures are estimates; real usage varies by channel and player settings."] },
-      { h: "Rural connection types", ul: ["Fixed wireless: can be good, but congestion at peak times may reduce speeds.", "Satellite (including low-orbit services where available): improving, but data policies vary.", "LTE/5G home internet: watch data allowances.", "DSL: speed drops with distance from the exchange."] },
+      { h: "Rural connection types", ul: ["Fixed wireless: can be good, but congestion at peak times may reduce speeds.", "Satellite: low-orbit Starlink now handles HD and 4K well (see [IPTV on Starlink](/iptv-starlink)); older geostationary satellite has high latency and tight data caps.", "LTE/5G home internet: watch data allowances.", "DSL: speed drops with distance from the exchange."] },
       { h: "Settings for slower connections", ol: ["Choose SD or HD, not 4K.", "Increase the player's buffer size.", "Avoid several streams at once; buy only the connections you need.", "Use a wired connection to the router if possible.", "Test at peak evening time with the [free trial](/free-trial) before subscribing."] },
       { h: "Northern and remote communities", p: ["See [IPTV Northern Canada](/iptv-northern-canada), [IPTV Yukon](/iptv-yukon), [IPTV Northwest Territories](/iptv-northwest-territories) and [IPTV Nunavut](/iptv-nunavut) for regional notes, and the [winter buffering guide](/iptv-winter-buffering)."] },
     ],
@@ -326,7 +326,7 @@ export default [
       { q: "How much data does IPTV use?", a: "HD can use about 3 GB per hour or more, and 4K far more. Check your data plan." },
       { q: "Can I use IPTV on mobile data at home?", a: "Yes, but watch your data allowance. HD and 4K use a lot." },
     ],
-    related: ["iptv-winter-buffering", "iptv-northern-canada", "iptv-4k", "iptv-cities", "free-trial"],
+    related: ["iptv-starlink", "iptv-winter-buffering", "iptv-northern-canada", "iptv-4k", "iptv-cities", "free-trial"],
   },
 
   // ---------------- Devices ----------------

@@ -79,7 +79,6 @@ export default {
   "fast iptv",
   "fastiptv",
   "nasa iptv",
-  "smartone iptv",
   "sonic iptv",
   "starshare iptv",
   "5g iptv",
@@ -118,15 +117,11 @@ export default {
   "quzu tv",
   "rapidiptv",
   "smartgo iptv",
-  "smartone iptv com generate",
-  "smartone iptv generate",
   "space iptv",
   "star iptv",
   "stariptv",
-  "starlink iptv",
   "starsat iptv",
   "thunder iptv",
-  "unifi iptv",
   "zoom iptv"
  ],
  "iptv-character-brand-names": [

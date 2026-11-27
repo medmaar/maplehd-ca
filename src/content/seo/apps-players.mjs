@@ -303,7 +303,7 @@ export default [
       { q: "Where do I find my TV's MAC address in Smart IPTV?", a: "It is displayed on the app's start screen. Copy it exactly when uploading your playlist." },
       { q: "Does Smart IPTV work with MapleHD?", a: "Yes, if you upload your MapleHD M3U link as the playlist. Ask support if you need the correct link format." },
     ],
-    related: ["iptv-apps", "iptv-samsung-tv-canada", "iptv-lg-tv-canada", "nanomid", "iptv-m3u", "siptv-app"],
+    related: ["iptv-apps", "smartone-iptv", "iptv-samsung-tv-canada", "iptv-lg-tv-canada", "nanomid", "iptv-m3u", "siptv-app"],
   },
   {
     slug: "siptv-app",
@@ -735,6 +735,6 @@ export default [
       { q: "What is the best IPTV app for Firestick?", a: "TiviMate and IPTV Smarters Pro are the most used on Firestick. See [best IPTV for Firestick](/best-iptv-for-firestick)." },
       { q: "Is there a best IPTV app for iPhone?", a: "Smarters Player Lite, IMPlayer and iPlayTV are common on iOS. Check the App Store for current listings." },
     ],
-    related: ["iptv-player", "iptv-apps", "tivimate", "iptv-smarters", "blog/best-iptv-player-canada", "best-iptv-for-firestick"],
+    related: ["iptv-player", "iptv-apps", "tivimate", "iptv-smarters", "blog/best-iptv-player-canada", "best-iptv-for-firestick", "stremio-iptv", "cloudstream", "jellyfin-iptv"],
   },
 ];

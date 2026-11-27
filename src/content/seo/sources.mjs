@@ -8,6 +8,12 @@ const WEATHER = ["Environment and Climate Change Canada: weather", "https://weat
 const NHL = ["NHL official site", "https://www.nhl.com"];
 
 const S = {
+  "jellyfin-iptv": [["Jellyfin documentation: Live TV", "https://jellyfin.org/docs/"], ["M3U playlist format (Wikipedia)", "https://en.wikipedia.org/wiki/M3U"]],
+  "plex-iptv": [["Plex support: Live TV & DVR", "https://support.plex.tv"], ["Jellyfin", "https://jellyfin.org"]],
+  "pluto-tv-iptv": [["Pluto TV", "https://pluto.tv"], ["CBC Gem", "https://gem.cbc.ca"]],
+  "stremio-iptv": [["Stremio", "https://www.stremio.com"]],
+  "cloudstream": [COPYRIGHT],
+  "iptv-starlink": [["Starlink", "https://www.starlink.com"], SPEED],
   "what-is-iptv": [WIKI_IPTV, CRTC],
   "iptv-canada": [CRTC, SPEED],
   "best-iptv-canada": [CRTC, SPEED],

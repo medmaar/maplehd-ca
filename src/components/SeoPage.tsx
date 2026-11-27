@@ -119,7 +119,7 @@ export default function SeoPage({ slug }: { slug: string }) {
   const url = urlFor(p.slug);
   const trail = crumbs(p);
   const showPlans = p.kind !== "hub" && p.kind !== "guide";
-  const modified = LAST_UPDATED;
+  const modified = p.updated ?? LAST_UPDATED;
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",

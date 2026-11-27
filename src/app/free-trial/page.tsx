@@ -5,11 +5,11 @@ import SeoLinks from "@/components/SeoLinks";
 import PageExtras from "@/components/PageExtras";
 
 export const metadata: Metadata = {
-  title: { absolute: "Free IPTV Trial Canada — Test MapleHD Risk-Free | MapleHD" },
+  title: { absolute: "IPTV Free Trial Canada — 24h, No Credit Card | MapleHD" },
   description:
-    "Get a free MapleHD IPTV trial in Canada. No credit card required. Access 25,000+ live channels, NHL, TSN, CTV and 120,000+ movies. Activate in under 5.",
+    "IPTV free trial in Canada: 24 hours of MapleHD, no credit card. Test 25,000+ live channels, NHL, TSN and CTV on your own device before you buy.",
   keywords:
-    "free IPTV trial Canada, MapleHD free trial, try IPTV Canada, free IPTV Canada no credit card",
+    "IPTV free trial, free trial IPTV, free IPTV trial Canada, MapleHD free trial, try IPTV Canada, free IPTV Canada no credit card",
   openGraph: { url: "https://maplehd.ca/free-trial",  siteName: "MapleHD", locale: "en_CA", type: "website",  images: [{ url: "/iptv-subscription-canada-1.jpg", width: 1200, height: 630, alt: "Free 24H IPTV Trial Canada — No Credit Card | MapleHD" }] },
   alternates: { canonical: "https://maplehd.ca/free-trial" },
 };
@@ -83,10 +83,10 @@ export default function FreeTrialPage() {
                   lineHeight: 1.2,
                 }}
               >
-                Free Trial — MapleHD
+                IPTV Free Trial in Canada — 24 Hours, No Credit Card
               </h1>
               <p className="text-gray-400 text-sm mt-3">
-                Fill out the form and your credentials will arrive in your inbox within seconds — automatically.
+                Fill out the form and your free trial IPTV login arrives in your inbox within seconds, automatically. Test it on your own TV, Firestick or phone, then compare <a href="/pricing" className="underline">plans</a> or read <a href="/how-it-works" className="underline">how it works</a>.
               </p>
             </div>
 

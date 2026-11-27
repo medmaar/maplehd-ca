@@ -121,3 +121,22 @@ https://www.maplehd.ca/* https://maplehd.ca/:splat 301
 /iptv-smarters-samsung           /iptv-smarters-samsung-tv    301
 /iptv-smarters-lg                /iptv-smarters-lg-tv         301
 /iptv-smarters-iphone            /iptv-smarters-apple         301
+
+# Nov 2026 app / service pages (aliases)
+/cloud-stream                    /cloudstream                 301
+/cloudstream-app                 /cloudstream                 301
+/cloudstream-iptv                /cloudstream                 301
+/stremio                         /stremio-iptv                301
+/iptv-stremio                    /stremio-iptv                301
+/pluto-tv                        /pluto-tv-iptv               301
+/pluto-iptv                      /pluto-tv-iptv               301
+/iptv-pluto-tv                   /pluto-tv-iptv               301
+/iptv-plex                       /plex-iptv                   301
+/plex-m3u                        /plex-iptv                   301
+/iptv-jellyfin                   /jellyfin-iptv               301
+/jellyfin-m3u                    /jellyfin-iptv               301
+/emby-iptv                       /iptv-plex-emby-jellyfin     301
+/smart-one-iptv                  /smartone-iptv               301
+/smartone                        /smartone-iptv               301
+/starlink-iptv                   /iptv-starlink               301
+/iptv-on-starlink                /iptv-starlink               301

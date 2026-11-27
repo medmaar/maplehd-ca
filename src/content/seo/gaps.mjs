@@ -173,7 +173,7 @@ export default [
     slug: "iptv-live-tv-24-7", cluster: "best", kind: "landing", pillar: "iptv-service-canada",
     title: "Live IPTV 24/7 — Watch TV Online Now in Canada | MapleHD", desc: "Watch live IPTV 24/7 online in Canada: live TV now, today's sports, streaming TV over Wi-Fi and how to start watching in minutes with MapleHD.",
     h1: "Live IPTV 24/7: Watch TV Online Now in Canada", badge: "Live IPTV · 24/7",
-    kw: "iptv live tv", kws: ["iptv 24", "iptv 24 7", "iptv 24h", "iptv now", "iptv today", "iptv wifi", "watch tv online iptv", "live iptv", "iptv live", "watch iptv", "cloud stream"], anchor: "live IPTV 24/7",
+    kw: "iptv live tv", kws: ["iptv 24", "iptv 24 7", "iptv 24h", "iptv now", "iptv today", "iptv wifi", "watch tv online iptv", "live iptv", "iptv live", "watch iptv"], anchor: "live IPTV 24/7",
     answer: "Live IPTV means channels stream to your device around the clock over your internet or Wi-Fi connection. With MapleHD you can watch live TV now: order or start a free trial, install a player, enter your login and open Live TV. Live sport, news and 24-hour channels are available whenever you are.",
     sections: [
       { h: "Watch live TV now in four steps", ol: ["Request a [free trial](/free-trial) or choose a plan.", "Install a player such as [TiviMate](/tivimate) or [IPTV Smarters Pro](/iptv-smarters).", "Enter the login from your email.", "Open Live TV and pick a channel or use the guide."] },
@@ -187,7 +187,7 @@ export default [
       { q: "How do I watch IPTV today?", a: "Start a free trial or order a plan, install a player and enter your login. Most customers are watching within minutes." },
       { q: "What is on IPTV right now?", a: "Open the programme guide in your player to see what is on now and next." },
     ],
-    related: ["iptv-service-canada", "what-is-iptv", "iptv-subscription", "iptv-devices", "free-trial"],
+    related: ["iptv-service-canada", "cloudstream", "pluto-tv-iptv", "what-is-iptv", "iptv-subscription", "iptv-devices", "free-trial"],
   },
   ...BRAND_GROUPS.map(brandGroup),
 ];

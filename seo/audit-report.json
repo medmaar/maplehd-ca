@@ -61,14 +61,6 @@
    567
   ],
   [
-   "/iptv-android-canada",
-   579
-  ],
-  [
-   "/iptv-apple-tv-canada",
-   495
-  ],
-  [
    "/iptv-calgary",
    556
   ],
@@ -90,7 +82,7 @@
   ],
   [
    "/iptv-chromecast",
-   569
+   579
   ],
   [
    "/iptv-ctv",
@@ -158,11 +150,7 @@
   ],
   [
    "/iptv-kodi",
-   584
-  ],
-  [
-   "/iptv-lg-tv-canada",
-   499
+   585
   ],
   [
    "/iptv-london-ontario",
@@ -170,15 +158,11 @@
   ],
   [
    "/iptv-m3u-player",
-   578
+   579
   ],
   [
    "/iptv-mac",
    537
-  ],
-  [
-   "/iptv-mag-box-canada",
-   545
   ],
   [
    "/iptv-montreal",
@@ -209,6 +193,10 @@
    502
   ],
   [
+   "/iptv-plex-emby-jellyfin",
+   599
+  ],
+  [
    "/iptv-prairies",
    572
   ],
@@ -222,11 +210,7 @@
   ],
   [
    "/iptv-rural-canada",
-   558
-  ],
-  [
-   "/iptv-smart-tv-canada",
-   513
+   570
   ],
   [
    "/iptv-smarters-android",
@@ -278,7 +262,7 @@
   ],
   [
    "/iptv-time-zones-canada",
-   589
+   593
   ],
   [
    "/iptv-tsn",
@@ -298,7 +282,7 @@
   ],
   [
    "/iptv-vlc",
-   595
+   596
   ],
   [
    "/iptv-vod-movies-series",
@@ -338,7 +322,7 @@
   ],
   [
    "/referral",
-   381
+   371
   ],
   [
    "/reseller",
@@ -385,34 +369,14 @@
    0.58
   ],
   [
-   "/iptv-other-brand-names",
-   "/iptv-space-speed-brand-names",
-   0.47
-  ],
-  [
    "/iptv-richmond-hill",
    "/iptv-st-catharines",
    0.48
   ],
   [
-   "/pricing/1-month",
-   "/pricing/3-months",
-   0.58
-  ],
-  [
-   "/pricing/1-month",
-   "/pricing/6-months",
-   0.46
-  ],
-  [
    "/pricing/12-months",
    "/pricing/6-months",
-   0.47
-  ],
-  [
-   "/pricing/3-months",
-   "/pricing/6-months",
-   0.49
+   0.46
   ]
  ],
  "pages": [
@@ -513,7 +477,7 @@
   {
    "r": "/best-iptv-apps",
    "issues": [],
-   "words": 624,
+   "words": 625,
    "noindex": false,
    "kwCount": 7,
    "types": [
@@ -803,6 +767,25 @@
    ],
    "internal": 22,
    "external": 0,
+   "syncScripts": 0,
+   "css": 1
+  },
+  {
+   "r": "/cloudstream",
+   "issues": [],
+   "words": 982,
+   "noindex": false,
+   "kwCount": 2,
+   "types": [
+    "WebSite",
+    "BreadcrumbList",
+    "Service",
+    "FAQPage",
+    "WebPage",
+    "Organization"
+   ],
+   "internal": 30,
+   "external": 2,
    "syncScripts": 0,
    "css": 1
   },
@@ -1206,7 +1189,7 @@
   {
    "r": "/free-trial",
    "issues": [],
-   "words": 757,
+   "words": 783,
    "noindex": false,
    "types": [
     "WebSite",
@@ -1215,7 +1198,7 @@
     "BreadcrumbList",
     "Organization"
    ],
-   "internal": 7,
+   "internal": 9,
    "external": 0,
    "syncScripts": 0,
    "css": 2
@@ -1260,16 +1243,15 @@
   {
    "r": "/",
    "issues": [],
-   "words": 1170,
+   "words": 1451,
    "noindex": false,
    "types": [
     "WebSite",
-    "FAQPage",
     "Organization",
-    "WebSite",
+    "FAQPage",
     "Organization"
    ],
-   "internal": 31,
+   "internal": 54,
    "external": 0,
    "syncScripts": 0,
    "css": 1
@@ -1354,7 +1336,7 @@
   {
    "r": "/iptv-android-canada",
    "issues": [],
-   "words": 579,
+   "words": 803,
    "noindex": false,
    "types": [
     "WebSite",
@@ -1364,7 +1346,7 @@
     "FAQPage",
     "Organization"
    ],
-   "internal": 13,
+   "internal": 16,
    "external": 0,
    "syncScripts": 0,
    "css": 1
@@ -1409,7 +1391,7 @@
   {
    "r": "/iptv-apple-tv-canada",
    "issues": [],
-   "words": 495,
+   "words": 684,
    "noindex": false,
    "types": [
     "WebSite",
@@ -1419,7 +1401,7 @@
     "FAQPage",
     "Organization"
    ],
-   "internal": 12,
+   "internal": 14,
    "external": 0,
    "syncScripts": 0,
    "css": 1
@@ -1427,7 +1409,7 @@
   {
    "r": "/iptv-apps",
    "issues": [],
-   "words": 1089,
+   "words": 1127,
    "noindex": false,
    "kwCount": 9,
    "types": [
@@ -1439,7 +1421,7 @@
     "ItemList",
     "Organization"
    ],
-   "internal": 61,
+   "internal": 64,
    "external": 0,
    "syncScripts": 0,
    "css": 1
@@ -1466,7 +1448,7 @@
   {
    "r": "/iptv-box",
    "issues": [],
-   "words": 807,
+   "words": 801,
    "noindex": false,
    "kwCount": 25,
    "types": [
@@ -1618,7 +1600,7 @@
   {
    "r": "/iptv-canada",
    "issues": [],
-   "words": 968,
+   "words": 967,
    "noindex": false,
    "kwCount": 4,
    "types": [
@@ -1809,9 +1791,9 @@
   {
    "r": "/iptv-chromecast",
    "issues": [],
-   "words": 569,
+   "words": 579,
    "noindex": false,
-   "kwCount": 2,
+   "kwCount": 3,
    "types": [
     "WebSite",
     "BreadcrumbList",
@@ -2341,7 +2323,7 @@
   {
    "r": "/iptv-guides",
    "issues": [],
-   "words": 710,
+   "words": 797,
    "noindex": false,
    "kwCount": 3,
    "types": [
@@ -2353,7 +2335,7 @@
     "ItemList",
     "Organization"
    ],
-   "internal": 45,
+   "internal": 52,
    "external": 0,
    "syncScripts": 0,
    "css": 1
@@ -2414,7 +2396,7 @@
   {
    "r": "/iptv-ios-canada",
    "issues": [],
-   "words": 612,
+   "words": 844,
    "noindex": false,
    "types": [
     "WebSite",
@@ -2424,7 +2406,7 @@
     "FAQPage",
     "Organization"
    ],
-   "internal": 14,
+   "internal": 17,
    "external": 0,
    "syncScripts": 0,
    "css": 1
@@ -2546,7 +2528,7 @@
   {
    "r": "/iptv-kodi",
    "issues": [],
-   "words": 584,
+   "words": 585,
    "noindex": false,
    "kwCount": 3,
    "types": [
@@ -2622,7 +2604,7 @@
   {
    "r": "/iptv-lg-tv-canada",
    "issues": [],
-   "words": 499,
+   "words": 748,
    "noindex": false,
    "types": [
     "WebSite",
@@ -2631,7 +2613,7 @@
     "BreadcrumbList",
     "Organization"
    ],
-   "internal": 13,
+   "internal": 14,
    "external": 0,
    "syncScripts": 0,
    "css": 1
@@ -2639,7 +2621,7 @@
   {
    "r": "/iptv-list",
    "issues": [],
-   "words": 602,
+   "words": 603,
    "noindex": false,
    "kwCount": 10,
    "types": [
@@ -2658,7 +2640,7 @@
   {
    "r": "/iptv-live-tv-24-7",
    "issues": [],
-   "words": 630,
+   "words": 628,
    "noindex": false,
    "kwCount": 2,
    "types": [
@@ -2733,7 +2715,7 @@
   {
    "r": "/iptv-m3u-player",
    "issues": [],
-   "words": 578,
+   "words": 579,
    "noindex": false,
    "kwCount": 2,
    "types": [
@@ -2752,7 +2734,7 @@
   {
    "r": "/iptv-m3u",
    "issues": [],
-   "words": 701,
+   "words": 702,
    "noindex": false,
    "kwCount": 7,
    "types": [
@@ -2790,7 +2772,7 @@
   {
    "r": "/iptv-mag-box-canada",
    "issues": [],
-   "words": 545,
+   "words": 693,
    "noindex": false,
    "types": [
     "WebSite",
@@ -3365,9 +3347,9 @@
   {
    "r": "/iptv-plex-emby-jellyfin",
    "issues": [],
-   "words": 623,
+   "words": 599,
    "noindex": false,
-   "kwCount": 3,
+   "kwCount": 2,
    "types": [
     "WebSite",
     "BreadcrumbList",
@@ -3376,7 +3358,7 @@
     "WebPage",
     "Organization"
    ],
-   "internal": 22,
+   "internal": 28,
    "external": 3,
    "syncScripts": 0,
    "css": 1
@@ -3647,7 +3629,7 @@
   {
    "r": "/iptv-roku-canada",
    "issues": [],
-   "words": 613,
+   "words": 751,
    "noindex": false,
    "types": [
     "WebSite",
@@ -3657,7 +3639,7 @@
     "FAQPage",
     "Organization"
    ],
-   "internal": 11,
+   "internal": 12,
    "external": 0,
    "syncScripts": 0,
    "css": 1
@@ -3684,7 +3666,7 @@
   {
    "r": "/iptv-rural-canada",
    "issues": [],
-   "words": 558,
+   "words": 570,
    "noindex": false,
    "kwCount": 2,
    "types": [
@@ -3695,7 +3677,7 @@
     "WebPage",
     "Organization"
    ],
-   "internal": 24,
+   "internal": 25,
    "external": 2,
    "syncScripts": 0,
    "css": 1
@@ -3741,7 +3723,7 @@
   {
    "r": "/iptv-samsung-tv-canada",
    "issues": [],
-   "words": 708,
+   "words": 887,
    "noindex": false,
    "types": [
     "WebSite",
@@ -3751,7 +3733,7 @@
     "FAQPage",
     "Organization"
    ],
-   "internal": 13,
+   "internal": 15,
    "external": 0,
    "syncScripts": 0,
    "css": 1
@@ -3874,7 +3856,7 @@
   {
    "r": "/iptv-smart-tv-canada",
    "issues": [],
-   "words": 513,
+   "words": 671,
    "noindex": false,
    "types": [
     "WebSite",
@@ -3884,7 +3866,7 @@
     "FAQPage",
     "Organization"
    ],
-   "internal": 18,
+   "internal": 19,
    "external": 0,
    "syncScripts": 0,
    "css": 1
@@ -3949,7 +3931,7 @@
   {
    "r": "/iptv-smarters-lite",
    "issues": [],
-   "words": 624,
+   "words": 627,
    "noindex": false,
    "kwCount": 2,
    "types": [
@@ -3968,7 +3950,7 @@
   {
    "r": "/iptv-smarters-pro-download",
    "issues": [],
-   "words": 1029,
+   "words": 1023,
    "noindex": false,
    "kwCount": 2,
    "types": [
@@ -4006,7 +3988,7 @@
   {
    "r": "/iptv-smarters-pro-pc-mac",
    "issues": [],
-   "words": 645,
+   "words": 641,
    "noindex": false,
    "kwCount": 2,
    "types": [
@@ -4156,7 +4138,7 @@
   {
    "r": "/iptv-space-speed-brand-names",
    "issues": [],
-   "words": 818,
+   "words": 805,
    "noindex": false,
    "kwCount": 4,
    "types": [
@@ -4284,6 +4266,25 @@
    ],
    "internal": 21,
    "external": 1,
+   "syncScripts": 0,
+   "css": 1
+  },
+  {
+   "r": "/iptv-starlink",
+   "issues": [],
+   "words": 828,
+   "noindex": false,
+   "kwCount": 2,
+   "types": [
+    "WebSite",
+    "BreadcrumbList",
+    "Article",
+    "FAQPage",
+    "WebPage",
+    "Organization"
+   ],
+   "internal": 29,
+   "external": 3,
    "syncScripts": 0,
    "css": 1
   },
@@ -4480,7 +4481,7 @@
   {
    "r": "/iptv-time-zones-canada",
    "issues": [],
-   "words": 589,
+   "words": 593,
    "noindex": false,
    "kwCount": 2,
    "types": [
@@ -4491,7 +4492,7 @@
     "WebPage",
     "Organization"
    ],
-   "internal": 22,
+   "internal": 23,
    "external": 1,
    "syncScripts": 0,
    "css": 1
@@ -4667,7 +4668,7 @@
   {
    "r": "/iptv-vlc",
    "issues": [],
-   "words": 595,
+   "words": 596,
    "noindex": false,
    "kwCount": 3,
    "types": [
@@ -4820,7 +4821,7 @@
   {
    "r": "/iptv-web-browser",
    "issues": [],
-   "words": 643,
+   "words": 635,
    "noindex": false,
    "kwCount": 2,
    "types": [
@@ -4858,7 +4859,7 @@
   {
    "r": "/iptv-windows-canada",
    "issues": [],
-   "words": 653,
+   "words": 821,
    "noindex": false,
    "types": [
     "WebSite",
@@ -4869,7 +4870,7 @@
     "FAQPage",
     "Organization"
    ],
-   "internal": 14,
+   "internal": 16,
    "external": 0,
    "syncScripts": 0,
    "css": 1
@@ -5007,6 +5008,25 @@
    "css": 1
   },
   {
+   "r": "/jellyfin-iptv",
+   "issues": [],
+   "words": 693,
+   "noindex": false,
+   "kwCount": 4,
+   "types": [
+    "WebSite",
+    "BreadcrumbList",
+    "Article",
+    "FAQPage",
+    "WebPage",
+    "Organization"
+   ],
+   "internal": 23,
+   "external": 2,
+   "syncScripts": 0,
+   "css": 1
+  },
+  {
    "r": "/kemo-iptv",
    "issues": [],
    "words": 687,
@@ -5028,9 +5048,9 @@
   {
    "r": "/king365-tv",
    "issues": [],
-   "words": 689,
+   "words": 695,
    "noindex": false,
-   "kwCount": 12,
+   "kwCount": 14,
    "types": [
     "WebSite",
     "BreadcrumbList",
@@ -5197,6 +5217,44 @@
    "css": 1
   },
   {
+   "r": "/plex-iptv",
+   "issues": [],
+   "words": 814,
+   "noindex": false,
+   "kwCount": 6,
+   "types": [
+    "WebSite",
+    "BreadcrumbList",
+    "Article",
+    "FAQPage",
+    "WebPage",
+    "Organization"
+   ],
+   "internal": 25,
+   "external": 2,
+   "syncScripts": 0,
+   "css": 1
+  },
+  {
+   "r": "/pluto-tv-iptv",
+   "issues": [],
+   "words": 771,
+   "noindex": false,
+   "kwCount": 3,
+   "types": [
+    "WebSite",
+    "BreadcrumbList",
+    "Article",
+    "FAQPage",
+    "WebPage",
+    "Organization"
+   ],
+   "internal": 23,
+   "external": 2,
+   "syncScripts": 0,
+   "css": 1
+  },
+  {
    "r": "/premium-iptv",
    "issues": [],
    "words": 622,
@@ -5218,7 +5276,7 @@
   {
    "r": "/pricing/1-month",
    "issues": [],
-   "words": 1144,
+   "words": 1163,
    "noindex": false,
    "types": [
     "WebSite",
@@ -5236,7 +5294,7 @@
   {
    "r": "/pricing/10-devices/1-month",
    "issues": [],
-   "words": 1025,
+   "words": 1044,
    "noindex": true,
    "types": [
     "WebSite",
@@ -5254,7 +5312,7 @@
   {
    "r": "/pricing/10-devices/1-year",
    "issues": [],
-   "words": 1024,
+   "words": 1043,
    "noindex": true,
    "types": [
     "WebSite",
@@ -5272,7 +5330,7 @@
   {
    "r": "/pricing/10-devices/3-months",
    "issues": [],
-   "words": 1029,
+   "words": 1048,
    "noindex": true,
    "types": [
     "WebSite",
@@ -5290,7 +5348,7 @@
   {
    "r": "/pricing/10-devices/6-months",
    "issues": [],
-   "words": 1029,
+   "words": 1048,
    "noindex": true,
    "types": [
     "WebSite",
@@ -5308,7 +5366,7 @@
   {
    "r": "/pricing/12-months",
    "issues": [],
-   "words": 1150,
+   "words": 1169,
    "noindex": false,
    "types": [
     "WebSite",
@@ -5326,7 +5384,7 @@
   {
    "r": "/pricing/2-devices/1-month",
    "issues": [],
-   "words": 1039,
+   "words": 1058,
    "noindex": true,
    "types": [
     "WebSite",
@@ -5344,7 +5402,7 @@
   {
    "r": "/pricing/2-devices/1-year",
    "issues": [],
-   "words": 1038,
+   "words": 1057,
    "noindex": true,
    "types": [
     "WebSite",
@@ -5362,7 +5420,7 @@
   {
    "r": "/pricing/2-devices/3-months",
    "issues": [],
-   "words": 1043,
+   "words": 1062,
    "noindex": true,
    "types": [
     "WebSite",
@@ -5380,7 +5438,7 @@
   {
    "r": "/pricing/2-devices/6-months",
    "issues": [],
-   "words": 1043,
+   "words": 1062,
    "noindex": true,
    "types": [
     "WebSite",
@@ -5398,7 +5456,7 @@
   {
    "r": "/pricing/3-devices/1-month",
    "issues": [],
-   "words": 1035,
+   "words": 1054,
    "noindex": true,
    "types": [
     "WebSite",
@@ -5416,7 +5474,7 @@
   {
    "r": "/pricing/3-devices/1-year",
    "issues": [],
-   "words": 1034,
+   "words": 1053,
    "noindex": true,
    "types": [
     "WebSite",
@@ -5434,7 +5492,7 @@
   {
    "r": "/pricing/3-devices/3-months",
    "issues": [],
-   "words": 1039,
+   "words": 1058,
    "noindex": true,
    "types": [
     "WebSite",
@@ -5452,7 +5510,7 @@
   {
    "r": "/pricing/3-devices/6-months",
    "issues": [],
-   "words": 1039,
+   "words": 1058,
    "noindex": true,
    "types": [
     "WebSite",
@@ -5470,7 +5528,7 @@
   {
    "r": "/pricing/3-months",
    "issues": [],
-   "words": 1107,
+   "words": 1304,
    "noindex": false,
    "types": [
     "WebSite",
@@ -5480,7 +5538,7 @@
     "WebPage",
     "Organization"
    ],
-   "internal": 12,
+   "internal": 15,
    "external": 0,
    "syncScripts": 0,
    "css": 2
@@ -5488,7 +5546,7 @@
   {
    "r": "/pricing/4-devices/1-month",
    "issues": [],
-   "words": 1030,
+   "words": 1049,
    "noindex": true,
    "types": [
     "WebSite",
@@ -5506,7 +5564,7 @@
   {
    "r": "/pricing/4-devices/1-year",
    "issues": [],
-   "words": 1029,
+   "words": 1048,
    "noindex": true,
    "types": [
     "WebSite",
@@ -5524,7 +5582,7 @@
   {
    "r": "/pricing/4-devices/3-months",
    "issues": [],
-   "words": 1034,
+   "words": 1053,
    "noindex": true,
    "types": [
     "WebSite",
@@ -5542,7 +5600,7 @@
   {
    "r": "/pricing/4-devices/6-months",
    "issues": [],
-   "words": 1034,
+   "words": 1053,
    "noindex": true,
    "types": [
     "WebSite",
@@ -5560,7 +5618,7 @@
   {
    "r": "/pricing/5-devices/1-month",
    "issues": [],
-   "words": 1029,
+   "words": 1048,
    "noindex": true,
    "types": [
     "WebSite",
@@ -5578,7 +5636,7 @@
   {
    "r": "/pricing/5-devices/1-year",
    "issues": [],
-   "words": 1028,
+   "words": 1047,
    "noindex": true,
    "types": [
     "WebSite",
@@ -5596,7 +5654,7 @@
   {
    "r": "/pricing/5-devices/3-months",
    "issues": [],
-   "words": 1033,
+   "words": 1052,
    "noindex": true,
    "types": [
     "WebSite",
@@ -5614,7 +5672,7 @@
   {
    "r": "/pricing/5-devices/6-months",
    "issues": [],
-   "words": 1033,
+   "words": 1052,
    "noindex": true,
    "types": [
     "WebSite",
@@ -5632,7 +5690,7 @@
   {
    "r": "/pricing/6-devices/1-month",
    "issues": [],
-   "words": 1027,
+   "words": 1046,
    "noindex": true,
    "types": [
     "WebSite",
@@ -5650,7 +5708,7 @@
   {
    "r": "/pricing/6-devices/1-year",
    "issues": [],
-   "words": 1026,
+   "words": 1045,
    "noindex": true,
    "types": [
     "WebSite",
@@ -5668,7 +5726,7 @@
   {
    "r": "/pricing/6-devices/3-months",
    "issues": [],
-   "words": 1031,
+   "words": 1050,
    "noindex": true,
    "types": [
     "WebSite",
@@ -5686,7 +5744,7 @@
   {
    "r": "/pricing/6-devices/6-months",
    "issues": [],
-   "words": 1031,
+   "words": 1050,
    "noindex": true,
    "types": [
     "WebSite",
@@ -5704,7 +5762,7 @@
   {
    "r": "/pricing/6-months",
    "issues": [],
-   "words": 1142,
+   "words": 1161,
    "noindex": false,
    "types": [
     "WebSite",
@@ -5722,7 +5780,7 @@
   {
    "r": "/pricing/7-devices/1-month",
    "issues": [],
-   "words": 1025,
+   "words": 1044,
    "noindex": true,
    "types": [
     "WebSite",
@@ -5740,7 +5798,7 @@
   {
    "r": "/pricing/7-devices/1-year",
    "issues": [],
-   "words": 1024,
+   "words": 1043,
    "noindex": true,
    "types": [
     "WebSite",
@@ -5758,7 +5816,7 @@
   {
    "r": "/pricing/7-devices/3-months",
    "issues": [],
-   "words": 1029,
+   "words": 1048,
    "noindex": true,
    "types": [
     "WebSite",
@@ -5776,7 +5834,7 @@
   {
    "r": "/pricing/7-devices/6-months",
    "issues": [],
-   "words": 1029,
+   "words": 1048,
    "noindex": true,
    "types": [
     "WebSite",
@@ -5794,7 +5852,7 @@
   {
    "r": "/pricing/8-devices/1-month",
    "issues": [],
-   "words": 1029,
+   "words": 1048,
    "noindex": true,
    "types": [
     "WebSite",
@@ -5812,7 +5870,7 @@
   {
    "r": "/pricing/8-devices/1-year",
    "issues": [],
-   "words": 1028,
+   "words": 1047,
    "noindex": true,
    "types": [
     "WebSite",
@@ -5830,7 +5888,7 @@
   {
    "r": "/pricing/8-devices/3-months",
    "issues": [],
-   "words": 1033,
+   "words": 1052,
    "noindex": true,
    "types": [
     "WebSite",
@@ -5848,7 +5906,7 @@
   {
    "r": "/pricing/8-devices/6-months",
    "issues": [],
-   "words": 1033,
+   "words": 1052,
    "noindex": true,
    "types": [
     "WebSite",
@@ -5866,7 +5924,7 @@
   {
    "r": "/pricing/9-devices/1-month",
    "issues": [],
-   "words": 1030,
+   "words": 1049,
    "noindex": true,
    "types": [
     "WebSite",
@@ -5884,7 +5942,7 @@
   {
    "r": "/pricing/9-devices/1-year",
    "issues": [],
-   "words": 1029,
+   "words": 1048,
    "noindex": true,
    "types": [
     "WebSite",
@@ -5902,7 +5960,7 @@
   {
    "r": "/pricing/9-devices/3-months",
    "issues": [],
-   "words": 1034,
+   "words": 1053,
    "noindex": true,
    "types": [
     "WebSite",
@@ -5920,7 +5978,7 @@
   {
    "r": "/pricing/9-devices/6-months",
    "issues": [],
-   "words": 1034,
+   "words": 1053,
    "noindex": true,
    "types": [
     "WebSite",
@@ -5974,7 +6032,7 @@
   {
    "r": "/referral",
    "issues": [],
-   "words": 381,
+   "words": 371,
    "noindex": false,
    "types": [
     "WebSite",
@@ -5984,7 +6042,7 @@
     "FAQPage",
     "Organization"
    ],
-   "internal": 9,
+   "internal": 8,
    "external": 0,
    "syncScripts": 0,
    "css": 1
@@ -6045,7 +6103,7 @@
   {
    "r": "/smart-iptv-app",
    "issues": [],
-   "words": 657,
+   "words": 658,
    "noindex": false,
    "kwCount": 31,
    "types": [
@@ -6057,6 +6115,25 @@
     "Organization"
    ],
    "internal": 25,
+   "external": 0,
+   "syncScripts": 0,
+   "css": 1
+  },
+  {
+   "r": "/smartone-iptv",
+   "issues": [],
+   "words": 754,
+   "noindex": false,
+   "kwCount": 21,
+   "types": [
+    "WebSite",
+    "BreadcrumbList",
+    "Service",
+    "FAQPage",
+    "WebPage",
+    "Organization"
+   ],
+   "internal": 30,
    "external": 0,
    "syncScripts": 0,
    "css": 1
@@ -6077,6 +6154,25 @@
    ],
    "internal": 22,
    "external": 0,
+   "syncScripts": 0,
+   "css": 1
+  },
+  {
+   "r": "/stremio-iptv",
+   "issues": [],
+   "words": 790,
+   "noindex": false,
+   "kwCount": 4,
+   "types": [
+    "WebSite",
+    "BreadcrumbList",
+    "Service",
+    "FAQPage",
+    "WebPage",
+    "Organization"
+   ],
+   "internal": 29,
+   "external": 1,
    "syncScripts": 0,
    "css": 1
   },

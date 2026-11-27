@@ -6,7 +6,7 @@ keyword,monthly_volume,intent,assigned_page,fallback_assignment
 "iptv canada",12100,Commercial,/iptv-canada,false
 "iptv québec",9900,Commercial,/iptv-quebec,false
 "iptv box",8400,Commercial,/iptv-box,false
-"cloud stream",5000,Commercial,/iptv-live-tv-24-7,false
+"cloud stream",5000,Commercial,/cloudstream,false
 "diablo iptv",5000,Commercial,/diablo-iptv,false
 "forevertv",5000,Commercial,/forever-tv,false
 "formuler z11",5000,Commercial,/formuler-z11,false
@@ -30,7 +30,7 @@ keyword,monthly_volume,intent,assigned_page,fallback_assignment
 "pandar tv",5000,Commercial,/iptv-animal-brand-names,true
 "provider iptv",5000,Commercial,/iptv-providers-canada,false
 "smart4iptv",5000,Commercial,/smart-iptv-app,false
-"smarters players lite",5000,Commercial,/iptv-smarters-pro-download,false
+"smarters players lite",5000,Commercial,/iptv-smarters-lite,false
 "smarters pro",5000,Commercial,/iptv-smarters-pro-download,false
 "smarterspro",5000,Commercial,/iptv-smarters-pro-download,false
 "stb emu pro",5000,Commercial,/stbemu,false
@@ -232,7 +232,7 @@ keyword,monthly_volume,intent,assigned_page,fallback_assignment
 "iptvisuel",500,Commercial,/fr/abonnement-iptv,false
 "iptvportal",500,Commercial,/iptv-web-browser,false
 "iptvx",500,Commercial,/iptv-generic-brand-names,true
-"jellyfin iptv",500,Informational,/iptv-plex-emby-jellyfin,false
+"jellyfin iptv",500,Informational,/jellyfin-iptv,false
 "kemo iptv",500,Commercial,/kemo-iptv,false
 "kemo tv",500,Commercial,/kemo-iptv,false
 "kemoiptv",500,Commercial,/kemo-iptv,false
@@ -275,8 +275,8 @@ keyword,monthly_volume,intent,assigned_page,fallback_assignment
 "ott tv",500,Commercial,/ott-navigator,false
 "ottiptv",500,Commercial,/ott-navigator,false
 "player m3u",500,Informational,/iptv-m3u,false
-"plex iptv",500,Informational,/iptv-plex-emby-jellyfin,false
-"pluto tv iptv",500,Informational,/iptv-plex-emby-jellyfin,false
+"plex iptv",500,Informational,/plex-iptv,false
+"pluto tv iptv",500,Informational,/pluto-tv-iptv,false
 "premium iptv",500,Commercial,/premium-iptv,false
 "private iptv",500,Commercial,/premium-iptv,false
 "reddit best iptv",500,Informational,/best-iptv-reddit,false
@@ -292,12 +292,12 @@ keyword,monthly_volume,intent,assigned_page,fallback_assignment
 "smarters iptv pro",500,Commercial,/iptv-smarters-pro-download,false
 "smarters player",500,Commercial,/iptv-smarters-pro-download,false
 "smarters pro iptv",500,Commercial,/iptv-smarters-pro-download,false
-"smartone iptv",500,Commercial,/iptv-space-speed-brand-names,true
+"smartone iptv",500,Commercial,/smartone-iptv,false
 "sonic iptv",500,Commercial,/iptv-space-speed-brand-names,true
 "starshare iptv",500,Commercial,/iptv-space-speed-brand-names,true
 "stbemu iptv",500,Commercial,/stbemu,false
 "stream iptv",500,Commercial,/iptv-service-canada,false
-"stremio iptv",500,Informational,/iptv-plex-emby-jellyfin,false
+"stremio iptv",500,Informational,/stremio-iptv,false
 "strong iptv",500,Commercial,/iptv-royal-premium-brand-names,true
 "television iptv",500,Informational,/what-is-iptv,false
 "titan iptv",500,Commercial,/iptv-other-brand-names,true
@@ -479,7 +479,7 @@ keyword,monthly_volume,intent,assigned_page,fallback_assignment
 "good iptv",50,Commercial,/iptv-royal-premium-brand-names,true
 "gotit iptv",50,Commercial,/iptv-generic-brand-names,true
 "gotv iptv",50,Commercial,/iptv-generic-brand-names,true
-"gse iptv chromecast",50,Informational,/iptv-web-browser,false
+"gse iptv chromecast",50,Informational,/iptv-chromecast,false
 "gseiptv",50,Commercial,/iptv-chromecast,false
 "harmo iptv",50,Commercial,/iptv-space-speed-brand-names,true
 "hbo max iptv",50,Informational,/iptv-vod-movies-series,false
@@ -544,7 +544,7 @@ keyword,monthly_volume,intent,assigned_page,fallback_assignment
 "iptv checker",50,Informational,/iptv-m3u-player,false
 "iptv checker online",50,Informational,/iptv-m3u-player,false
 "iptv chrome",50,Informational,/iptv-web-browser,false
-"iptv chromecast",50,Commercial,/iptv-web-browser,false
+"iptv chromecast",50,Commercial,/iptv-chromecast,false
 "iptv com",50,Commercial,/iptv-web-browser,false
 "iptv connect",50,Commercial,/iptv-server,false
 "iptv connect pro",50,Commercial,/iptv-server,false
@@ -630,11 +630,11 @@ keyword,monthly_volume,intent,assigned_page,fallback_assignment
 "iptv smart box",50,Commercial,/iptv-smart-tv-canada,false
 "iptv smart purple player",50,Commercial,/iptv-player,false
 "iptv smart tv",50,Informational,/iptv-smart-tv-canada,false
-"iptv smarter pc",50,Informational,/iptv-smarters-pro-download,false
+"iptv smarter pc",50,Informational,/iptv-smarters-pro-pc-mac,false
 "iptv smarter pro downloader",50,Informational,/iptv-smarters-pro-download,false
 "iptv smarters android",50,Informational,/iptv-smarters-android,false
 "iptv smarters apple tv",50,Commercial,/iptv-smarters-apple,false
-"iptv smarters chromecast",50,Informational,/iptv-smarters-pro-pc-mac,false
+"iptv smarters chromecast",50,Informational,/iptv-chromecast,false
 "iptv smarters com",50,Commercial,/iptv-smarters-pro-download,false
 "iptv smarters customer service",50,Informational,/iptv-customer-service,false
 "iptv smasters android tv",50,Informational,/iptv-smarters-android,false
@@ -756,8 +756,8 @@ keyword,monthly_volume,intent,assigned_page,fallback_assignment
 "king365 iptv",50,Commercial,/king365-tv,false
 "king365 tv",50,Commercial,/king365-tv,false
 "king365tv",50,Commercial,/king365-tv,false
-"king365tv box v2",50,Commercial,/iptv-box,false
-"king365tv box v3",50,Commercial,/iptv-box,false
+"king365tv box v2",50,Commercial,/king365-tv,false
+"king365tv box v3",50,Commercial,/king365-tv,false
 "kingtv365",50,Commercial,/king365-tv,false
 "kodi iptv m3u",50,Informational,/iptv-kodi,false
 "kodi live tv",50,Informational,/iptv-kodi,false
@@ -789,7 +789,7 @@ keyword,monthly_volume,intent,assigned_page,fallback_assignment
 "m3u online",50,Informational,/iptv-m3u-player,false
 "m3u player online",50,Informational,/iptv-m3u-player,false
 "m3u player pc",50,Informational,/iptv-m3u-player,false
-"m3u plex",50,Informational,/iptv-plex-emby-jellyfin,false
+"m3u plex",50,Informational,/plex-iptv,false
 "m3u premium",50,Commercial,/iptv-m3u,false
 "m3u vod",50,Informational,/iptv-vod-movies-series,false
 "m3u8 iptv",50,Informational,/iptv-m3u,false
@@ -874,11 +874,11 @@ keyword,monthly_volume,intent,assigned_page,fallback_assignment
 "platinum iptv",50,Commercial,/premium-iptv,false
 "play list iptv",50,Informational,/iptv-list,false
 "playiptv",50,Commercial,/iptv-generic-brand-names,true
-"plex iptv m3u",50,Informational,/iptv-plex-emby-jellyfin,false
-"plex m3u",50,Informational,/iptv-plex-emby-jellyfin,false
+"plex iptv m3u",50,Informational,/plex-iptv,false
+"plex m3u",50,Informational,/plex-iptv,false
 "plus iptv",50,Commercial,/iptv-generic-brand-names,true
-"pluto iptv",50,Commercial,/iptv-plex-emby-jellyfin,false
-"pluto tv m3u",50,Informational,/iptv-plex-emby-jellyfin,false
+"pluto iptv",50,Commercial,/pluto-tv-iptv,false
+"pluto tv m3u",50,Informational,/pluto-tv-iptv,false
 "premier iptv",50,Commercial,/iptv-royal-premium-brand-names,true
 "prestige iptv",50,Commercial,/premium-iptv,false
 "primeiptv",50,Commercial,/iptv-royal-premium-brand-names,true
@@ -931,7 +931,7 @@ keyword,monthly_volume,intent,assigned_page,fallback_assignment
 "smarter player pro",50,Commercial,/iptv-smarters-pro-download,false
 "smarters iptv firestick",50,Commercial,/iptv-smarters-pro-firestick,false
 "smarters lite",50,Commercial,/iptv-smarters-lite,false
-"smarters player lite chromecast",50,Informational,/iptv-smarters-pro-pc-mac,false
+"smarters player lite chromecast",50,Informational,/iptv-chromecast,false
 "smarters player lite firestick",50,Commercial,/iptv-smarters-pro-firestick,false
 "smarters player lite samsung tv",50,Informational,/iptv-smarters-samsung-tv,false
 "smarters player lite sur tv samsung",50,Informational,/fr/iptv-smarters-pro,false
@@ -946,9 +946,9 @@ keyword,monthly_volume,intent,assigned_page,fallback_assignment
 "smarters tv pro",50,Commercial,/iptv-smarters-pro-smart-tv,false
 "smarterstv",50,Commercial,/iptv-smarters-pro-smart-tv,false
 "smartgo iptv",50,Commercial,/iptv-space-speed-brand-names,true
-"smartone iptv com",50,Commercial,/iptv-web-browser,false
-"smartone iptv com generate",50,Commercial,/iptv-space-speed-brand-names,true
-"smartone iptv generate",50,Commercial,/iptv-space-speed-brand-names,true
+"smartone iptv com",50,Commercial,/smartone-iptv,false
+"smartone iptv com generate",50,Commercial,/smartone-iptv,false
+"smartone iptv generate",50,Commercial,/smartone-iptv,false
 "smasters player lite télécharger",50,Informational,/fr/iptv-smarters-pro,false
 "sniper iptv",50,Commercial,/iptv-character-brand-names,true
 "soplayer iptv",50,Commercial,/iptv-player,false
@@ -959,7 +959,7 @@ keyword,monthly_volume,intent,assigned_page,fallback_assignment
 "sstv iptv",50,Commercial,/iptv-generic-brand-names,true
 "star iptv",50,Commercial,/iptv-space-speed-brand-names,true
 "stariptv",50,Commercial,/iptv-space-speed-brand-names,true
-"starlink iptv",50,Informational,/iptv-space-speed-brand-names,true
+"starlink iptv",50,Informational,/iptv-starlink,false
 "starsat iptv",50,Commercial,/iptv-space-speed-brand-names,true
 "stbemu 4k",50,Commercial,/stbemu,false
 "stbemu pro firestick",50,Commercial,/stbemu,false
@@ -1014,7 +1014,6 @@ keyword,monthly_volume,intent,assigned_page,fallback_assignment
 "ugoos am7",50,Commercial,/android-tv-box-models,false
 "ukiptv",50,Commercial,/iptv-generic-brand-names,true
 "ultimate iptv",50,Commercial,/iptv-royal-premium-brand-names,true
-"unifi iptv",50,Commercial,/iptv-space-speed-brand-names,true
 "universal iptv",50,Commercial,/iptv-royal-premium-brand-names,true
 "universe iptv",50,Commercial,/iptv-royal-premium-brand-names,true
 "unoiptv",50,Commercial,/iptv-generic-brand-names,true

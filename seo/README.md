@@ -29,6 +29,14 @@ Target market: **Canada** (en-CA + fr-CA). Rendered with the site's existing des
 - Kept: 1,053 → 105 page assignments (87 new pages, 18 existing pages including the homepage)
 - No existing page targeted an excluded market, so nothing had to be deleted or tombstoned.
 
+### Nov 2026 cluster split (same keyword file)
+- Market filter now also removes `unifi iptv` (Malaysian telco): 27 excluded, 1,052 kept, 127 page assignments.
+- New pages for intents that had no page of their own: `/cloudstream`, `/stremio-iptv`, `/pluto-tv-iptv`, `/plex-iptv`,
+  `/jellyfin-iptv`, `/smartone-iptv`, `/iptv-starlink` (content in `src/content/seo/apps-extra.mjs`).
+- `/iptv-plex-emby-jellyfin` is now the Plex vs Emby vs Jellyfin comparison (primary: emby iptv).
+- Rule fixes: Smarters Player Lite, Smarters PC, King365 box and Chromecast keywords now land on their dedicated pages.
+- Pages carry an optional `updated` date used for `dateModified` and sitemap `lastmod`.
+
 ## Deep audit (page-by-page)
 `next build && node seo/audit-deep.mjs` checks every exported HTML page: title/description length and duplicates, canonical, OG/Twitter,
 hreflang reciprocity, h1/heading order, primary keyword placement, JSON-LD validity (FAQPage must match visible text), internal/external

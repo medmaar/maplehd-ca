@@ -534,7 +534,7 @@ export default [
     h1: "Smarters Player Lite vs IPTV Smarters Pro",
     badge: "Smarters Player Lite",
     kw: "iptv smarters lite",
-    kws: ["smart player lite", "iptv smasters player lite", "smarters lite", "smarters pro lite", "smarters player lite chromecast", "smarters player lite firestick", "smarters player lite samsung tv"],
+    kws: ["smarters players lite", "smart player lite", "iptv smasters player lite", "smarters lite", "smarters pro lite", "smarters player lite chromecast", "smarters player lite firestick", "smarters player lite samsung tv"],
     anchor: "Smarters Player Lite",
     answer:
       "Smarters Player Lite is the version of the Smarters IPTV player found on iOS, Apple TV, some smart TVs and Fire TV. It accepts an Xtream Codes login or M3U link like Smarters Pro. If you can't find \"IPTV Smarters Pro\" in your app store, search for \"Smarters Player Lite\".",

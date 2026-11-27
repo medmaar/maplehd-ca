@@ -21,13 +21,12 @@
  },
  {
   "slug": "iptv-smarters-pro-download",
-  "n": 33,
-  "vol": 77040,
+  "n": 31,
+  "vol": 71990,
   "primary": "ip tv smarters pro",
   "all": [
    "ip tv smarters pro",
    "iptv smarters",
-   "smarters players lite",
    "smarters pro",
    "smarterspro",
    "iptv smarter",
@@ -43,7 +42,6 @@
    "iptv smarters pro",
    "ip smarter pro",
    "ip smarters pro",
-   "iptv smarter pc",
    "iptv smarter pro downloader",
    "iptv smarters com",
    "iptv smasters free",
@@ -121,8 +119,8 @@
  },
  {
   "slug": "iptv-box",
-  "n": 15,
-  "vol": 17470,
+  "n": 13,
+  "vol": 17370,
   "primary": "iptv box",
   "all": [
    "iptv box",
@@ -137,8 +135,6 @@
    "iptv sim",
    "box tv iptv",
    "global tv box",
-   "king365tv box v2",
-   "king365tv box v3",
    "tv ip box"
   ]
  },
@@ -427,32 +423,6 @@
   ]
  },
  {
-  "slug": "iptv-live-tv-24-7",
-  "n": 18,
-  "vol": 8030,
-  "primary": "cloud stream",
-  "all": [
-   "cloud stream",
-   "online iptv",
-   "ip tv online",
-   "iptv live",
-   "online ip tv",
-   "ip tv live",
-   "iptv 24",
-   "iptv 24 7",
-   "iptv 24h",
-   "iptv live tv",
-   "iptv now",
-   "iptv today",
-   "iptv watch tv online",
-   "iptv wifi",
-   "live ip tv",
-   "live iptv",
-   "watch iptv",
-   "watched iptv"
-  ]
- },
- {
   "slug": "best-iptv-canada",
   "n": 8,
   "vol": 7000,
@@ -493,6 +463,21 @@
    "top 10 iptv",
    "top 5 iptv",
    "top1iptv"
+  ]
+ },
+ {
+  "slug": "iptv-smarters-lite",
+  "n": 7,
+  "vol": 6200,
+  "primary": "smarters players lite",
+  "all": [
+   "smarters players lite",
+   "iptv smarters lite",
+   "smart player lite",
+   "iptv smasters player lite",
+   "smarters lite",
+   "smarters player lite tv",
+   "smarters pro lite"
   ]
  },
  {
@@ -600,66 +585,6 @@
   ]
  },
  {
-  "slug": "iptv-space-speed-brand-names",
-  "n": 52,
-  "vol": 5300,
-  "primary": "fast iptv",
-  "all": [
-   "fast iptv",
-   "fastiptv",
-   "nasa iptv",
-   "smartone iptv",
-   "sonic iptv",
-   "starshare iptv",
-   "5g iptv",
-   "5giptv",
-   "astra iptv",
-   "blitzen iptv",
-   "delta iptv",
-   "electro iptv",
-   "evo iptv",
-   "evolution iptv",
-   "flux iptv",
-   "gamma iptv",
-   "harmo iptv",
-   "helix iptv",
-   "hydrogen iptv",
-   "hypersonic iptv",
-   "igate iptv",
-   "iptv mxl",
-   "iptv rapid",
-   "iptv revolution",
-   "ironiptv",
-   "istar iptv",
-   "itec iptv",
-   "iview iptv",
-   "jarvis iptv",
-   "matrix iptv",
-   "mxl iptv",
-   "mxl tv",
-   "nasaiptv",
-   "neo iptv",
-   "neox2 iptv",
-   "nitro iptv",
-   "nova iptv",
-   "nova max iptv",
-   "quzu iptv",
-   "quzu tv",
-   "rapidiptv",
-   "smartgo iptv",
-   "smartone iptv com generate",
-   "smartone iptv generate",
-   "space iptv",
-   "star iptv",
-   "stariptv",
-   "starlink iptv",
-   "starsat iptv",
-   "thunder iptv",
-   "unifi iptv",
-   "zoom iptv"
-  ]
- },
- {
   "slug": "iptv-smart-tv-canada",
   "n": 4,
   "vol": 5150,
@@ -733,6 +658,15 @@
   ]
  },
  {
+  "slug": "cloudstream",
+  "n": 1,
+  "vol": 5000,
+  "primary": "cloud stream",
+  "all": [
+   "cloud stream"
+  ]
+ },
+ {
   "slug": "iptv-near-me",
   "n": 7,
   "vol": 4850,
@@ -745,6 +679,61 @@
    "iptv box near me",
    "iptv service near me",
    "local iptv"
+  ]
+ },
+ {
+  "slug": "iptv-space-speed-brand-names",
+  "n": 47,
+  "vol": 4600,
+  "primary": "fast iptv",
+  "all": [
+   "fast iptv",
+   "fastiptv",
+   "nasa iptv",
+   "sonic iptv",
+   "starshare iptv",
+   "5g iptv",
+   "5giptv",
+   "astra iptv",
+   "blitzen iptv",
+   "delta iptv",
+   "electro iptv",
+   "evo iptv",
+   "evolution iptv",
+   "flux iptv",
+   "gamma iptv",
+   "harmo iptv",
+   "helix iptv",
+   "hydrogen iptv",
+   "hypersonic iptv",
+   "igate iptv",
+   "iptv mxl",
+   "iptv rapid",
+   "iptv revolution",
+   "ironiptv",
+   "istar iptv",
+   "itec iptv",
+   "iview iptv",
+   "jarvis iptv",
+   "matrix iptv",
+   "mxl iptv",
+   "mxl tv",
+   "nasaiptv",
+   "neo iptv",
+   "neox2 iptv",
+   "nitro iptv",
+   "nova iptv",
+   "nova max iptv",
+   "quzu iptv",
+   "quzu tv",
+   "rapidiptv",
+   "smartgo iptv",
+   "space iptv",
+   "star iptv",
+   "stariptv",
+   "starsat iptv",
+   "thunder iptv",
+   "zoom iptv"
   ]
  },
  {
@@ -905,25 +894,28 @@
   ]
  },
  {
-  "slug": "iptv-web-browser",
-  "n": 14,
-  "vol": 2950,
-  "primary": "iptv online player",
+  "slug": "iptv-live-tv-24-7",
+  "n": 17,
+  "vol": 3030,
+  "primary": "online iptv",
   "all": [
-   "iptv online player",
-   "iptv site",
-   "iptv web",
-   "iptv website",
-   "iptvportal",
-   "chrome iptv player",
-   "gse iptv chromecast",
-   "iptv browser",
-   "iptv chrome",
-   "iptv chromecast",
-   "iptv com",
-   "iptv viewer",
-   "iptv web browser",
-   "smartone iptv com"
+   "online iptv",
+   "ip tv online",
+   "iptv live",
+   "online ip tv",
+   "ip tv live",
+   "iptv 24",
+   "iptv 24 7",
+   "iptv 24h",
+   "iptv live tv",
+   "iptv now",
+   "iptv today",
+   "iptv watch tv online",
+   "iptv wifi",
+   "live ip tv",
+   "live iptv",
+   "watch iptv",
+   "watched iptv"
   ]
  },
  {
@@ -945,6 +937,25 @@
    "paid iptv",
    "platinum iptv",
    "prestige iptv"
+  ]
+ },
+ {
+  "slug": "iptv-web-browser",
+  "n": 11,
+  "vol": 2800,
+  "primary": "iptv online player",
+  "all": [
+   "iptv online player",
+   "iptv site",
+   "iptv web",
+   "iptv website",
+   "iptvportal",
+   "chrome iptv player",
+   "iptv browser",
+   "iptv chrome",
+   "iptv com",
+   "iptv viewer",
+   "iptv web browser"
   ]
  },
  {
@@ -991,24 +1002,6 @@
    "iptv high tech",
    "onetv iptv",
    "vipiptv"
-  ]
- },
- {
-  "slug": "iptv-plex-emby-jellyfin",
-  "n": 10,
-  "vol": 2300,
-  "primary": "jellyfin iptv",
-  "all": [
-   "jellyfin iptv",
-   "plex iptv",
-   "pluto tv iptv",
-   "stremio iptv",
-   "emby iptv",
-   "m3u plex",
-   "plex iptv m3u",
-   "plex m3u",
-   "pluto iptv",
-   "pluto tv m3u"
   ]
  },
  {
@@ -1247,6 +1240,24 @@
   ]
  },
  {
+  "slug": "king365-tv",
+  "n": 10,
+  "vol": 1400,
+  "primary": "king365",
+  "all": [
+   "king365",
+   "kingiptv",
+   "iptv 365",
+   "iptv365",
+   "king365 iptv",
+   "king365 tv",
+   "king365tv",
+   "king365tv box v2",
+   "king365tv box v3",
+   "kingtv365"
+  ]
+ },
+ {
   "slug": "blog/is-iptv-legal-canada",
   "n": 1,
   "vol": 1300,
@@ -1272,22 +1283,6 @@
   ]
  },
  {
-  "slug": "king365-tv",
-  "n": 8,
-  "vol": 1300,
-  "primary": "king365",
-  "all": [
-   "king365",
-   "kingiptv",
-   "iptv 365",
-   "iptv365",
-   "king365 iptv",
-   "king365 tv",
-   "king365tv",
-   "kingtv365"
-  ]
- },
- {
   "slug": "iptv-kodi",
   "n": 8,
   "vol": 1300,
@@ -1301,20 +1296,6 @@
    "m3u kodi",
    "vavoo iptv",
    "vavoo kodi"
-  ]
- },
- {
-  "slug": "iptv-smarters-lite",
-  "n": 6,
-  "vol": 1200,
-  "primary": "iptv smarters lite",
-  "all": [
-   "iptv smarters lite",
-   "smart player lite",
-   "iptv smasters player lite",
-   "smarters lite",
-   "smarters player lite tv",
-   "smarters pro lite"
   ]
  },
  {
@@ -1401,27 +1382,6 @@
   ]
  },
  {
-  "slug": "iptv-smarters-pro-pc-mac",
-  "n": 13,
-  "vol": 1100,
-  "primary": "iptv smarters pro pc",
-  "all": [
-   "iptv smarters pro pc",
-   "iptv smarters chromecast",
-   "iptv smasters for pc",
-   "iptv smasters mac",
-   "iptv smasters online",
-   "iptv smasters pc",
-   "iptv smasters pro for pc",
-   "iptv smasters pro mac",
-   "iptv smasters pro macbook",
-   "iptv smasters web",
-   "smarters player lite chromecast",
-   "smarters pro pc",
-   "web iptv smarters"
-  ]
- },
- {
   "slug": "ott-navigator",
   "n": 4,
   "vol": 1100,
@@ -1431,6 +1391,26 @@
    "ottiptv",
    "ott navigator premium",
    "ott pro box"
+  ]
+ },
+ {
+  "slug": "iptv-smarters-pro-pc-mac",
+  "n": 12,
+  "vol": 1050,
+  "primary": "iptv smarters pro pc",
+  "all": [
+   "iptv smarters pro pc",
+   "iptv smarter pc",
+   "iptv smasters for pc",
+   "iptv smasters mac",
+   "iptv smasters online",
+   "iptv smasters pc",
+   "iptv smasters pro for pc",
+   "iptv smasters pro mac",
+   "iptv smasters pro macbook",
+   "iptv smasters web",
+   "smarters pro pc",
+   "web iptv smarters"
   ]
  },
  {
@@ -1622,6 +1602,30 @@
   ]
  },
  {
+  "slug": "plex-iptv",
+  "n": 4,
+  "vol": 650,
+  "primary": "plex iptv",
+  "all": [
+   "plex iptv",
+   "m3u plex",
+   "plex iptv m3u",
+   "plex m3u"
+  ]
+ },
+ {
+  "slug": "smartone-iptv",
+  "n": 4,
+  "vol": 650,
+  "primary": "smartone iptv",
+  "all": [
+   "smartone iptv",
+   "smartone iptv com",
+   "smartone iptv com generate",
+   "smartone iptv generate"
+  ]
+ },
+ {
   "slug": "iptv-android-canada",
   "n": 3,
   "vol": 600,
@@ -1641,6 +1645,17 @@
    "apollo iptv",
    "apollo tv iptv",
    "iptv apollo"
+  ]
+ },
+ {
+  "slug": "pluto-tv-iptv",
+  "n": 3,
+  "vol": 600,
+  "primary": "pluto tv iptv",
+  "all": [
+   "pluto tv iptv",
+   "pluto iptv",
+   "pluto tv m3u"
   ]
  },
  {
@@ -1710,6 +1725,24 @@
   ]
  },
  {
+  "slug": "jellyfin-iptv",
+  "n": 1,
+  "vol": 500,
+  "primary": "jellyfin iptv",
+  "all": [
+   "jellyfin iptv"
+  ]
+ },
+ {
+  "slug": "stremio-iptv",
+  "n": 1,
+  "vol": 500,
+  "primary": "stremio iptv",
+  "all": [
+   "stremio iptv"
+  ]
+ },
+ {
   "slug": "iptv-smarters-pro-smart-tv",
   "n": 10,
   "vol": 500,
@@ -1725,6 +1758,22 @@
    "smarters tv",
    "smarters tv pro",
    "smarterstv"
+  ]
+ },
+ {
+  "slug": "iptv-chromecast",
+  "n": 8,
+  "vol": 400,
+  "primary": "chromecast iptv",
+  "all": [
+   "chromecast iptv",
+   "gse iptv chromecast",
+   "gseiptv",
+   "iptv chromecast",
+   "iptv google chromecast",
+   "iptv google tv",
+   "iptv smarters chromecast",
+   "smarters player lite chromecast"
   ]
  },
  {
@@ -1800,18 +1849,6 @@
    "iptv smasters samsung tv",
    "samsung iptv smarters",
    "smarters player lite samsung tv"
-  ]
- },
- {
-  "slug": "iptv-chromecast",
-  "n": 4,
-  "vol": 200,
-  "primary": "chromecast iptv",
-  "all": [
-   "chromecast iptv",
-   "gseiptv",
-   "iptv google chromecast",
-   "iptv google tv"
   ]
  },
  {
@@ -1977,6 +2014,15 @@
   ]
  },
  {
+  "slug": "iptv-plex-emby-jellyfin",
+  "n": 1,
+  "vol": 50,
+  "primary": "emby iptv",
+  "all": [
+   "emby iptv"
+  ]
+ },
+ {
   "slug": "iptv-dvr-catch-up",
   "n": 1,
   "vol": 50,
@@ -2010,6 +2056,15 @@
   "primary": "iptv ps5",
   "all": [
    "iptv ps5"
+  ]
+ },
+ {
+  "slug": "iptv-starlink",
+  "n": 1,
+  "vol": 50,
+  "primary": "starlink iptv",
+  "all": [
+   "starlink iptv"
   ]
  }
 ]

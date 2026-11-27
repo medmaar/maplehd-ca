@@ -5,11 +5,6 @@
   "slug": "tivimate"
  },
  {
-  "kw": "cloud stream",
-  "vol": 5000,
-  "slug": "iptv-live-tv-24-7"
- },
- {
   "kw": "ip tv box",
   "vol": 5000,
   "slug": "iptv-box"
@@ -62,7 +57,7 @@
  {
   "kw": "smarters players lite",
   "vol": 5000,
-  "slug": "iptv-smarters-pro-download"
+  "slug": "iptv-smarters-lite"
  },
  {
   "kw": "smarterspro",
@@ -585,16 +580,6 @@
   "slug": "iptv-m3u"
  },
  {
-  "kw": "plex iptv",
-  "vol": 500,
-  "slug": "iptv-plex-emby-jellyfin"
- },
- {
-  "kw": "pluto tv iptv",
-  "vol": 500,
-  "slug": "iptv-plex-emby-jellyfin"
- },
- {
   "kw": "private iptv",
   "vol": 500,
   "slug": "premium-iptv"
@@ -648,11 +633,6 @@
   "kw": "stream iptv",
   "vol": 500,
   "slug": "iptv-service-canada"
- },
- {
-  "kw": "stremio iptv",
-  "vol": 500,
-  "slug": "iptv-plex-emby-jellyfin"
  },
  {
   "kw": "tivimate account",
@@ -890,11 +870,6 @@
   "slug": "premium-iptv"
  },
  {
-  "kw": "emby iptv",
-  "vol": 50,
-  "slug": "iptv-plex-emby-jellyfin"
- },
- {
   "kw": "expressiptv",
   "vol": 50,
   "slug": "siptv-app"
@@ -1022,7 +997,7 @@
  {
   "kw": "gse iptv chromecast",
   "vol": 50,
-  "slug": "iptv-web-browser"
+  "slug": "iptv-chromecast"
  },
  {
   "kw": "gseiptv",
@@ -1236,11 +1211,6 @@
  },
  {
   "kw": "iptv chrome",
-  "vol": 50,
-  "slug": "iptv-web-browser"
- },
- {
-  "kw": "iptv chromecast",
   "vol": 50,
   "slug": "iptv-web-browser"
  },
@@ -1517,7 +1487,7 @@
  {
   "kw": "iptv smarter pc",
   "vol": 50,
-  "slug": "iptv-smarters-pro-download"
+  "slug": "iptv-smarters-pro-pc-mac"
  },
  {
   "kw": "iptv smarter pro downloader",
@@ -1527,7 +1497,7 @@
  {
   "kw": "iptv smarters chromecast",
   "vol": 50,
-  "slug": "iptv-smarters-pro-pc-mac"
+  "slug": "iptv-chromecast"
  },
  {
   "kw": "iptv smarters com",
@@ -1982,12 +1952,12 @@
  {
   "kw": "king365tv box v2",
   "vol": 50,
-  "slug": "iptv-box"
+  "slug": "king365-tv"
  },
  {
   "kw": "king365tv box v3",
   "vol": 50,
-  "slug": "iptv-box"
+  "slug": "king365-tv"
  },
  {
   "kw": "kingtv365",
@@ -2077,7 +2047,7 @@
  {
   "kw": "m3u plex",
   "vol": 50,
-  "slug": "iptv-plex-emby-jellyfin"
+  "slug": "plex-iptv"
  },
  {
   "kw": "m3u premium",
@@ -2215,19 +2185,14 @@
   "slug": "iptv-list"
  },
  {
-  "kw": "plex iptv m3u",
-  "vol": 50,
-  "slug": "iptv-plex-emby-jellyfin"
- },
- {
   "kw": "plex m3u",
   "vol": 50,
-  "slug": "iptv-plex-emby-jellyfin"
+  "slug": "plex-iptv"
  },
  {
   "kw": "pluto iptv",
   "vol": 50,
-  "slug": "iptv-plex-emby-jellyfin"
+  "slug": "pluto-tv-iptv"
  },
  {
   "kw": "prestige iptv",
@@ -2357,7 +2322,7 @@
  {
   "kw": "smarters player lite chromecast",
   "vol": 50,
-  "slug": "iptv-smarters-pro-pc-mac"
+  "slug": "iptv-chromecast"
  },
  {
   "kw": "smarters player lite firestick",
@@ -2412,7 +2377,12 @@
  {
   "kw": "smartone iptv com",
   "vol": 50,
-  "slug": "iptv-web-browser"
+  "slug": "smartone-iptv"
+ },
+ {
+  "kw": "smartone iptv com generate",
+  "vol": 50,
+  "slug": "smartone-iptv"
  },
  {
   "kw": "smasters player lite télécharger",

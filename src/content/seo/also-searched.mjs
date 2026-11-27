@@ -11,19 +11,6 @@ export default {
   "tivimate website",
   "troypoint tivimate"
  ],
- "iptv-live-tv-24-7": [
-  "cloud stream",
-  "online iptv",
-  "ip tv online",
-  "online ip tv",
-  "ip tv live",
-  "iptv 24h",
-  "iptv now",
-  "iptv watch tv online",
-  "iptv wifi",
-  "live ip tv",
-  "watched iptv"
- ],
  "iptv-box": [
   "ip tv box",
   "amazon iptv box",
@@ -34,8 +21,6 @@ export default {
   "iptv sim",
   "box tv iptv",
   "global tv box",
-  "king365tv box v2",
-  "king365tv box v3",
   "tv ip box"
  ],
  "iptv-smart-tv-canada": [
@@ -119,8 +104,14 @@ export default {
   "smart pro iptv",
   "smart stb tv"
  ],
- "iptv-smarters-pro-download": [
+ "iptv-smarters-lite": [
   "smarters players lite",
+  "smart player lite",
+  "iptv smasters player lite",
+  "smarters player lite tv",
+  "smarters pro lite"
+ ],
+ "iptv-smarters-pro-download": [
   "smarterspro",
   "iptv smarter",
   "ip tv smarter pro",
@@ -130,7 +121,6 @@ export default {
   "smarters iptv pro",
   "ip smarter pro",
   "ip smarters pro",
-  "iptv smarter pc",
   "iptv smarter pro downloader",
   "iptv smarters com",
   "iptv smasters free",
@@ -155,6 +145,18 @@ export default {
   "best iptv 2026",
   "best iptv provider canada",
   "best canadian iptv provider"
+ ],
+ "iptv-live-tv-24-7": [
+  "online iptv",
+  "ip tv online",
+  "online ip tv",
+  "ip tv live",
+  "iptv 24h",
+  "iptv now",
+  "iptv watch tv online",
+  "iptv wifi",
+  "live ip tv",
+  "watched iptv"
  ],
  "iptv-near-me": [
   "iptv areas",
@@ -398,14 +400,11 @@ export default {
   "iptv website",
   "iptvportal",
   "chrome iptv player",
-  "gse iptv chromecast",
   "iptv browser",
   "iptv chrome",
-  "iptv chromecast",
   "iptv com",
   "iptv viewer",
-  "iptv web browser",
-  "smartone iptv com"
+  "iptv web browser"
  ],
  "kemo-iptv": [
   "kemoiptv",
@@ -449,22 +448,6 @@ export default {
   "ottiptv",
   "ott navigator premium",
   "ott pro box"
- ],
- "iptv-plex-emby-jellyfin": [
-  "plex iptv",
-  "pluto tv iptv",
-  "stremio iptv",
-  "emby iptv",
-  "m3u plex",
-  "plex iptv m3u",
-  "plex m3u",
-  "pluto iptv"
- ],
- "iptv-smarters-lite": [
-  "smart player lite",
-  "iptv smasters player lite",
-  "smarters player lite tv",
-  "smarters pro lite"
  ],
  "tivimate-premium": [
   "tivimate account",
@@ -531,8 +514,11 @@ export default {
   "xtreme hd iptv reddit"
  ],
  "iptv-chromecast": [
+  "gse iptv chromecast",
   "gseiptv",
-  "iptv google chromecast"
+  "iptv google chromecast",
+  "iptv smarters chromecast",
+  "smarters player lite chromecast"
  ],
  "iptv-vod-movies-series": [
   "hbo max iptv",
@@ -565,6 +551,8 @@ export default {
   "iptv 365",
   "iptv365",
   "king365 iptv",
+  "king365tv box v2",
+  "king365tv box v3",
   "kingtv365"
  ],
  "iptv-apple-tv-canada": [
@@ -616,7 +604,7 @@ export default {
   "iptv rive nord"
  ],
  "iptv-smarters-pro-pc-mac": [
-  "iptv smarters chromecast",
+  "iptv smarter pc",
   "iptv smasters for pc",
   "iptv smasters mac",
   "iptv smasters online",
@@ -625,7 +613,6 @@ export default {
   "iptv smasters pro mac",
   "iptv smasters pro macbook",
   "iptv smasters web",
-  "smarters player lite chromecast",
   "web iptv smarters"
  ],
  "iptv-customer-service": [
@@ -700,6 +687,10 @@ export default {
  "iptv-resellers": [
   "iptvresale"
  ],
+ "plex-iptv": [
+  "m3u plex",
+  "plex m3u"
+ ],
  "mag-524-iptv": [
   "mag 420w1",
   "mag 424w3",
@@ -711,6 +702,13 @@ export default {
  ],
  "iptv-nvidia-shield": [
   "nvidia shield iptv"
+ ],
+ "pluto-tv-iptv": [
+  "pluto iptv"
+ ],
+ "smartone-iptv": [
+  "smartone iptv com",
+  "smartone iptv com generate"
  ],
  "tivimate-pc-mac": [
   "tivimate companion iphone",

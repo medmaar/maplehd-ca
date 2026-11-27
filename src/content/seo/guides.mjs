@@ -32,7 +32,8 @@ export default [
         ul: [
           "[Play an M3U playlist in VLC](/iptv-vlc)",
           "[Use IPTV with Kodi](/iptv-kodi)",
-          "[Add live TV to Plex, Emby or Jellyfin](/iptv-plex-emby-jellyfin)",
+          "[Add live TV to Plex](/plex-iptv) or [Jellyfin](/jellyfin-iptv), or compare [Plex vs Emby vs Jellyfin](/iptv-plex-emby-jellyfin)",
+          "[Does IPTV work on Starlink?](/iptv-starlink)",
           "[Check an M3U link with a player or checker](/iptv-m3u-player)",
           "[Watch in a web browser](/iptv-web-browser)",
         ],
@@ -318,15 +319,15 @@ export default [
     slug: "iptv-plex-emby-jellyfin",
     cluster: "guides",
     kind: "guide",
-    title: "IPTV on Plex, Emby & Jellyfin: Live TV Guide | MapleHD",
-    desc: "Add IPTV to Plex, Emby or Jellyfin: how live TV and M3U work in each media server, what you need and simpler alternatives, including Pluto TV and Stremio.",
-    h1: "IPTV on Plex, Emby and Jellyfin: What's Possible",
+    title: "Plex vs Emby vs Jellyfin for IPTV: Compared | MapleHD",
+    desc: "Plex vs Emby vs Jellyfin for IPTV: how live TV and M3U work in each media server, what each costs, Emby IPTV setup and which one suits your household.",
+    h1: "Plex vs Emby vs Jellyfin for IPTV: Which Media Server?",
     badge: "IPTV · Plex · Emby · Jellyfin",
-    kw: "jellyfin iptv",
-    kws: ["plex iptv", "plex m3u", "m3u plex", "plex iptv m3u", "emby iptv", "stremio iptv", "pluto tv iptv", "pluto iptv", "pluto tv m3u"],
-    anchor: "IPTV on Plex, Emby and Jellyfin",
+    kw: "emby iptv",
+    kws: ["iptv media server", "plex vs jellyfin iptv", "emby m3u", "emby live tv"],
+    anchor: "Plex vs Emby vs Jellyfin for IPTV",
     answer:
-      "Jellyfin and Emby can play an M3U playlist through their Live TV features, while Plex typically needs a tuner or a helper tool to bring in IPTV. For most viewers, a dedicated IPTV player is simpler. If you already run a media server, you can add your MapleHD M3U link to Jellyfin or Emby.",
+      "Emby IPTV and Jellyfin IPTV both read an M3U playlist directly through their Live TV features, while Plex needs a tuner or a helper tool such as Threadfin. Jellyfin is free, Emby's live TV and DVR may need Emby Premiere, and Plex needs a Plex Pass. Step-by-step guides: [Jellyfin IPTV](/jellyfin-iptv) and [Plex IPTV](/plex-iptv).",
     sections: [
       {
         h: "Which media servers support IPTV",
@@ -353,7 +354,7 @@ export default [
       {
         h: "Pluto TV and free ad-supported streaming",
         p: [
-          "People also search for Pluto TV M3U. Pluto TV is a separate ad-supported streaming service with its own app; it is not part of a paid IPTV subscription. Use its official app for it.",
+          "Pluto TV is a separate free ad-supported service with its own app, and Stremio is an add-on media centre rather than a media server. See [Pluto TV vs IPTV](/pluto-tv-iptv) and [Stremio IPTV](/stremio-iptv) for both.",
         ],
       },
       {
@@ -364,12 +365,12 @@ export default [
       },
     ],
     faq: [
-      { q: "Can I use IPTV on Plex?", a: "Plex is designed around tuners and has limited direct M3U support. Third-party tools can help, but a dedicated IPTV player is simpler." },
-      { q: "Does Jellyfin support IPTV?", a: "Yes. Add an M3U tuner in Live TV settings and paste your playlist link." },
+      { q: "Can I use IPTV on Plex?", a: "Yes, with a tuner emulator such as Threadfin or xTeVe and a Plex Pass. Our [Plex IPTV guide](/plex-iptv) has the steps." },
+      { q: "Does Jellyfin support IPTV?", a: "Yes. Add an M3U tuner in Live TV settings and paste your playlist link. See the [Jellyfin IPTV setup](/jellyfin-iptv)." },
       { q: "Does Emby support M3U?", a: "Yes, through Live TV tuners. Some features such as DVR may require Emby Premiere." },
       { q: "Is Pluto TV part of IPTV?", a: "Pluto TV is a separate free ad-supported service. It isn't included in an IPTV subscription like MapleHD's." },
     ],
-    related: ["iptv-kodi", "iptv-m3u", "iptv-vlc", "iptv-player", "iptv-guides"],
+    related: ["plex-iptv", "jellyfin-iptv", "stremio-iptv", "pluto-tv-iptv", "iptv-kodi", "iptv-m3u", "iptv-vlc", "iptv-player", "iptv-guides"],
   },
   {
     slug: "iptv-web-browser",

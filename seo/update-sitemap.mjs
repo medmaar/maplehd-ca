@@ -54,7 +54,7 @@ let added = 0;
 for (const p of PAGES) {
   if (existingLocs.has(url(p.slug))) continue;
   const pair = pairs.find(([en, fr]) => en === p.slug || fr === p.slug);
-  block += `  <url><loc>${url(p.slug)}</loc>${pair ? alt(pair[0], pair[1]) : ""}<lastmod>${TODAY}</lastmod><changefreq>${p.kind === "hub" ? "weekly" : "monthly"}</changefreq><priority>${prio(p)}</priority></url>\n`;
+  block += `  <url><loc>${url(p.slug)}</loc>${pair ? alt(pair[0], pair[1]) : ""}<lastmod>${p.updated || TODAY}</lastmod><changefreq>${p.kind === "hub" ? "weekly" : "monthly"}</changefreq><priority>${prio(p)}</priority></url>\n`;
   added++;
 }
 xml = xml.replace("</urlset>", block + "</urlset>");

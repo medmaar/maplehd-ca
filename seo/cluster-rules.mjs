@@ -5,7 +5,7 @@
 export const EXCLUDE_RULES = [
   // [category, regex]
   ["Middle East / Arab", /\barab(ic|e)?\b|lebanese|lebanon|great bee/i],
-  ["Asian (South Asia / Philippines / China)", /tamil|desi\b|jio\b|tashan|\btfc\b|cctv/i],
+  ["Asian (South Asia / Philippines / China / Malaysia)", /tamil|desi\b|jio\b|tashan|\btfc\b|cctv|unifi/i],
   ["African", /africa|dstv|startimes/i],
   ["Non-Canada market (Georgia / Balkans / Romania / French telco-ISP)", /ge imedi|kanali|televizija|romanesti|freebox|iptv orange|iptvfrance/i],
 ];
@@ -40,6 +40,16 @@ export const RULES = [
   ["tivimate", /tivi ?mate/i],
 
   ["iptv-ctv", /^ctv iptv$/i],
+  // Nov 2026: dedicated app / service pages split out of shared clusters
+  ["cloudstream", /cloud ?stream/i],
+  ["stremio-iptv", /stremio/i],
+  ["pluto-tv-iptv", /pluto/i],
+  ["jellyfin-iptv", /jellyfin/i],
+  ["plex-iptv", /plex/i],
+  ["smartone-iptv", /smart ?one/i],
+  ["iptv-starlink", /starlink/i],
+  ["king365-tv", /king ?365|kingtv365|kingiptv|iptv365|iptv 365/i],
+  ["iptv-chromecast", /chromecast|google tv|gse ?iptv/i],
   ["iptv-smarters-samsung-tv", /(smarters|smasters).*samsung|samsung iptv smarters/i],
   ["iptv-smarters-lg-tv", /(smarters|smasters).* lg( |$)/i],
   ["iptv-smarters-roku", /(smarters|smasters).*roku/i],
@@ -47,9 +57,9 @@ export const RULES = [
   ["iptv-smarters-android", /(smarters|smasters|smarter).*android/i],
   ["iptv-smarters-pro-price", /smasters (pro )?(price|subscription|premium)|smasters pro subscription|smasters subscription/i],
   ["iptv-smarters-pro-firestick", /(smarters|smasters).*(fire ?stick|fire tv)|smarters pro firestick|smart iptv fire|xciptv.*fire/i],
-  ["iptv-smarters-pro-pc-mac", /(smarters|smasters).*(\bpc\b|mac|macbook|web|online|browser|chromecast)|smarters pro pc|web iptv smarters/i],
+  ["iptv-smarters-pro-pc-mac", /(smarters|smasters|smarter).*(\bpc\b|mac|macbook|web|online|browser|chromecast)|smarters pro pc|web iptv smarters/i],
   ["iptv-smarters-pro-smart-tv", /(smarters|smasters).*(samsung| lg( |$)|roku|smart tv|sony|apple|android tv|tizen)|(smarters|smasters)( pro| player)? tv$|smarterstv|smarters pro tv|smarters tv pro|smarters player tv|smarters player pro|iptv smasters (pro )?tv/i],
-  ["iptv-smarters-lite", /smarters (player )?lite|smart player lite|smasters player lite|smarters pro lite|smarters lite/i],
+  ["iptv-smarters-lite", /smarters (players? )?lite|smart player lite|smasters player lite|smarters pro lite|smarters lite/i],
   ["iptv-smarters-pro-download", /(smarters|smasters|smarterspro|smarter pro|smarter).*(download|google play|free|android|iphone|m3u|com$|pro live|pro com)|ip ?tv smarters pro|iptv smarters pro|ip tv smarter|smarters pro|smarters iptv|iptv smarters|iptv smarter|smarter player|smarters player|smarterspro|ip smarters|iptvsmarterspro|tv smarters|iptv smasters|iptv smasters pro|smasters|ip smarter pro|iptv smarter pro/i],
 
   ["xciptv", /xc ?iptv|xciptv/i],
