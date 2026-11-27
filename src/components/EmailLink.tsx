@@ -17,7 +17,7 @@ export default function EmailLink({ className, style, subject }: Props) {
     setEmail(`${u}@${d}`);
   }, []);
 
-  if (!email) return <span className={className} style={style}>help[at]maple4k.ca</span>;
+  if (!email) return <span className={className} style={style}>help[at]maplehd.ca</span>;
 
   const href = subject
     ? `mailto:${email}?subject=${encodeURIComponent(subject)}`
